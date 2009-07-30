@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE sqlMapConfig
+
+PUBLIC "-//iBATIS.com//DTD SQL Map Config 2.0//EN"
+
+"http://www.ibatis.com/dtd/sql-map-config-2.dtd">
+
+ 
+
+<sqlMapConfig>
+
+      <settings cacheModelsEnabled="true" enhancementEnabled="true"
+
+            lazyLoadingEnabled="true" maxRequests="32" maxSessions="10"
+
+            maxTransactions="5" useStatementNamespaces="false" />
+
+      <transactionManager type="JDBC">
+            <dataSource type="DBCP">
+            	<property name="driverClassName" value="${db.jdbc.driver}"/>
+  				<property name="url" value="${db.jdbc.url}"/>
+  				<property name="username" value="${db.jdbc.user}"/>
+  				<property name="password" value="${db.jdbc.password}"/>
+  				<property name="maxActive" value="10"/>
+  				<property name="initialSize" value="5"/>
+            </dataSource>
+      </transactionManager>
+
+      <sqlMap resource="gipse-query.xml" />
+
+</sqlMapConfig>

@@ -1,0 +1,25 @@
+#Rename file to gipse.properties to use as part of the build.
+
+##MAIN PROPERTIES - Change these##
+#specifies the jdbc url. postgres=jdbc:postgresql://server:port[usually 5432]/dbname; sqlserver=jdbc:jtds:sqlserver://server:port[usually 1433]/dbname;ssl=request
+db.jdbc.url=DB URL
+#jdbc driver to be used, the package includes jtds and postgres so if you use something else, rebuild with that jar; SQLServer=net.sourceforge.jtds.jdbc.Driver;Postgres=org.postgresql.Driver
+db.jdbc.driver=DB DRIVER
+#username in cleartext, this user needs insert permissions to gipse_jobs_import and gipse_store
+db.jdbc.user=USER NAME
+#associated password
+db.jdbc.password=PASSWORD
+#Set to the name of the table or view that contains the following fields (state, date, zip3, zip5, count, condition)
+db.gipse.table=TABLE/VIEW NAME
+
+#Change the following properties only if you are using different column names, these are the values for the GIPSE Store
+db.gipse.table.column.date=date
+db.gipse.table.column.state=state
+db.gipse.table.column.zip5=zip5
+db.gipse.table.column.zip3=zip3
+db.gipse.table.column.condition=condition
+db.gipse.table.column.classifier=indicator
+db.gipse.table.column.count=value
+
+#The url to the service, only used by the runClient ant task. You probably don't need to change this.
+service.url=http://localhost:8080/wsrf/services/gipse/GIPSEService

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetadataQueryResponse xmlns="http://ncphi.phgrid.net:8080/schemas/gipse/20090630">
+	<MetadataRecord>
+		<TimePeriodSupported start="2009-01-01T00:00:01-00:00" end="2010-01-01T05:00:00-00:00"/>
+		<DataSourceOID>BioSense-GIPSE-NCPHILab</DataSourceOID>
+		<SuppressValues smallestValueReported="0"/><!-- Means this service does not apply cell suppression -->
+		<PagingSupported maxPageSize="100"/><!-- Optional, if not specified then service does not support paging. -->
+		<IndicatorsSupported><!-- These would correspond to entries in a wiki/registry describing the classification rules (count vs. ratio, etc) -->
+			<Indicator classifier="BioSense" name="Asthma"/>
+			<Indicator classifier="BioSense" name="Bites, animal"/>
+			<Indicator classifier="BioSense" name="Burns"/>
+			<Indicator classifier="BioSense" name="Carbon monoxide poisoning"/>
+			<Indicator classifier="BioSense" name="Cardiac dysrhythmias"/>
+			<Indicator classifier="BioSense" name="Chest pain"/>
+			<Indicator classifier="BioSense" name="CNS, inflammatory disease"/>
+			<Indicator classifier="BioSense" name="Convulsions"/>
+			<Indicator classifier="BioSense" name="COPD"/>
+			<Indicator classifier="BioSense" name="Cough"/>
+			<Indicator classifier="BioSense" name="Diabetes mellitus"/>
+			<Indicator classifier="BioSense" name="Diarrhea"/>
+			<Indicator classifier="BioSense" name="Dyspnea"/>
+			<Indicator classifier="BioSense" name="Falls"/>
+			<Indicator classifier="BioSense" name="Fever(Subyndrome)"/>
+			<Indicator classifier="BioSense" name="Fractures and dislocation"/>
+			<Indicator classifier="BioSense" name="Heart disease, ischemic"/>
+			<Indicator classifier="BioSense" name="Heat, excessive"/>
+			<Indicator classifier="BioSense" name="Injury, NOS"/>
+			<Indicator classifier="BioSense" name="Insect bites"/>
+			<Indicator classifier="BioSense" name="Jaundice"/>
+			<Indicator classifier="BioSense" name="Meningismus"/>
+			<Indicator classifier="BioSense" name="Mental disorders"/>
+			<Indicator classifier="BioSense" name="Motor vehicle traffic accidents"/>
+			<Indicator classifier="BioSense" name="Nausea and vomiting"/>
+			<Indicator classifier="BioSense" name="Pneumonia and lung abscess"/>
+			<Indicator classifier="BioSense" name="Pregnancy, childbirth, puerperium complications"/>
+			<Indicator classifier="BioSense" name="Rash(Subsyndrome)"/>
+			<Indicator classifier="BioSense" name="Skin infection"/>
+			<Indicator classifier="BioSense" name="ILI2"/>
+		</IndicatorsSupported>
+		<IntervalsSupported>
+			<Interval name="Day" isDefault="true"/>
+		</IntervalsSupported>
+		<GeoRegionsSupported>
+			<!-- All of the states in US -->
+			<GeoRegion type="country" value="US">
+				<SpecificLocations>
+					<GeoLocation type="state" value="*"/>
+				</SpecificLocations>
+			</GeoRegion>
+			<!-- All of the zip3s in US -->
+			<GeoRegion type="country" value="US">
+				<SpecificLocations>
+					<GeoLocation type="zip3" value="*"/>
+				</SpecificLocations>
+			</GeoRegion>
+			<!-- All of the zip5s in US -->
+			<GeoRegion type="country" value="US">
+				<SpecificLocations>
+					<GeoLocation type="zip5" value="*"/>
+				</SpecificLocations>
+			</GeoRegion>
+		</GeoRegionsSupported>
+	</MetadataRecord>
+</MetadataQueryResponse>

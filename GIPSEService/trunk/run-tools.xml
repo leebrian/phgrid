@@ -1,0 +1,12 @@
+<project name="run-tools file" basedir="." default="runClient">
+     <target name="runClient" depends="checkGlobus, defineClasspaths" description="Run the sample Client">
+        <!--<property name="service.url" value="http://localhost:8080/wsrf/services/gipse/GIPSEService" />-->
+        <property name="service.url" value="https://ncphi.phgrid.net:8443/wsrf/services/gipse/GIPSEService" />
+        <echo message="Connecting to service: ${service.url}" />
+        <java failonerror="true" classname="gov.cdc.ncphi.phgrid.services.gipse.client.GIPSEServiceClient" classpathref="run.classpath" fork="yes">
+            <jvmarg value="-DGLOBUS_LOCATION=${ext.globus.dir}" />
+            <arg value="-url" />
+            <arg value="${service.url}" />
+        </java>
+    </target>
+</project>

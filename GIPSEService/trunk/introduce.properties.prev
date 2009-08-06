@@ -1,11 +1,11 @@
 #Introduce Properties
-#Thu Jul 16 00:30:45 EDT 2009
+#Wed Aug 05 21:34:51 EDT 2009
 introduce.skeleton.services.list=GIPSEService
 introduce.skeleton.extensions=
-introduce.skeleton.timestamp=1247684515083
+introduce.skeleton.timestamp=1247718663222
 introduce.skeleton.service.name=GIPSEService
 introduce.skeleton.resource.options=main,singleton,identifiable,resourcePropertyManagement
 introduce.skeleton.destination.dir=/Users/brian/Documents/java-stuff/workspace/GIPSEService
 introduce.skeleton.namespace.domain=http\://gipse.services.phgrid.ncphi.cdc.gov/GIPSEService
-introduce.soap.binding.excludes=\ 
 introduce.ns.excludes=\ -x gme\://caGrid.caBIG/1.0/gov.nih.nci.cagrid.metadata.security
+introduce.soap.binding.excludes=\ 

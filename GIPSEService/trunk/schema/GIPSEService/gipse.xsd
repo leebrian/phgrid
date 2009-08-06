@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 	<!--
 		PHGrid GIPSE Schema edited by Brian Alexander Lee (brianalee@gmail.com),
-		2009.06.22 1500EDT)
+		2009.08.03 1613EDT)
 	-->
 
-<xs:schema id="GIPSE" targetNamespace="http://ncphi.phgrid.net:8080/schemas/gipse/20090630"
+<xs:schema id="GIPSE" targetNamespace="http://ncphi.phgrid.net:8080/schemas/gipse/20090831"
 	xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="qualified"
 	elementFormDefault="qualified" version="1.0" xml:lang="EN">
 	
@@ -32,7 +32,7 @@
 								</xs:complexType>
 							</xs:element>
 							<xs:element name="DataSourceOID"
-								type="xs:string" minOccurs="1" maxOccurs="1" />
+								type="xs:string" minOccurs="1" maxOccurs="unbounded" />
 							<xs:element name="SuppressValues" minOccurs="0" maxOccurs="1" >
                                 <xs:complexType>
                                 	<xs:attribute name="smallestValueReported"
@@ -472,6 +472,22 @@
                 					</xs:sequence>
                 				</xs:complexType>
                 			</xs:element>
+	
+							<xs:element name="DataSources" minOccurs="0"
+								maxOccurs="1">
+								<xs:annotation>
+									<xs:documentation>
+										Optional Element. This element describes the data sources that are included in this response.
+										If not supplied then no data source filter is applied.
+									</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="DataSourceOID"
+											type="xs:string" minOccurs="1" maxOccurs="unbounded" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
 
                 			<xs:element name="PageData" minOccurs="0"
                 				maxOccurs="1">
@@ -513,7 +529,7 @@
 							<xs:element name="ResponseDateTime" type="xs:dateTime" minOccurs="1" maxOccurs="1" />
 							<xs:element name="RequestingUser" type="xs:string" minOccurs="1" maxOccurs="1" />
 							<xs:element name="RequestingOrganization" type="xs:string" minOccurs="1" maxOccurs="1" />
-							<xs:element name="DataSourceOID" type="xs:string" minOccurs="1" maxOccurs="1" />
+							<xs:element name="DataSourceOID" type="xs:string" minOccurs="1" maxOccurs="unbounded" />
 							<xs:element name="DataSourceTimeZone" type="xs:string" minOccurs="0" maxOccurs="1" />
 						</xs:sequence>
 					</xs:complexType>
@@ -750,6 +766,22 @@
 									</xs:element>
 								</xs:sequence>
 							</xs:choice>
+	
+							<xs:element name="DataSources" minOccurs="0"
+								maxOccurs="1">
+								<xs:annotation>
+									<xs:documentation>
+										Optional Element. This element describes the data sources that are included in this response.
+										If not supplied then no data source filter is applied.
+									</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="DataSourceOID"
+											type="xs:string" minOccurs="1" maxOccurs="unbounded" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
 	
 							<xs:element name="PageData" minOccurs="0"
 								maxOccurs="1">

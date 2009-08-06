@@ -1,12 +1,12 @@
 <ns1:ServiceDescription introduceVersion="1.3" xmlns:ns1="gme://gov.nih.nci.cagrid/1/Introduce">
  <ns2:Namespaces xsi:type="ns2:NamespacesType" xmlns:ns2="gme://gov.nih.nci.cagrid.introduce/1/Namespace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <ns2:Namespace location="./gipse.xsd" namespace="http://ncphi.phgrid.net:8080/schemas/gipse/20090630" packageName="gov.cdc.ncphi.phgrid.gipse.message" xsi:type="ns2:NamespaceType">
+  <ns2:Namespace location="./gipse.xsd" namespace="http://ncphi.phgrid.net:8080/schemas/gipse/20090831" packageName="gov.cdc.ncphi.phgrid.gipse.message" xsi:type="ns2:NamespaceType">
    <ns2:SchemaElement type="GIPSEQueryRequest" xsi:type="ns2:SchemaElementType"/>
    <ns2:SchemaElement type="GIPSEQueryResponse" xsi:type="ns2:SchemaElementType"/>
    <ns2:SchemaElement type="MetadataQuery" xsi:type="ns2:SchemaElementType"/>
    <ns2:SchemaElement type="MetadataQueryResponse" xsi:type="ns2:SchemaElementType"/>
   </ns2:Namespace>
-  <ns2:Namespace location="./gipse.xsd" namespace="http://ncphi.phgrid.net:8080/schemas/gipse/20090630" packageName="gov.cdc.ncphi.phgrid.gipse.message" xsi:type="ns2:NamespaceType">
+  <ns2:Namespace location="./gipse.xsd" namespace="http://ncphi.phgrid.net:8080/schemas/gipse/20090831" packageName="gov.cdc.ncphi.phgrid.gipse.message" xsi:type="ns2:NamespaceType">
    <ns2:SchemaElement type="GIPSEQueryRequest" xsi:type="ns2:SchemaElementType"/>
    <ns2:SchemaElement type="GIPSEQueryResponse" xsi:type="ns2:SchemaElementType"/>
    <ns2:SchemaElement type="MetadataQuery" xsi:type="ns2:SchemaElementType"/>
@@ -114,16 +114,16 @@
     </ns4:Method>
     <ns4:Method description="" isImported="false" isProvided="false" name="queryMetadata" xsi:type="ns4:MethodType">
      <ns4:Inputs>
-      <ns4:Input qName="ns13:MetadataQuery" description="" isArray="false" name="query" xmlns:ns13="http://ncphi.phgrid.net:8080/schemas/gipse/20090630"/>
+      <ns4:Input qName="ns13:MetadataQuery" description="" isArray="false" name="query" xmlns:ns13="http://ncphi.phgrid.net:8080/schemas/gipse/20090831"/>
      </ns4:Inputs>
-     <ns4:Output qName="ns14:MetadataQueryResponse" description="" isArray="false" xmlns:ns14="http://ncphi.phgrid.net:8080/schemas/gipse/20090630"/>
+     <ns4:Output qName="ns14:MetadataQueryResponse" description="" isArray="false" xmlns:ns14="http://ncphi.phgrid.net:8080/schemas/gipse/20090831"/>
      <ns4:Exceptions/>
     </ns4:Method>
     <ns4:Method description="" isImported="false" isProvided="false" name="queryGIPSE" xsi:type="ns4:MethodType">
      <ns4:Inputs>
-      <ns4:Input qName="ns15:GIPSEQueryRequest" description="" isArray="false" name="query" xmlns:ns15="http://ncphi.phgrid.net:8080/schemas/gipse/20090630"/>
+      <ns4:Input qName="ns15:GIPSEQueryRequest" description="" isArray="false" name="query" xmlns:ns15="http://ncphi.phgrid.net:8080/schemas/gipse/20090831"/>
      </ns4:Inputs>
-     <ns4:Output qName="ns16:GIPSEQueryResponse" description="" isArray="false" xmlns:ns16="http://ncphi.phgrid.net:8080/schemas/gipse/20090630"/>
+     <ns4:Output qName="ns16:GIPSEQueryResponse" description="" isArray="false" xmlns:ns16="http://ncphi.phgrid.net:8080/schemas/gipse/20090831"/>
      <ns4:Exceptions/>
     </ns4:Method>
    </ns4:Methods>

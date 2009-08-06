@@ -1,4 +1,4 @@
-package gov.cdc.ncphi.phgrid.services.gipse.common.dao;
+package gov.cdc.ncphi.phgrid.services.gipse.service.dao;
 
 import java.sql.Date;
 

@@ -95,7 +95,7 @@ public class GIPSEServiceClient extends GIPSEServiceClientBase implements GIPSES
 		  client.setAnonymousPrefered(false);
 		  MetadataQuery query = new MetadataQuery();
 		  MetadataQueryResponse response = client.queryMetadata(query);
-		  System.out.println(AxisUtils.serializeAxisObject(response, false, true));
+		  System.out.println(AxisUtils.serializeAxisObject(response, true, true));
 		
 	}
 	
@@ -106,7 +106,7 @@ public class GIPSEServiceClient extends GIPSEServiceClientBase implements GIPSES
 		  if (queryRequestFile.exists()){
 			  GIPSEQueryRequest query = (GIPSEQueryRequest) AxisUtils.deserializeAxisObject(FileUtils.readFileToString(queryRequestFile), GIPSEQueryRequest.class);
 			  GIPSEQueryResponse response = client.queryGIPSE(query);
-			  System.out.println(AxisUtils.serializeAxisObject(response, false, true));
+			  System.out.println(AxisUtils.serializeAxisObject(response, true, true));
 			  
 		  }else{
 			  System.out.println("No " + queryRequestFileName + "in current dir. Exiting. Copy file to current dir and try again.");

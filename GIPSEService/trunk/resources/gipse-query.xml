@@ -11,17 +11,17 @@ PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN"
 	<resultMap id="gipseResultByState" class="gov.cdc.ncphi.phgrid.services.gipse.common.dao.Observation">
 	      <result property="observationDate" column="${db.gipse.table.column.date}" />
 	      <result property="state" column="${db.gipse.table.column.state}" />
-	      <result property="classifier" column="${db.gipse.table.column.classifier}" />
-	      <result property="indicator" column="${db.gipse.table.column.condition}" />
-	      <result property="count" column="${db.gipse.table.column.count}" />
+	      <result property="classifier" column="${db.gipse.table.column.indicator}" />
+	      <result property="indicator" column="${db.gipse.table.column.indicator}" />
+	      <result property="count" column="${db.gipse.table.column.value}" />
 	</resultMap>
 
 	<resultMap id="gipseResultByZip3" class="gov.cdc.ncphi.phgrid.services.gipse.common.dao.Observation">
 	      <result property="observationDate" column="${db.gipse.table.column.date}" />
 	      <result property="state" column="${db.gipse.table.column.state}" />
 	      <result property="classifier" column="${db.gipse.table.column.classifier}" />
-	      <result property="indicator" column="${db.gipse.table.column.condition}" />
-	      <result property="count" column="${db.gipse.table.column.count}" />
+	      <result property="indicator" column="${db.gipse.table.column.indicator" />
+	      <result property="count" column="${db.gipse.table.column.value}" />
 	      <result property="zip3" column="${db.gipse.table.column.zip3}" />
 	</resultMap>
 
@@ -29,8 +29,8 @@ PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN"
 	      <result property="observationDate" column="${db.gipse.table.column.date}" />
 	      <result property="state" column="${db.gipse.table.column.state}" />
 	      <result property="classifier" column="${db.gipse.table.column.classifier}" />
-	      <result property="indicator" column="${db.gipse.table.column.condition}" />
-	      <result property="count" column="${db.gipse.table.column.count}" />
+	      <result property="indicator" column="${db.gipse.table.column.indicator}" />
+	      <result property="count" column="${db.gipse.table.column.value}" />
 	      <result property="zip3" column="${db.gipse.table.column.zip3}" />
 	      <result property="zip5" column="${db.gipse.table.column.zip5}" />
 	</resultMap>
@@ -40,8 +40,8 @@ PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN"
             SELECT ${db.gipse.table.column.date},
             	${db.gipse.table.column.state},
             	${db.gipse.table.column.classifier},
-            	${db.gipse.table.column.condition},
-            	sum(${db.gipse.table.column.count}) as ${db.gipse.table.column.count}
+            	${db.gipse.table.column.indicator},
+            	sum(${db.gipse.table.column.value}) as ${db.gipse.table.column.value}
             FROM ${db.gipse.table}
 	      <dynamic prepend="WHERE">
             <isNotEmpty prepend="AND" property="startDate">
@@ -62,11 +62,11 @@ PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN"
 	      	<isNotEmpty prepend="AND" property="indicators">
 	            <iterate property="indicators" open="(" close=")"
 	                  conjunction="OR">
-	                  ${db.gipse.table.column.condition}=#indicators[]#
+	                  ${db.gipse.table.column.indicator}=#indicators[]#
 	            </iterate>
 	        </isNotEmpty>
 	      </dynamic>
-	      GROUP BY ${db.gipse.table.column.date},${db.gipse.table.column.state},${db.gipse.table.column.classifier},${db.gipse.table.column.condition}
+	      GROUP BY ${db.gipse.table.column.date},${db.gipse.table.column.state},${db.gipse.table.column.classifier},${db.gipse.table.column.indicator}
       </select>
 
       <select id="selectObservationsByZip3" resultMap="gipseResultByZip3">
@@ -74,8 +74,8 @@ PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN"
             	${db.gipse.table.column.state},
             	${db.gipse.table.column.zip3},
             	${db.gipse.table.column.classifier},
-            	${db.gipse.table.column.condition},
-            	sum(${db.gipse.table.column.count}) as ${db.gipse.table.column.count}
+            	${db.gipse.table.column.indicator},
+            	sum(${db.gipse.table.column.value}) as ${db.gipse.table.column.value}
 
             FROM ${db.gipse.table}
 	      <dynamic prepend="WHERE">
@@ -103,11 +103,11 @@ PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN"
 	      	<isNotEmpty prepend="AND" property="indicators">
 	            <iterate property="indicators" open="(" close=")"
 	                  conjunction="OR">
-	                  ${db.gipse.table.column.condition}=#indicators[]#
+	                  ${db.gipse.table.column.indicator}=#indicators[]#
 	            </iterate>
 	        </isNotEmpty>
 	      </dynamic>
-	      GROUP BY ${db.gipse.table.column.date},${db.gipse.table.column.state},${db.gipse.table.column.zip3},${db.gipse.table.column.classifier},${db.gipse.table.column.condition}
+	      GROUP BY ${db.gipse.table.column.date},${db.gipse.table.column.state},${db.gipse.table.column.zip3},${db.gipse.table.column.classifier},${db.gipse.table.column.indicator}
       </select>
 
       <select id="selectObservationsByZip5" resultMap="gipseResultByZip5">
@@ -116,8 +116,8 @@ PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN"
             	${db.gipse.table.column.zip3},
             	${db.gipse.table.column.zip5},
             	${db.gipse.table.column.classifier},
-            	${db.gipse.table.column.condition},
-            	sum(${db.gipse.table.column.count}) as ${db.gipse.table.column.count}
+            	${db.gipse.table.column.indicator},
+            	sum(${db.gipse.table.column.value}) as ${db.gipse.table.column.value}
 
             FROM ${db.gipse.table}
 	      <dynamic prepend="WHERE">
@@ -151,11 +151,11 @@ PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN"
 	      	<isNotEmpty prepend="AND" property="indicators">
 	            <iterate property="indicators" open="(" close=")"
 	                  conjunction="OR">
-	                  ${db.gipse.table.column.condition}=#indicators[]#
+	                  ${db.gipse.table.column.indicator}=#indicators[]#
 	            </iterate>
 	        </isNotEmpty>
 	      </dynamic>
-	      GROUP BY ${db.gipse.table.column.date},${db.gipse.table.column.state},${db.gipse.table.column.zip3},${db.gipse.table.column.zip5},${db.gipse.table.column.classifier},${db.gipse.table.column.condition}
+	      GROUP BY ${db.gipse.table.column.date},${db.gipse.table.column.state},${db.gipse.table.column.zip3},${db.gipse.table.column.zip5},${db.gipse.table.column.classifier},${db.gipse.table.column.indicator}
 
       </select>
 

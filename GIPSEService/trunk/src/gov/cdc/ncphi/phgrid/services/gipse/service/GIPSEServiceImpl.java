@@ -29,9 +29,9 @@ import gov.cdc.ncphi.phgrid.gipse.message.MetadataQueryResponseMetadataRecordInt
 import gov.cdc.ncphi.phgrid.gipse.message.MetadataQueryResponseMetadataRecordSuppressValues;
 import gov.cdc.ncphi.phgrid.services.gipse.common.GIPSEServiceConstants;
 import gov.cdc.ncphi.phgrid.services.gipse.common.AxisUtils;
-import gov.cdc.ncphi.phgrid.services.gipse.common.dao.DatabaseManager;
-import gov.cdc.ncphi.phgrid.services.gipse.common.dao.Observation;
-import gov.cdc.ncphi.phgrid.services.gipse.common.dao.QueryParameters;
+import gov.cdc.ncphi.phgrid.services.gipse.service.dao.DatabaseManager;
+import gov.cdc.ncphi.phgrid.services.gipse.service.dao.Observation;
+import gov.cdc.ncphi.phgrid.services.gipse.service.dao.QueryParameters;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang.StringUtils;

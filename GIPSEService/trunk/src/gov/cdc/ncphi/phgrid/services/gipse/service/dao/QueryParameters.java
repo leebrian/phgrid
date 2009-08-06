@@ -20,22 +20,62 @@ public class QueryParameters {
 	private String [] indicators;
 	private String [] zip3s;
 	private String [] zip5s;
+	private String [] ages;
+	private String [] serviceAreas;
+	private String [] dataSources;
 	
 	public QueryParameters(){
 		super();
 	}
-	
-	public QueryParameters(String classifier, Date endDate, String[] indicators,
-			Date startDate, String[] states, String[] zip3s, String[] zip5s) {
+
+	public QueryParameters(String[] ages, String classifier,
+			String[] dataSources, Date endDate, String[] indicators,
+			String[] serviceAreas, Date startDate, String[] states,
+			String[] zip3s, String[] zip5s) {
 		super();
+		this.ages = ages;
 		this.classifier = classifier;
+		this.dataSources = dataSources;
 		this.endDate = endDate;
 		this.indicators = indicators;
+		this.serviceAreas = serviceAreas;
 		this.startDate = startDate;
 		this.states = states;
 		this.zip3s = zip3s;
 		this.zip5s = zip5s;
 	}
+
+
+	public String[] getDataSources() {
+		return dataSources;
+	}
+
+
+	public void setDataSources(String[] dataSources) {
+		this.dataSources = dataSources;
+	}
+
+
+	public String[] getAges() {
+		return ages;
+	}
+
+
+	public void setAges(String[] ages) {
+		this.ages = ages;
+	}
+
+
+	public String[] getServiceAreas() {
+		return serviceAreas;
+	}
+
+
+	public void setServiceAreas(String[] serviceAreas) {
+		this.serviceAreas = serviceAreas;
+	}
+
+
 	public Date getStartDate() {
 		return startDate;
 	}

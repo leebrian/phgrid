@@ -17,10 +17,11 @@ db.gipse.table.column.date=date
 db.gipse.table.column.state=state
 db.gipse.table.column.zip5=zip5
 db.gipse.table.column.zip3=zip3
-db.gipse.table.column.indicator=condition
+db.gipse.table.column.indicator=indicator
 db.gipse.table.column.classifier=indicator
 db.gipse.table.column.service.area=service_area
-db.gipse.table.columb.age=age
+db.gipse.table.column.age=age
+db.gipse.table.column.data.source=data_source
 db.gipse.table.column.value=value
 
 #The url to the service, only used by the runClient ant task. You probably don't need to change this.

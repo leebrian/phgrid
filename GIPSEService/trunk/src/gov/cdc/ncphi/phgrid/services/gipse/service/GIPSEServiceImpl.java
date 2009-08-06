@@ -1,18 +1,28 @@
 package gov.cdc.ncphi.phgrid.services.gipse.service;
 
 import gov.cdc.ncphi.phgrid.gipse.message.GIPSEQueryRequest;
+import gov.cdc.ncphi.phgrid.gipse.message.GIPSEQueryRequestQueryCharacteristicsAges;
+import gov.cdc.ncphi.phgrid.gipse.message.GIPSEQueryRequestQueryCharacteristicsAgesAge;
+import gov.cdc.ncphi.phgrid.gipse.message.GIPSEQueryRequestQueryCharacteristicsDataSources;
 import gov.cdc.ncphi.phgrid.gipse.message.GIPSEQueryRequestQueryCharacteristicsDates;
 import gov.cdc.ncphi.phgrid.gipse.message.GIPSEQueryRequestQueryCharacteristicsGeoRegions;
 import gov.cdc.ncphi.phgrid.gipse.message.GIPSEQueryRequestQueryCharacteristicsGeoRegionsGeoRegion;
 import gov.cdc.ncphi.phgrid.gipse.message.GIPSEQueryRequestQueryCharacteristicsGeoRegionsGeoRegionSpecificLocations;
 import gov.cdc.ncphi.phgrid.gipse.message.GIPSEQueryRequestQueryCharacteristicsGeoRegionsGeoRegionSpecificLocationsGeoLocation;
+import gov.cdc.ncphi.phgrid.gipse.message.GIPSEQueryRequestQueryCharacteristicsGeoRegionsGeoRegionSpecificLocationsGeoLocationType;
+import gov.cdc.ncphi.phgrid.gipse.message.GIPSEQueryRequestQueryCharacteristicsGeoRegionsGeoRegionType;
 import gov.cdc.ncphi.phgrid.gipse.message.GIPSEQueryRequestQueryCharacteristicsIndicatorsIndicator;
+import gov.cdc.ncphi.phgrid.gipse.message.GIPSEQueryRequestQueryCharacteristicsServiceAreas;
+import gov.cdc.ncphi.phgrid.gipse.message.GIPSEQueryRequestQueryCharacteristicsServiceAreasServiceArea;
 import gov.cdc.ncphi.phgrid.gipse.message.GIPSEQueryRequestQueryCharacteristicsSuppressValues;
 import gov.cdc.ncphi.phgrid.gipse.message.GIPSEQueryRequestRequestCharacteristics;
 import gov.cdc.ncphi.phgrid.gipse.message.GIPSEQueryResponse;
 import gov.cdc.ncphi.phgrid.gipse.message.GIPSEQueryResponseObservationSet;
 import gov.cdc.ncphi.phgrid.gipse.message.GIPSEQueryResponseObservationSetObservation;
 import gov.cdc.ncphi.phgrid.gipse.message.GIPSEQueryResponseQueryCharacteristics;
+import gov.cdc.ncphi.phgrid.gipse.message.GIPSEQueryResponseQueryCharacteristicsAges;
+import gov.cdc.ncphi.phgrid.gipse.message.GIPSEQueryResponseQueryCharacteristicsAgesAge;
+import gov.cdc.ncphi.phgrid.gipse.message.GIPSEQueryResponseQueryCharacteristicsDataSources;
 import gov.cdc.ncphi.phgrid.gipse.message.GIPSEQueryResponseQueryCharacteristicsDates;
 import gov.cdc.ncphi.phgrid.gipse.message.GIPSEQueryResponseQueryCharacteristicsGeoRegions;
 import gov.cdc.ncphi.phgrid.gipse.message.GIPSEQueryResponseQueryCharacteristicsGeoRegionsGeoRegion;
@@ -22,6 +32,8 @@ import gov.cdc.ncphi.phgrid.gipse.message.GIPSEQueryResponseQueryCharacteristics
 import gov.cdc.ncphi.phgrid.gipse.message.GIPSEQueryResponseQueryCharacteristicsGeoRegionsGeoRegionType;
 import gov.cdc.ncphi.phgrid.gipse.message.GIPSEQueryResponseQueryCharacteristicsIndicators;
 import gov.cdc.ncphi.phgrid.gipse.message.GIPSEQueryResponseQueryCharacteristicsIndicatorsIndicator;
+import gov.cdc.ncphi.phgrid.gipse.message.GIPSEQueryResponseQueryCharacteristicsServiceAreas;
+import gov.cdc.ncphi.phgrid.gipse.message.GIPSEQueryResponseQueryCharacteristicsServiceAreasServiceArea;
 import gov.cdc.ncphi.phgrid.gipse.message.GIPSEQueryResponseQueryCharacteristicsSuppressValues;
 import gov.cdc.ncphi.phgrid.gipse.message.GIPSEQueryResponseResponseCharacteristics;
 import gov.cdc.ncphi.phgrid.gipse.message.MetadataQueryResponse;
@@ -138,7 +150,7 @@ public class GIPSEServiceImpl extends GIPSEServiceImplBase {
 			  LOGGER.debug("gipse response-pre query" + AxisUtils.serializeAxisObject(response, true, true));
 		  }
 		  
-		  List<Observation> sqlResults = runQuery(response);
+		  List<Observation> sqlResults = runQuery(query);
 
 		  populateResponseWithObservations(response, sqlResults);
 
@@ -172,7 +184,9 @@ public class GIPSEServiceImpl extends GIPSEServiceImplBase {
 			  observationForResult.setLocation(observation.getState());
 		  }
 		  observationForResult.setIndicator(observation.getIndicator());
-		  observationForResult.setValue(Integer.toString(observation.getCount()));
+		  observationForResult.setAge(observation.getAge());
+		  observationForResult.setServiceArea(observation.getServiceArea());
+		  observationForResult.setValue(Integer.toString(observation.getValue()));
 		  observationArray[i++] = observationForResult;
 	  }
 	  
@@ -183,34 +197,88 @@ public class GIPSEServiceImpl extends GIPSEServiceImplBase {
   
   /**
    * Determines the appropriate query type to run, executes the query and returns a non-null List of Observation objects.
-   * @param response a response object populated with all the query properties
+   * @param request a request object - used to determine query parameters
    * @return List of gov.cdc.ncphi.phgrid.services.gipse.common.dao.Observation objects, doesn't use generics because ibatis doesn't use them.
    * @throws IOException 
    * @throws SQLException 
    */
-  private static List<Observation> runQuery(GIPSEQueryResponse response) throws Exception{
+  private static List<Observation> runQuery(GIPSEQueryRequest request) throws Exception{
 	  SqlMapClient client = DatabaseManager.getSqlMap();
 	  List<Observation> returnList = null;
 	  
-	  QueryParameters parameters = buildQueryParameters(response);
+	  QueryParameters parameters = buildQueryParameters(request);
 	  //zip5 query
 	  if (parameters.getZip5s() != null && parameters.getZip5s().length >0){
-		  if (LOGGER.isDebugEnabled()){
-			  LOGGER.debug("Running zip5 query with these parameters:" + parameters);
+		  if (parameters.getAges() != null && parameters.getAges().length > 0
+				  && parameters.getServiceAreas() != null && parameters.getServiceAreas().length > 0){
+			  if (LOGGER.isDebugEnabled()){
+				  LOGGER.debug("Running zip5 query by age by service area with these parameters:" + parameters);
+			  }
+			  returnList = client.queryForList(GIPSEServiceConstants.IBATIS_ZIP5_AGE_SERVICE_AREA_QUERY, parameters);
+		  }else if (parameters.getAges() != null && parameters.getAges().length > 0){
+			  if (LOGGER.isDebugEnabled()){
+				  LOGGER.debug("Running zip5 query by age with these parameters:" + parameters);
+			  }
+			  returnList = client.queryForList(GIPSEServiceConstants.IBATIS_ZIP5_AGE_QUERY, parameters);
+		  }else if(parameters.getServiceAreas() != null && parameters.getServiceAreas().length > 0){
+			  if (LOGGER.isDebugEnabled()){
+				  LOGGER.debug("Running zip5 query by service area with these parameters:" + parameters);
+			  }
+			  returnList = client.queryForList(GIPSEServiceConstants.IBATIS_ZIP5_SERVICE_AREA_QUERY, parameters);
+		  }else{
+			  if (LOGGER.isDebugEnabled()){
+				  LOGGER.debug("Running zip5 query with these parameters:" + parameters);
+			  }
+			  returnList = client.queryForList(GIPSEServiceConstants.IBATIS_ZIP5_QUERY, parameters);
 		  }
-		  returnList = client.queryForList(GIPSEServiceConstants.IBATIS_ZIP5_QUERY, parameters);
 	  //zip3 query
 	  }else if (parameters.getZip3s() != null && parameters.getZip3s().length >0){
-		  if (LOGGER.isDebugEnabled()){
-			  LOGGER.debug("Running zip3 query with these parameters:" + parameters);
+		  if (parameters.getAges() != null && parameters.getAges().length > 0
+				  && parameters.getServiceAreas() != null && parameters.getServiceAreas().length > 0){
+			  if (LOGGER.isDebugEnabled()){
+				  LOGGER.debug("Running zip3 query by age by service area with these parameters:" + parameters);
+			  }
+			  returnList = client.queryForList(GIPSEServiceConstants.IBATIS_ZIP3_AGE_SERVICE_AREA_QUERY, parameters);
+		  }else if (parameters.getAges() != null && parameters.getAges().length > 0){
+			  if (LOGGER.isDebugEnabled()){
+				  LOGGER.debug("Running zip3 query by age with these parameters:" + parameters);
+			  }
+			  returnList = client.queryForList(GIPSEServiceConstants.IBATIS_ZIP3_AGE_QUERY, parameters);
+		  }else if(parameters.getServiceAreas() != null && parameters.getServiceAreas().length > 0){
+			  if (LOGGER.isDebugEnabled()){
+				  LOGGER.debug("Running zip3 query by service area with these parameters:" + parameters);
+			  }
+			  returnList = client.queryForList(GIPSEServiceConstants.IBATIS_ZIP3_SERVICE_AREA_QUERY, parameters);
+		  }else{
+			  if (LOGGER.isDebugEnabled()){
+				  LOGGER.debug("Running zip3 query with these parameters:" + parameters);
+			  }
+			  returnList = client.queryForList(GIPSEServiceConstants.IBATIS_ZIP3_QUERY, parameters);
 		  }
-		  returnList = client.queryForList(GIPSEServiceConstants.IBATIS_ZIP3_QUERY, parameters);
 	  //state query
 	  }else if(parameters.getStates() != null && parameters.getStates().length >0){
-		  if (LOGGER.isDebugEnabled()){
-			  LOGGER.debug("Running state query with these parameters:" + parameters);
+		  if (parameters.getAges() != null && parameters.getAges().length > 0
+				  && parameters.getServiceAreas() != null && parameters.getServiceAreas().length > 0){
+			  if (LOGGER.isDebugEnabled()){
+				  LOGGER.debug("Running state query by age by service area with these parameters:" + parameters);
+			  }
+			  returnList = client.queryForList(GIPSEServiceConstants.IBATIS_STATE_AGE_SERVICE_AREA_QUERY, parameters);
+		  }else if (parameters.getAges() != null && parameters.getAges().length > 0){
+			  if (LOGGER.isDebugEnabled()){
+				  LOGGER.debug("Running state query by age with these parameters:" + parameters);
+			  }
+			  returnList = client.queryForList(GIPSEServiceConstants.IBATIS_STATE_AGE_QUERY, parameters);
+		  }else if(parameters.getServiceAreas() != null && parameters.getServiceAreas().length > 0){
+			  if (LOGGER.isDebugEnabled()){
+				  LOGGER.debug("Running state query by service area with these parameters:" + parameters);
+			  }
+			  returnList = client.queryForList(GIPSEServiceConstants.IBATIS_STATE_SERVICE_AREA_QUERY, parameters);
+		  }else{
+			  if (LOGGER.isDebugEnabled()){
+				  LOGGER.debug("Running state query with these parameters:" + parameters);
+			  }
+			  returnList = client.queryForList(GIPSEServiceConstants.IBATIS_STATE_QUERY, parameters);
 		  }
-		  returnList = client.queryForList(GIPSEServiceConstants.IBATIS_STATE_QUERY, parameters);
 	  }else{
 		  LOGGER.warn("The query parameter is not properly set up, empty list returned. QueryParameters<" + parameters +">");
 		  returnList = new LinkedList<Observation>();
@@ -225,20 +293,20 @@ public class GIPSEServiceImpl extends GIPSEServiceImplBase {
   
   /**
    * Builds the ibatis query parameters based on submitted query.
-   * @param response
+   * @param request
    * @return
  * @throws Exception 
    */
-  private static QueryParameters buildQueryParameters(GIPSEQueryResponse response) throws Exception{
+  private static QueryParameters buildQueryParameters(GIPSEQueryRequest request) throws Exception{
 	  QueryParameters parameters = new QueryParameters();
 	  
-	  parameters.setStartDate(new java.sql.Date(response.getQueryCharacteristics().getDates().getStart().getTime()));
-	  parameters.setEndDate(new java.sql.Date(response.getQueryCharacteristics().getDates().getEnd().getTime()));
+	  parameters.setStartDate(new java.sql.Date(request.getQueryCharacteristics().getDates().getStart().getTime()));
+	  parameters.setEndDate(new java.sql.Date(request.getQueryCharacteristics().getDates().getEnd().getTime()));
 	  
-	  GIPSEQueryResponseQueryCharacteristicsIndicatorsIndicator[] indicatorArray = response.getQueryCharacteristics().getIndicators().getIndicator();
+	  GIPSEQueryRequestQueryCharacteristicsIndicatorsIndicator[] indicatorArray = request.getQueryCharacteristics().getIndicators().getIndicator();
 	  String [] queryIndicatorArray = new String[indicatorArray.length];
 	  int i = 0;
-	  for (GIPSEQueryResponseQueryCharacteristicsIndicatorsIndicator indicator : indicatorArray){
+	  for (GIPSEQueryRequestQueryCharacteristicsIndicatorsIndicator indicator : indicatorArray){
 		  queryIndicatorArray[i++] = indicator.getName();
 	  }
 	  
@@ -248,18 +316,18 @@ public class GIPSEServiceImpl extends GIPSEServiceImplBase {
 	  List<String> stateList = new LinkedList<String>();
 	  List<String> zip3List = new LinkedList<String>();
 	  List<String> zip5List = new LinkedList<String>();
-	  GIPSEQueryResponseQueryCharacteristicsGeoRegionsGeoRegion[] geoRegionArray = response.getQueryCharacteristics().getGeoRegions().getGeoRegion();
-	  for (GIPSEQueryResponseQueryCharacteristicsGeoRegionsGeoRegion geoRegion : geoRegionArray){
+	  GIPSEQueryRequestQueryCharacteristicsGeoRegionsGeoRegion[] geoRegionArray = request.getQueryCharacteristics().getGeoRegions().getGeoRegion();
+	  for (GIPSEQueryRequestQueryCharacteristicsGeoRegionsGeoRegion geoRegion : geoRegionArray){
 		  String regionType = geoRegion.getType().getValue();
 		  String regionValue = geoRegion.getValue();
 		  regionValue = regionValue.replace('*', '%');
-		  if (regionType.equals(GIPSEQueryResponseQueryCharacteristicsGeoRegionsGeoRegionType._state)){
+		  if (regionType.equals(GIPSEQueryRequestQueryCharacteristicsGeoRegionsGeoRegionType._state)){
 			  stateList.add(regionValue);
-		  }else if(regionType.equals(GIPSEQueryResponseQueryCharacteristicsGeoRegionsGeoRegionType._zip3)){
+		  }else if(regionType.equals(GIPSEQueryRequestQueryCharacteristicsGeoRegionsGeoRegionType._zip3)){
 			  zip3List.add(regionValue);
-		  }else if(regionType.equals(GIPSEQueryResponseQueryCharacteristicsGeoRegionsGeoRegionType._zip5)){
+		  }else if(regionType.equals(GIPSEQueryRequestQueryCharacteristicsGeoRegionsGeoRegionType._zip5)){
 			  zip5List.add(regionValue);
-		  }else if(regionType.equals(GIPSEQueryResponseQueryCharacteristicsGeoRegionsGeoRegionType._country)){
+		  }else if(regionType.equals(GIPSEQueryRequestQueryCharacteristicsGeoRegionsGeoRegionType._country)){
 			  //ignore for now, doesn't affect query
 		  }else{
 			  String errorMessage = "Unknown GeoRegion type<" + regionType +">.";
@@ -267,20 +335,20 @@ public class GIPSEServiceImpl extends GIPSEServiceImplBase {
 			  throw new IllegalArgumentException(errorMessage);
 		  }
 		  
-		  GIPSEQueryResponseQueryCharacteristicsGeoRegionsGeoRegionSpecificLocations specificLocations = geoRegion.getSpecificLocations();
+		  GIPSEQueryRequestQueryCharacteristicsGeoRegionsGeoRegionSpecificLocations specificLocations = geoRegion.getSpecificLocations();
 		  if (specificLocations != null){
-			  GIPSEQueryResponseQueryCharacteristicsGeoRegionsGeoRegionSpecificLocationsGeoLocation[] locationArray = specificLocations.getGeoLocation();
-			  for (GIPSEQueryResponseQueryCharacteristicsGeoRegionsGeoRegionSpecificLocationsGeoLocation location : locationArray){
+			  GIPSEQueryRequestQueryCharacteristicsGeoRegionsGeoRegionSpecificLocationsGeoLocation[] locationArray = specificLocations.getGeoLocation();
+			  for (GIPSEQueryRequestQueryCharacteristicsGeoRegionsGeoRegionSpecificLocationsGeoLocation location : locationArray){
 				  String locationType = location.getType().getValue();
 				  String locationValue = location.getValue();
 				  locationValue = locationValue.replace('*', '%');
-				  if (locationType.equals(GIPSEQueryResponseQueryCharacteristicsGeoRegionsGeoRegionSpecificLocationsGeoLocationType._state)){
+				  if (locationType.equals(GIPSEQueryRequestQueryCharacteristicsGeoRegionsGeoRegionSpecificLocationsGeoLocationType._state)){
 					  stateList.add(locationValue);
-				  }else if(locationType.equals(GIPSEQueryResponseQueryCharacteristicsGeoRegionsGeoRegionSpecificLocationsGeoLocationType._zip3)){
+				  }else if(locationType.equals(GIPSEQueryRequestQueryCharacteristicsGeoRegionsGeoRegionSpecificLocationsGeoLocationType._zip3)){
 					  zip3List.add(locationValue);
-				  }else if(locationType.equals(GIPSEQueryResponseQueryCharacteristicsGeoRegionsGeoRegionSpecificLocationsGeoLocationType._zip5)){
+				  }else if(locationType.equals(GIPSEQueryRequestQueryCharacteristicsGeoRegionsGeoRegionSpecificLocationsGeoLocationType._zip5)){
 					  zip5List.add(locationValue);
-				  }else if(locationType.equals(GIPSEQueryResponseQueryCharacteristicsGeoRegionsGeoRegionSpecificLocationsGeoLocationType._country)){
+				  }else if(locationType.equals(GIPSEQueryRequestQueryCharacteristicsGeoRegionsGeoRegionSpecificLocationsGeoLocationType._country)){
 					  //ignore for now, doesn't affect query
 				  }else{
 					  String errorMessage = "Unknown GeoLocation type<" + locationType +">.";
@@ -292,9 +360,42 @@ public class GIPSEServiceImpl extends GIPSEServiceImplBase {
 		  }
 	  }
 	  
+
+	  List<String> dataSourceList = new LinkedList<String>();
+	  GIPSEQueryRequestQueryCharacteristicsDataSources dataSources = request.getQueryCharacteristics().getDataSources();
+	  if (dataSources != null){
+		  String[] dataSourceArray =  dataSources.getDataSourceOID();
+		  for (String dataSource : dataSourceArray){
+			  dataSourceList.add(dataSource);
+		  }
+	  }
+	  
+	  List<String> ageList = new LinkedList<String>();
+	  GIPSEQueryRequestQueryCharacteristicsAges ages = request.getQueryCharacteristics().getAges();
+	  if (ages != null){
+		  GIPSEQueryRequestQueryCharacteristicsAgesAge[] ageArray = ages.getAge();
+		  for (GIPSEQueryRequestQueryCharacteristicsAgesAge age : ageArray){
+			  ageList.add(age.getName());
+		  }
+	  }
+	  
+	  List<String> serviceAreaList = new LinkedList<String>();
+	  GIPSEQueryRequestQueryCharacteristicsServiceAreas serviceAreas = request.getQueryCharacteristics().getServiceAreas();
+	  if (serviceAreas != null){
+		  GIPSEQueryRequestQueryCharacteristicsServiceAreasServiceArea[] serviceAreaArray = serviceAreas.getServiceArea();
+		  for (GIPSEQueryRequestQueryCharacteristicsServiceAreasServiceArea serviceArea : serviceAreaArray){
+			  serviceAreaList.add(serviceArea.getName());
+		  }
+	  }
+	  
+	  
+	  
 	  parameters.setStates((String[]) stateList.toArray(new String[0]));
 	  parameters.setZip3s((String[]) zip3List.toArray(new String[0]));
 	  parameters.setZip5s((String[]) zip5List.toArray(new String[0]));
+	  parameters.setDataSources((String[]) dataSourceList.toArray(new String[0]));
+	  parameters.setServiceAreas((String[]) serviceAreaList.toArray(new String[0]));
+	  parameters.setAges((String[]) ageList.toArray(new String[0]));
 	  
 	  return parameters;
   }
@@ -326,15 +427,94 @@ public class GIPSEServiceImpl extends GIPSEServiceImplBase {
 	  response.setResponseCharacteristics(responseChars);
   }
   
+  /**
+   * Populates the Response query characteristics with either the request query characteristics or the request's query id (if it is not null)
+   * @param request
+   * @param response
+   * @throws Exception
+   */
   private static final void populateQueryCharacteristics(GIPSEQueryRequest request,GIPSEQueryResponse response) throws Exception{
 	  GIPSEQueryResponseQueryCharacteristics queryChars = new GIPSEQueryResponseQueryCharacteristics();
-	  populateInterval(request, queryChars);
-	  populateSuppressValues(request, queryChars);
-	  //ignore paging for now
-	  populateIndicators(request, queryChars);
-	  populateGeoRegions(request,queryChars);
+	  String queryID = request.getQueryCharacteristics().getQueryID();
+	  if (queryID != null){
+		  queryChars.setQueryID(queryID);
+	  }else{
+		  populateInterval(request, queryChars);
+		  populateSuppressValues(request, queryChars);
+		  //ignore paging for now
+		  populateIndicators(request, queryChars);
+		  populateGeoRegions(request,queryChars);
+		  populateDataSources(request,queryChars);
+		  populateServiceAreas(request, queryChars);
+		  populateAges(request,queryChars);
+	  }
 	  response.setQueryCharacteristics(queryChars);
 	  
+  }   
+  
+  /**
+   * Populates the ages in response based on request (if <Ages> is not null).
+   * @param request
+   * @param queryChars
+   * @throws Exception
+   */
+  private static final void populateAges(GIPSEQueryRequest request, GIPSEQueryResponseQueryCharacteristics queryChars) throws Exception{
+	  GIPSEQueryRequestQueryCharacteristicsAges requestAges = request.getQueryCharacteristics().getAges();
+	  if (requestAges != null){
+		  GIPSEQueryResponseQueryCharacteristicsAges responseAges = new GIPSEQueryResponseQueryCharacteristicsAges();
+		  GIPSEQueryRequestQueryCharacteristicsAgesAge[] requestAgeArray = requestAges.getAge();
+		  if (requestAgeArray != null){
+			  GIPSEQueryResponseQueryCharacteristicsAgesAge[] responseAgeArray = new GIPSEQueryResponseQueryCharacteristicsAgesAge[requestAgeArray.length];
+			  int i=0;
+			  for (GIPSEQueryRequestQueryCharacteristicsAgesAge requestAge : requestAgeArray){
+				  GIPSEQueryResponseQueryCharacteristicsAgesAge responseAge =
+					  new GIPSEQueryResponseQueryCharacteristicsAgesAge(requestAge.getClassifier(),requestAge.getName());
+				  responseAgeArray[i++] = responseAge;
+			  }
+			  responseAges.setAge(responseAgeArray);
+			  queryChars.setAges(responseAges);
+		  }
+	  }
+  }
+  
+  /**
+   * Populates the service areas in response based on request (if <ServiceAreas> is not null).
+   * @param request
+   * @param queryChars
+   * @throws Exception
+   */
+  private static final void populateServiceAreas(GIPSEQueryRequest request, GIPSEQueryResponseQueryCharacteristics queryChars) throws Exception{
+	  GIPSEQueryRequestQueryCharacteristicsServiceAreas requestServiceAreas = request.getQueryCharacteristics().getServiceAreas();
+	  if (requestServiceAreas != null){
+		  GIPSEQueryResponseQueryCharacteristicsServiceAreas responseServiceAreas = new GIPSEQueryResponseQueryCharacteristicsServiceAreas();
+		  GIPSEQueryRequestQueryCharacteristicsServiceAreasServiceArea[] requestServiceAreaArray = requestServiceAreas.getServiceArea();
+		  if (requestServiceAreaArray != null){
+			  GIPSEQueryResponseQueryCharacteristicsServiceAreasServiceArea[] responseServiceAreaArray = new GIPSEQueryResponseQueryCharacteristicsServiceAreasServiceArea[requestServiceAreaArray.length];
+			  int i=0;
+			  for (GIPSEQueryRequestQueryCharacteristicsServiceAreasServiceArea requestServiceArea : requestServiceAreaArray){
+				  GIPSEQueryResponseQueryCharacteristicsServiceAreasServiceArea responseServiceArea =
+					  new GIPSEQueryResponseQueryCharacteristicsServiceAreasServiceArea(requestServiceArea.getCodeset(),requestServiceArea.getName());
+				  responseServiceAreaArray[i++] = responseServiceArea;
+			  }
+			  responseServiceAreas.setServiceArea(responseServiceAreaArray);
+			  queryChars.setServiceAreas(responseServiceAreas);
+		  }
+	  }
+  }
+  
+  /**
+   * Populates the data sources in response based on request (if <DataSources> is specified in the request).
+   * @param request
+   * @param queryChars
+   * @throws Exception
+   */
+  private static final void populateDataSources(GIPSEQueryRequest request, GIPSEQueryResponseQueryCharacteristics queryChars) throws Exception{
+	  GIPSEQueryRequestQueryCharacteristicsDataSources requestDataSources = request.getQueryCharacteristics().getDataSources();
+	  if (requestDataSources != null){
+		  GIPSEQueryResponseQueryCharacteristicsDataSources dataSources = new GIPSEQueryResponseQueryCharacteristicsDataSources();
+		  dataSources.setDataSourceOID(requestDataSources.getDataSourceOID());
+		  queryChars.setDataSources(dataSources);
+	  }
   }
   
   /**
@@ -415,39 +595,41 @@ public class GIPSEServiceImpl extends GIPSEServiceImplBase {
    */
   private static final void populateGeoRegions(GIPSEQueryRequest request, GIPSEQueryResponseQueryCharacteristics queryChars) throws Exception{
 	  GIPSEQueryRequestQueryCharacteristicsGeoRegions requestGeoRegions = request.getQueryCharacteristics().getGeoRegions();
-	  GIPSEQueryResponseQueryCharacteristicsGeoRegions responseGeoRegions = new GIPSEQueryResponseQueryCharacteristicsGeoRegions();
-	  GIPSEQueryRequestQueryCharacteristicsGeoRegionsGeoRegion[] requestGeoRegionArray = requestGeoRegions.getGeoRegion();
-	  GIPSEQueryResponseQueryCharacteristicsGeoRegionsGeoRegion[] responseGeoRegionArray = new GIPSEQueryResponseQueryCharacteristicsGeoRegionsGeoRegion[requestGeoRegionArray.length];
-	  
-	  int i=0;//loop through all the georegions and copy them into response georegions
-	  for (GIPSEQueryRequestQueryCharacteristicsGeoRegionsGeoRegion requestGeoRegion : requestGeoRegionArray){
-		  GIPSEQueryResponseQueryCharacteristicsGeoRegionsGeoRegion responseGeoRegion = new GIPSEQueryResponseQueryCharacteristicsGeoRegionsGeoRegion();
-		  GIPSEQueryResponseQueryCharacteristicsGeoRegionsGeoRegionType responseGeoRegionType = 
-			  GIPSEQueryResponseQueryCharacteristicsGeoRegionsGeoRegionType.fromValue(requestGeoRegion.getType().getValue());
-		  responseGeoRegion.setType(responseGeoRegionType);
-		  responseGeoRegion.setValue(requestGeoRegion.getValue());
+	  if (requestGeoRegions != null){
+		  GIPSEQueryResponseQueryCharacteristicsGeoRegions responseGeoRegions = new GIPSEQueryResponseQueryCharacteristicsGeoRegions();
+		  GIPSEQueryRequestQueryCharacteristicsGeoRegionsGeoRegion[] requestGeoRegionArray = requestGeoRegions.getGeoRegion();
+		  GIPSEQueryResponseQueryCharacteristicsGeoRegionsGeoRegion[] responseGeoRegionArray = new GIPSEQueryResponseQueryCharacteristicsGeoRegionsGeoRegion[requestGeoRegionArray.length];
 		  
-		  GIPSEQueryRequestQueryCharacteristicsGeoRegionsGeoRegionSpecificLocations requestGeoRegionSpecificLocations = requestGeoRegion.getSpecificLocations();
-		  if (requestGeoRegionSpecificLocations != null){//supported locations might be null
-			  GIPSEQueryResponseQueryCharacteristicsGeoRegionsGeoRegionSpecificLocations responseGeoRegionSpecificLocations = new GIPSEQueryResponseQueryCharacteristicsGeoRegionsGeoRegionSpecificLocations();
-			  GIPSEQueryRequestQueryCharacteristicsGeoRegionsGeoRegionSpecificLocationsGeoLocation[] requestGeoRegionSpecificLocationGeoLocationArray =  requestGeoRegionSpecificLocations.getGeoLocation();
-			  GIPSEQueryResponseQueryCharacteristicsGeoRegionsGeoRegionSpecificLocationsGeoLocation[] responseGeoRegionSpecificLocationGeoLocationArray = new GIPSEQueryResponseQueryCharacteristicsGeoRegionsGeoRegionSpecificLocationsGeoLocation[requestGeoRegionSpecificLocationGeoLocationArray.length];
-			  int j=0;//loop through all the geolocations and copy them into response geolocations
-			  for (GIPSEQueryRequestQueryCharacteristicsGeoRegionsGeoRegionSpecificLocationsGeoLocation requestGeoLocation : requestGeoRegionSpecificLocationGeoLocationArray){
-				  GIPSEQueryResponseQueryCharacteristicsGeoRegionsGeoRegionSpecificLocationsGeoLocation responseGeoLocation = new GIPSEQueryResponseQueryCharacteristicsGeoRegionsGeoRegionSpecificLocationsGeoLocation();
-				  GIPSEQueryResponseQueryCharacteristicsGeoRegionsGeoRegionSpecificLocationsGeoLocationType responseGeoLocationType = 
-					  GIPSEQueryResponseQueryCharacteristicsGeoRegionsGeoRegionSpecificLocationsGeoLocationType.fromValue(requestGeoLocation.getType().getValue());
-				  responseGeoLocation.setType(responseGeoLocationType);
-				  responseGeoLocation.setValue(requestGeoLocation.getValue());
-				  responseGeoRegionSpecificLocationGeoLocationArray[j++] = responseGeoLocation;
+		  int i=0;//loop through all the georegions and copy them into response georegions
+		  for (GIPSEQueryRequestQueryCharacteristicsGeoRegionsGeoRegion requestGeoRegion : requestGeoRegionArray){
+			  GIPSEQueryResponseQueryCharacteristicsGeoRegionsGeoRegion responseGeoRegion = new GIPSEQueryResponseQueryCharacteristicsGeoRegionsGeoRegion();
+			  GIPSEQueryResponseQueryCharacteristicsGeoRegionsGeoRegionType responseGeoRegionType = 
+				  GIPSEQueryResponseQueryCharacteristicsGeoRegionsGeoRegionType.fromValue(requestGeoRegion.getType().getValue());
+			  responseGeoRegion.setType(responseGeoRegionType);
+			  responseGeoRegion.setValue(requestGeoRegion.getValue());
+			  
+			  GIPSEQueryRequestQueryCharacteristicsGeoRegionsGeoRegionSpecificLocations requestGeoRegionSpecificLocations = requestGeoRegion.getSpecificLocations();
+			  if (requestGeoRegionSpecificLocations != null){//supported locations might be null
+				  GIPSEQueryResponseQueryCharacteristicsGeoRegionsGeoRegionSpecificLocations responseGeoRegionSpecificLocations = new GIPSEQueryResponseQueryCharacteristicsGeoRegionsGeoRegionSpecificLocations();
+				  GIPSEQueryRequestQueryCharacteristicsGeoRegionsGeoRegionSpecificLocationsGeoLocation[] requestGeoRegionSpecificLocationGeoLocationArray =  requestGeoRegionSpecificLocations.getGeoLocation();
+				  GIPSEQueryResponseQueryCharacteristicsGeoRegionsGeoRegionSpecificLocationsGeoLocation[] responseGeoRegionSpecificLocationGeoLocationArray = new GIPSEQueryResponseQueryCharacteristicsGeoRegionsGeoRegionSpecificLocationsGeoLocation[requestGeoRegionSpecificLocationGeoLocationArray.length];
+				  int j=0;//loop through all the geolocations and copy them into response geolocations
+				  for (GIPSEQueryRequestQueryCharacteristicsGeoRegionsGeoRegionSpecificLocationsGeoLocation requestGeoLocation : requestGeoRegionSpecificLocationGeoLocationArray){
+					  GIPSEQueryResponseQueryCharacteristicsGeoRegionsGeoRegionSpecificLocationsGeoLocation responseGeoLocation = new GIPSEQueryResponseQueryCharacteristicsGeoRegionsGeoRegionSpecificLocationsGeoLocation();
+					  GIPSEQueryResponseQueryCharacteristicsGeoRegionsGeoRegionSpecificLocationsGeoLocationType responseGeoLocationType = 
+						  GIPSEQueryResponseQueryCharacteristicsGeoRegionsGeoRegionSpecificLocationsGeoLocationType.fromValue(requestGeoLocation.getType().getValue());
+					  responseGeoLocation.setType(responseGeoLocationType);
+					  responseGeoLocation.setValue(requestGeoLocation.getValue());
+					  responseGeoRegionSpecificLocationGeoLocationArray[j++] = responseGeoLocation;
+				  }
+				  responseGeoRegionSpecificLocations.setGeoLocation(responseGeoRegionSpecificLocationGeoLocationArray);
+				  responseGeoRegion.setSpecificLocations(responseGeoRegionSpecificLocations);
 			  }
-			  responseGeoRegionSpecificLocations.setGeoLocation(responseGeoRegionSpecificLocationGeoLocationArray);
-			  responseGeoRegion.setSpecificLocations(responseGeoRegionSpecificLocations);
+			  responseGeoRegionArray[i++] = responseGeoRegion;
 		  }
-		  responseGeoRegionArray[i++] = responseGeoRegion;
+		  responseGeoRegions.setGeoRegion(responseGeoRegionArray);
+		  queryChars.setGeoRegions(responseGeoRegions);
 	  }
-	  responseGeoRegions.setGeoRegion(responseGeoRegionArray);
-	  queryChars.setGeoRegions(responseGeoRegions);
   }
 
 }

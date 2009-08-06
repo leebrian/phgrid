@@ -26,15 +26,24 @@ public interface GIPSEServiceConstants extends GIPSEServiceConstantsBase {
 	 * IBATIS specific, values must sync with gipse-query.xml config file.
 	 */
 	public static final String IBATIS_STATE_QUERY = "selectObservationsByState";
+	public static final String IBATIS_STATE_AGE_QUERY = "selectObservationsByStateByAge";
+	public static final String IBATIS_STATE_SERVICE_AREA_QUERY = "selectObservationsByStateByServiceArea";
+	public static final String IBATIS_STATE_AGE_SERVICE_AREA_QUERY = "selectObservationsByStateByAgeByServiceArea";
 	
 	/**
 	 * IBATIS specific, values must sync with gipse-query.xml config file.
 	 */
 	public static final String IBATIS_ZIP3_QUERY = "selectObservationsByZip3";
+	public static final String IBATIS_ZIP3_AGE_QUERY = "selectObservationsByZip3ByAge";
+	public static final String IBATIS_ZIP3_SERVICE_AREA_QUERY = "selectObservationsByZip3ByServiceArea";
+	public static final String IBATIS_ZIP3_AGE_SERVICE_AREA_QUERY = "selectObservationsByZip3ByAgeByServiceArea";
 	
 	/**
 	 * IBATIS specific, values must sync with gipse-query.xml config file.
 	 */
 	public static final String IBATIS_ZIP5_QUERY = "selectObservationsByZip5";
+	public static final String IBATIS_ZIP5_AGE_QUERY = "selectObservationsByZip5ByAge";
+	public static final String IBATIS_ZIP5_SERVICE_AREA_QUERY = "selectObservationsByZip5ByServiceArea";
+	public static final String IBATIS_ZIP5_AGE_SERVICE_AREA_QUERY = "selectObservationsByZip5ByAgeByServiceArea";
 	
 }

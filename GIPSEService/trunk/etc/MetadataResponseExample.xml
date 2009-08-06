@@ -2,7 +2,10 @@
 <MetadataQueryResponse xmlns="http://ncphi.phgrid.net:8080/schemas/gipse/20090831">
 	<MetadataRecord>
 		<TimePeriodSupported start="2009-01-01T00:00:01-00:00" end="2010-01-01T05:00:00-00:00"/>
-		<DataSourceOID>BioSense-GIPSE-NCPHILab</DataSourceOID>
+		<DataSourceOID>BioSenseRT</DataSourceOID>
+		<DataSourceOID>BioSenseVA</DataSourceOID>
+		<DataSourceOID>BioSenseDoD</DataSourceOID>
+		<DataSourceOID>DiSTRIBuTE</DataSourceOID>
 		<SuppressValues smallestValueReported="0"/><!-- Means this service does not apply cell suppression -->
 		<PagingSupported maxPageSize="100"/><!-- Optional, if not specified then service does not support paging. -->
 		<IndicatorsSupported><!-- These would correspond to entries in a wiki/registry describing the classification rules (count vs. ratio, etc) -->

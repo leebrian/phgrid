@@ -20,16 +20,12 @@
 		</GeoRegions>
 		<Ages>
 			<Age classifier="DiSTRIBuTE" name="&lt;2"/>
+			<Age classifier="DiSTRIBuTE" name="2-4"/>
 		</Ages>
 		<ServiceAreas>
 			<ServiceArea codeset="DiSTRIBuTE" name="Admit"/>
-			<ServiceArea codeset="DiSTRIBuTE" name="Admit2"/>
+			<ServiceArea codeset="DiSTRIBuTE" name="Discharge"/>
 		</ServiceAreas>
-		<DataSources>
-			<DataSourceOID>Blargh</DataSourceOID>
-			<DataSourceOID>Blargh2</DataSourceOID>
-			<DataSourceOID>BioSense-DoD</DataSourceOID>
-		</DataSources>
 		<PageData pageNumber="1" pageSize="10"/>
 	</QueryCharacteristics>
 </GIPSEQueryRequest>

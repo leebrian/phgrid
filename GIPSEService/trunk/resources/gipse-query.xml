@@ -8,31 +8,124 @@ PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN"
 
 <sqlMap namespace="gipse">
 
-	<resultMap id="gipseResultByState" class="gov.cdc.ncphi.phgrid.services.gipse.common.dao.Observation">
+	<resultMap id="gipseResultByState" class="gov.cdc.ncphi.phgrid.services.gipse.service.dao.Observation">
 	      <result property="observationDate" column="${db.gipse.table.column.date}" />
 	      <result property="state" column="${db.gipse.table.column.state}" />
 	      <result property="classifier" column="${db.gipse.table.column.indicator}" />
 	      <result property="indicator" column="${db.gipse.table.column.indicator}" />
-	      <result property="count" column="${db.gipse.table.column.value}" />
+	      <result property="value" column="${db.gipse.table.column.value}" />
 	</resultMap>
 
-	<resultMap id="gipseResultByZip3" class="gov.cdc.ncphi.phgrid.services.gipse.common.dao.Observation">
+	<resultMap id="gipseResultByStateByAge" class="gov.cdc.ncphi.phgrid.services.gipse.service.dao.Observation">
 	      <result property="observationDate" column="${db.gipse.table.column.date}" />
 	      <result property="state" column="${db.gipse.table.column.state}" />
-	      <result property="classifier" column="${db.gipse.table.column.classifier}" />
-	      <result property="indicator" column="${db.gipse.table.column.indicator" />
-	      <result property="count" column="${db.gipse.table.column.value}" />
-	      <result property="zip3" column="${db.gipse.table.column.zip3}" />
+	      <result property="classifier" column="${db.gipse.table.column.indicator}" />
+	      <result property="indicator" column="${db.gipse.table.column.indicator}" />
+	      <result property="age" column="${db.gipse.table.column.age}" />
+	      <result property="value" column="${db.gipse.table.column.value}" />
 	</resultMap>
 
-	<resultMap id="gipseResultByZip5" class="gov.cdc.ncphi.phgrid.services.gipse.common.dao.Observation">
+	<resultMap id="gipseResultByStateByServiceArea" class="gov.cdc.ncphi.phgrid.services.gipse.service.dao.Observation">
+	      <result property="observationDate" column="${db.gipse.table.column.date}" />
+	      <result property="state" column="${db.gipse.table.column.state}" />
+	      <result property="classifier" column="${db.gipse.table.column.indicator}" />
+	      <result property="indicator" column="${db.gipse.table.column.indicator}" />
+	      <result property="serviceArea" column="${db.gipse.table.column.service.area}" />
+	      <result property="value" column="${db.gipse.table.column.value}" />
+	</resultMap>
+
+	<resultMap id="gipseResultByStateByAgeByServiceArea" class="gov.cdc.ncphi.phgrid.services.gipse.service.dao.Observation">
+	      <result property="observationDate" column="${db.gipse.table.column.date}" />
+	      <result property="state" column="${db.gipse.table.column.state}" />
+	      <result property="classifier" column="${db.gipse.table.column.indicator}" />
+	      <result property="indicator" column="${db.gipse.table.column.indicator}" />
+	      <result property="age" column="${db.gipse.table.column.age}" />
+	      <result property="serviceArea" column="${db.gipse.table.column.service.area}" />
+	      <result property="value" column="${db.gipse.table.column.value}" />
+	</resultMap>
+
+	<resultMap id="gipseResultByZip3" class="gov.cdc.ncphi.phgrid.services.gipse.service.dao.Observation">
 	      <result property="observationDate" column="${db.gipse.table.column.date}" />
 	      <result property="state" column="${db.gipse.table.column.state}" />
 	      <result property="classifier" column="${db.gipse.table.column.classifier}" />
 	      <result property="indicator" column="${db.gipse.table.column.indicator}" />
-	      <result property="count" column="${db.gipse.table.column.value}" />
+	      <result property="value" column="${db.gipse.table.column.value}" />
+	      <result property="zip3" column="${db.gipse.table.column.zip3}" />
+	</resultMap>
+
+	<resultMap id="gipseResultByZip3ByAge" class="gov.cdc.ncphi.phgrid.services.gipse.service.dao.Observation">
+	      <result property="observationDate" column="${db.gipse.table.column.date}" />
+	      <result property="state" column="${db.gipse.table.column.state}" />
+	      <result property="classifier" column="${db.gipse.table.column.classifier}" />
+	      <result property="indicator" column="${db.gipse.table.column.indicator}" />
+	      <result property="value" column="${db.gipse.table.column.value}" />
+	      <result property="zip3" column="${db.gipse.table.column.zip3}" />
+	      <result property="age" column="${db.gipse.table.column.age}" />
+	</resultMap>
+
+	<resultMap id="gipseResultByZip3ByServiceArea" class="gov.cdc.ncphi.phgrid.services.gipse.service.dao.Observation">
+	      <result property="observationDate" column="${db.gipse.table.column.date}" />
+	      <result property="state" column="${db.gipse.table.column.state}" />
+	      <result property="classifier" column="${db.gipse.table.column.classifier}" />
+	      <result property="indicator" column="${db.gipse.table.column.indicator}" />
+	      <result property="value" column="${db.gipse.table.column.value}" />
+	      <result property="zip3" column="${db.gipse.table.column.zip3}" />
+	      <result property="serviceArea" column="${db.gipse.table.column.service.area}" />
+	</resultMap>
+
+	<resultMap id="gipseResultByZip3ByAgeByServiceArea" class="gov.cdc.ncphi.phgrid.services.gipse.service.dao.Observation">
+	      <result property="observationDate" column="${db.gipse.table.column.date}" />
+	      <result property="state" column="${db.gipse.table.column.state}" />
+	      <result property="classifier" column="${db.gipse.table.column.classifier}" />
+	      <result property="indicator" column="${db.gipse.table.column.indicator}" />
+	      <result property="value" column="${db.gipse.table.column.value}" />
+	      <result property="zip3" column="${db.gipse.table.column.zip3}" />
+	      <result property="age" column="${db.gipse.table.column.age}" />
+	      <result property="serviceArea" column="${db.gipse.table.column.service.area}" />
+	</resultMap>
+
+	<resultMap id="gipseResultByZip5" class="gov.cdc.ncphi.phgrid.services.gipse.service.dao.Observation">
+	      <result property="observationDate" column="${db.gipse.table.column.date}" />
+	      <result property="state" column="${db.gipse.table.column.state}" />
+	      <result property="classifier" column="${db.gipse.table.column.classifier}" />
+	      <result property="indicator" column="${db.gipse.table.column.indicator}" />
+	      <result property="value" column="${db.gipse.table.column.value}" />
 	      <result property="zip3" column="${db.gipse.table.column.zip3}" />
 	      <result property="zip5" column="${db.gipse.table.column.zip5}" />
+	</resultMap>
+
+	<resultMap id="gipseResultByZip5ByAge" class="gov.cdc.ncphi.phgrid.services.gipse.service.dao.Observation">
+	      <result property="observationDate" column="${db.gipse.table.column.date}" />
+	      <result property="state" column="${db.gipse.table.column.state}" />
+	      <result property="classifier" column="${db.gipse.table.column.classifier}" />
+	      <result property="indicator" column="${db.gipse.table.column.indicator}" />
+	      <result property="value" column="${db.gipse.table.column.value}" />
+	      <result property="zip3" column="${db.gipse.table.column.zip3}" />
+	      <result property="zip5" column="${db.gipse.table.column.zip5}" />
+	      <result property="age" column="${db.gipse.table.column.age}" />
+	</resultMap>
+
+	<resultMap id="gipseResultByZip5ByServiceArea" class="gov.cdc.ncphi.phgrid.services.gipse.service.dao.Observation">
+	      <result property="observationDate" column="${db.gipse.table.column.date}" />
+	      <result property="state" column="${db.gipse.table.column.state}" />
+	      <result property="classifier" column="${db.gipse.table.column.classifier}" />
+	      <result property="indicator" column="${db.gipse.table.column.indicator}" />
+	      <result property="value" column="${db.gipse.table.column.value}" />
+	      <result property="zip3" column="${db.gipse.table.column.zip3}" />
+	      <result property="zip5" column="${db.gipse.table.column.zip5}" />
+	      <result property="serviceArea" column="${db.gipse.table.column.service.area}" />
+	</resultMap>
+
+	<resultMap id="gipseResultByZip5ByAgeByServiceArea" class="gov.cdc.ncphi.phgrid.services.gipse.service.dao.Observation">
+	      <result property="observationDate" column="${db.gipse.table.column.date}" />
+	      <result property="state" column="${db.gipse.table.column.state}" />
+	      <result property="classifier" column="${db.gipse.table.column.classifier}" />
+	      <result property="indicator" column="${db.gipse.table.column.indicator}" />
+	      <result property="value" column="${db.gipse.table.column.value}" />
+	      <result property="zip3" column="${db.gipse.table.column.zip3}" />
+	      <result property="zip5" column="${db.gipse.table.column.zip5}" />
+	      <result property="age" column="${db.gipse.table.column.age}" />
+	      <result property="serviceArea" column="${db.gipse.table.column.service.area}" />
 	</resultMap>
 
 
@@ -65,8 +158,162 @@ PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN"
 	                  ${db.gipse.table.column.indicator}=#indicators[]#
 	            </iterate>
 	        </isNotEmpty>
+	      	<isNotEmpty prepend="AND" property="dataSources">
+	            <iterate property="dataSources" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.data.source}=#dataSources[]#
+	            </iterate>
+	        </isNotEmpty>
 	      </dynamic>
 	      GROUP BY ${db.gipse.table.column.date},${db.gipse.table.column.state},${db.gipse.table.column.classifier},${db.gipse.table.column.indicator}
+      </select>
+
+
+      <select id="selectObservationsByStateByAge" resultMap="gipseResultByStateByAge">
+            SELECT ${db.gipse.table.column.date},
+            	${db.gipse.table.column.state},
+            	${db.gipse.table.column.classifier},
+            	${db.gipse.table.column.indicator},
+            	${db.gipse.table.column.age},
+            	sum(${db.gipse.table.column.value}) as ${db.gipse.table.column.value}
+            FROM ${db.gipse.table}
+	      <dynamic prepend="WHERE">
+            <isNotEmpty prepend="AND" property="startDate">
+                  ${db.gipse.table.column.date} &gt;=#startDate#
+            </isNotEmpty>
+            <isNotEmpty prepend="AND" property="endDate">
+                  ${db.gipse.table.column.date} &lt;#endDate#
+            </isNotEmpty>
+	      	<isNotEmpty prepend="AND" property="states">
+	            <iterate property="states" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.state} Like #states[]#
+	            </iterate>
+	        </isNotEmpty>
+            <isNotEmpty prepend="AND" property="classifier">
+                  ${db.gipse.table.column.classifier}=#classifier#
+            </isNotEmpty>
+	      	<isNotEmpty prepend="AND" property="indicators">
+	            <iterate property="indicators" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.indicator}=#indicators[]#
+	            </iterate>
+	        </isNotEmpty>
+	      	<isNotEmpty prepend="AND" property="ages">
+	            <iterate property="ages" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.age}=#ages[]#
+	            </iterate>
+	        </isNotEmpty>
+	      	<isNotEmpty prepend="AND" property="dataSources">
+	            <iterate property="dataSources" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.data.source}=#dataSources[]#
+	            </iterate>
+	        </isNotEmpty>
+	      </dynamic>
+	      GROUP BY ${db.gipse.table.column.date},${db.gipse.table.column.state},${db.gipse.table.column.classifier},${db.gipse.table.column.indicator},${db.gipse.table.column.age}
+      </select>
+
+
+      <select id="selectObservationsByStateByServiceArea" resultMap="gipseResultByStateByServiceArea">
+            SELECT ${db.gipse.table.column.date},
+            	${db.gipse.table.column.state},
+            	${db.gipse.table.column.classifier},
+            	${db.gipse.table.column.indicator},
+            	${db.gipse.table.column.service.area},
+            	sum(${db.gipse.table.column.value}) as ${db.gipse.table.column.value}
+            FROM ${db.gipse.table}
+	      <dynamic prepend="WHERE">
+            <isNotEmpty prepend="AND" property="startDate">
+                  ${db.gipse.table.column.date} &gt;=#startDate#
+            </isNotEmpty>
+            <isNotEmpty prepend="AND" property="endDate">
+                  ${db.gipse.table.column.date} &lt;#endDate#
+            </isNotEmpty>
+	      	<isNotEmpty prepend="AND" property="states">
+	            <iterate property="states" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.state} Like #states[]#
+	            </iterate>
+	        </isNotEmpty>
+            <isNotEmpty prepend="AND" property="classifier">
+                  ${db.gipse.table.column.classifier}=#classifier#
+            </isNotEmpty>
+	      	<isNotEmpty prepend="AND" property="indicators">
+	            <iterate property="indicators" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.indicator}=#indicators[]#
+	            </iterate>
+	        </isNotEmpty>
+	      	<isNotEmpty prepend="AND" property="serviceAreas">
+	            <iterate property="serviceAreas" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.service.area}=#serviceAreas[]#
+	            </iterate>
+	        </isNotEmpty>
+	      	<isNotEmpty prepend="AND" property="dataSources">
+	            <iterate property="dataSources" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.data.source}=#dataSources[]#
+	            </iterate>
+	        </isNotEmpty>
+	      </dynamic>
+	      GROUP BY ${db.gipse.table.column.date},${db.gipse.table.column.state},${db.gipse.table.column.classifier},${db.gipse.table.column.indicator},${db.gipse.table.column.service.area}
+      </select>
+
+
+      <select id="selectObservationsByStateByAgeByServiceArea" resultMap="gipseResultByStateByAgeByServiceArea">
+            SELECT ${db.gipse.table.column.date},
+            	${db.gipse.table.column.state},
+            	${db.gipse.table.column.classifier},
+            	${db.gipse.table.column.indicator},
+            	${db.gipse.table.column.age},
+            	${db.gipse.table.column.service.area},
+            	sum(${db.gipse.table.column.value}) as ${db.gipse.table.column.value}
+            FROM ${db.gipse.table}
+	      <dynamic prepend="WHERE">
+            <isNotEmpty prepend="AND" property="startDate">
+                  ${db.gipse.table.column.date} &gt;=#startDate#
+            </isNotEmpty>
+            <isNotEmpty prepend="AND" property="endDate">
+                  ${db.gipse.table.column.date} &lt;#endDate#
+            </isNotEmpty>
+	      	<isNotEmpty prepend="AND" property="states">
+	            <iterate property="states" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.state} Like #states[]#
+	            </iterate>
+	        </isNotEmpty>
+            <isNotEmpty prepend="AND" property="classifier">
+                  ${db.gipse.table.column.classifier}=#classifier#
+            </isNotEmpty>
+	      	<isNotEmpty prepend="AND" property="indicators">
+	            <iterate property="indicators" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.indicator}=#indicators[]#
+	            </iterate>
+	        </isNotEmpty>
+	      	<isNotEmpty prepend="AND" property="ages">
+	            <iterate property="ages" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.age}=#ages[]#
+	            </iterate>
+	        </isNotEmpty>
+	      	<isNotEmpty prepend="AND" property="serviceAreas">
+	            <iterate property="serviceAreas" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.service.area}=#serviceAreas[]#
+	            </iterate>
+	        </isNotEmpty>
+	      	<isNotEmpty prepend="AND" property="dataSources">
+	            <iterate property="dataSources" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.data.source}=#dataSources[]#
+	            </iterate>
+	        </isNotEmpty>
+	      </dynamic>
+	      GROUP BY ${db.gipse.table.column.date},${db.gipse.table.column.state},${db.gipse.table.column.classifier},${db.gipse.table.column.indicator},${db.gipse.table.column.age},${db.gipse.table.column.service.area}
       </select>
 
       <select id="selectObservationsByZip3" resultMap="gipseResultByZip3">
@@ -106,8 +353,183 @@ PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN"
 	                  ${db.gipse.table.column.indicator}=#indicators[]#
 	            </iterate>
 	        </isNotEmpty>
+	      	<isNotEmpty prepend="AND" property="dataSources">
+	            <iterate property="dataSources" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.data.source}=#dataSources[]#
+	            </iterate>
+	        </isNotEmpty>
 	      </dynamic>
 	      GROUP BY ${db.gipse.table.column.date},${db.gipse.table.column.state},${db.gipse.table.column.zip3},${db.gipse.table.column.classifier},${db.gipse.table.column.indicator}
+      </select>
+
+      <select id="selectObservationsByZip3ByAge" resultMap="gipseResultByZip3ByAge">
+            SELECT ${db.gipse.table.column.date},
+            	${db.gipse.table.column.state},
+            	${db.gipse.table.column.zip3},
+            	${db.gipse.table.column.classifier},
+            	${db.gipse.table.column.indicator},
+            	${db.gipse.table.column.age},
+            	sum(${db.gipse.table.column.value}) as ${db.gipse.table.column.value}
+
+            FROM ${db.gipse.table}
+	      <dynamic prepend="WHERE">
+            <isNotEmpty prepend="AND" property="startDate">
+                  ${db.gipse.table.column.date} &gt;=#startDate#
+            </isNotEmpty>
+            <isNotEmpty prepend="AND" property="endDate">
+                  ${db.gipse.table.column.date} &lt;#endDate#
+            </isNotEmpty>
+            <isNotEmpty prepend="AND" property="states">
+	            <iterate property="states" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.state} Like #states[]#
+	            </iterate>
+            </isNotEmpty>
+	      	<isNotEmpty prepend="AND" property="zip3s">
+	            <iterate property="zip3s" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.zip3} Like #zip3s[]#
+	            </iterate>
+	        </isNotEmpty>
+            <isNotEmpty prepend="AND" property="classifier">
+                  ${db.gipse.table.column.classifier}=#classifier#
+            </isNotEmpty>
+	      	<isNotEmpty prepend="AND" property="indicators">
+	            <iterate property="indicators" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.indicator}=#indicators[]#
+	            </iterate>
+	        </isNotEmpty>
+	      	<isNotEmpty prepend="AND" property="ages">
+	            <iterate property="ages" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.age}=#ages[]#
+	            </iterate>
+	        </isNotEmpty>
+	      	<isNotEmpty prepend="AND" property="dataSources">
+	            <iterate property="dataSources" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.data.source}=#dataSources[]#
+	            </iterate>
+	        </isNotEmpty>
+	      </dynamic>
+	      GROUP BY ${db.gipse.table.column.date},${db.gipse.table.column.state},${db.gipse.table.column.zip3},${db.gipse.table.column.classifier},${db.gipse.table.column.indicator},${db.gipse.table.column.age}
+      </select>
+
+      <select id="selectObservationsByZip3ByServiceArea" resultMap="gipseResultByZip3ByServiceArea">
+            SELECT ${db.gipse.table.column.date},
+            	${db.gipse.table.column.state},
+            	${db.gipse.table.column.zip3},
+            	${db.gipse.table.column.classifier},
+            	${db.gipse.table.column.indicator},
+            	${db.gipse.table.column.service.area},
+            	sum(${db.gipse.table.column.value}) as ${db.gipse.table.column.value}
+
+            FROM ${db.gipse.table}
+	      <dynamic prepend="WHERE">
+            <isNotEmpty prepend="AND" property="startDate">
+                  ${db.gipse.table.column.date} &gt;=#startDate#
+            </isNotEmpty>
+            <isNotEmpty prepend="AND" property="endDate">
+                  ${db.gipse.table.column.date} &lt;#endDate#
+            </isNotEmpty>
+            <isNotEmpty prepend="AND" property="states">
+	            <iterate property="states" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.state} Like #states[]#
+	            </iterate>
+            </isNotEmpty>
+	      	<isNotEmpty prepend="AND" property="zip3s">
+	            <iterate property="zip3s" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.zip3} Like #zip3s[]#
+	            </iterate>
+	        </isNotEmpty>
+            <isNotEmpty prepend="AND" property="classifier">
+                  ${db.gipse.table.column.classifier}=#classifier#
+            </isNotEmpty>
+	      	<isNotEmpty prepend="AND" property="indicators">
+	            <iterate property="indicators" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.indicator}=#indicators[]#
+	            </iterate>
+	        </isNotEmpty>
+	      	<isNotEmpty prepend="AND" property="dataSources">
+	            <iterate property="dataSources" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.data.source}=#dataSources[]#
+	            </iterate>
+	        </isNotEmpty>
+	      	<isNotEmpty prepend="AND" property="serviceAreas">
+	            <iterate property="serviceAreas" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.service.area}=#serviceAreas[]#
+	            </iterate>
+	        </isNotEmpty>
+	      </dynamic>
+	      GROUP BY ${db.gipse.table.column.date},${db.gipse.table.column.state},${db.gipse.table.column.zip3},${db.gipse.table.column.classifier},${db.gipse.table.column.indicator},${db.gipse.table.column.service.area}
+      </select>
+
+      <select id="selectObservationsByZip3ByAgeByServiceArea" resultMap="gipseResultByZip3ByAgeByServiceArea">
+            SELECT ${db.gipse.table.column.date},
+            	${db.gipse.table.column.state},
+            	${db.gipse.table.column.zip3},
+            	${db.gipse.table.column.classifier},
+            	${db.gipse.table.column.indicator},
+            	${db.gipse.table.column.age},
+            	${db.gipse.table.column.service.area},
+            	sum(${db.gipse.table.column.value}) as ${db.gipse.table.column.value}
+
+            FROM ${db.gipse.table}
+	      <dynamic prepend="WHERE">
+            <isNotEmpty prepend="AND" property="startDate">
+                  ${db.gipse.table.column.date} &gt;=#startDate#
+            </isNotEmpty>
+            <isNotEmpty prepend="AND" property="endDate">
+                  ${db.gipse.table.column.date} &lt;#endDate#
+            </isNotEmpty>
+            <isNotEmpty prepend="AND" property="states">
+	            <iterate property="states" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.state} Like #states[]#
+	            </iterate>
+            </isNotEmpty>
+	      	<isNotEmpty prepend="AND" property="zip3s">
+	            <iterate property="zip3s" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.zip3} Like #zip3s[]#
+	            </iterate>
+	        </isNotEmpty>
+            <isNotEmpty prepend="AND" property="classifier">
+                  ${db.gipse.table.column.classifier}=#classifier#
+            </isNotEmpty>
+	      	<isNotEmpty prepend="AND" property="indicators">
+	            <iterate property="indicators" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.indicator}=#indicators[]#
+	            </iterate>
+	        </isNotEmpty>
+	      	<isNotEmpty prepend="AND" property="dataSources">
+	            <iterate property="dataSources" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.data.source}=#dataSources[]#
+	            </iterate>
+	        </isNotEmpty>
+	      	<isNotEmpty prepend="AND" property="ages">
+	            <iterate property="ages" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.age}=#ages[]#
+	            </iterate>
+	        </isNotEmpty>
+	      	<isNotEmpty prepend="AND" property="serviceAreas">
+	            <iterate property="serviceAreas" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.service.area}=#serviceAreas[]#
+	            </iterate>
+	        </isNotEmpty>
+	      </dynamic>
+	      GROUP BY ${db.gipse.table.column.date},${db.gipse.table.column.state},${db.gipse.table.column.zip3},${db.gipse.table.column.classifier},${db.gipse.table.column.indicator},${db.gipse.table.column.age},${db.gipse.table.column.service.area}
       </select>
 
       <select id="selectObservationsByZip5" resultMap="gipseResultByZip5">
@@ -154,8 +576,207 @@ PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN"
 	                  ${db.gipse.table.column.indicator}=#indicators[]#
 	            </iterate>
 	        </isNotEmpty>
+	      	<isNotEmpty prepend="AND" property="dataSources">
+	            <iterate property="dataSources" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.data.source}=#dataSources[]#
+	            </iterate>
+	        </isNotEmpty>
 	      </dynamic>
 	      GROUP BY ${db.gipse.table.column.date},${db.gipse.table.column.state},${db.gipse.table.column.zip3},${db.gipse.table.column.zip5},${db.gipse.table.column.classifier},${db.gipse.table.column.indicator}
+
+      </select>
+
+      <select id="selectObservationsByZip5ByAge" resultMap="gipseResultByZip5ByAge">
+            SELECT ${db.gipse.table.column.date},
+            	${db.gipse.table.column.state},
+            	${db.gipse.table.column.zip3},
+            	${db.gipse.table.column.zip5},
+            	${db.gipse.table.column.classifier},
+            	${db.gipse.table.column.indicator},
+            	${db.gipse.table.column.age},
+            	sum(${db.gipse.table.column.value}) as ${db.gipse.table.column.value}
+
+            FROM ${db.gipse.table}
+	      <dynamic prepend="WHERE">
+            <isNotEmpty prepend="AND" property="startDate">
+                  ${db.gipse.table.column.date} &gt;=#startDate#
+            </isNotEmpty>
+            <isNotEmpty prepend="AND" property="endDate">
+                  ${db.gipse.table.column.date} &lt;#endDate#
+            </isNotEmpty>
+            <isNotEmpty prepend="AND" property="states">
+	            <iterate property="states" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.state} Like #states[]#
+	            </iterate>
+            </isNotEmpty>
+	      	<isNotEmpty prepend="OR" property="zip3s">
+	            <iterate property="zip3s" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.zip3} Like #zip3s[]#
+	            </iterate>
+	        </isNotEmpty>
+	      	<isNotEmpty prepend="AND" property="zip5s">
+	            <iterate property="zip5s" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.zip5} Like #zip5s[]#
+	            </iterate>
+	        </isNotEmpty>
+            <isNotEmpty prepend="AND" property="classifier">
+                  ${db.gipse.table.column.classifier}=#classifier#
+            </isNotEmpty>
+	      	<isNotEmpty prepend="AND" property="indicators">
+	            <iterate property="indicators" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.indicator}=#indicators[]#
+	            </iterate>
+	        </isNotEmpty>
+	      	<isNotEmpty prepend="AND" property="dataSources">
+	            <iterate property="dataSources" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.data.source}=#dataSources[]#
+	            </iterate>
+	        </isNotEmpty>
+	      	<isNotEmpty prepend="AND" property="ages">
+	            <iterate property="ages" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.age}=#ages[]#
+	            </iterate>
+	        </isNotEmpty>
+	      </dynamic>
+	      GROUP BY ${db.gipse.table.column.date},${db.gipse.table.column.state},${db.gipse.table.column.zip3},${db.gipse.table.column.zip5},${db.gipse.table.column.classifier},${db.gipse.table.column.indicator},${db.gipse.table.column.age}
+
+      </select>
+
+      <select id="selectObservationsByZip5ByServiceArea" resultMap="gipseResultByZip5ByServiceArea">
+            SELECT ${db.gipse.table.column.date},
+            	${db.gipse.table.column.state},
+            	${db.gipse.table.column.zip3},
+            	${db.gipse.table.column.zip5},
+            	${db.gipse.table.column.classifier},
+            	${db.gipse.table.column.indicator},
+            	${db.gipse.table.column.service.area},
+            	sum(${db.gipse.table.column.value}) as ${db.gipse.table.column.value}
+
+            FROM ${db.gipse.table}
+	      <dynamic prepend="WHERE">
+            <isNotEmpty prepend="AND" property="startDate">
+                  ${db.gipse.table.column.date} &gt;=#startDate#
+            </isNotEmpty>
+            <isNotEmpty prepend="AND" property="endDate">
+                  ${db.gipse.table.column.date} &lt;#endDate#
+            </isNotEmpty>
+            <isNotEmpty prepend="AND" property="states">
+	            <iterate property="states" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.state} Like #states[]#
+	            </iterate>
+            </isNotEmpty>
+	      	<isNotEmpty prepend="OR" property="zip3s">
+	            <iterate property="zip3s" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.zip3} Like #zip3s[]#
+	            </iterate>
+	        </isNotEmpty>
+	      	<isNotEmpty prepend="AND" property="zip5s">
+	            <iterate property="zip5s" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.zip5} Like #zip5s[]#
+	            </iterate>
+	        </isNotEmpty>
+            <isNotEmpty prepend="AND" property="classifier">
+                  ${db.gipse.table.column.classifier}=#classifier#
+            </isNotEmpty>
+	      	<isNotEmpty prepend="AND" property="indicators">
+	            <iterate property="indicators" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.indicator}=#indicators[]#
+	            </iterate>
+	        </isNotEmpty>
+	      	<isNotEmpty prepend="AND" property="dataSources">
+	            <iterate property="dataSources" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.data.source}=#dataSources[]#
+	            </iterate>
+	        </isNotEmpty>
+	      	<isNotEmpty prepend="AND" property="serviceAreas">
+	            <iterate property="serviceAreas" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.service.area}=#serviceAreas[]#
+	            </iterate>
+	        </isNotEmpty>
+	      </dynamic>
+	      GROUP BY ${db.gipse.table.column.date},${db.gipse.table.column.state},${db.gipse.table.column.zip3},${db.gipse.table.column.zip5},${db.gipse.table.column.classifier},${db.gipse.table.column.indicator},${db.gipse.table.column.service.area}
+
+      </select>
+
+      <select id="selectObservationsByZip5ByAgeByServiceArea" resultMap="gipseResultByZip5ByAgeByServiceArea">
+            SELECT ${db.gipse.table.column.date},
+            	${db.gipse.table.column.state},
+            	${db.gipse.table.column.zip3},
+            	${db.gipse.table.column.zip5},
+            	${db.gipse.table.column.classifier},
+            	${db.gipse.table.column.indicator},
+            	${db.gipse.table.column.age},
+            	${db.gipse.table.column.service.area},
+            	sum(${db.gipse.table.column.value}) as ${db.gipse.table.column.value}
+
+            FROM ${db.gipse.table}
+	      <dynamic prepend="WHERE">
+            <isNotEmpty prepend="AND" property="startDate">
+                  ${db.gipse.table.column.date} &gt;=#startDate#
+            </isNotEmpty>
+            <isNotEmpty prepend="AND" property="endDate">
+                  ${db.gipse.table.column.date} &lt;#endDate#
+            </isNotEmpty>
+            <isNotEmpty prepend="AND" property="states">
+	            <iterate property="states" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.state} Like #states[]#
+	            </iterate>
+            </isNotEmpty>
+	      	<isNotEmpty prepend="OR" property="zip3s">
+	            <iterate property="zip3s" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.zip3} Like #zip3s[]#
+	            </iterate>
+	        </isNotEmpty>
+	      	<isNotEmpty prepend="AND" property="zip5s">
+	            <iterate property="zip5s" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.zip5} Like #zip5s[]#
+	            </iterate>
+	        </isNotEmpty>
+            <isNotEmpty prepend="AND" property="classifier">
+                  ${db.gipse.table.column.classifier}=#classifier#
+            </isNotEmpty>
+	      	<isNotEmpty prepend="AND" property="indicators">
+	            <iterate property="indicators" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.indicator}=#indicators[]#
+	            </iterate>
+	        </isNotEmpty>
+	      	<isNotEmpty prepend="AND" property="dataSources">
+	            <iterate property="dataSources" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.data.source}=#dataSources[]#
+	            </iterate>
+	        </isNotEmpty>
+	      	<isNotEmpty prepend="AND" property="ages">
+	            <iterate property="ages" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.ages}=#ages[]#
+	            </iterate>
+	        </isNotEmpty>
+	      	<isNotEmpty prepend="AND" property="serviceAreas">
+	            <iterate property="serviceAreas" open="(" close=")"
+	                  conjunction="OR">
+	                  ${db.gipse.table.column.service.area}=#serviceAreas[]#
+	            </iterate>
+	        </isNotEmpty>
+	      </dynamic>
+	      GROUP BY ${db.gipse.table.column.date},${db.gipse.table.column.state},${db.gipse.table.column.zip3},${db.gipse.table.column.zip5},${db.gipse.table.column.classifier},${db.gipse.table.column.indicator},${db.gipse.table.column.age},${db.gipse.table.column.service.area}
 
       </select>
 

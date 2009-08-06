@@ -11,15 +11,15 @@ import org.apache.commons.lang.builder.ToStringBuilder;
  */
 public class Observation {
 	private Date observationDate;
-	private String zip3,zip5,state,classifier,indicator;
-	private int count;
+	private String zip3,zip5,state,classifier,indicator,age,serviceArea;
+	private int value;
 	
 	public Observation(){
 		super();
 	}
 	
 	public Observation(Date observationDate, String zip3, String zip5,
-			String state, String classifier, String indicator, int count) {
+			String state, String classifier, String indicator, int value,String age, String serviceArea) {
 		super();
 		this.observationDate = observationDate;
 		this.zip3 = zip3;
@@ -27,9 +27,29 @@ public class Observation {
 		this.state = state;
 		this.classifier = classifier;
 		this.indicator = indicator;
-		this.count = count;
+		this.value = value;
+		this.age = age;
+		this.serviceArea = serviceArea;
 	}
 	
+	
+	
+	public String getAge() {
+		return age;
+	}
+
+	public void setAge(String age) {
+		this.age = age;
+	}
+
+	public String getServiceArea() {
+		return serviceArea;
+	}
+
+	public void setServiceArea(String serviceArea) {
+		this.serviceArea = serviceArea;
+	}
+
 	public Date getObservationDate() {
 		return observationDate;
 	}
@@ -66,31 +86,32 @@ public class Observation {
 	public void setIndicator(String indicator) {
 		this.indicator = indicator;
 	}
-	public int getCount() {
-		return count;
+	public int getValue() {
+		return value;
 	}
-	public void setCount(int count) {
-		this.count = count;
+	public void setValue(int value) {
+		this.value = value;
 	}
-
-
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
+		result = prime * result + ((age == null) ? 0 : age.hashCode());
 		result = prime * result
 				+ ((classifier == null) ? 0 : classifier.hashCode());
-		result = prime * result + count;
 		result = prime * result
 				+ ((indicator == null) ? 0 : indicator.hashCode());
 		result = prime * result
 				+ ((observationDate == null) ? 0 : observationDate.hashCode());
+		result = prime * result
+				+ ((serviceArea == null) ? 0 : serviceArea.hashCode());
 		result = prime * result + ((state == null) ? 0 : state.hashCode());
+		result = prime * result + value;
 		result = prime * result + ((zip3 == null) ? 0 : zip3.hashCode());
 		result = prime * result + ((zip5 == null) ? 0 : zip5.hashCode());
 		return result;
 	}
-
 
 	@Override
 	public boolean equals(Object obj) {
@@ -101,12 +122,15 @@ public class Observation {
 		if (getClass() != obj.getClass())
 			return false;
 		Observation other = (Observation) obj;
+		if (age == null) {
+			if (other.age != null)
+				return false;
+		} else if (!age.equals(other.age))
+			return false;
 		if (classifier == null) {
 			if (other.classifier != null)
 				return false;
 		} else if (!classifier.equals(other.classifier))
-			return false;
-		if (count != other.count)
 			return false;
 		if (indicator == null) {
 			if (other.indicator != null)
@@ -118,10 +142,17 @@ public class Observation {
 				return false;
 		} else if (!observationDate.equals(other.observationDate))
 			return false;
+		if (serviceArea == null) {
+			if (other.serviceArea != null)
+				return false;
+		} else if (!serviceArea.equals(other.serviceArea))
+			return false;
 		if (state == null) {
 			if (other.state != null)
 				return false;
 		} else if (!state.equals(other.state))
+			return false;
+		if (value != other.value)
 			return false;
 		if (zip3 == null) {
 			if (other.zip3 != null)
@@ -135,7 +166,7 @@ public class Observation {
 			return false;
 		return true;
 	}
-	
+
 	public String toString(){
 		return ToStringBuilder.reflectionToString(this);
 	}

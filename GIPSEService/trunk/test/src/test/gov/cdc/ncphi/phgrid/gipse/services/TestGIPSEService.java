@@ -18,8 +18,8 @@ import gov.cdc.ncphi.phgrid.gipse.message.MetadataQueryResponse;
 import gov.cdc.ncphi.phgrid.services.gipse.client.GIPSEServiceClient;
 import gov.cdc.ncphi.phgrid.services.gipse.common.GIPSEServiceConstants;
 import gov.cdc.ncphi.phgrid.services.gipse.common.AxisUtils;
-import gov.cdc.ncphi.phgrid.services.gipse.common.dao.DatabaseManager;
-import gov.cdc.ncphi.phgrid.services.gipse.common.dao.QueryParameters;
+import gov.cdc.ncphi.phgrid.services.gipse.service.dao.DatabaseManager;
+import gov.cdc.ncphi.phgrid.services.gipse.service.dao.QueryParameters;
 import junit.framework.TestCase;
 
 /**
@@ -45,8 +45,8 @@ public class TestGIPSEService extends TestCase {
 		params.setIndicators(new String[]{"Fever","Flavor"});
 		SqlMapClient client = DatabaseManager.getSqlMap();
 		List results = client.queryForList(GIPSEServiceConstants.IBATIS_STATE_QUERY, params);
-		LOGGER.debug("results <" + results.toString() + ">");
 		assertNotNull("results should not be null",results);
+		LOGGER.debug("results <" + results.toString() + ">");
 	}
 	
 	public void testIbatisQueryEmpty() throws Exception{
@@ -58,9 +58,9 @@ public class TestGIPSEService extends TestCase {
 		params.setIndicators(new String[]{"Fever","Flavor"});
 		SqlMapClient client = DatabaseManager.getSqlMap();
 		List results = client.queryForList(GIPSEServiceConstants.IBATIS_STATE_QUERY, params);
-		LOGGER.debug("results <" + results.toString() + ">");
 		assertNotNull("results should not be null",results);
 		assertEquals("results size should be zero",results.size(),0);
+		LOGGER.debug("results <" + results.toString() + ">");
 		
 	}
 	
@@ -82,6 +82,46 @@ public class TestGIPSEService extends TestCase {
 		LOGGER.debug("response serialized for testing<" + AxisUtils.serializeAxisObject(response, true, true) + ">");
 	}
 	
+	public void testServiceQueryByStateByAge() throws Exception{
+		String queryAsString = IOUtils.toString(this.getClass().getResourceAsStream("/GIPSEQueryRequest-ForTest-StateAgeQuery.xml"));
+		assertNotNull("Reading the test xml file should not be null", queryAsString);
+		GIPSEQueryRequest query = (GIPSEQueryRequest) AxisUtils.deserializeAxisObject(queryAsString, GIPSEQueryRequest.class);
+		assertNotNull("Creating Axis request object should not be null", query);
+		GIPSEQueryResponse response = buildServiceClient().queryGIPSE(query);
+		assertNotNull("We should have some response",response);
+		LOGGER.debug("response serialized for testing<" + AxisUtils.serializeAxisObject(response, true, true) + ">");
+	}
+	
+	public void testServiceQueryByStateByServiceArea() throws Exception{
+		String queryAsString = IOUtils.toString(this.getClass().getResourceAsStream("/GIPSEQueryRequest-ForTest-StateServiceAreaQuery.xml"));
+		assertNotNull("Reading the test xml file should not be null", queryAsString);
+		GIPSEQueryRequest query = (GIPSEQueryRequest) AxisUtils.deserializeAxisObject(queryAsString, GIPSEQueryRequest.class);
+		assertNotNull("Creating Axis request object should not be null", query);
+		GIPSEQueryResponse response = buildServiceClient().queryGIPSE(query);
+		assertNotNull("We should have some response",response);
+		LOGGER.debug("response serialized for testing<" + AxisUtils.serializeAxisObject(response, true, true) + ">");
+	}
+	
+	public void testServiceQueryByStateByAgeByServiceArea() throws Exception{
+		String queryAsString = IOUtils.toString(this.getClass().getResourceAsStream("/GIPSEQueryRequest-ForTest-StateAgeServiceAreaQuery.xml"));
+		assertNotNull("Reading the test xml file should not be null", queryAsString);
+		GIPSEQueryRequest query = (GIPSEQueryRequest) AxisUtils.deserializeAxisObject(queryAsString, GIPSEQueryRequest.class);
+		assertNotNull("Creating Axis request object should not be null", query);
+		GIPSEQueryResponse response = buildServiceClient().queryGIPSE(query);
+		assertNotNull("We should have some response",response);
+		LOGGER.debug("response serialized for testing<" + AxisUtils.serializeAxisObject(response, true, true) + ">");
+	}
+	
+	public void testServiceQueryByStateWithDataSourceFilter() throws Exception{
+		String queryAsString = IOUtils.toString(this.getClass().getResourceAsStream("/GIPSEQueryRequest-ForTest-StateDataSourceFilterQuery.xml"));
+		assertNotNull("Reading the test xml file should not be null", queryAsString);
+		GIPSEQueryRequest query = (GIPSEQueryRequest) AxisUtils.deserializeAxisObject(queryAsString, GIPSEQueryRequest.class);
+		assertNotNull("Creating Axis request object should not be null", query);
+		GIPSEQueryResponse response = buildServiceClient().queryGIPSE(query);
+		assertNotNull("We should have some response",response);
+		LOGGER.debug("response serialized for testing<" + AxisUtils.serializeAxisObject(response, true, true) + ">");
+	}
+	
 	public void testServiceQueryByZip3() throws Exception{
 		String queryAsString = IOUtils.toString(this.getClass().getResourceAsStream("/GIPSEQueryRequest-ForTest-Zip3Query.xml"));
 		assertNotNull("Reading the test xml file should not be null", queryAsString);
@@ -90,6 +130,36 @@ public class TestGIPSEService extends TestCase {
 		GIPSEQueryResponse response = buildServiceClient().queryGIPSE(query);
 		assertNotNull("We should have some response",response);
 		LOGGER.debug("response serialized for testing<" + AxisUtils.serializeAxisObject(response, true, true) + ">");	
+	}
+	
+	public void testServiceQueryByZip3ByAge() throws Exception{
+		String queryAsString = IOUtils.toString(this.getClass().getResourceAsStream("/GIPSEQueryRequest-ForTest-Zip3AgeQuery.xml"));
+		assertNotNull("Reading the test xml file should not be null", queryAsString);
+		GIPSEQueryRequest query = (GIPSEQueryRequest) AxisUtils.deserializeAxisObject(queryAsString, GIPSEQueryRequest.class);
+		assertNotNull("Creating Axis request object should not be null", query);
+		GIPSEQueryResponse response = buildServiceClient().queryGIPSE(query);
+		assertNotNull("We should have some response",response);
+		LOGGER.debug("response serialized for testing<" + AxisUtils.serializeAxisObject(response, true, true) + ">");
+	}
+	
+	public void testServiceQueryByZip3ByServiceArea() throws Exception{
+		String queryAsString = IOUtils.toString(this.getClass().getResourceAsStream("/GIPSEQueryRequest-ForTest-Zip3ServiceAreaQuery.xml"));
+		assertNotNull("Reading the test xml file should not be null", queryAsString);
+		GIPSEQueryRequest query = (GIPSEQueryRequest) AxisUtils.deserializeAxisObject(queryAsString, GIPSEQueryRequest.class);
+		assertNotNull("Creating Axis request object should not be null", query);
+		GIPSEQueryResponse response = buildServiceClient().queryGIPSE(query);
+		assertNotNull("We should have some response",response);
+		LOGGER.debug("response serialized for testing<" + AxisUtils.serializeAxisObject(response, true, true) + ">");
+	}
+	
+	public void testServiceQueryByZip3ByAgeByServiceArea() throws Exception{
+		String queryAsString = IOUtils.toString(this.getClass().getResourceAsStream("/GIPSEQueryRequest-ForTest-Zip3AgeServiceAreaQuery.xml"));
+		assertNotNull("Reading the test xml file should not be null", queryAsString);
+		GIPSEQueryRequest query = (GIPSEQueryRequest) AxisUtils.deserializeAxisObject(queryAsString, GIPSEQueryRequest.class);
+		assertNotNull("Creating Axis request object should not be null", query);
+		GIPSEQueryResponse response = buildServiceClient().queryGIPSE(query);
+		assertNotNull("We should have some response",response);
+		LOGGER.debug("response serialized for testing<" + AxisUtils.serializeAxisObject(response, true, true) + ">");
 	}
 	
 	public void testServiceQueryByZip5() throws Exception{
@@ -101,6 +171,36 @@ public class TestGIPSEService extends TestCase {
 		assertNotNull("We should have some response",response);
 		LOGGER.debug("response serialized for testing<" + AxisUtils.serializeAxisObject(response, true, true) + ">");	
 		
+	}
+	
+	public void testServiceQueryByZip5ByAge() throws Exception{
+		String queryAsString = IOUtils.toString(this.getClass().getResourceAsStream("/GIPSEQueryRequest-ForTest-Zip5AgeQuery.xml"));
+		assertNotNull("Reading the test xml file should not be null", queryAsString);
+		GIPSEQueryRequest query = (GIPSEQueryRequest) AxisUtils.deserializeAxisObject(queryAsString, GIPSEQueryRequest.class);
+		assertNotNull("Creating Axis request object should not be null", query);
+		GIPSEQueryResponse response = buildServiceClient().queryGIPSE(query);
+		assertNotNull("We should have some response",response);
+		LOGGER.debug("response serialized for testing<" + AxisUtils.serializeAxisObject(response, true, true) + ">");
+	}
+	
+	public void testServiceQueryByZip5ByServiceArea() throws Exception{
+		String queryAsString = IOUtils.toString(this.getClass().getResourceAsStream("/GIPSEQueryRequest-ForTest-Zip5ServiceAreaQuery.xml"));
+		assertNotNull("Reading the test xml file should not be null", queryAsString);
+		GIPSEQueryRequest query = (GIPSEQueryRequest) AxisUtils.deserializeAxisObject(queryAsString, GIPSEQueryRequest.class);
+		assertNotNull("Creating Axis request object should not be null", query);
+		GIPSEQueryResponse response = buildServiceClient().queryGIPSE(query);
+		assertNotNull("We should have some response",response);
+		LOGGER.debug("response serialized for testing<" + AxisUtils.serializeAxisObject(response, true, true) + ">");
+	}
+	
+	public void testServiceQueryByZip5ByAgeByServiceArea() throws Exception{
+		String queryAsString = IOUtils.toString(this.getClass().getResourceAsStream("/GIPSEQueryRequest-ForTest-Zip5AgeServiceAreaQuery.xml"));
+		assertNotNull("Reading the test xml file should not be null", queryAsString);
+		GIPSEQueryRequest query = (GIPSEQueryRequest) AxisUtils.deserializeAxisObject(queryAsString, GIPSEQueryRequest.class);
+		assertNotNull("Creating Axis request object should not be null", query);
+		GIPSEQueryResponse response = buildServiceClient().queryGIPSE(query);
+		assertNotNull("We should have some response",response);
+		LOGGER.debug("response serialized for testing<" + AxisUtils.serializeAxisObject(response, true, true) + ">");
 	}
 	
 	private static final GIPSEServiceClient buildServiceClient() throws IOException{

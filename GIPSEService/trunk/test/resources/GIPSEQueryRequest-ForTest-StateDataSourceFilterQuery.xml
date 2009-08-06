@@ -18,18 +18,8 @@
 			<GeoRegion type="state" value="MA"/>
 			<GeoRegion type="state" value="RI"/>
 		</GeoRegions>
-		<Ages>
-			<Age classifier="DiSTRIBuTE" name="&lt;2"/>
-		</Ages>
-		<ServiceAreas>
-			<ServiceArea codeset="DiSTRIBuTE" name="Admit"/>
-			<ServiceArea codeset="DiSTRIBuTE" name="Admit2"/>
-		</ServiceAreas>
 		<DataSources>
-			<DataSourceOID>Blargh</DataSourceOID>
-			<DataSourceOID>Blargh2</DataSourceOID>
 			<DataSourceOID>BioSense-DoD</DataSourceOID>
 		</DataSources>
-		<PageData pageNumber="1" pageSize="10"/>
 	</QueryCharacteristics>
 </GIPSEQueryRequest>

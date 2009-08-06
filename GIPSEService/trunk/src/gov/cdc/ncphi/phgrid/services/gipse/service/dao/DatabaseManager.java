@@ -23,11 +23,11 @@ public class DatabaseManager {
 
     private static SqlMapClient sqlMap = null;
 
-    private static String resource = "sqlMap-config.xml";
+    private static final String SQL_MAP_FILE = "sqlMap-config.xml";
 
     public static SqlMapClient getSqlMap() throws IOException {
         if (sqlMap == null) {
-            Reader reader = Resources.getResourceAsReader(resource);
+            Reader reader = Resources.getResourceAsReader(SQL_MAP_FILE);
             sqlMap = SqlMapClientBuilder.buildSqlMapClient(reader);
             LOGGER.debug("Ibatis initialized");
         }

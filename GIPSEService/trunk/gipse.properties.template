@@ -5,20 +5,22 @@
 db.jdbc.url=DB URL
 #jdbc driver to be used, the package includes jtds and postgres so if you use something else, rebuild with that jar; SQLServer=net.sourceforge.jtds.jdbc.Driver;Postgres=org.postgresql.Driver
 db.jdbc.driver=DB DRIVER
-#username in cleartext, this user needs insert permissions to gipse_jobs_import and gipse_store
+#username in cleartext, this user needs select permissions to gipse_view (or whatever table name you specify in the db.gipse.table property below)
 db.jdbc.user=USER NAME
 #associated password
 db.jdbc.password=PASSWORD
-#Set to the name of the table or view that contains the following fields (state, date, zip3, zip5, count, condition)
+#Set to the name of the table or view that contains the following fields (state, date, zip3, zip5, count, indicator)
 db.gipse.table=TABLE/VIEW NAME
 
 #Change the following properties only if you are using different column names, these are the values for the GIPSE Store
+#These properties are used by the service for the various supported stratifiers. For example, if your service doesn't support Age Groups, then the db.gipse.table.column.age property will be ignored
+#This service implementation uses all of the columns below to query by state/zip3/zip5 with age, service area as stratifiers
 db.gipse.table.column.date=date
 db.gipse.table.column.state=state
 db.gipse.table.column.zip5=zip5
 db.gipse.table.column.zip3=zip3
 db.gipse.table.column.indicator=indicator
-db.gipse.table.column.classifier=indicator
+db.gipse.table.column.classifier=classifier
 db.gipse.table.column.service.area=service_area
 db.gipse.table.column.age=age
 db.gipse.table.column.data.source=data_source

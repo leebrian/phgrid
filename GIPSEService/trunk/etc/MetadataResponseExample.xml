@@ -48,7 +48,8 @@
 			<Indicator classifier="BioSense" name="Motor vehicle traffic accidents"/>
 			<Indicator classifier="BioSense" name="Nausea and vomiting"/>
 			<Indicator classifier="BioSense" name="Pneumonia and lung abscess"/>
-			<Indicator classifier="BioSense" name="Pregnancy, childbirth, puerperium complications"/>
+			<Indicator classifier="BioSense" name="Pregnancy, childbirth, puerperium co"/>
+			<Indicator classifier="BioSense" name="Upper respiratory infections"/>
 			<Indicator classifier="BioSense" name="Rash(Subsyndrome)"/>
 			<Indicator classifier="BioSense" name="Skin infection"/>
 			<Indicator classifier="DiSTRIBuTE" name="EDVisits"/>

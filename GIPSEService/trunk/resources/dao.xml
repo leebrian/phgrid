@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE daoConfig
+    PUBLIC "-//ibatis.apache.org//DTD DAO Configuration 2.0//EN"
+    "http://ibatis.apache.org/dtd/dao-2.dtd">
+
+<daoConfig>
+  <context>
+    <transactionManager type="SQLMAP">
+      <property name="SqlMapConfigResource" value="sqlMap-config.xml" />
+    </transactionManager>
+
+	<dao interface="gov.cdc.ncphi.phgrid.gipse.dao.ObservationDAO" implementation="gov.cdc.ncphi.phgrid.gipse.dao.ObservationDAOImpl" />
+</context>
+</daoConfig>

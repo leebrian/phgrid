@@ -2,6 +2,7 @@ package test.gov.cdc.ncphi.phgrid.gipse.services;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Calendar;
 import java.util.List;
 import java.util.Properties;
 
@@ -11,6 +12,7 @@ import org.apache.log4j.Logger;
 
 import com.ibatis.sqlmap.client.SqlMapClient;
 
+import gov.cdc.ncphi.phgrid.gipse.dao.ObservationDAOImpl;
 import gov.cdc.ncphi.phgrid.gipse.message.GIPSEQueryRequest;
 import gov.cdc.ncphi.phgrid.gipse.message.GIPSEQueryResponse;
 import gov.cdc.ncphi.phgrid.gipse.message.MetadataQuery;
@@ -212,5 +214,31 @@ public class TestGIPSEService extends TestCase {
 		return client;
 		
 	}
+
+
 	
+	public void testIbatisBasicQuery() throws Exception {
+		QueryParameters params = new QueryParameters();
+		Calendar startDate = Calendar.getInstance();
+		startDate.set(Calendar.DAY_OF_MONTH, 01);
+		startDate.set(Calendar.MONTH, Calendar.JANUARY);
+		startDate.set(Calendar.YEAR, 2008);
+		params.setStartDate(new java.sql.Date(startDate.getTimeInMillis()));
+		Calendar endDate = Calendar.getInstance();
+		endDate.set(Calendar.DAY_OF_MONTH, 01);
+		endDate.set(Calendar.MONTH, Calendar.JANUARY);
+		endDate.set(Calendar.YEAR, 2010);
+		params.setEndDate(new java.sql.Date(endDate.getTimeInMillis()));
+		params.setStates(new String[]{"IL"});
+		params.setClassifier("BioSense");
+		params.setIndicators(new String[]{"Fever"});
+		SqlMapClient client = DatabaseManager.getSqlMap();
+		List results = client.queryForList(ObservationDAOImpl.IBATIS_BASIC_QUERY, params);
+		assertNotNull("results should not be null",results);
+		System.out.println("got " + results.size() + " results!");
+		for (Object o : results) {
+			System.out.println("obs  = " + o);
+		}
+	}
+
 }

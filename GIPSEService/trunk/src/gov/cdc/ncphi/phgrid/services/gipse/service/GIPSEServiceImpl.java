@@ -1,5 +1,6 @@
 package gov.cdc.ncphi.phgrid.services.gipse.service;
 
+import gov.cdc.ncphi.phgrid.gipse.dao.ObservationDAO;
 import gov.cdc.ncphi.phgrid.gipse.message.GIPSEQueryRequest;
 import gov.cdc.ncphi.phgrid.gipse.message.GIPSEQueryRequestQueryCharacteristicsAges;
 import gov.cdc.ncphi.phgrid.gipse.message.GIPSEQueryRequestQueryCharacteristicsAgesAge;
@@ -39,11 +40,10 @@ import gov.cdc.ncphi.phgrid.gipse.message.GIPSEQueryResponseResponseCharacterist
 import gov.cdc.ncphi.phgrid.gipse.message.MetadataQueryResponse;
 import gov.cdc.ncphi.phgrid.gipse.message.MetadataQueryResponseMetadataRecordIntervalsSupportedInterval;
 import gov.cdc.ncphi.phgrid.gipse.message.MetadataQueryResponseMetadataRecordSuppressValues;
-import gov.cdc.ncphi.phgrid.services.gipse.common.GIPSEServiceConstants;
 import gov.cdc.ncphi.phgrid.services.gipse.common.AxisUtils;
-import gov.cdc.ncphi.phgrid.services.gipse.service.dao.DatabaseManager;
 import gov.cdc.ncphi.phgrid.services.gipse.service.dao.Observation;
 import gov.cdc.ncphi.phgrid.services.gipse.service.dao.QueryParameters;
+import gov.cdc.ncphi.phgrid.utils.DAOConfig;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang.StringUtils;
@@ -59,8 +59,6 @@ import java.util.TimeZone;
 
 import org.apache.log4j.Logger;
 
-import com.ibatis.sqlmap.client.SqlMapClient;
-
 /** 
  * Main service implementation for GIPSE service.
  * 
@@ -73,6 +71,7 @@ public class GIPSEServiceImpl extends GIPSEServiceImplBase {
 	private static MetadataQueryResponse response = null;
 	  
 	  private static String defaultInterval = null;
+	  private static ObservationDAO dao = (ObservationDAO) DAOConfig.getDaoManager().getDao(ObservationDAO.class);
 
 	
 	public GIPSEServiceImpl() throws RemoteException {
@@ -203,93 +202,102 @@ public class GIPSEServiceImpl extends GIPSEServiceImplBase {
    * @throws SQLException 
    */
   private static List<Observation> runQuery(GIPSEQueryRequest request) throws Exception{
-	  SqlMapClient client = DatabaseManager.getSqlMap();
-	  List<Observation> returnList = null;
-	  
 	  QueryParameters parameters = buildQueryParameters(request);
-	  //zip5 query
-	  if (parameters.getZip5s() != null && parameters.getZip5s().length >0){
-		  if (parameters.getAges() != null && parameters.getAges().length > 0
-				  && parameters.getServiceAreas() != null && parameters.getServiceAreas().length > 0){
-			  if (LOGGER.isDebugEnabled()){
-				  LOGGER.debug("Running zip5 query by age by service area with these parameters:" + parameters);
-			  }
-			  returnList = client.queryForList(GIPSEServiceConstants.IBATIS_ZIP5_AGE_SERVICE_AREA_QUERY, parameters);
-		  }else if (parameters.getAges() != null && parameters.getAges().length > 0){
-			  if (LOGGER.isDebugEnabled()){
-				  LOGGER.debug("Running zip5 query by age with these parameters:" + parameters);
-			  }
-			  returnList = client.queryForList(GIPSEServiceConstants.IBATIS_ZIP5_AGE_QUERY, parameters);
-		  }else if(parameters.getServiceAreas() != null && parameters.getServiceAreas().length > 0){
-			  if (LOGGER.isDebugEnabled()){
-				  LOGGER.debug("Running zip5 query by service area with these parameters:" + parameters);
-			  }
-			  returnList = client.queryForList(GIPSEServiceConstants.IBATIS_ZIP5_SERVICE_AREA_QUERY, parameters);
-		  }else{
-			  if (LOGGER.isDebugEnabled()){
-				  LOGGER.debug("Running zip5 query with these parameters:" + parameters);
-			  }
-			  returnList = client.queryForList(GIPSEServiceConstants.IBATIS_ZIP5_QUERY, parameters);
-		  }
-	  //zip3 query
-	  }else if (parameters.getZip3s() != null && parameters.getZip3s().length >0){
-		  if (parameters.getAges() != null && parameters.getAges().length > 0
-				  && parameters.getServiceAreas() != null && parameters.getServiceAreas().length > 0){
-			  if (LOGGER.isDebugEnabled()){
-				  LOGGER.debug("Running zip3 query by age by service area with these parameters:" + parameters);
-			  }
-			  returnList = client.queryForList(GIPSEServiceConstants.IBATIS_ZIP3_AGE_SERVICE_AREA_QUERY, parameters);
-		  }else if (parameters.getAges() != null && parameters.getAges().length > 0){
-			  if (LOGGER.isDebugEnabled()){
-				  LOGGER.debug("Running zip3 query by age with these parameters:" + parameters);
-			  }
-			  returnList = client.queryForList(GIPSEServiceConstants.IBATIS_ZIP3_AGE_QUERY, parameters);
-		  }else if(parameters.getServiceAreas() != null && parameters.getServiceAreas().length > 0){
-			  if (LOGGER.isDebugEnabled()){
-				  LOGGER.debug("Running zip3 query by service area with these parameters:" + parameters);
-			  }
-			  returnList = client.queryForList(GIPSEServiceConstants.IBATIS_ZIP3_SERVICE_AREA_QUERY, parameters);
-		  }else{
-			  if (LOGGER.isDebugEnabled()){
-				  LOGGER.debug("Running zip3 query with these parameters:" + parameters);
-			  }
-			  returnList = client.queryForList(GIPSEServiceConstants.IBATIS_ZIP3_QUERY, parameters);
-		  }
-	  //state query
-	  }else if(parameters.getStates() != null && parameters.getStates().length >0){
-		  if (parameters.getAges() != null && parameters.getAges().length > 0
-				  && parameters.getServiceAreas() != null && parameters.getServiceAreas().length > 0){
-			  if (LOGGER.isDebugEnabled()){
-				  LOGGER.debug("Running state query by age by service area with these parameters:" + parameters);
-			  }
-			  returnList = client.queryForList(GIPSEServiceConstants.IBATIS_STATE_AGE_SERVICE_AREA_QUERY, parameters);
-		  }else if (parameters.getAges() != null && parameters.getAges().length > 0){
-			  if (LOGGER.isDebugEnabled()){
-				  LOGGER.debug("Running state query by age with these parameters:" + parameters);
-			  }
-			  returnList = client.queryForList(GIPSEServiceConstants.IBATIS_STATE_AGE_QUERY, parameters);
-		  }else if(parameters.getServiceAreas() != null && parameters.getServiceAreas().length > 0){
-			  if (LOGGER.isDebugEnabled()){
-				  LOGGER.debug("Running state query by service area with these parameters:" + parameters);
-			  }
-			  returnList = client.queryForList(GIPSEServiceConstants.IBATIS_STATE_SERVICE_AREA_QUERY, parameters);
-		  }else{
-			  if (LOGGER.isDebugEnabled()){
-				  LOGGER.debug("Running state query with these parameters:" + parameters);
-			  }
-			  returnList = client.queryForList(GIPSEServiceConstants.IBATIS_STATE_QUERY, parameters);
-		  }
-	  }else{
-		  LOGGER.warn("The query parameter is not properly set up, empty list returned. QueryParameters<" + parameters +">");
-		  returnList = new LinkedList<Observation>();
-	  }
-
-	  if (LOGGER.isDebugEnabled()){
-		LOGGER.debug("query results" + returnList);
-	  }
-	  
+	  List<Observation>  returnList = dao.runAggregateQuery(parameters);
 	  return returnList;
-  }
+}
+  
+  /**
+   * MSC - This is the old implementation for runQuery. 
+   */
+//SqlMapClient client = DatabaseManager.getSqlMap();
+//  List<Observation> returnList = null;
+//  
+//  QueryParameters parameters = buildQueryParameters(request);
+  //returnList = client.queryForList(GIPSEServiceConstants.IBATIS_BASIC_QUERY,  parameters);
+	  //zip5 query
+//	  if (parameters.getZip5s() != null && parameters.getZip5s().length >0){
+//		  if (parameters.getAges() != null && parameters.getAges().length > 0
+//				  && parameters.getServiceAreas() != null && parameters.getServiceAreas().length > 0){
+//			  if (LOGGER.isDebugEnabled()){
+//				  LOGGER.debug("Running zip5 query by age by service area with these parameters:" + parameters);
+//			  }
+//			  returnList = client.queryForList(GIPSEServiceConstants.IBATIS_ZIP5_AGE_SERVICE_AREA_QUERY, parameters);
+//		  }else if (parameters.getAges() != null && parameters.getAges().length > 0){
+//			  if (LOGGER.isDebugEnabled()){
+//				  LOGGER.debug("Running zip5 query by age with these parameters:" + parameters);
+//			  }
+//			  returnList = client.queryForList(GIPSEServiceConstants.IBATIS_ZIP5_AGE_QUERY, parameters);
+//		  }else if(parameters.getServiceAreas() != null && parameters.getServiceAreas().length > 0){
+//			  if (LOGGER.isDebugEnabled()){
+//				  LOGGER.debug("Running zip5 query by service area with these parameters:" + parameters);
+//			  }
+//			  returnList = client.queryForList(GIPSEServiceConstants.IBATIS_ZIP5_SERVICE_AREA_QUERY, parameters);
+//		  }else{
+//			  if (LOGGER.isDebugEnabled()){
+//				  LOGGER.debug("Running zip5 query with these parameters:" + parameters);
+//			  }
+//			  returnList = client.queryForList(GIPSEServiceConstants.IBATIS_ZIP5_QUERY, parameters);
+//		  }
+//	  //zip3 query
+//	  }else if (parameters.getZip3s() != null && parameters.getZip3s().length >0){
+//		  if (parameters.getAges() != null && parameters.getAges().length > 0
+//				  && parameters.getServiceAreas() != null && parameters.getServiceAreas().length > 0){
+//			  if (LOGGER.isDebugEnabled()){
+//				  LOGGER.debug("Running zip3 query by age by service area with these parameters:" + parameters);
+//			  }
+//			  returnList = client.queryForList(GIPSEServiceConstants.IBATIS_ZIP3_AGE_SERVICE_AREA_QUERY, parameters);
+//		  }else if (parameters.getAges() != null && parameters.getAges().length > 0){
+//			  if (LOGGER.isDebugEnabled()){
+//				  LOGGER.debug("Running zip3 query by age with these parameters:" + parameters);
+//			  }
+//			  returnList = client.queryForList(GIPSEServiceConstants.IBATIS_ZIP3_AGE_QUERY, parameters);
+//		  }else if(parameters.getServiceAreas() != null && parameters.getServiceAreas().length > 0){
+//			  if (LOGGER.isDebugEnabled()){
+//				  LOGGER.debug("Running zip3 query by service area with these parameters:" + parameters);
+//			  }
+//			  returnList = client.queryForList(GIPSEServiceConstants.IBATIS_ZIP3_SERVICE_AREA_QUERY, parameters);
+//		  }else{
+//			  if (LOGGER.isDebugEnabled()){
+//				  LOGGER.debug("Running zip3 query with these parameters:" + parameters);
+//			  }
+//			  returnList = client.queryForList(GIPSEServiceConstants.IBATIS_ZIP3_QUERY, parameters);
+//		  }
+//	  //state query
+//	  }else if(parameters.getStates() != null && parameters.getStates().length >0){
+//		  if (parameters.getAges() != null && parameters.getAges().length > 0
+//				  && parameters.getServiceAreas() != null && parameters.getServiceAreas().length > 0){
+//			  if (LOGGER.isDebugEnabled()){
+//				  LOGGER.debug("Running state query by age by service area with these parameters:" + parameters);
+//			  }
+//			  returnList = client.queryForList(GIPSEServiceConstants.IBATIS_STATE_AGE_SERVICE_AREA_QUERY, parameters);
+//		  }else if (parameters.getAges() != null && parameters.getAges().length > 0){
+//			  if (LOGGER.isDebugEnabled()){
+//				  LOGGER.debug("Running state query by age with these parameters:" + parameters);
+//			  }
+//			  returnList = client.queryForList(GIPSEServiceConstants.IBATIS_STATE_AGE_QUERY, parameters);
+//		  }else if(parameters.getServiceAreas() != null && parameters.getServiceAreas().length > 0){
+//			  if (LOGGER.isDebugEnabled()){
+//				  LOGGER.debug("Running state query by service area with these parameters:" + parameters);
+//			  }
+//			  returnList = client.queryForList(GIPSEServiceConstants.IBATIS_STATE_SERVICE_AREA_QUERY, parameters);
+//		  }else{
+//			  if (LOGGER.isDebugEnabled()){
+//				  LOGGER.debug("Running state query with these parameters:" + parameters);
+//			  }
+//			  returnList = client.queryForList(GIPSEServiceConstants.IBATIS_STATE_QUERY, parameters);
+//		  }
+//	  }else{
+//		  LOGGER.warn("The query parameter is not properly set up, empty list returned. QueryParameters<" + parameters +">");
+//		  returnList = new LinkedList<Observation>();
+//	  }
+//
+//	  if (LOGGER.isDebugEnabled()){
+//		LOGGER.debug("query results" + returnList);
+//	  }
+//	  
+//	  return returnList;
+//  }
   
   /**
    * Builds the ibatis query parameters based on submitted query.

@@ -46,7 +46,7 @@ public class TestGIPSEService extends TestCase {
 		params.setClassifier("BioSense");
 		params.setIndicators(new String[]{"Fever","Flavor"});
 		SqlMapClient client = DatabaseManager.getSqlMap();
-		List results = client.queryForList(GIPSEServiceConstants.IBATIS_STATE_QUERY, params);
+		List results = client.queryForList(ObservationDAOImpl.IBATIS_BASIC_QUERY, params);
 		assertNotNull("results should not be null",results);
 		LOGGER.debug("results <" + results.toString() + ">");
 	}
@@ -59,7 +59,7 @@ public class TestGIPSEService extends TestCase {
 		params.setClassifier("BioSense");
 		params.setIndicators(new String[]{"Fever","Flavor"});
 		SqlMapClient client = DatabaseManager.getSqlMap();
-		List results = client.queryForList(GIPSEServiceConstants.IBATIS_STATE_QUERY, params);
+		List results = client.queryForList(ObservationDAOImpl.IBATIS_BASIC_QUERY, params);
 		assertNotNull("results should not be null",results);
 		assertEquals("results size should be zero",results.size(),0);
 		LOGGER.debug("results <" + results.toString() + ">");
@@ -82,6 +82,7 @@ public class TestGIPSEService extends TestCase {
 		GIPSEQueryResponse response = buildServiceClient().queryGIPSE(query);
 		assertNotNull("We should have some response",response);
 		LOGGER.debug("response serialized for testing<" + AxisUtils.serializeAxisObject(response, true, true) + ">");
+		System.out.println("response serialized for testing<" + AxisUtils.serializeAxisObject(response, true, true) + ">");
 	}
 	
 	public void testServiceQueryByStateByAge() throws Exception{
@@ -92,6 +93,7 @@ public class TestGIPSEService extends TestCase {
 		GIPSEQueryResponse response = buildServiceClient().queryGIPSE(query);
 		assertNotNull("We should have some response",response);
 		LOGGER.debug("response serialized for testing<" + AxisUtils.serializeAxisObject(response, true, true) + ">");
+		System.out.println("response serialized for testing<" + AxisUtils.serializeAxisObject(response, true, true) + ">");
 	}
 	
 	public void testServiceQueryByStateByServiceArea() throws Exception{
@@ -102,6 +104,7 @@ public class TestGIPSEService extends TestCase {
 		GIPSEQueryResponse response = buildServiceClient().queryGIPSE(query);
 		assertNotNull("We should have some response",response);
 		LOGGER.debug("response serialized for testing<" + AxisUtils.serializeAxisObject(response, true, true) + ">");
+		System.out.println("response serialized for testing<" + AxisUtils.serializeAxisObject(response, true, true) + ">");
 	}
 	
 	public void testServiceQueryByStateByAgeByServiceArea() throws Exception{
@@ -131,7 +134,8 @@ public class TestGIPSEService extends TestCase {
 		assertNotNull("Creating Axis request object should not be null", query);
 		GIPSEQueryResponse response = buildServiceClient().queryGIPSE(query);
 		assertNotNull("We should have some response",response);
-		LOGGER.debug("response serialized for testing<" + AxisUtils.serializeAxisObject(response, true, true) + ">");	
+		LOGGER.debug("response serialized for testing<" + AxisUtils.serializeAxisObject(response, true, true) + ">");
+		
 	}
 	
 	public void testServiceQueryByZip3ByAge() throws Exception{
@@ -142,6 +146,7 @@ public class TestGIPSEService extends TestCase {
 		GIPSEQueryResponse response = buildServiceClient().queryGIPSE(query);
 		assertNotNull("We should have some response",response);
 		LOGGER.debug("response serialized for testing<" + AxisUtils.serializeAxisObject(response, true, true) + ">");
+		System.out.println("response serialized for testing<" + AxisUtils.serializeAxisObject(response, true, true) + ">");
 	}
 	
 	public void testServiceQueryByZip3ByServiceArea() throws Exception{
@@ -152,7 +157,8 @@ public class TestGIPSEService extends TestCase {
 		GIPSEQueryResponse response = buildServiceClient().queryGIPSE(query);
 		assertNotNull("We should have some response",response);
 		LOGGER.debug("response serialized for testing<" + AxisUtils.serializeAxisObject(response, true, true) + ">");
-	}
+		System.out.println("response serialized for testing<" + AxisUtils.serializeAxisObject(response, true, true) + ">");
+}
 	
 	public void testServiceQueryByZip3ByAgeByServiceArea() throws Exception{
 		String queryAsString = IOUtils.toString(this.getClass().getResourceAsStream("/GIPSEQueryRequest-ForTest-Zip3AgeServiceAreaQuery.xml"));
@@ -162,6 +168,7 @@ public class TestGIPSEService extends TestCase {
 		GIPSEQueryResponse response = buildServiceClient().queryGIPSE(query);
 		assertNotNull("We should have some response",response);
 		LOGGER.debug("response serialized for testing<" + AxisUtils.serializeAxisObject(response, true, true) + ">");
+		System.out.println("response serialized for testing<" + AxisUtils.serializeAxisObject(response, true, true) + ">");
 	}
 	
 	public void testServiceQueryByZip5() throws Exception{
@@ -172,6 +179,7 @@ public class TestGIPSEService extends TestCase {
 		GIPSEQueryResponse response = buildServiceClient().queryGIPSE(query);
 		assertNotNull("We should have some response",response);
 		LOGGER.debug("response serialized for testing<" + AxisUtils.serializeAxisObject(response, true, true) + ">");	
+		System.out.println("response serialized for testing<" + AxisUtils.serializeAxisObject(response, true, true) + ">");
 		
 	}
 	
@@ -183,6 +191,7 @@ public class TestGIPSEService extends TestCase {
 		GIPSEQueryResponse response = buildServiceClient().queryGIPSE(query);
 		assertNotNull("We should have some response",response);
 		LOGGER.debug("response serialized for testing<" + AxisUtils.serializeAxisObject(response, true, true) + ">");
+		System.out.println("response serialized for testing<" + AxisUtils.serializeAxisObject(response, true, true) + ">");
 	}
 	
 	public void testServiceQueryByZip5ByServiceArea() throws Exception{
@@ -229,7 +238,8 @@ public class TestGIPSEService extends TestCase {
 		endDate.set(Calendar.MONTH, Calendar.JANUARY);
 		endDate.set(Calendar.YEAR, 2010);
 		params.setEndDate(new java.sql.Date(endDate.getTimeInMillis()));
-		params.setStates(new String[]{"IL"});
+		params.setStates(new String[]{"MI"});
+		params.setZip3s(new String[] {"484"});
 		params.setClassifier("BioSense");
 		params.setIndicators(new String[]{"Fever"});
 		SqlMapClient client = DatabaseManager.getSqlMap();

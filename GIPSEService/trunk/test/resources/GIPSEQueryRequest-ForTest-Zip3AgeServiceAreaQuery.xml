@@ -14,7 +14,7 @@
 			<Indicator classifier="BioSense" name="Respiratory"/>
 		</Indicators>
 		<GeoRegions>
-			<GeoRegion type="state" value="PR">
+			<GeoRegion type="state" value="IL">
 				<SpecificLocations>
 					<GeoLocation type="zip3" value="*"/>
 				</SpecificLocations>

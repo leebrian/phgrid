@@ -12,6 +12,7 @@ import org.apache.log4j.Logger;
 
 import com.ibatis.sqlmap.client.SqlMapClient;
 
+import gov.cdc.ncphi.phgrid.gipse.dao.ObservationDAO;
 import gov.cdc.ncphi.phgrid.gipse.dao.ObservationDAOImpl;
 import gov.cdc.ncphi.phgrid.gipse.message.GIPSEQueryRequest;
 import gov.cdc.ncphi.phgrid.gipse.message.GIPSEQueryResponse;
@@ -22,6 +23,7 @@ import gov.cdc.ncphi.phgrid.services.gipse.common.GIPSEServiceConstants;
 import gov.cdc.ncphi.phgrid.services.gipse.common.AxisUtils;
 import gov.cdc.ncphi.phgrid.services.gipse.service.dao.DatabaseManager;
 import gov.cdc.ncphi.phgrid.services.gipse.service.dao.QueryParameters;
+import gov.cdc.ncphi.phgrid.utils.DAOConfig;
 import junit.framework.TestCase;
 
 /**
@@ -223,6 +225,17 @@ public class TestGIPSEService extends TestCase {
 		return client;
 		
 	}
+	
+	public void testServiceWithProblem() throws Exception {
+		String queryAsString = IOUtils.toString(this.getClass().getResourceAsStream("/GIPSEQueryRequest-Lee.xml"));
+		assertNotNull("Reading the test xml file should not be null", queryAsString);
+		GIPSEQueryRequest query = (GIPSEQueryRequest) AxisUtils.deserializeAxisObject(queryAsString, GIPSEQueryRequest.class);
+		assertNotNull("Creating Axis request object should not be null", query);
+		GIPSEQueryResponse response = buildServiceClient().queryGIPSE(query);
+		assertNotNull("We should have some response",response);
+		LOGGER.debug("response serialized for testing<" + AxisUtils.serializeAxisObject(response, true, true) + ">");
+		System.out.println("response serialized for testing<" + AxisUtils.serializeAxisObject(response, true, true) + ">");
+	}
 
 
 	
@@ -238,17 +251,30 @@ public class TestGIPSEService extends TestCase {
 		endDate.set(Calendar.MONTH, Calendar.JANUARY);
 		endDate.set(Calendar.YEAR, 2010);
 		params.setEndDate(new java.sql.Date(endDate.getTimeInMillis()));
-		params.setStates(new String[]{"MI"});
-		params.setZip3s(new String[] {"484"});
+		//params.setStates(new String[]{"MI"});
+		params.setZip3s(new String[] {"300"});
 		params.setClassifier("BioSense");
-		params.setIndicators(new String[]{"Fever"});
-		SqlMapClient client = DatabaseManager.getSqlMap();
-		List results = client.queryForList(ObservationDAOImpl.IBATIS_BASIC_QUERY, params);
+		params.setIndicators(new String[]{"Asthma"});
+		//SqlMapClient client = DatabaseManager.getSqlMap();
+		 ObservationDAO client = (ObservationDAO) DAOConfig.getDaoManager().getDao(ObservationDAO.class);
+
+		List results = client.runAggregateQuery(params);
 		assertNotNull("results should not be null",results);
 		System.out.println("got " + results.size() + " results!");
 		for (Object o : results) {
 			System.out.println("obs  = " + o);
 		}
 	}
+//	public void testServiceQueryByState() throws Exception{
+//	String queryAsString = IOUtils.toString(this.getClass().getResourceAsStream("/GIPSEQueryRequest-ForTest-StateQuery.xml"));
+//	assertNotNull("Reading the test xml file should not be null", queryAsString);
+//	GIPSEQueryRequest query = (GIPSEQueryRequest) AxisUtils.deserializeAxisObject(queryAsString, GIPSEQueryRequest.class);
+//	assertNotNull("Creating Axis request object should not be null", query);
+//	GIPSEQueryResponse response = buildServiceClient().queryGIPSE(query);
+//	assertNotNull("We should have some response",response);
+//	LOGGER.debug("response serialized for testing<" + AxisUtils.serializeAxisObject(response, true, true) + ">");
+//	System.out.println("response serialized for testing<" + AxisUtils.serializeAxisObject(response, true, true) + ">");
+//}
+//
 
 }

@@ -46,8 +46,6 @@ import gov.cdc.ncphi.phgrid.services.gipse.service.dao.QueryParameters;
 import gov.cdc.ncphi.phgrid.utils.DAOConfig;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.commons.lang.StringUtils;
-
 import java.io.File;
 import java.io.IOException;
 import java.rmi.RemoteException;
@@ -175,13 +173,14 @@ public class GIPSEServiceImpl extends GIPSEServiceImplBase {
 	  for (Observation observation : observationList){
 		  GIPSEQueryResponseObservationSetObservation observationForResult = new GIPSEQueryResponseObservationSetObservation();
 		  observationForResult.setStart(observation.getObservationDate());
-		  if (StringUtils.isNotEmpty(observation.getZip5())){
-			  observationForResult.setLocation(observation.getZip5());  
-		  }else if(StringUtils.isNotEmpty(observation.getZip3())){
-			  observationForResult.setLocation(observation.getZip3());
-		  }else{
-			  observationForResult.setLocation(observation.getState());
-		  }
+//		  if (StringUtils.isNotEmpty(observation.getZip5())){
+//			  observationForResult.setLocation(observation.getZip5());  
+//		  }else if(StringUtils.isNotEmpty(observation.getZip3())){
+//			  observationForResult.setLocation(observation.getZip3());
+//		  }else{
+//			  observationForResult.setLocation(observation.getState());
+//		  }
+		  observationForResult.setLocation(observation.getLocation());
 		  observationForResult.setIndicator(observation.getIndicator());
 		  observationForResult.setAge(observation.getAge());
 		  observationForResult.setServiceArea(observation.getServiceArea());
@@ -204,6 +203,7 @@ public class GIPSEServiceImpl extends GIPSEServiceImplBase {
   private static List<Observation> runQuery(GIPSEQueryRequest request) throws Exception{
 	  QueryParameters parameters = buildQueryParameters(request);
 	  List<Observation>  returnList = dao.runAggregateQuery(parameters);
+	  
 	  return returnList;
 }
   

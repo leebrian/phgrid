@@ -7,17 +7,17 @@ PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN"
 "http://www.ibatis.com/dtd/sql-map-2.dtd">
  
 <sqlMap namespace="gipse">
-	<select id="mscBasicSelect" resultClass="gov.cdc.ncphi.phgrid.services.gipse.service.dao.Observation">
+	<select id="mscBasicSelect" resultClass="gov.cdc.ncphi.phgrid.services.gipse.service.dao.Observation" remapResults="true">
 		SELECT ${db.gipse.table.column.date} as observationDate
 		,${db.gipse.table.column.classifier} as classifier
 		,${db.gipse.table.column.indicator} as indicator
 		,${db.gipse.table.column.state} as state
 		<dynamic>
 			<isNotEmpty prepend=", " property="zip3s">
-				${db.gipse.table.column.zip3} as zip3
+				${db.gipse.table.column.zip3} 
             </isNotEmpty>
 			<isNotEmpty prepend=", " property="zip5s">
-				${db.gipse.table.column.zip5} as zip5
+				${db.gipse.table.column.zip5} 
             </isNotEmpty>
 			<isNotEmpty prepend=", " property="ages">
 				${db.gipse.table.column.age} 

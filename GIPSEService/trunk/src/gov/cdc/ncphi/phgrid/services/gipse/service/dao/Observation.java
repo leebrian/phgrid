@@ -1,6 +1,8 @@
 package gov.cdc.ncphi.phgrid.services.gipse.service.dao;
 
 import java.sql.Date;
+
+import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang.builder.ToStringBuilder;
 
 /**
@@ -33,6 +35,15 @@ public class Observation {
 	}
 	
 	
+	public String getLocation() {
+		if (StringUtils.isNotEmpty(getZip5())){
+			  return getZip5();  
+		  }else if(StringUtils.isNotEmpty(getZip3())){
+			  return getZip3();
+		  }else{
+			  return getState();
+		  }
+	}
 	
 	public String getAge() {
 		return age;

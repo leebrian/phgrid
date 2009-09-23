@@ -1,5 +1,8 @@
 #Rename file to gipse.properties to use as part of the build.
 
+#version tag to identify this build (e.g. GS1.0.0.20090923
+build.label=SOME LABEL TO INDENTIFY BUILD
+
 ##MAIN PROPERTIES - Change these##
 #specifies the jdbc url. postgres=jdbc:postgresql://server:port[usually 5432]/dbname; sqlserver=jdbc:jtds:sqlserver://server:port[usually 1433]/dbname;ssl=request
 db.jdbc.url=DB URL

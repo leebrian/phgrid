@@ -1,28 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MetadataQueryResponse xmlns="http://ncphi.phgrid.net:8080/schemas/gipse/20090831">
 	<MetadataRecord>
-		<TimePeriodSupported start="2009-01-01T00:00:01-00:00" end="2010-01-01T05:00:00-00:00"/>
+		<TimePeriodSupported start="2009-01-01T00:00:01-00:00" end="2011-01-01T05:00:00-00:00"/>
 		<DataSourceOID>BioSense-RT</DataSourceOID>
 		<DataSourceOID>BioSense-VA</DataSourceOID>
 		<DataSourceOID>BioSense-DoD</DataSourceOID>
 		<DataSourceOID>DiSTRIBuTE</DataSourceOID>
-		<SuppressValues smallestValueReported="0"/><!-- Means this service does not apply cell suppression -->
-		<PagingSupported maxPageSize="100"/><!-- Optional, if not specified then service does not support paging. -->
+		<SuppressValues smallestValueReported="0"/><!-- Means this service does not require cell suppression -->
 		<IndicatorsSupported><!-- These would correspond to entries in a wiki/registry describing the classification rules (count vs. ratio, etc) -->
-			<Indicator classifier="BioSense" name="EDVisits"/>
-			<Indicator classifier="BioSense" name="EDVisits-LowTemp"/>
-			<Indicator classifier="BioSense" name="EDVisits-HighTemp"/>
-			<Indicator classifier="BioSense" name="EDVisits-UnknownTemp"/>
-			<Indicator classifier="BioSense" name="ILI-b"/>
-			<Indicator classifier="BioSense" name="ILI-b-LowTemp"/>
-			<Indicator classifier="BioSense" name="ILI-b-HighTemp"/>
-			<Indicator classifier="BioSense" name="ILI-b-UnknownTemp"/>
-			<Indicator classifier="BioSense" name="ILI-n"/>
-			<Indicator classifier="BioSense" name="ILI-LowTemp"/>
-			<Indicator classifier="BioSense" name="ILI-HighTemp"/>
-			<Indicator classifier="BioSense" name="ILI-UnknownTemp"/>
-			<Indicator classifier="BioSense" name="ILI2"/>
-			<Indicator classifier="BioSense" name="Fever(Subyndrome)"/>
 			<Indicator classifier="BioSense" name="Asthma"/>
 			<Indicator classifier="BioSense" name="Bites, animal"/>
 			<Indicator classifier="BioSense" name="Burns"/>
@@ -36,10 +21,23 @@
 			<Indicator classifier="BioSense" name="Diabetes mellitus"/>
 			<Indicator classifier="BioSense" name="Diarrhea"/>
 			<Indicator classifier="BioSense" name="Dyspnea"/>
+			<Indicator classifier="BioSense" name="EDVisits"/>
+			<Indicator classifier="BioSense" name="EDVisits-HighTemp"/>
+			<Indicator classifier="BioSense" name="EDVisits-LowTemp"/>
+			<Indicator classifier="BioSense" name="EDVisits-UnknownTemp"/>
 			<Indicator classifier="BioSense" name="Falls"/>
+			<Indicator classifier="BioSense" name="Fever"/>
 			<Indicator classifier="BioSense" name="Fractures and dislocation"/>
 			<Indicator classifier="BioSense" name="Heart disease, ischemic"/>
 			<Indicator classifier="BioSense" name="Heat, excessive"/>
+			<Indicator classifier="BioSense" name="ILI-b"/>
+			<Indicator classifier="BioSense" name="ILI-b-HighTemp"/>
+			<Indicator classifier="BioSense" name="ILI-b-LowTemp"/>
+			<Indicator classifier="BioSense" name="ILI-b-UnknownTemp"/>
+			<Indicator classifier="BioSense" name="ILI-n"/>
+			<Indicator classifier="BioSense" name="ILI-n-HighTemp"/>
+			<Indicator classifier="BioSense" name="ILI-n-LowTemp"/>
+			<Indicator classifier="BioSense" name="ILI-n-UnknownTemp"/>
 			<Indicator classifier="BioSense" name="Injury, NOS"/>
 			<Indicator classifier="BioSense" name="Insect bites"/>
 			<Indicator classifier="BioSense" name="Jaundice"/>
@@ -49,20 +47,20 @@
 			<Indicator classifier="BioSense" name="Nausea and vomiting"/>
 			<Indicator classifier="BioSense" name="Pneumonia and lung abscess"/>
 			<Indicator classifier="BioSense" name="Pregnancy, childbirth, puerperium co"/>
-			<Indicator classifier="BioSense" name="Upper respiratory infections"/>
-			<Indicator classifier="BioSense" name="Rash(Subsyndrome)"/>
+			<Indicator classifier="BioSense" name="Rash"/>
 			<Indicator classifier="BioSense" name="Skin infection"/>
+			<Indicator classifier="BioSense" name="Upper respiratory infections"/>
 			<Indicator classifier="DiSTRIBuTE" name="EDVisits"/>
-			<Indicator classifier="DiSTRIBuTE" name="EDVisits-LowTemp"/>
 			<Indicator classifier="DiSTRIBuTE" name="EDVisits-HighTemp"/>
+			<Indicator classifier="DiSTRIBuTE" name="EDVisits-LowTemp"/>
 			<Indicator classifier="DiSTRIBuTE" name="EDVisits-UnknownTemp"/>
 			<Indicator classifier="DiSTRIBuTE" name="ILI-b"/>
-			<Indicator classifier="DiSTRIBuTE" name="ILI-b-LowTemp"/>
 			<Indicator classifier="DiSTRIBuTE" name="ILI-b-HighTemp"/>
+			<Indicator classifier="DiSTRIBuTE" name="ILI-b-LowTemp"/>
 			<Indicator classifier="DiSTRIBuTE" name="ILI-b-UnknownTemp"/>
 			<Indicator classifier="DiSTRIBuTE" name="ILI-n"/>
-			<Indicator classifier="DiSTRIBuTE" name="ILI-n-LowTemp"/>
 			<Indicator classifier="DiSTRIBuTE" name="ILI-n-HighTemp"/>
+			<Indicator classifier="DiSTRIBuTE" name="ILI-n-LowTemp"/>
 			<Indicator classifier="DiSTRIBuTE" name="ILI-n-UnknownTemp"/>
 		</IndicatorsSupported>
 		<IntervalsSupported>
@@ -79,12 +77,6 @@
 			<GeoRegion type="country" value="US">
 				<SpecificLocations>
 					<GeoLocation type="zip3" value="*"/>
-				</SpecificLocations>
-			</GeoRegion>
-			<!-- All of the zip5s in US -->
-			<GeoRegion type="country" value="US">
-				<SpecificLocations>
-					<GeoLocation type="zip5" value="*"/>
 				</SpecificLocations>
 			</GeoRegion>
 		</GeoRegionsSupported>

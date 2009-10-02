@@ -1,0 +1,161 @@
+body {
+    font-family: helvetica, arial, serif;
+    margin:1%;
+    font-size:62.5%;
+}
+a {
+    color:#336699;
+    text-decoration:none;
+}
+a:hover {
+    text-decoration:underline;
+}
+h1 {
+    font-size:2.5em;
+}
+form.selections fieldset {
+    border:1px solid #ddd;
+}
+ form.selections legend {
+    padding: 0.2em 0.5em;
+    border:1px solid #ddd;
+    color:#333;
+    font-size:1.4em;
+    cursor:pointer;
+    margin-left:5px;
+}
+form.selections label {
+    display: inline-block;
+    width:100px;
+    color:#333;
+}
+form.selections fieldset ol {
+    margin: 0;
+    padding: 0;
+    list-display:none;
+}
+form.selections fieldset li {
+    list-style: none;
+    padding: 5px;
+    margin: 0;
+}
+form.selections fieldset li div.buttons {
+    margin-top:15px;
+}
+.dates {
+    margin-top: 5px;
+}
+#legend {
+    display:none;
+}
+#legend input {
+    width:35px;
+    border:1px solid #999;
+    font-size:.9em;
+    color:#999;
+}
+.legendLabel {
+    color:#999;
+    font-size:1em;
+}
+#legend_canvas {
+    margin-top:10px;
+    margin-left:2px;
+}
+#filters {
+    display:none;
+}
+.showHide {
+    text-align:right;
+    margin-right:5px;
+}
+.zipQuery {
+}
+.zipLink {
+    font-size: 11px;
+}
+.shareLink {
+    display:none;
+    font-size: 11px;
+    color: #336699;
+}
+.zipDiv {
+    margin:5px;
+}
+.showHide a:link, a:visited {
+    color:#666;
+    text-decoration:none;
+}
+.showHide a:hover {
+    text-decoration:underline;
+}
+.c {
+    clear:all;
+}
+.datasource {
+    border:1px solid #ddd;
+    margin:5px;
+    padding:5px;
+    display:none;
+}
+.queryBox {
+    width:400px;
+    margin-bottom:10px;
+    border: 1px solid #dddddd;
+}
+#pinLegend {
+    display:none;
+    border:1px solid #ddd;
+}
+.infoBox {
+    padding:5px;
+}
+.sparkZip {
+    float:left;
+    width:40px;
+}
+.sparkChart {
+}
+div.lineTypeSelect {
+    text-align:right;
+    margin-bottom:5px;
+}
+div.regionQuery {
+    /*overflow: auto;
+    -ms-overflow-y: hidden;
+    height:150px;
+    display:none;
+    */
+}
+#map_canvas {
+    position: absolute;
+    top: 40px;
+    bottom:0px;
+    left: 0px;
+    padding: 10px 1% 10px 1%;
+    margin: 0px;
+    border: 0px;
+    width: 65%;
+    voice-family: "\"}\"";
+    voice-family:inherit;
+    width: 63%;
+}
+html>body #map_canvas {
+    width: 63%;
+}
+#nav {
+    position: absolute;
+    top: 28px;
+    bottom:0px;
+    right: 0px;
+    padding: 10px 1% 10px 1%;
+    margin: 0px;
+    border: 0px;
+    width: 35%;
+    voice-family: "\"}\"";
+    voice-family:inherit;
+    width: 33%;
+}
+html>body #nav {
+    width: 33%;
+}

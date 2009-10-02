@@ -1,0 +1,24 @@
+BODY {
+	BACKGROUND: url(images/bgMainDropShadow.png) #bec3cc fixed no-repeat 50% top; MARGIN: 0px; FONT: 75% Verdana, Arial, Helvetica, sans-serif; TEXT-ALIGN: center
+}
+H1 {
+	FONT-SIZE: 1.9em; MARGIN-BOTTOM: 3px; COLOR: #ffffff
+}
+#wrapper {
+	MARGIN-LEFT: auto; WIDTH: 1000px; MARGIN-RIGHT: auto; BACKGROUND-COLOR: #ffffff
+}
+#content {
+	MARGIN-LEFT: auto; WIDTH: 1000px; MARGIN-RIGHT: auto
+}
+#pcdaHeader {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 30px; BACKGROUND: url(images/pcda-header-bg.gif) no-repeat; FLOAT: left; PADDING-BOTTOM: 0px; WIDTH: 1001px; COLOR: #ffffff; PADDING-TOP: 27px; HEIGHT: 100px; TEXT-ALIGN: left
+}
+TABLE {
+	FONT-SIZE: 1.05em
+}
+TR.cell {
+	BACKGROUND-COLOR: #ffffff
+}
+TR.title {
+	FONT-WEIGHT: bold; BACKGROUND: url(images/blue-bg.gif); COLOR: #ffffff
+}

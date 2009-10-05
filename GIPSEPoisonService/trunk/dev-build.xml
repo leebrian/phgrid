@@ -122,7 +122,7 @@
 			  	</filterchain>
 				<fileset file="${basedir}/resources/**.xml" />
 				<fileset file="${basedir}/resources/ClinicalEffectValues.properties" />
-				<fileset file="${basedir}/resources/npds-client.properties" />
+				<fileset file="${basedir}/npds-client.properties" />
 				<fileset file="${basedir}/resources/zip3bystate.properties"/>
 				</copy>
 		</target>
@@ -175,6 +175,7 @@
 	<!-- Edited by PMW to remove the service properties during clean (don't want to check this in) -->
 	<target name="postClean">
 		<delete file="${etc.dir}/gipsepoison.properties" quiet="true"/>
+		<delete file="${etc.dir}/npds-client.properties" quiet="true"/>
 		<delete file="${etc.dir}/zip3bystate.properties" quiet="true"/>
 	</target>
 

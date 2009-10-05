@@ -1,0 +1,4 @@
+#Main properties
+npds.client.url=URL
+npds.client.systemUserName=USERNAME
+npds.client.systemPassword=PASSWORD

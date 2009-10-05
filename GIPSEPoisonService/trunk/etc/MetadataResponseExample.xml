@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetadataQueryResponse xmlns="http://ncphi.phgrid.net:8080/schemas/amds/20090531">
+	<MetadataRecord>
+		<TimePeriodSupported start="2009-01-01T00:00:01-00:00" end="2010-01-01T05:00:00-00:00"/>
+		<DataSourceOID>BioSense-AMDS-NCPHILab</DataSourceOID>
+		<SuppressValues smallestValueReported="0"/><!-- Means this service does not apply cell suppression -->
+		<IndicatorsSupported>
+		<!-- These would correspond to entries in a wiki/registry describing the classification rules (count vs. ratio etc) -->
+		<Indicator classifier="NPDS" name="All Clinical Effects"/>
+		<Indicator classifier="NPDS" name="Bradycardia"/>
+		<Indicator classifier="NPDS" name="Cardiac arrest"/>
+		<Indicator classifier="NPDS" name="Chest pain (incl. noncardiac)"/>
+		<Indicator classifier="NPDS" name="Conduction disturbance"/>
+		<Indicator classifier="NPDS" name="Dysrhythmia (other)"/>
+		<Indicator classifier="NPDS" name="Dysrhythmia (v tach/v fib)"/>
+		<Indicator classifier="NPDS" name="Hypotension"/>
+		<Indicator classifier="NPDS" name="Hypertension"/>
+		<Indicator classifier="NPDS" name="Tachycardia"/>
+		<Indicator classifier="NPDS" name="Bullae"/>
+		<Indicator classifier="NPDS" name="Burns (superficial)"/>
+		<Indicator classifier="NPDS" name="Burns 2 - 3 degree"/>
+		<Indicator classifier="NPDS" name="Cellulitis"/>
+		<Indicator classifier="NPDS" name="Ecchymosis"/>
+		<Indicator classifier="NPDS" name="Edema"/>
+		<Indicator classifier="NPDS" name="Erythema/flushed"/>
+		<Indicator classifier="NPDS" name="Hives/welts"/>
+		<Indicator classifier="NPDS" name="Dermal - Irritation/pain"/>
+		<Indicator classifier="NPDS" name="Necrosis"/>
+		<Indicator classifier="NPDS" name="Pallor"/>
+		<Indicator classifier="NPDS" name="Pruritus"/>
+		<Indicator classifier="NPDS" name="Puncture wound/sting"/>
+		<Indicator classifier="NPDS" name="Rash"/>
+		<Indicator classifier="NPDS" name="Abdominal Pain"/>
+		<Indicator classifier="NPDS" name="Anorexia"/>
+		<Indicator classifier="NPDS" name="Constipation"/>
+		<Indicator classifier="NPDS" name="Dehydration"/>
+		<Indicator classifier="NPDS" name="Diarrhea"/>
+		<Indicator classifier="NPDS" name="Dysphagia"/>
+		<Indicator classifier="NPDS" name="Esophageal injury"/>
+		<Indicator classifier="NPDS" name="Esophageal stricture"/>
+		<Indicator classifier="NPDS" name="Fecal incontinence"/>
+		<Indicator classifier="NPDS" name="Hematemesis"/>
+		<Indicator classifier="NPDS" name="Melena"/>
+		<Indicator classifier="NPDS" name="Nausea"/>
+		<Indicator classifier="NPDS" name="Oral burns (incl. lips)"/>
+		<Indicator classifier="NPDS" name="Oral irritation"/>
+		<Indicator classifier="NPDS" name="Throat irritation"/>
+		<Indicator classifier="NPDS" name="Vomiting"/>
+		<Indicator classifier="NPDS" name="AST ALT less than 100 between 1000"/>
+		<Indicator classifier="NPDS" name="AST ALT greater than 1000"/>
+		<Indicator classifier="NPDS" name="Bilirubin increased"/>
+		<Indicator classifier="NPDS" name="Cytopenia"/>
+		<Indicator classifier="NPDS" name="DIC"/>
+		<Indicator classifier="NPDS" name="Hemolysis"/>
+		<Indicator classifier="NPDS" name="PT prolonged"/>
+		<Indicator classifier="NPDS" name="Other coagulopathy"/>
+		<Indicator classifier="NPDS" name="Other LFT abnormality"/>
+		<Indicator classifier="NPDS" name="Agitated/irritable"/>
+		<Indicator classifier="NPDS" name="Ataxia"/>
+		<Indicator classifier="NPDS" name="Coma"/>
+		<Indicator classifier="NPDS" name="Confusion"/>
+		<Indicator classifier="NPDS" name="CVA"/>
+		<Indicator classifier="NPDS" name="Dizziness/vertigo"/>
+		<Indicator classifier="NPDS" name="Drowsiness/lethargy"/>
+		<Indicator classifier="NPDS" name="Dystonia"/>
+		<Indicator classifier="NPDS" name="Fasciculations"/>
+		<Indicator classifier="NPDS" name="Hallucinations/delusions"/>
+		<Indicator classifier="NPDS" name="Headache"/>
+		<Indicator classifier="NPDS" name="Intracranial bleed"/>
+		<Indicator classifier="NPDS" name="Muscle rigidity"/>
+		<Indicator classifier="NPDS" name="Muscle weakness"/>
+		<Indicator classifier="NPDS" name="Paralysis"/>
+		<Indicator classifier="NPDS" name="Peripheral neuropathy"/>
+		<Indicator classifier="NPDS" name="Seizure (single)"/>
+		<Indicator classifier="NPDS" name="Seizures (multi/discrete)"/>
+		<Indicator classifier="NPDS" name="Seizures (status)"/>
+		<Indicator classifier="NPDS" name="Slurred speech"/>
+		<Indicator classifier="NPDS" name="Syncope"/>
+		<Indicator classifier="NPDS" name="Tinnitus"/>
+		<Indicator classifier="NPDS" name="Tremor"/>
+		<Indicator classifier="NPDS" name="Blurred vision"/>
+		<Indicator classifier="NPDS" name="Burns"/>
+		<Indicator classifier="NPDS" name="Corneal abrasion"/>
+		<Indicator classifier="NPDS" name="Ocular - Irritation/pain"/>
+		<Indicator classifier="NPDS" name="Lacrimation"/>
+		<Indicator classifier="NPDS" name="Miosis"/>
+		<Indicator classifier="NPDS" name="Mydriasis"/>
+		<Indicator classifier="NPDS" name="Nystagmus"/>
+		<Indicator classifier="NPDS" name="Papilledema"/>
+		<Indicator classifier="NPDS" name="Pupil(s) nonreactive"/>
+		<Indicator classifier="NPDS" name="Visual defect"/>
+		<Indicator classifier="NPDS" name="Creatinine increased"/>
+		<Indicator classifier="NPDS" name="Hematuria"/>
+		<Indicator classifier="NPDS" name="Hemo/myoglobinuria"/>
+		<Indicator classifier="NPDS" name="Oliguria/anuria"/>
+		<Indicator classifier="NPDS" name="Polyuria"/>
+		<Indicator classifier="NPDS" name="Renal failure"/>
+		<Indicator classifier="NPDS" name="Urinary incontinence"/>
+		<Indicator classifier="NPDS" name="Urinary retention"/>
+		<Indicator classifier="NPDS" name="Bronchospasm"/>
+		<Indicator classifier="NPDS" name="Cough/choke"/>
+		<Indicator classifier="NPDS" name="Cyanosis"/>
+		<Indicator classifier="NPDS" name="Dyspnea"/>
+		<Indicator classifier="NPDS" name="Hyperventilation/tachypnea"/>
+		<Indicator classifier="NPDS" name="Pneumonitis"/>
+		<Indicator classifier="NPDS" name="Pulmonary edema"/>
+		<Indicator classifier="NPDS" name="Respiratory arrest"/>
+		<Indicator classifier="NPDS" name="Respiratory depression"/>
+		<Indicator classifier="NPDS" name="X-ray findings(+)"/>
+		<Indicator classifier="NPDS" name="Acidosis"/>
+		<Indicator classifier="NPDS" name="ADR to treatment"/>
+		<Indicator classifier="NPDS" name="Alkalosis"/>
+		<Indicator classifier="NPDS" name="Anion gap increased"/>
+		<Indicator classifier="NPDS" name="Bleeding (other)"/>
+		<Indicator classifier="NPDS" name="Deafness"/>
+		<Indicator classifier="NPDS" name="Diaphoresis"/>
+		<Indicator classifier="NPDS" name="Electrolyte abnormality"/>
+		<Indicator classifier="NPDS" name="Excess secretions"/>
+		<Indicator classifier="NPDS" name="Fever/hyperthermia"/>
+		<Indicator classifier="NPDS" name="Hyperglycemia"/>
+		<Indicator classifier="NPDS" name="Hypoglycemia"/>
+		<Indicator classifier="NPDS" name="Hypothermia"/>
+		<Indicator classifier="NPDS" name="Multiple Chemical Sensitivities"/>
+		<Indicator classifier="NPDS" name="Osmolal gap increased"/>
+		<Indicator classifier="NPDS" name="Pain (not dermal, GI, ocular)"/>
+		<Indicator classifier="NPDS" name="Rhabdomyolysis"/>
+		<Indicator classifier="NPDS" name="Other"/>
+		<Indicator classifier="NPDS" name="Asystole"/>
+		<Indicator classifier="NPDS" name="ECG change (other)"/>
+		<Indicator classifier="NPDS" name="Blood per rectum (other)"/>
+		<Indicator classifier="NPDS" name="Gastric burns"/>
+		<Indicator classifier="NPDS" name="Ileus/no bowel sounds"/>
+		<Indicator classifier="NPDS" name="Oropharyngeal edema"/>
+		<Indicator classifier="NPDS" name="Numbness"/>
+		<Indicator classifier="NPDS" name="Photophobia"/>
+		<Indicator classifier="NPDS" name="Red eye/conjunctivitis"/>
+		<Indicator classifier="NPDS" name="Oxalate crystals (urine)"/>
+		<Indicator classifier="NPDS" name="Urine color change"/>
+		<Indicator classifier="NPDS" name="CPK elevated"/>
+		<Indicator classifier="NPDS" name="Fetal death"/>
+</IndicatorsSupported>
+		<IntervalsSupported>
+			<Interval name="Day" isDefault="true"/>
+		</IntervalsSupported>
+		<GeoRegionsSupported>
+			<!-- All of the states in US -->
+			<GeoRegion type="country" value="US">
+				<SpecificLocations>
+					<GeoLocation type="state" value="*"/>
+				</SpecificLocations>
+			</GeoRegion>
+			<!-- All of the zip5s in US -->
+		<!-- 	<GeoRegion type="country" value="US">
+				<SpecificLocations>
+					<GeoLocation type="zip5" value="*"/>
+				</SpecificLocations>
+			</GeoRegion> -->
+		</GeoRegionsSupported>
+	</MetadataRecord>
+</MetadataQueryResponse>

@@ -108,7 +108,7 @@
         <script type='text/javascript' src='scripts/jquery.getUrlParam.js'></script>
 
         <script type="text/javascript">
-            var startDate = "<%=startDateJSP%>"?Date.parse("<%=startDateJSP%>"):(-1).months().fromNow();
+            var startDate = "<%=startDateJSP%>"?Date.parse("<%=startDateJSP%>").add({  months: -1 }):(-1).months().fromNow();
             var endDate = "<%=endDateJSP%>"?Date.parse("<%=endDateJSP%>"):Date.today();
             var displayType = "<%=displayTypeJSP%>"?"<%=displayTypeJSP%>":"0";
             var indicatorName = "<%=ClinicalEffectJSP%>"?"<%=ClinicalEffectJSP%>":"0";
@@ -338,7 +338,10 @@
                         });
                         var d3=[];
                         $.each(data.averageArray.slice(), function(index, value){
+                            //var _add = Date.compare(startDate, value.date);
+                            //if(_add==1) {
                             d3.push([value.date.getTime(),value.count]);
+                            //}
                         });
                     }
                     //$("#processing", parent.document.body).fadeOut(function(){
@@ -349,5 +352,5 @@
                 });
             }
         </script>
-                    
+
 <%@ include file="_includes/footer.jsp" %>

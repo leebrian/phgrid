@@ -24,6 +24,7 @@
 			    	<expandproperties/>
 			  	</filterchain>
 				<fileset file="${basedir}/gipsepoison.properties"/>
+				<fileset file="${basedir}/npds-client.properties"/>
 				<fileset file="${basedir}/resources/zip3bystate.properties"/>
 			</copy>
 

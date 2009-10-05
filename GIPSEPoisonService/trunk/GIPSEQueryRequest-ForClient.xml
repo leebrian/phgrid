@@ -1,0 +1,29 @@
+<!-- Example client for use by client. Update with actual values to modify query. -->
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+
+<GIPSEQueryRequest xmlns="http://ncphi.phgrid.net:8080/schemas/gipse/20090831"><!-- date is used as version -->
+	<RequestCharacteristics>
+		<RequestDateTime>2009-03-30T22:24:13-00:00</RequestDateTime><!-- Always uses GMT -->
+		<RequestingUser>PeterWhite</RequestingUser>
+		<RequestingOrganization>CDC NCPHI Lab</RequestingOrganization>
+	</RequestCharacteristics>
+	<QueryCharacteristics>
+		<Dates start="2009-01-01" end="2009-01-15"/>
+		<SuppressValues smallestValueReported="2" reportAs="Ecchymosis"/>
+		<Indicators>
+			<Indicator classifier="NPDS" name="Tachycardia"/>
+		</Indicators>
+		<GeoRegions>
+			<GeoRegion type="state" value="WA"/>
+			<GeoRegion type="state" value="CA"/> 
+			<GeoRegion type="zip3" value="300"/>
+			<GeoRegion type="zip5" value="30075"/>
+		</GeoRegions>
+		<PageData pageNumber="1" pageSize="10"/>
+	</QueryCharacteristics>
+</GIPSEQueryRequest>
+
+<!--  -->

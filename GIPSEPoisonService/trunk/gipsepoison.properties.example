@@ -1,0 +1,9 @@
+#Rename file to gipsepoison.properties to use as part of the build.
+
+##MAIN PROPERTIES - Change these##
+
+#The url to the service, only used by the runClient ant task. You probably don't need to change this.
+service.url=https://localhost:8443/wsrf/services/gipse/GIPSEPoison
+gipsepoison.TOMCAT6=/usr/local/tomcat5.5
+gipsepoison.systemUser=BiosenseUser
+gipsepoison.JBOSS=

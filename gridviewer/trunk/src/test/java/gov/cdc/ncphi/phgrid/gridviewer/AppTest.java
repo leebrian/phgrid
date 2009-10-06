@@ -11,6 +11,7 @@ import gov.cdc.ncphi.phgrid.gipse.message.GIPSEQueryResponse;
 import gov.cdc.ncphi.phgrid.gridviewer.jsphelper.C2FlotArray;
 import gov.cdc.ncphi.phgrid.gridviewer.jsphelper.GridViewerJSPHelper;
 import gov.cdc.ncphi.phgrid.gridviewer.jsphelper.PHMapper;
+import gov.cdc.ncphi.phgrid.gridviewer.jsphelper.PHMapResponse;
 import gov.cdc.ncphi.phgrid.gridviewer.jsphelper.RegionalObservations;
 import gov.cdc.ncphi.phgrid.gridviewer.jsphelper.ServerDataSources;
 import gov.cdc.ncphi.phgrid.gridviewer.jsphelper.ServerSelectorJSPHelper;
@@ -161,9 +162,9 @@ public class AppTest
 			
 		}
 		
-		List<RegionalObservations> rol = phMapper.getMultipleRegionalObservations("USA", "state", 
+		PHMapResponse phmapResponse = phMapper.getMultipleRegionalObservations("USA", "state",
 				startDate.getTime(), endDate.getTime(), indy.getName(), indy.getClassifier(), preServerArr2, null, null);
-		
+		List<RegionalObservations> rol =  phmapResponse.getRegionalObservations();
 		assertTrue (rol.size()>0);
 		assertTrue (rol.get(0) != null);
 		assertTrue (rol.get(0).getObservations() != null);

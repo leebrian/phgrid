@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import gov.cdc.ncphi.phgrid.gridviewer.jsphelper.PHMapper;
+import gov.cdc.ncphi.phgrid.gridviewer.jsphelper.PHMapResponse;
 import gov.cdc.ncphi.phgrid.gridviewer.jsphelper.RegionalObservations;
 import gov.cdc.ncphi.phgrid.gridviewer.jsphelper.ServerDataSources;
 import gov.cdc.ncphi.phgrid.gridviewer.jsphelper.ServerObservations;
@@ -75,7 +76,7 @@ public class Export extends HttpServlet {
         String serviceArea = request.getParameter("serviceAreas");
 
         PHMapper phMapper = new PHMapper();
-        List<RegionalObservations> observations = phMapper.getMultipleRegionalObservations(regionParent,
+        PHMapResponse phmapResponse = phMapper.getMultipleRegionalObservations(regionParent,
                 regionType,
                 startDate,
                 endDate, indicatorName,
@@ -84,8 +85,8 @@ public class Export extends HttpServlet {
 
         out.append("\"Region\",\"Type\",\"Location\",\"Date\",\"Indicator\",\"Count\"\n");
 
-        if (observations != null) {
-            for (RegionalObservations observation : observations) {
+        if (phmapResponse.getRegionalObservations() != null) {
+            for (RegionalObservations observation : phmapResponse.getRegionalObservations()) {
                 List<ServerObservations> _observations = observation.getObservations();
                 if (_observations != null) {
                     for (ServerObservations _observation : _observations) {

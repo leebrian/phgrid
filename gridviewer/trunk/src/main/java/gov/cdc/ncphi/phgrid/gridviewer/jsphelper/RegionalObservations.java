@@ -3,6 +3,7 @@ package gov.cdc.ncphi.phgrid.gridviewer.jsphelper;
 import java.util.List;
 
 import gov.cdc.ncphi.phgrid.polygon.regrel.RegionData;
+import java.util.Date;
 
 public class RegionalObservations{
 
@@ -26,4 +27,5 @@ public class RegionalObservations{
         this.serverObservations = observations;
     }
 
+    
 }

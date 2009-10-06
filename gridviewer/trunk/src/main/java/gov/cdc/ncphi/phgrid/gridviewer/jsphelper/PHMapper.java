@@ -124,10 +124,12 @@ public class PHMapper {
         return returnable;
     }
 
-    public List<RegionalObservations> getMultipleRegionalObservations(String regionParent, String regionType,
+    public PHMapResponse getMultipleRegionalObservations(String regionParent, String regionType,
             Date startDate, Date endDate, String indicatorName, String classifier,
             List<ServerDataSources> serverList, String ageRange, String serviceArea) {
         init();
+        PHMapResponse response = new PHMapResponse();
+
         List<RegionalObservations> returnable = new ArrayList<RegionalObservations>();
         List<RegionData> rdl = rlf.getRegionDataForRegions(regionParent, regionType);
 
@@ -145,9 +147,14 @@ public class PHMapper {
         if (serviceArea != null && !serviceArea.equals("")) {
             sareaList.add(makeServiceArea(classifier, serviceArea));
         }
+        //service request timestamp
+        response.setServiceCallRequestTime(new Date());
         returnable = gdf.fetchRegionalObservationsByGroup(rdl, startDateCal, endDateCal,
                 indicator, servMeta, arangeList, sareaList);
-        return returnable;
+        //service response timestamp
+        response.setRegionalObservations(returnable);
+        response.setServiceCallResponseTime(new Date());
+        return response;
     }
 
     public C2FlotArray getC2FlotArray(String regionName, String regionType,

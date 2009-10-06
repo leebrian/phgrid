@@ -67,12 +67,14 @@ function getObservations(regionType, region, regions) {
         function(data){
             callEndTime = Date.now();
             var seconds = getSeconds(callEndTime.getTime(),callStartTime.getTime());
+            var serviceSeconds = getSeconds(data.serviceCallResponseTime.getTime(), data.serviceCallRequestTime.getTime());
+            $("#divConsole").append("Service response execution time: ["+region+"] <span style='font-weight:bold;font-size:1.25em;'>"+serviceSeconds+"</span><br/>");
             $("#divConsole").append("Server response execution time: ["+region+"] <span style='font-weight:bold;font-size:1.25em;'>"+seconds+"</span><br/>");
             var lowBound = $("#lowBound").val()?$("#lowBound").val():0;
             var midBound = $("#midBound").val()?$("#midBound").val():1000;
             var upBound = $("#upBound").val()?$("#upBound").val():2000;
 
-            var observations = data;
+            var observations = data.regionalObservations;
             $.each(observations, function(index, observation){
                 if(observation != undefined) {
                     var count = 0;

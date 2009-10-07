@@ -1,0 +1,39 @@
+<project name="GIPSEServiceInstaller" default="update" basedir=".">
+
+	<property name="gipseservicedeploy.version" value="0.1" />
+	<property name="prop.dir" value="props/"/>
+	<property name="gipseservicesource.dir" value="serviceSrc"/>
+	<property file="GipseServiceInstaller.properties"/>
+	
+<path id="project.classpath">
+<fileset dir="lib">
+<include name="**/*.jar"/>
+</fileset>
+</path>
+<taskdef name="svn" classname="org.tigris.subversion.svnant.SvnTask" classpathref="project.classpath"/>
+<target name="update" description="Update WordPress from Subversion Repository" >
+<svn>
+<checkout url="${svnServiceURL}" 
+	destPath="${gipseservicesource.dir}" />
+</svn>
+	</target>
+	<target name="setProps" description="Move the properties files for a GIPSEService to their proper location">
+	<copy todir="${gipseservicesource.dir}">
+	    <fileset dir="${prop.dir}" includes="${properties.list}">
+	    </fileset>
+	  </copy>
+	</target>
+	<target name="buildService" description="builds the newly downloaded service">
+	<ant antfile="build.xml" dir="${gipseservicesource.dir}" target="all"/>
+
+	</target>
+	<target name="deployServiceGlobus" description="deploys the newly built service to globus container" depends="buildService">
+	<ant antfile="build.xml" dir="${gipseservicesource.dir}" target="deployGlobus"/>
+
+	</target>	
+	<target name="deployServiceTomcat" description="deploys the newly built service to tomcat container" depends="buildService">
+	<ant antfile="build.xml" dir="${gipseservicesource.dir}" target="deployTomcat"/>
+
+	</target>	
+	
+</project>

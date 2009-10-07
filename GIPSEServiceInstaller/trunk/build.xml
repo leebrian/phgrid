@@ -36,4 +36,15 @@
 
 	</target>	
 	
+	<target name="all" description="downloads the source, copies the properties over, builds the service, and deploys to globus and tomcat">
+		<antcall target="update"/>
+		<antcall target="setProps"/>
+		<antcall target="buildService"/>
+		<antcall target="deployServiceGlobus"/>
+		<antcall target="deployServiceTomcat"/>
+	</target>
+	
+	<target name="clean" description="cleans all the downloaded code">
+		<delete dir="${gipseservicesource.dir}"/>
+	</target>
 </project>

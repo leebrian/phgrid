@@ -1,0 +1,4 @@
+properties.list=gipseservice.properties
+prop.dir=props
+gipseservicesource.dir=serviceSrc
+svnServiceURL=SVN URL OF GIPSE SERVICE

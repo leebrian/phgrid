@@ -336,19 +336,36 @@ function updateQueries() {
     linkDataTable.innerHTML = "Display Data";
     divLink.appendChild(linkDataTable);
 
-
-    //insert export download data
+    //share
     divLink.appendChild(document.createTextNode(" | "));
     var linkShare = document.createElement("a");
     linkShare.id = "lShare-"+index;
-    linkShare.setAttribute("href","");
-    linkShare.className = "shareLink";
-    linkShare.innerHTML = "Email Link";
+    linkShare.setAttribute("href","javascript://");
+    //linkShare.className = "shareLink";
+    linkShare.innerHTML = "Share";
+    linkShare.setAttribute("onClick","$('#dShare-"+index+"').toggle();");
+    linkShare.onclick = function(){
+        $('#dShare-'+index).toggle();
+    };
     divLink.appendChild(linkShare);
+
+
+    //insert export download data
+    divLink.appendChild(document.createTextNode(" | "));
+    var linkEmail = document.createElement("a");
+    linkEmail.id = "lEmail-"+index;
+    linkEmail.setAttribute("href","");
+    linkEmail.className = "shareLink";
+    linkEmail.innerHTML = "Email";
+    divLink.appendChild(linkEmail);
     var domain = document.location.protocol+"//"+document.location.host.toLowerCase();
     getShortUrl(domain+'/gridviewer/?'+$("form").serialize(), addShareLink, index);
-    
+    divLink.appendChild(linkEmail);
+
+
     divBoxes.appendChild(divLink);
+
+    
     fsZip3.style.padding = "4px";
     fsZip3.style.marginTop = "-4px";
     
@@ -466,6 +483,78 @@ function updateQueries() {
     fsFilters.appendChild(divFilters);
     divBoxes.appendChild(fsFilters);
 
+    var divShare = document.createElement("div");
+    divShare.style.display = "none";
+    divShare.style.padding = "5px";
+    divShare.setAttribute("id","dShare-"+index);
+
+    //facebook
+    var img = document.createElement("img");
+    img.src = "images/link-facebook.gif";
+    img.style.border = "0";
+    var a = document.createElement("a");
+    a.id = "facebook-"+index;
+    a.className = "linkShare";
+    a.href = "#";
+    a.target= "facebook";
+    a.onclick = function() {
+        onclick=window.open('','facebook','width=642,height=436,left=0,top=0,resizable,scrollbars=yes');
+    }
+    a.appendChild(img);
+    divShare.appendChild(a);
+    divShare.appendChild(document.createTextNode(" "));
+
+
+    //twitter
+    img = document.createElement("img");
+    img.src = "images/link-twitter.gif";
+    img.style.border = "0";
+    a = document.createElement("a");
+    a.id = "twitter-"+index;
+    a.className = "linkShare";
+    a.href = "#";
+    a.target= "twitter";
+    a.onclick = function() {
+        onclick=window.open('','twitter','width=642,height=436,left=0,top=0,resizable,scrollbars=yes');
+    }
+    a.appendChild(img);
+    divShare.appendChild(a);
+    divShare.appendChild(document.createTextNode(" "));
+
+     //delicious
+    img = document.createElement("img");
+    img.src = "images/link-delicious.gif";
+    img.style.border = "0";
+    a = document.createElement("a");
+    a.id = "delicious-"+index;
+    a.className = "linkShare";
+    a.href = "#";
+    a.target= "delicious";
+    a.onclick = function() {
+        onclick=window.open('','delicious','width=642,height=436,left=0,top=0,resizable,scrollbars=yes');
+    }
+    a.appendChild(img);
+    divShare.appendChild(a);
+    divShare.appendChild(document.createTextNode(" "));
+    
+     //digg
+    img = document.createElement("img");
+    img.src = "images/link-digg.gif";
+    img.style.border = "0";
+    a = document.createElement("a");
+    a.id = "digg-"+index;
+    a.className = "linkShare";
+    a.href = "#";
+    a.target= "digg";
+    a.onclick = function() {
+        onclick=window.open('','digg','width=642,height=436,left=0,top=0,resizable,scrollbars=yes');
+    }
+    a.appendChild(img);
+    divShare.appendChild(a);
+    divShare.appendChild(document.createTextNode(" "));
+    
+    divBoxes.appendChild(divShare);
+
     parent.appendChild(divBoxes);
     //end region filter box
 
@@ -473,8 +562,19 @@ function updateQueries() {
 }
 function addShareLink(url, _ref){
     var mailto = "mailto:?subject=Gridviewer Data&body=Hi,%0A%0AHere is some data from the NCPHI Gridviewer Beta application.%0A%0APlease visit this link: "+url+".";
-    $("#lShare-"+_ref).attr("href",mailto).fadeIn();
+    $("#lEmail-"+_ref).attr("href",mailto).fadeIn();
     $("a").removeAttr("bitly");
+
+    //share links
+    var _title = "NCPHI Gridviewer Link";
+    var title = encodeURIComponent(_title);
+    var bitlyurl = encodeURIComponent(url);
+    $("#facebook-"+_ref).attr("href","http://www.facebook.com/sharer.php?u="+bitlyurl+"&t="+title);
+    $("#twitter-"+_ref).attr("href","http://twitter.com/home?status=Interesting data from CDC "+bitlyurl);
+    $("#delicious-"+_ref).attr("href","http://del.icio.us/post?v=4&jump=close&url="+bitlyurl+"+&title="+title);
+    $("#digg-"+_ref).attr("href","http://digg.com/submit?phase=2&url="+bitlyurl+"&title="+title);
+
+    
 }
 function getShortUrl(_url, callback, _ref) {
     url = encodeURIComponent(_url);

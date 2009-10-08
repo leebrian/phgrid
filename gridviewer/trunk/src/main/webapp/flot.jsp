@@ -29,6 +29,7 @@
          gov.cdc.ncphi.phgrid.gridviewer.ServerMetadata,
          org.apache.commons.lang.StringEscapeUtils,
          java.util.ArrayList" %>
+<%@ include file="../_includes/taglibs.jsp" %>
 <%
             String startDateJSP = StringEscapeUtils.escapeHtml(request.getParameter("startdate"));
             if (startDateJSP == null) {
@@ -101,13 +102,15 @@
         <link href="layout.css" rel="stylesheet" type="text/css" />
         <!--[if IE]><script language="javascript" type="text/javascript" src="flot/excanvas.pack.js"></script><![endif]-->
         <script src="scripts/jquery-1.3.2.min.js" type="text/javascript"></script>
-        <script language="javascript" type="text/javascript" src="flot/jquery.flot.js"></script>
+        <script src="scripts/date.js" type="text/javascript"></script>
+        <script type="text/javascript" src="flot/jquery.flot.js"></script>
         <script type='text/javascript' src='/gridviewer/dwr/interface/regionDao.js'></script>
         <script type='text/javascript' src='/gridviewer/dwr/interface/observationDao.js'></script>
         <script type='text/javascript' src='/gridviewer/dwr/engine.js'></script>
         <script type='text/javascript' src='scripts/jquery.getUrlParam.js'></script>
 
         <script type="text/javascript">
+            var startDateOriginal = "<%=startDateJSP%>"?Date.parse("<%=startDateJSP%>"):"";
             var startDate = "<%=startDateJSP%>"?Date.parse("<%=startDateJSP%>").add({  months: -1 }):(-1).months().fromNow();
             var endDate = "<%=endDateJSP%>"?Date.parse("<%=endDateJSP%>"):Date.today();
             var displayType = "<%=displayTypeJSP%>"?"<%=displayTypeJSP%>":"0";
@@ -116,9 +119,20 @@
             var latestZip3ID = "<%=latestZip3IDJSP%>";
             var latestZip5ID = "<%=latestZip5IDJSP%>";
             var classifier = "<%=ClassifierJSP%>"?"<%=ClassifierJSP%>":"BioSense";
-            var age = "<%=agesJSP%>"?"<%=agesJSP%>":"";
-            var serviceAreas = "<%=serviceAreasJSP%>"?"<%=serviceAreasJSP%>":"";
-            var zip = "<%=zipJSP%>";
+            var age = "<c:out value='${param.ages}' />"?"<c:out value='${param.ages}' />":"";
+            var serviceAreas = "<c:out value='${param.serviceAreas}' />";
+            var serverKeys=[];
+                <c:choose>
+                <c:when test="${not empty paramValues.serverKeys}">
+                <c:forEach items="${paramValues.serverKeys}" var="serverKey">
+                serverKeys.push("<c:out value='${serverKey}' />");
+                </c:forEach>
+                </c:when>
+                <c:otherwise></c:otherwise>
+                </c:choose>
+
+        
+                var zip = "<c:out value='${param.zip}' />";
             var sk = [<%=serverKeys.toString()%>];//$(document).getUrlParam("serverKeys");
             var serverList = [];
 
@@ -147,14 +161,14 @@
                     server.serverName = sk[0];
                     var ds = $(document).getUrlParam("chk"+sk[0]);
                     if(ds != null){
-                            //loop thru datasource & add to facilities
-                            $.each(ds, function(dsIndex, dsValue) {
-                                //var facilities = new Object();
-                                //facilities.facilityClassifier = classifier;
-                                //facilities.facilityName = dsValue;
-                                server.dataSources.push(dsValue);
-                            });
-                        }
+                        //loop thru datasource & add to facilities
+                        $.each(ds, function(dsIndex, dsValue) {
+                            //var facilities = new Object();
+                            //facilities.facilityClassifier = classifier;
+                            //facilities.facilityName = dsValue;
+                            server.dataSources.push(dsValue);
+                        });
+                    }
                     serverList.push(server);
                 }
             }
@@ -307,9 +321,10 @@
 
             function getPlotData() {
                 var regionType = "zip3";
-                if(zip.length==2) {
+                if(zip != null && zip.length==2) {
                     regionType = "state";
                 }
+                console.log(startDate);
                 observationDao.getC2FlotArray(zip, regionType, startDate, endDate, indicatorName, classifier, serverList, age, serviceAreas,
                 function(data){
 
@@ -334,16 +349,19 @@
                         });
                         var d2=[];
                         $.each(data.valueArray.slice(), function(index, value){
-                            d2.push([value.date.getTime(),value.count]);
+                            if(value.date>=startDateOriginal) {
+                                //console.log("VALUE DATES: "+startDate.getMonth()+"-"+value.date.getMonth()+" ");
+                                d2.push([value.date.getTime(),value.count]);
+                            }
                         });
                         var d3=[];
                         $.each(data.averageArray.slice(), function(index, value){
-                            //var _add = Date.compare(startDate, value.date);
-                            //if(_add==1) {
                             d3.push([value.date.getTime(),value.count]);
-                            //}
+                            // console.log("AVG DATES: "+startDate.getMonth()+"-"+value.date.getMonth()+" ");
                         });
+
                     }
+
                     //$("#processing", parent.document.body).fadeOut(function(){
                     $("#processing").fadeOut(function(){
                         $("#placeholder, #overview, #overviewLegend").fadeIn();
@@ -353,4 +371,4 @@
             }
         </script>
 
-<%@ include file="_includes/footer.jsp" %>
+        <%@ include file="_includes/footer.jsp" %>

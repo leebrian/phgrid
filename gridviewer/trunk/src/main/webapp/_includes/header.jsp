@@ -40,7 +40,17 @@
             var latestZip5ID = "<c:out value='${param.latestZip5ID}' />";
             var ClinicalEffect = "<c:out value='${param.ClinicalEffect}' />"?"<c:out value='${param.ClinicalEffect}' />":"0";
             var Classifier = "<c:out value='${param.Classifier}' />"?"<c:out value='${param.Classifier}' />":"BioSense";
-            var serverKeys = "<c:out value='${param.serverKeys}' />";
+            var serverKeys = [];
+            <c:choose>
+                <c:when test="${not empty paramValues.serverKeys}">
+                    <c:forEach items="${paramValues.serverKeys}" var="serverKey">
+                            serverKeys.push("<c:out value="${serverKey}" />");
+                    </c:forEach>
+                </c:when>
+                <c:otherwise></c:otherwise>
+            </c:choose>
+
+
 
             var postBack =  "<c:out value='${param.postBack}' />"?true:false;
             var mostRecentRegionName = "<c:out value='${param.mostRecentRegionName}' />"?"<c:out value='${param.mostRecentRegionName}' />":"BioSense";

@@ -110,8 +110,8 @@
         <script type='text/javascript' src='scripts/jquery.getUrlParam.js'></script>
 
         <script type="text/javascript">
-            var startDateOriginal = "<%=startDateJSP%>"?Date.parse("<%=startDateJSP%>"):"";
-            var startDate = "<%=startDateJSP%>"?Date.parse("<%=startDateJSP%>").add({  months: -1 }):(-1).months().fromNow();
+            //var startDate = "<%=startDateJSP%>"?Date.parse("<%=startDateJSP%>").add({  days: -28 }):(-1).months().fromNow();
+            var startDate = "<%=startDateJSP%>"?Date.parse("<%=startDateJSP%>"):(-1).months().fromNow();
             var endDate = "<%=endDateJSP%>"?Date.parse("<%=endDateJSP%>"):Date.today();
             var displayType = "<%=displayTypeJSP%>"?"<%=displayTypeJSP%>":"0";
             var indicatorName = "<%=ClinicalEffectJSP%>"?"<%=ClinicalEffectJSP%>":"0";
@@ -324,7 +324,6 @@
                 if(zip != null && zip.length==2) {
                     regionType = "state";
                 }
-                console.log(startDate);
                 observationDao.getC2FlotArray(zip, regionType, startDate, endDate, indicatorName, classifier, serverList, age, serviceAreas,
                 function(data){
 
@@ -349,15 +348,11 @@
                         });
                         var d2=[];
                         $.each(data.valueArray.slice(), function(index, value){
-                            if(value.date>=startDateOriginal) {
-                                //console.log("VALUE DATES: "+startDate.getMonth()+"-"+value.date.getMonth()+" ");
                                 d2.push([value.date.getTime(),value.count]);
-                            }
                         });
                         var d3=[];
                         $.each(data.averageArray.slice(), function(index, value){
                             d3.push([value.date.getTime(),value.count]);
-                            // console.log("AVG DATES: "+startDate.getMonth()+"-"+value.date.getMonth()+" ");
                         });
 
                     }

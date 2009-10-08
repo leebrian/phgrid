@@ -14,7 +14,8 @@
                 if(serverName != "random") {
                     cb.type = "checkbox";
                     cb.name = "serverKeys";
-                    cb.id = "chk"+serverName;
+                    cb.id = "serverKeys";
+                    //cb.id = "chk"+serverName;
                     cb.value = serverName;///this.serverUrl;
                     cb.checked = true;
                     cb.setAttribute("checked","checked");
@@ -54,7 +55,8 @@
                                 cb.type = "checkbox";
                                 //cb.name = "datasource";
                                 cb.name = "chk"+serverName;
-                                cb.id = "chk"+this;
+                                cb.id = "chk"+serverName;
+                                //cb.id = "chk"+this;
                                 cb.value = this;
                                 cb.checked = true;
                                 cb.setAttribute("checked","checked");
@@ -142,7 +144,8 @@
             sk = serverKeys;
             //get sub-datasources
             if(sk != null) {
-                if(sk.toString().indexOf(',')>0) {
+                if(sk.length>0) {
+                //if(sk.toString().indexOf(',')>0) {
                     $.each(sk, function(index,value){
                         var server = new Object();
                         server.dataSources = [];

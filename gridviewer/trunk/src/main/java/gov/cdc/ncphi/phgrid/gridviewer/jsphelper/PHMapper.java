@@ -162,14 +162,14 @@ public class PHMapper {
             List<ServerDataSources> serverList, String ageRange, String serviceArea) {
 
         C2FlotArray returnable = new C2FlotArray();
-        RegionalObservations ro = getRegionalObservations(regionName, regionType,
-                startDate, endDate, indicatorName, classifier,
-                serverList, ageRange, serviceArea);
         //attempt to fix averages for flot plots
         Calendar c = Calendar.getInstance();
         c.setTime(startDate);
-        c.add(Calendar.DAY_OF_MONTH,-30);
-        returnable = cfab.getArrayString(ro, c.getTime(), endDate);
+        c.add(Calendar.DAY_OF_MONTH, -30);
+        RegionalObservations ro = getRegionalObservations(regionName, regionType,
+                c.getTime(), endDate, indicatorName, classifier,
+                serverList, ageRange, serviceArea);
+        returnable = cfab.getArrayString(ro, startDate, endDate);
 
         return returnable;
     }

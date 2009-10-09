@@ -1,0 +1,28 @@
+<!DOCTYPE dwr PUBLIC
+    "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN"
+    "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr>
+  <allow>
+      <convert match="java.lang.Exception" converter="exception"/>
+      <convert converter="bean" match="java.lang.StackTraceElement" />
+
+      <convert converter="bean" match="gov.cdc.ncphi.phgrid.gridviewer.*"/>
+      <convert converter="bean" match="gov.cdc.ncphi.phgrid.gipse.*" />
+      <convert converter="bean" match="gov.cdc.ncphi.phgrid.gipse.message.*" />
+      <convert converter="bean" match="gov.cdc.ncphi.phgrid.polygon.*" />
+      <convert converter="bean" match="gov.cdc.ncphi.phgrid.polygon.gmaps.*" />
+      <convert converter="bean" match="gov.cdc.ncphi.phgrid.polygon.regrel.*" />
+      <convert converter="bean" match="it.rambow.master.javautils.*" />
+
+    <create creator="new" javascript="JDate">
+      <param name="class" value="java.util.Date"/>
+    </create>
+    <create creator="new" javascript="observationDao">
+        <param name="class" value="gov.cdc.ncphi.phgrid.gridviewer.jsphelper.PHMapper" />
+    </create>
+    <create creator="new" javascript="regionDao">
+        <param name="class" value="gov.cdc.ncphi.phgrid.gridviewer.jsphelper.ServerSelectorJSPHelper" />
+    </create>
+  </allow>
+</dwr>

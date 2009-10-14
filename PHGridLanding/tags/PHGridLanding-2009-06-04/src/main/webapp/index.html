@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<title>PHGrid</title>
+<link rel="stylesheet" href="styles/base.css" type="text/css" media="screen" charset="utf-8" />
+
+<script src="scripts/jquery-1.2.6.js" type="text/javascript"></script>
+<script src="scripts/jquery.scrollTo-1.3.3.js" type="text/javascript"></script>
+<script src="scripts/jquery.localscroll-1.2.5.js" type="text/javascript" charset="utf-8"></script>
+<script src="scripts/jquery.serialScroll-1.2.1.js" type="text/javascript" charset="utf-8"></script>
+<script src="scripts/slider.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="intro">
+        <h1>PHGrid Service Registry</h1>
+            <p>Welcome to the Service Registry. This page functions as a very basic collection of PHGrid services available for demostration purposes.</p>
+            <p>The services may be secure or freely accessible.</p>
+            <p>The service steward should be contacted to arrange for access to service. For more information the service steward should be contacted. Not only are services included in this list, but we have also included associated clients / applications - which can use PHGrid services.</p>
+        </div>
+    
+        <div id="slider">    
+            <ul class="navigation">
+                <li><a href="#quicksilver">Quicksilver</a></li>
+                <li><a href="#rodsadai">RODSA-DAI</a></li>
+                <li><a href="#poicondai">Poicon DAI</a></li>
+                <li><a href="#gmappolygon">Gmap Polygon</a></li>
+                <li><a href="#gridviewer">Gridviewer</a></li>
+            </ul>
+
+            <div class="scroll">
+                <div class="scrollContainer">
+	
+<!-- Quicksilver -->                
+				<div class="panel" id="quicksilver">
+								<h2>Quicksilver (NPDS Gmap)</h2>
+								<div class="dL">&nbsp;</div>
+								<div class="c">
+									<div class="left"><a href="http://ncphi.phgrid.net:8080/npdsgmaps-web/"><img src="images/screens/quicksilver.jpg" border="0" align="left" /></a></div>
+									<div class="right">
+				                		<p>Quicksilver is a combination of a AAPCC service handler and the Gmap-Polygon libraries. It was developed by Peter White for the NCPHI Lab, and displays poison effect counts across State, Zip 3, or Zip 5 polygons from behind secure websites.</p>
+				<p>The main service java code is a branch of the Poicondai service code. It retrieves the data from Poison Service and marshalls it into java objects using the Apache AXIS libraries. NPDSGmaps contains code for marshaling the data objects from the service into polygons for the mapper.</p><p>Npdsgmaps-web contains the JSPs for making getting the polygons into a map.
+				</p>
+				<p class="dL"><a href="http://ncphi.phgrid.net:8080/npdsgmaps-web/">launch site</a></p>
+				                	</div>
+								</div>
+								</div>
+
+
+<!-- RODSA-DAI -->
+				<div class="panel" id="rodsadai">
+								<h2>RODSA-DAI</h2>
+								<div class="dL">&nbsp;</div>
+								<div class="c">
+									<div class="left"><a href="http://ncphi.phgrid.net:8080/rodsadai-web/jsmulticache.jsp"><img src="images/screens/rodsadai.jpg" border="0" align="left" /></a></div>
+									<div class="right">
+										<p>RODSA-DAI is a code library that facilitates secure SQL queries to different RODS (Realtime Outbreak Detection System) databases exposed using OGSA-DAI across the globus network.</p>
+										<p>RODS is an outbreak detection software application maintained by the University of Pittsburgh Realtime Outbreak and Disease Surveillance Laboratory. It collects symptom and disease data from various hospitals using HL7 listeners and aggregates it into a central database. RODS instances are usually regional, and formerly were only able to see their own database. Thus, RODSAdai was developed as a prototype interface for allowing one RODS instance to query other RODS Instance's data.
+										</p><p class="dL"><a href="http://ncphi.phgrid.net:8080/rodsadai-web/jsmulticache.jsp">launch site</a></p>
+								</div></div></div>                
+
+
+<!-- POI-CONDAI -->
+<div class="panel" id="poicondai">
+                <h2>Poicon DAI</h2>
+				<div class="dL">&nbsp;</div>
+				<div class="c">
+					<div class="left"><a href="http://ncphi.phgrid.net:8080/poicondaiMap.jsp"><img src="images/screens/poicondai.jpg" border="0" align="left" /></a></div>
+					<div class="right"><p>Poison center call count data. Current clients exist in PH-DGInet and JBoss web application format.</p>
+				<p>NPDS-WS-Client is a java interface for connecting to the US National Poison Center Data web service. It was developed primarily by Dr. Jeremy Espino of the University of Pittsburgh Realtime Outbreak and Disease Surveillance Laboratory. It combines an axis-generated client library with JAXB parsing libary to send a request to NPDS, marshall the return data into a simple data collection, and return that collection to the requesting entity. Poicondai-web is a simple set of java servlets that used the NPDS-WS-Client to supply Poison Control call center data... and display a time series using the Google Chart API.
+				<p class="dL"><a href="http://ncphi.phgrid.net:8080/poicondai-web/poicondaiMap.jsp">launch site</a></p>
+						</div>
+						</div>
+						</div>
+
+
+<!-- GMap Polygon -->
+<div class="panel" id="gmappolygon">
+                <h2>GMap Polygon</h2>
+                <div class="dL">&nbsp;</div>
+				<div class="c">
+					<div class="left"><a href="http://ncphi.phgrid.net:8080/gmap-poly-web/gmap-pane.jsp"><img src="images/screens/gmappolyweb.jpg" border="0" align="left" /></a></div>
+					<div class="right"><p>A modular suite of JSP code for drawing regional US polygons (State, Zip 3, Zip 5) in google maps. Will display simple line graphs of provided time series.
+					</p><p class="dL"><a href="http://ncphi.phgrid.net:8080/gmap-poly-web/gmap-pane.jsp">launch site</a></p></div>
+	                </div>
+                </div>
+
+
+				
+<!-- Gridviewer -->               
+			<div class="panel" id="gridviewer"><h2>Gridviewer</h2>
+			                <div class="dL">&nbsp;</div>
+							<div class="c">
+								<div class="left"><a href="http://ncphi.phgrid.net:8080/gridviewer/"><img src="images/screens/gridviewer.jpg" border="0" align="left" /></a></div>
+								<div class="right"><p>Awaiting content
+								</p><p class="dL"><a href="http://ncphi.phgrid.net:8080/gridviewer/">launch site</a></p></div>
+			                </div>
+			            </div>
+
+
+                
+                
+
+                </div>
+            </div>
+
+            <div id="shade"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1381 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Ivy report :: transfer by caGrid :: impl-test</title>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="content-language" content="en">
+<meta name="robots" content="index,follow">
+<link rel="stylesheet" type="text/css" href="ivy-report.css">
+</head>
+<body>
+<div id="logo">
+<a href="http://ant.apache.org/ivy/"><img src="http://ant.apache.org/ivy/logo.png"></a>
+</div>
+<h1>
+<a name="caGrid-transfer"></a><span id="module">transfer</span> 
+        by 
+        <span id="organisation">caGrid</span>
+</h1>
+<div id="date">
+    resolved on 
+      2008-04-09 22:37:52</div>
+<ul id="confmenu">
+<li>
+<a href="caGrid-transfer-target_grid.html">target_grid</a>
+</li>
+<li>
+<a href="caGrid-transfer-impl.html">impl</a>
+</li>
+<li>
+<a class="active" href="caGrid-transfer-impl-test.html">impl-test</a>
+</li>
+<li>
+<a href="caGrid-transfer-stubs.html">stubs</a>
+</li>
+<li>
+<a href="caGrid-transfer-common.html">common</a>
+</li>
+<li>
+<a href="caGrid-transfer-client.html">client</a>
+</li>
+<li>
+<a href="caGrid-transfer-service.html">service</a>
+</li>
+<li>
+<a href="caGrid-transfer-extension.html">extension</a>
+</li>
+<li>
+<a href="caGrid-transfer-webapp.html">webapp</a>
+</li>
+<li>
+<a href="caGrid-transfer-test.html">test</a>
+</li>
+</ul>
+<div id="content">
+<h2>Dependencies Stats</h2>
+<table class="header">
+<tr>
+<td class="title">Modules</td><td class="value">11</td>
+</tr>
+<tr>
+<td class="title">Revisions</td><td class="value">12  
+            (11 searched <img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="module revisions which required a search with a dependency resolver to be resolved">,
+            0 downloaded <img src="http://ant.apache.org/ivy/images/downloaded.gif" alt="downloaded" title="module revisions for which ivy file was downloaded by dependency resolver">,
+            0 evicted <img src="http://ant.apache.org/ivy/images/evicted.gif" alt="evicted" title="module revisions which were evicted by others">,
+            0 errors <img src="http://ant.apache.org/ivy/images/error.gif" alt="error" title="module revisions on which error occured">)</td>
+</tr>
+<tr>
+<td class="title">Artifacts</td><td class="value">19 
+            (0 downloaded,
+            0 failed)</td>
+</tr>
+<tr>
+<td class="title">Artifacts size</td><td class="value">5350 kB
+            (0 kB downloaded,
+            5350 kB in cache)</td>
+</tr>
+</table>
+<h2>Conflicts</h2>
+<table class="conflicts">
+<thead>
+<tr>
+<th>Module</th><th>Selected</th><th>Evicted</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#caGrid-testing">testing
+             by
+             caGrid</a></td><td><a href="#caGrid-testing-1.2">1.2</a> <a href="#caGrid-testing-1.2">1.2</a> </td><td></td>
+</tr>
+</tbody>
+</table>
+<h2>Dependencies Overview</h2>
+<table class="deps">
+<thead>
+<tr>
+<th>Module</th><th>Revision</th><th>Status</th><th>Resolver</th><th>Default</th><th>Licenses</th><th>Size</th><th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#caGrid-introduce"> introduce
+         by
+         caGrid</a></td><td><a href="#caGrid-introduce-1.2">1.2</a></td><td align="center">release</td><td align="center">caGrid-local-fs-fs</td><td align="center">false</td><td align="center"><span style="padding-right:3px;"><a href="http://www.cagrid.org/wiki/CaGrid:LICENSE-1.2">caGrid</a></span></td><td align="center">1219 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#codehaus-jaxen">--- jaxen
+         by
+         codehaus</a></td><td><a href="#codehaus-jaxen-1.1">1.1</a></td><td align="center">release</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"><span style="padding-right:3px;"><a href="http://jaxen.org/license.html">BSD-like</a></span></td><td align="center">221 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#metro-xsom">------ xsom
+         by
+         metro</a></td><td><a href="#metro-xsom-20060901">20060901</a></td><td align="center">release</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"><span style="padding-right:3px;"><a href="http://www.opensource.org/licenses/cddl1.php">CDDL 1.0</a></span></td><td align="center">366 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#relaxng-datatype-java">--------- datatype-java
+         by
+         relaxng</a></td><td><a href="#relaxng-datatype-java-1.0">1.0</a></td><td align="center">release</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"><span style="padding-right:3px;">BSD-like</span></td><td align="center">19 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#jaxme-jaxmejs">--- jaxmejs
+         by
+         jaxme</a></td><td><a href="#jaxme-jaxmejs-0.5.2-patched">0.5.2-patched</a></td><td align="center">integration</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"><span style="padding-right:3px;"><a href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache</a></span></td><td align="center">389 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#antlr-antlr">------ antlr
+         by
+         antlr</a></td><td><a href="#antlr-antlr-2.7.6rc1">2.7.6rc1</a></td><td align="center">release</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"><span style="padding-right:3px;"><a href="http://www.antlr2.org/license.html">ANTLR 2 (Public Domain)</a></span></td><td align="center">434 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#caGrid-testing">--- testing
+         by
+         caGrid</a></td><td><a href="#caGrid-testing-1.2">1.2</a></td><td align="center">release</td><td align="center">caGrid-local-fs-fs</td><td align="center">false</td><td align="center"><span style="padding-right:3px;"><a href="http://www.cagrid.org/wiki/CaGrid:LICENSE-1.2">caGrid</a></span></td><td align="center">82 kB
+    </td><td align="center"></td>
+</tr>
+<tr>
+<td><a href="#caGrid-core">------ core
+         by
+         caGrid</a></td><td><a href="#caGrid-core-1.2">1.2</a></td><td align="center">release</td><td align="center">caGrid-local-fs-fs</td><td align="center">false</td><td align="center"><span style="padding-right:3px;"><a href="http://www.cagrid.org/wiki/CaGrid:LICENSE-1.2">caGrid</a></span></td><td align="center">99 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#clarkware-jdepend">--------- jdepend
+         by
+         clarkware</a></td><td><a href="#clarkware-jdepend-2.7">2.7</a></td><td align="center">integration</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"></td><td align="center">424 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#jdom-jdom">--------- jdom
+         by
+         jdom</a></td><td><a href="#jdom-jdom-1.0">1.0</a></td><td align="center">release</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"></td><td align="center">150 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#castor-castor">--------- castor
+         by
+         castor</a></td><td><a href="#castor-castor-0.9.9">0.9.9</a></td><td align="center">integration</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"><span style="padding-right:3px;"><a href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache</a></span></td><td align="center">1865 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#jdom-jdom">------ jdom
+         by
+         jdom</a></td><td><a href="#jdom-jdom-1.0">1.0</a></td><td align="center">release</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"></td><td align="center">150 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#caGrid-testing">--- testing
+         by
+         caGrid</a></td><td><a href="#caGrid-testing-1.2">1.2</a></td><td align="center">release</td><td align="center">caGrid-local-fs-fs</td><td align="center">false</td><td align="center"><span style="padding-right:3px;"><a href="http://www.cagrid.org/wiki/CaGrid:LICENSE-1.2">caGrid</a></span></td><td align="center">82 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#caGrid-core">------ core
+         by
+         caGrid</a></td><td><a href="#caGrid-core-1.2">1.2</a></td><td align="center">release</td><td align="center">caGrid-local-fs-fs</td><td align="center">false</td><td align="center"><span style="padding-right:3px;"><a href="http://www.cagrid.org/wiki/CaGrid:LICENSE-1.2">caGrid</a></span></td><td align="center">99 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#clarkware-jdepend">--------- jdepend
+         by
+         clarkware</a></td><td><a href="#clarkware-jdepend-2.7">2.7</a></td><td align="center">integration</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"></td><td align="center">424 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#jdom-jdom">--------- jdom
+         by
+         jdom</a></td><td><a href="#jdom-jdom-1.0">1.0</a></td><td align="center">release</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"></td><td align="center">150 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#castor-castor">--------- castor
+         by
+         castor</a></td><td><a href="#castor-castor-0.9.9">0.9.9</a></td><td align="center">integration</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"><span style="padding-right:3px;"><a href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache</a></span></td><td align="center">1865 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#jdom-jdom">------ jdom
+         by
+         jdom</a></td><td><a href="#jdom-jdom-1.0">1.0</a></td><td align="center">release</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"></td><td align="center">150 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#caGrid-core">--- core
+         by
+         caGrid</a></td><td><a href="#caGrid-core-1.2">1.2</a></td><td align="center">release</td><td align="center">caGrid-local-fs-fs</td><td align="center">false</td><td align="center"><span style="padding-right:3px;"><a href="http://www.cagrid.org/wiki/CaGrid:LICENSE-1.2">caGrid</a></span></td><td align="center">99 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#clarkware-jdepend">------ jdepend
+         by
+         clarkware</a></td><td><a href="#clarkware-jdepend-2.7">2.7</a></td><td align="center">integration</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"></td><td align="center">424 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#jdom-jdom">------ jdom
+         by
+         jdom</a></td><td><a href="#jdom-jdom-1.0">1.0</a></td><td align="center">release</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"></td><td align="center">150 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#castor-castor">------ castor
+         by
+         castor</a></td><td><a href="#castor-castor-0.9.9">0.9.9</a></td><td align="center">integration</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"><span style="padding-right:3px;"><a href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache</a></span></td><td align="center">1865 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#jdom-jdom">--- jdom
+         by
+         jdom</a></td><td><a href="#jdom-jdom-1.0">1.0</a></td><td align="center">release</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"></td><td align="center">150 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#caGrid-testing"> testing
+         by
+         caGrid</a></td><td><a href="#caGrid-testing-1.2">1.2</a></td><td align="center">release</td><td align="center">caGrid-local-fs-fs</td><td align="center">false</td><td align="center"><span style="padding-right:3px;"><a href="http://www.cagrid.org/wiki/CaGrid:LICENSE-1.2">caGrid</a></span></td><td align="center">82 kB
+    </td><td align="center"></td>
+</tr>
+<tr>
+<td><a href="#caGrid-core">--- core
+         by
+         caGrid</a></td><td><a href="#caGrid-core-1.2">1.2</a></td><td align="center">release</td><td align="center">caGrid-local-fs-fs</td><td align="center">false</td><td align="center"><span style="padding-right:3px;"><a href="http://www.cagrid.org/wiki/CaGrid:LICENSE-1.2">caGrid</a></span></td><td align="center">99 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#clarkware-jdepend">------ jdepend
+         by
+         clarkware</a></td><td><a href="#clarkware-jdepend-2.7">2.7</a></td><td align="center">integration</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"></td><td align="center">424 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#jdom-jdom">------ jdom
+         by
+         jdom</a></td><td><a href="#jdom-jdom-1.0">1.0</a></td><td align="center">release</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"></td><td align="center">150 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#castor-castor">------ castor
+         by
+         castor</a></td><td><a href="#castor-castor-0.9.9">0.9.9</a></td><td align="center">integration</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"><span style="padding-right:3px;"><a href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache</a></span></td><td align="center">1865 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#jdom-jdom">--- jdom
+         by
+         jdom</a></td><td><a href="#jdom-jdom-1.0">1.0</a></td><td align="center">release</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"></td><td align="center">150 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#caGrid-testing"> testing
+         by
+         caGrid</a></td><td><a href="#caGrid-testing-1.2">1.2</a></td><td align="center">release</td><td align="center">caGrid-local-fs-fs</td><td align="center">false</td><td align="center"><span style="padding-right:3px;"><a href="http://www.cagrid.org/wiki/CaGrid:LICENSE-1.2">caGrid</a></span></td><td align="center">82 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#caGrid-core">--- core
+         by
+         caGrid</a></td><td><a href="#caGrid-core-1.2">1.2</a></td><td align="center">release</td><td align="center">caGrid-local-fs-fs</td><td align="center">false</td><td align="center"><span style="padding-right:3px;"><a href="http://www.cagrid.org/wiki/CaGrid:LICENSE-1.2">caGrid</a></span></td><td align="center">99 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#clarkware-jdepend">------ jdepend
+         by
+         clarkware</a></td><td><a href="#clarkware-jdepend-2.7">2.7</a></td><td align="center">integration</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"></td><td align="center">424 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#jdom-jdom">------ jdom
+         by
+         jdom</a></td><td><a href="#jdom-jdom-1.0">1.0</a></td><td align="center">release</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"></td><td align="center">150 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#castor-castor">------ castor
+         by
+         castor</a></td><td><a href="#castor-castor-0.9.9">0.9.9</a></td><td align="center">integration</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"><span style="padding-right:3px;"><a href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache</a></span></td><td align="center">1865 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#jdom-jdom">--- jdom
+         by
+         jdom</a></td><td><a href="#jdom-jdom-1.0">1.0</a></td><td align="center">release</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"></td><td align="center">150 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#caGrid-core"> core
+         by
+         caGrid</a></td><td><a href="#caGrid-core-1.2">1.2</a></td><td align="center">release</td><td align="center">caGrid-local-fs-fs</td><td align="center">false</td><td align="center"><span style="padding-right:3px;"><a href="http://www.cagrid.org/wiki/CaGrid:LICENSE-1.2">caGrid</a></span></td><td align="center">99 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#clarkware-jdepend">--- jdepend
+         by
+         clarkware</a></td><td><a href="#clarkware-jdepend-2.7">2.7</a></td><td align="center">integration</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"></td><td align="center">424 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#jdom-jdom">--- jdom
+         by
+         jdom</a></td><td><a href="#jdom-jdom-1.0">1.0</a></td><td align="center">release</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"></td><td align="center">150 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#castor-castor">--- castor
+         by
+         castor</a></td><td><a href="#castor-castor-0.9.9">0.9.9</a></td><td align="center">integration</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"><span style="padding-right:3px;"><a href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache</a></span></td><td align="center">1865 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+</tbody>
+</table>
+<h2>Details</h2>
+<h3>
+<a name="caGrid-introduce"></a>introduce by caGrid</h3>
+<h4>
+<a name="caGrid-introduce-1.2"></a>
+           Revision: 1.2<span style="padding-left:15px;"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></span>
+</h4>
+<table class="header">
+<tr>
+<td class="title">Status</td><td class="value">release</td>
+</tr>
+<tr>
+<td class="title">Publication</td><td class="value">20080409223444</td>
+</tr>
+<tr>
+<td class="title">Resolver</td><td class="value">caGrid-local-fs-fs</td>
+</tr>
+<tr>
+<td class="title">Configurations</td><td class="value">extension, impl-test, test, extension-test</td>
+</tr>
+<tr>
+<td class="title">Artifacts size</td><td class="value">1219 kB
+            (0 kB downloaded,
+            1219 kB in cache)</td>
+</tr>
+<tr>
+<td class="title">Licenses</td><td class="value"><span style="padding-right:3px;"><a href="http://www.cagrid.org/wiki/CaGrid:LICENSE-1.2">caGrid</a></span></td>
+</tr>
+</table>
+<h5>Required by</h5>
+<table>
+<thead>
+<tr>
+<th>Organisation</th><th>Name</th><th>Revision</th><th>In Configurations</th><th>Asked Revision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>caGrid</td><td><a href="#caGrid-transfer">transfer</a></td><td>1.2</td><td>impl-test</td><td>latest.integration</td>
+</tr>
+</tbody>
+</table>
+<h5>Dependencies</h5>
+<table class="deps">
+<thead>
+<tr>
+<th>Module</th><th>Revision</th><th>Status</th><th>Resolver</th><th>Default</th><th>Licenses</th><th>Size</th><th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#codehaus-jaxen"> jaxen
+         by
+         codehaus</a></td><td><a href="#codehaus-jaxen-1.1">1.1</a></td><td align="center">release</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"><span style="padding-right:3px;"><a href="http://jaxen.org/license.html">BSD-like</a></span></td><td align="center">221 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#metro-xsom">--- xsom
+         by
+         metro</a></td><td><a href="#metro-xsom-20060901">20060901</a></td><td align="center">release</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"><span style="padding-right:3px;"><a href="http://www.opensource.org/licenses/cddl1.php">CDDL 1.0</a></span></td><td align="center">366 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#relaxng-datatype-java">------ datatype-java
+         by
+         relaxng</a></td><td><a href="#relaxng-datatype-java-1.0">1.0</a></td><td align="center">release</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"><span style="padding-right:3px;">BSD-like</span></td><td align="center">19 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#jaxme-jaxmejs"> jaxmejs
+         by
+         jaxme</a></td><td><a href="#jaxme-jaxmejs-0.5.2-patched">0.5.2-patched</a></td><td align="center">integration</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"><span style="padding-right:3px;"><a href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache</a></span></td><td align="center">389 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#antlr-antlr">--- antlr
+         by
+         antlr</a></td><td><a href="#antlr-antlr-2.7.6rc1">2.7.6rc1</a></td><td align="center">release</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"><span style="padding-right:3px;"><a href="http://www.antlr2.org/license.html">ANTLR 2 (Public Domain)</a></span></td><td align="center">434 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#caGrid-testing"> testing
+         by
+         caGrid</a></td><td><a href="#caGrid-testing-1.2">1.2</a></td><td align="center">release</td><td align="center">caGrid-local-fs-fs</td><td align="center">false</td><td align="center"><span style="padding-right:3px;"><a href="http://www.cagrid.org/wiki/CaGrid:LICENSE-1.2">caGrid</a></span></td><td align="center">82 kB
+    </td><td align="center"></td>
+</tr>
+<tr>
+<td><a href="#caGrid-core">--- core
+         by
+         caGrid</a></td><td><a href="#caGrid-core-1.2">1.2</a></td><td align="center">release</td><td align="center">caGrid-local-fs-fs</td><td align="center">false</td><td align="center"><span style="padding-right:3px;"><a href="http://www.cagrid.org/wiki/CaGrid:LICENSE-1.2">caGrid</a></span></td><td align="center">99 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#clarkware-jdepend">------ jdepend
+         by
+         clarkware</a></td><td><a href="#clarkware-jdepend-2.7">2.7</a></td><td align="center">integration</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"></td><td align="center">424 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#jdom-jdom">------ jdom
+         by
+         jdom</a></td><td><a href="#jdom-jdom-1.0">1.0</a></td><td align="center">release</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"></td><td align="center">150 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#castor-castor">------ castor
+         by
+         castor</a></td><td><a href="#castor-castor-0.9.9">0.9.9</a></td><td align="center">integration</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"><span style="padding-right:3px;"><a href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache</a></span></td><td align="center">1865 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#jdom-jdom">--- jdom
+         by
+         jdom</a></td><td><a href="#jdom-jdom-1.0">1.0</a></td><td align="center">release</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"></td><td align="center">150 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#caGrid-testing"> testing
+         by
+         caGrid</a></td><td><a href="#caGrid-testing-1.2">1.2</a></td><td align="center">release</td><td align="center">caGrid-local-fs-fs</td><td align="center">false</td><td align="center"><span style="padding-right:3px;"><a href="http://www.cagrid.org/wiki/CaGrid:LICENSE-1.2">caGrid</a></span></td><td align="center">82 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#caGrid-core">--- core
+         by
+         caGrid</a></td><td><a href="#caGrid-core-1.2">1.2</a></td><td align="center">release</td><td align="center">caGrid-local-fs-fs</td><td align="center">false</td><td align="center"><span style="padding-right:3px;"><a href="http://www.cagrid.org/wiki/CaGrid:LICENSE-1.2">caGrid</a></span></td><td align="center">99 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#clarkware-jdepend">------ jdepend
+         by
+         clarkware</a></td><td><a href="#clarkware-jdepend-2.7">2.7</a></td><td align="center">integration</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"></td><td align="center">424 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#jdom-jdom">------ jdom
+         by
+         jdom</a></td><td><a href="#jdom-jdom-1.0">1.0</a></td><td align="center">release</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"></td><td align="center">150 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#castor-castor">------ castor
+         by
+         castor</a></td><td><a href="#castor-castor-0.9.9">0.9.9</a></td><td align="center">integration</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"><span style="padding-right:3px;"><a href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache</a></span></td><td align="center">1865 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#jdom-jdom">--- jdom
+         by
+         jdom</a></td><td><a href="#jdom-jdom-1.0">1.0</a></td><td align="center">release</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"></td><td align="center">150 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#caGrid-core"> core
+         by
+         caGrid</a></td><td><a href="#caGrid-core-1.2">1.2</a></td><td align="center">release</td><td align="center">caGrid-local-fs-fs</td><td align="center">false</td><td align="center"><span style="padding-right:3px;"><a href="http://www.cagrid.org/wiki/CaGrid:LICENSE-1.2">caGrid</a></span></td><td align="center">99 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#clarkware-jdepend">--- jdepend
+         by
+         clarkware</a></td><td><a href="#clarkware-jdepend-2.7">2.7</a></td><td align="center">integration</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"></td><td align="center">424 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#jdom-jdom">--- jdom
+         by
+         jdom</a></td><td><a href="#jdom-jdom-1.0">1.0</a></td><td align="center">release</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"></td><td align="center">150 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#castor-castor">--- castor
+         by
+         castor</a></td><td><a href="#castor-castor-0.9.9">0.9.9</a></td><td align="center">integration</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"><span style="padding-right:3px;"><a href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache</a></span></td><td align="center">1865 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#jdom-jdom"> jdom
+         by
+         jdom</a></td><td><a href="#jdom-jdom-1.0">1.0</a></td><td align="center">release</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"></td><td align="center">150 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+</tbody>
+</table>
+<h5>Artifacts</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th><th>Type</th><th>Ext</th><th>Download</th><th>Size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>caGrid-Introduce-updater-tests</td><td>jar</td><td>jar</td><td align="center">no</td><td align="center">3 kB</td>
+</tr>
+<tr>
+<td>caGrid-Introduce-portal</td><td>jar</td><td>jar</td><td align="center">no</td><td align="center">669 kB</td>
+</tr>
+<tr>
+<td>caGrid-Introduce-core</td><td>jar</td><td>jar</td><td align="center">no</td><td align="center">432 kB</td>
+</tr>
+<tr>
+<td>caGrid-Introduce-portal-tests</td><td>jar</td><td>jar</td><td align="center">no</td><td align="center">0 kB</td>
+</tr>
+<tr>
+<td>caGrid-Introduce-core-tests</td><td>jar</td><td>jar</td><td align="center">no</td><td align="center">115 kB</td>
+</tr>
+</tbody>
+</table>
+<h3>
+<a name="codehaus-jaxen"></a>jaxen by codehaus</h3>
+<h4>
+<a name="codehaus-jaxen-1.1"></a>
+           Revision: 1.1<span style="padding-left:15px;"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></span>
+</h4>
+<table class="header">
+<tr>
+<td class="title">Home Page</td><td class="value"><a href="http://ws.apache.org/jaxme/js/index.html">http://ws.apache.org/jaxme/js/index.html</a></td>
+</tr>
+<tr>
+<td class="title">Status</td><td class="value">release</td>
+</tr>
+<tr>
+<td class="title">Publication</td><td class="value">20080216004427</td>
+</tr>
+<tr>
+<td class="title">Resolver</td><td class="value">caGrid-fs-fs</td>
+</tr>
+<tr>
+<td class="title">Configurations</td><td class="value">default</td>
+</tr>
+<tr>
+<td class="title">Artifacts size</td><td class="value">221 kB
+            (0 kB downloaded,
+            221 kB in cache)</td>
+</tr>
+<tr>
+<td class="title">Licenses</td><td class="value"><span style="padding-right:3px;"><a href="http://jaxen.org/license.html">BSD-like</a></span></td>
+</tr>
+</table>
+<h5>Required by</h5>
+<table>
+<thead>
+<tr>
+<th>Organisation</th><th>Name</th><th>Revision</th><th>In Configurations</th><th>Asked Revision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>caGrid</td><td><a href="#caGrid-introduce">introduce</a></td><td>1.2</td><td>extension</td><td>1.1</td>
+</tr>
+</tbody>
+</table>
+<h5>Dependencies</h5>
+<table class="deps">
+<thead>
+<tr>
+<th>Module</th><th>Revision</th><th>Status</th><th>Resolver</th><th>Default</th><th>Licenses</th><th>Size</th><th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#metro-xsom"> xsom
+         by
+         metro</a></td><td><a href="#metro-xsom-20060901">20060901</a></td><td align="center">release</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"><span style="padding-right:3px;"><a href="http://www.opensource.org/licenses/cddl1.php">CDDL 1.0</a></span></td><td align="center">366 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#relaxng-datatype-java">--- datatype-java
+         by
+         relaxng</a></td><td><a href="#relaxng-datatype-java-1.0">1.0</a></td><td align="center">release</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"><span style="padding-right:3px;">BSD-like</span></td><td align="center">19 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+</tbody>
+</table>
+<h5>Artifacts</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th><th>Type</th><th>Ext</th><th>Download</th><th>Size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>jaxen</td><td>jar</td><td>jar</td><td align="center">no</td><td align="center">221 kB</td>
+</tr>
+</tbody>
+</table>
+<h3>
+<a name="metro-xsom"></a>xsom by metro</h3>
+<h4>
+<a name="metro-xsom-20060901"></a>
+           Revision: 20060901<span style="padding-left:15px;"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></span>
+</h4>
+<table class="header">
+<tr>
+<td class="title">Home Page</td><td class="value"><a href="https://xsom.dev.java.net/">https://xsom.dev.java.net/</a></td>
+</tr>
+<tr>
+<td class="title">Status</td><td class="value">release</td>
+</tr>
+<tr>
+<td class="title">Publication</td><td class="value">20080216004421</td>
+</tr>
+<tr>
+<td class="title">Resolver</td><td class="value">caGrid-fs-fs</td>
+</tr>
+<tr>
+<td class="title">Configurations</td><td class="value">default</td>
+</tr>
+<tr>
+<td class="title">Artifacts size</td><td class="value">366 kB
+            (0 kB downloaded,
+            366 kB in cache)</td>
+</tr>
+<tr>
+<td class="title">Licenses</td><td class="value"><span style="padding-right:3px;"><a href="http://www.opensource.org/licenses/cddl1.php">CDDL 1.0</a></span></td>
+</tr>
+</table>
+<h5>Required by</h5>
+<table>
+<thead>
+<tr>
+<th>Organisation</th><th>Name</th><th>Revision</th><th>In Configurations</th><th>Asked Revision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>codehaus</td><td><a href="#codehaus-jaxen">jaxen</a></td><td>1.1</td><td>default</td><td>20060901</td>
+</tr>
+</tbody>
+</table>
+<h5>Dependencies</h5>
+<table class="deps">
+<thead>
+<tr>
+<th>Module</th><th>Revision</th><th>Status</th><th>Resolver</th><th>Default</th><th>Licenses</th><th>Size</th><th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#relaxng-datatype-java"> datatype-java
+         by
+         relaxng</a></td><td><a href="#relaxng-datatype-java-1.0">1.0</a></td><td align="center">release</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"><span style="padding-right:3px;">BSD-like</span></td><td align="center">19 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+</tbody>
+</table>
+<h5>Artifacts</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th><th>Type</th><th>Ext</th><th>Download</th><th>Size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>xsom14</td><td>jar</td><td>jar</td><td align="center">no</td><td align="center">366 kB</td>
+</tr>
+</tbody>
+</table>
+<h3>
+<a name="relaxng-datatype-java"></a>datatype-java by relaxng</h3>
+<h4>
+<a name="relaxng-datatype-java-1.0"></a>
+           Revision: 1.0<span style="padding-left:15px;"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></span>
+</h4>
+<table class="header">
+<tr>
+<td class="title">Home Page</td><td class="value"><a href="https://sourceforge.net/projects/relaxng">https://sourceforge.net/projects/relaxng</a></td>
+</tr>
+<tr>
+<td class="title">Status</td><td class="value">release</td>
+</tr>
+<tr>
+<td class="title">Publication</td><td class="value">20080216004302</td>
+</tr>
+<tr>
+<td class="title">Resolver</td><td class="value">caGrid-fs-fs</td>
+</tr>
+<tr>
+<td class="title">Configurations</td><td class="value">default</td>
+</tr>
+<tr>
+<td class="title">Artifacts size</td><td class="value">19 kB
+            (0 kB downloaded,
+            19 kB in cache)</td>
+</tr>
+<tr>
+<td class="title">Licenses</td><td class="value"><span style="padding-right:3px;">BSD-like</span></td>
+</tr>
+</table>
+<h5>Required by</h5>
+<table>
+<thead>
+<tr>
+<th>Organisation</th><th>Name</th><th>Revision</th><th>In Configurations</th><th>Asked Revision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>metro</td><td><a href="#metro-xsom">xsom</a></td><td>20060901</td><td>default</td><td>1.0</td>
+</tr>
+</tbody>
+</table>
+<h5>Dependencies</h5>
+<table>
+<tr>
+<td>
+    No dependency
+    </td>
+</tr>
+</table>
+<h5>Artifacts</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th><th>Type</th><th>Ext</th><th>Download</th><th>Size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>relaxngDatatype</td><td>jar</td><td>jar</td><td align="center">no</td><td align="center">19 kB</td>
+</tr>
+</tbody>
+</table>
+<h3>
+<a name="jaxme-jaxmejs"></a>jaxmejs by jaxme</h3>
+<h4>
+<a name="jaxme-jaxmejs-0.5.2-patched"></a>
+           Revision: 0.5.2-patched<span style="padding-left:15px;"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></span>
+</h4>
+<table class="header">
+<tr>
+<td class="title">Home Page</td><td class="value"><a href="http://ws.apache.org/jaxme/js/index.html">http://ws.apache.org/jaxme/js/index.html</a></td>
+</tr>
+<tr>
+<td class="title">Status</td><td class="value">integration</td>
+</tr>
+<tr>
+<td class="title">Publication</td><td class="value">20080216004306</td>
+</tr>
+<tr>
+<td class="title">Resolver</td><td class="value">caGrid-fs-fs</td>
+</tr>
+<tr>
+<td class="title">Configurations</td><td class="value">default</td>
+</tr>
+<tr>
+<td class="title">Artifacts size</td><td class="value">389 kB
+            (0 kB downloaded,
+            389 kB in cache)</td>
+</tr>
+<tr>
+<td class="title">Licenses</td><td class="value"><span style="padding-right:3px;"><a href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache</a></span></td>
+</tr>
+</table>
+<h5>Required by</h5>
+<table>
+<thead>
+<tr>
+<th>Organisation</th><th>Name</th><th>Revision</th><th>In Configurations</th><th>Asked Revision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>caGrid</td><td><a href="#caGrid-introduce">introduce</a></td><td>1.2</td><td>extension</td><td>0.5.2-patched</td>
+</tr>
+</tbody>
+</table>
+<h5>Dependencies</h5>
+<table class="deps">
+<thead>
+<tr>
+<th>Module</th><th>Revision</th><th>Status</th><th>Resolver</th><th>Default</th><th>Licenses</th><th>Size</th><th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#antlr-antlr"> antlr
+         by
+         antlr</a></td><td><a href="#antlr-antlr-2.7.6rc1">2.7.6rc1</a></td><td align="center">release</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"><span style="padding-right:3px;"><a href="http://www.antlr2.org/license.html">ANTLR 2 (Public Domain)</a></span></td><td align="center">434 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+</tbody>
+</table>
+<h5>Artifacts</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th><th>Type</th><th>Ext</th><th>Download</th><th>Size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>jaxmejs-0.5.2</td><td>jar</td><td>jar</td><td align="center">no</td><td align="center">389 kB</td>
+</tr>
+</tbody>
+</table>
+<h3>
+<a name="antlr-antlr"></a>antlr by antlr</h3>
+<h4>
+<a name="antlr-antlr-2.7.6rc1"></a>
+           Revision: 2.7.6rc1<span style="padding-left:15px;"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></span>
+</h4>
+<table class="header">
+<tr>
+<td class="title">Home Page</td><td class="value"><a href="http://www.antlr2.org/">http://www.antlr2.org/</a></td>
+</tr>
+<tr>
+<td class="title">Status</td><td class="value">release</td>
+</tr>
+<tr>
+<td class="title">Publication</td><td class="value">20080216004312</td>
+</tr>
+<tr>
+<td class="title">Resolver</td><td class="value">caGrid-fs-fs</td>
+</tr>
+<tr>
+<td class="title">Configurations</td><td class="value">default</td>
+</tr>
+<tr>
+<td class="title">Artifacts size</td><td class="value">434 kB
+            (0 kB downloaded,
+            434 kB in cache)</td>
+</tr>
+<tr>
+<td class="title">Licenses</td><td class="value"><span style="padding-right:3px;"><a href="http://www.antlr2.org/license.html">ANTLR 2 (Public Domain)</a></span></td>
+</tr>
+</table>
+<h5>Required by</h5>
+<table>
+<thead>
+<tr>
+<th>Organisation</th><th>Name</th><th>Revision</th><th>In Configurations</th><th>Asked Revision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>jaxme</td><td><a href="#jaxme-jaxmejs">jaxmejs</a></td><td>0.5.2-patched</td><td>default</td><td>2.7.+</td>
+</tr>
+</tbody>
+</table>
+<h5>Dependencies</h5>
+<table>
+<tr>
+<td>
+    No dependency
+    </td>
+</tr>
+</table>
+<h5>Artifacts</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th><th>Type</th><th>Ext</th><th>Download</th><th>Size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>antlr</td><td>jar</td><td>jar</td><td align="center">no</td><td align="center">434 kB</td>
+</tr>
+</tbody>
+</table>
+<h3>
+<a name="caGrid-testing"></a>testing by caGrid</h3>
+<h4>
+<a name="caGrid-testing-1.2"></a>
+           Revision: 1.2<span style="padding-left:15px;"></span>
+</h4>
+<table class="header">
+<tr>
+<td class="title">Status</td><td class="value">release</td>
+</tr>
+<tr>
+<td class="title">Publication</td><td class="value">20080409223338</td>
+</tr>
+<tr>
+<td class="title">Resolver</td><td class="value">caGrid-local-fs-fs</td>
+</tr>
+<tr>
+<td class="title">Configurations</td><td class="value">core, system</td>
+</tr>
+<tr>
+<td class="title">Artifacts size</td><td class="value">82 kB
+            (0 kB downloaded,
+            82 kB in cache)</td>
+</tr>
+<tr>
+<td class="title">Licenses</td><td class="value"><span style="padding-right:3px;"><a href="http://www.cagrid.org/wiki/CaGrid:LICENSE-1.2">caGrid</a></span></td>
+</tr>
+</table>
+<h5>Required by</h5>
+<table>
+<thead>
+<tr>
+<th>Organisation</th><th>Name</th><th>Revision</th><th>In Configurations</th><th>Asked Revision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>caGrid</td><td><a href="#caGrid-transfer">transfer</a></td><td>1.2</td><td>impl-test</td><td>latest.integration</td>
+</tr>
+<tr>
+<td>caGrid</td><td><a href="#caGrid-introduce">introduce</a></td><td>1.2</td><td>impl-test</td><td>1.2</td>
+</tr>
+</tbody>
+</table>
+<h5>Dependencies</h5>
+<table class="deps">
+<thead>
+<tr>
+<th>Module</th><th>Revision</th><th>Status</th><th>Resolver</th><th>Default</th><th>Licenses</th><th>Size</th><th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#caGrid-core"> core
+         by
+         caGrid</a></td><td><a href="#caGrid-core-1.2">1.2</a></td><td align="center">release</td><td align="center">caGrid-local-fs-fs</td><td align="center">false</td><td align="center"><span style="padding-right:3px;"><a href="http://www.cagrid.org/wiki/CaGrid:LICENSE-1.2">caGrid</a></span></td><td align="center">99 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#clarkware-jdepend">--- jdepend
+         by
+         clarkware</a></td><td><a href="#clarkware-jdepend-2.7">2.7</a></td><td align="center">integration</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"></td><td align="center">424 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#jdom-jdom">--- jdom
+         by
+         jdom</a></td><td><a href="#jdom-jdom-1.0">1.0</a></td><td align="center">release</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"></td><td align="center">150 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#castor-castor">--- castor
+         by
+         castor</a></td><td><a href="#castor-castor-0.9.9">0.9.9</a></td><td align="center">integration</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"><span style="padding-right:3px;"><a href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache</a></span></td><td align="center">1865 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#jdom-jdom"> jdom
+         by
+         jdom</a></td><td><a href="#jdom-jdom-1.0">1.0</a></td><td align="center">release</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"></td><td align="center">150 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+</tbody>
+</table>
+<h5>Artifacts</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th><th>Type</th><th>Ext</th><th>Download</th><th>Size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>caGrid-testing-core</td><td>jar</td><td>jar</td><td align="center">no</td><td align="center">2 kB</td>
+</tr>
+<tr>
+<td>caGrid-testing-system</td><td>jar</td><td>jar</td><td align="center">no</td><td align="center">80 kB</td>
+</tr>
+</tbody>
+</table>
+<h4>
+<a name="caGrid-testing-1.2"></a>
+           Revision: 1.2<span style="padding-left:15px;"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></span>
+</h4>
+<table class="header">
+<tr>
+<td class="title">Status</td><td class="value">release</td>
+</tr>
+<tr>
+<td class="title">Publication</td><td class="value">20080409223338</td>
+</tr>
+<tr>
+<td class="title">Resolver</td><td class="value">caGrid-local-fs-fs</td>
+</tr>
+<tr>
+<td class="title">Configurations</td><td class="value">core, system</td>
+</tr>
+<tr>
+<td class="title">Artifacts size</td><td class="value">82 kB
+            (0 kB downloaded,
+            82 kB in cache)</td>
+</tr>
+<tr>
+<td class="title">Licenses</td><td class="value"><span style="padding-right:3px;"><a href="http://www.cagrid.org/wiki/CaGrid:LICENSE-1.2">caGrid</a></span></td>
+</tr>
+</table>
+<h5>Required by</h5>
+<table>
+<thead>
+<tr>
+<th>Organisation</th><th>Name</th><th>Revision</th><th>In Configurations</th><th>Asked Revision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>caGrid</td><td><a href="#caGrid-transfer">transfer</a></td><td>1.2</td><td>impl-test</td><td>latest.integration</td>
+</tr>
+<tr>
+<td>caGrid</td><td><a href="#caGrid-introduce">introduce</a></td><td>1.2</td><td>impl-test</td><td>1.2</td>
+</tr>
+</tbody>
+</table>
+<h5>Dependencies</h5>
+<table class="deps">
+<thead>
+<tr>
+<th>Module</th><th>Revision</th><th>Status</th><th>Resolver</th><th>Default</th><th>Licenses</th><th>Size</th><th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#caGrid-core"> core
+         by
+         caGrid</a></td><td><a href="#caGrid-core-1.2">1.2</a></td><td align="center">release</td><td align="center">caGrid-local-fs-fs</td><td align="center">false</td><td align="center"><span style="padding-right:3px;"><a href="http://www.cagrid.org/wiki/CaGrid:LICENSE-1.2">caGrid</a></span></td><td align="center">99 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#clarkware-jdepend">--- jdepend
+         by
+         clarkware</a></td><td><a href="#clarkware-jdepend-2.7">2.7</a></td><td align="center">integration</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"></td><td align="center">424 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#jdom-jdom">--- jdom
+         by
+         jdom</a></td><td><a href="#jdom-jdom-1.0">1.0</a></td><td align="center">release</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"></td><td align="center">150 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#castor-castor">--- castor
+         by
+         castor</a></td><td><a href="#castor-castor-0.9.9">0.9.9</a></td><td align="center">integration</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"><span style="padding-right:3px;"><a href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache</a></span></td><td align="center">1865 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#jdom-jdom"> jdom
+         by
+         jdom</a></td><td><a href="#jdom-jdom-1.0">1.0</a></td><td align="center">release</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"></td><td align="center">150 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+</tbody>
+</table>
+<h5>Artifacts</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th><th>Type</th><th>Ext</th><th>Download</th><th>Size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>caGrid-testing-core</td><td>jar</td><td>jar</td><td align="center">no</td><td align="center">2 kB</td>
+</tr>
+<tr>
+<td>caGrid-testing-system</td><td>jar</td><td>jar</td><td align="center">no</td><td align="center">80 kB</td>
+</tr>
+</tbody>
+</table>
+<h3>
+<a name="caGrid-core"></a>core by caGrid</h3>
+<h4>
+<a name="caGrid-core-1.2"></a>
+           Revision: 1.2<span style="padding-left:15px;"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></span>
+</h4>
+<table class="header">
+<tr>
+<td class="title">Status</td><td class="value">release</td>
+</tr>
+<tr>
+<td class="title">Publication</td><td class="value">20080409223238</td>
+</tr>
+<tr>
+<td class="title">Resolver</td><td class="value">caGrid-local-fs-fs</td>
+</tr>
+<tr>
+<td class="title">Configurations</td><td class="value">impl-test, default, test</td>
+</tr>
+<tr>
+<td class="title">Artifacts size</td><td class="value">99 kB
+            (0 kB downloaded,
+            99 kB in cache)</td>
+</tr>
+<tr>
+<td class="title">Licenses</td><td class="value"><span style="padding-right:3px;"><a href="http://www.cagrid.org/wiki/CaGrid:LICENSE-1.2">caGrid</a></span></td>
+</tr>
+</table>
+<h5>Required by</h5>
+<table>
+<thead>
+<tr>
+<th>Organisation</th><th>Name</th><th>Revision</th><th>In Configurations</th><th>Asked Revision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>caGrid</td><td><a href="#caGrid-testing">testing</a></td><td>1.2</td><td>core</td><td>1.2</td>
+</tr>
+<tr>
+<td>caGrid</td><td><a href="#caGrid-transfer">transfer</a></td><td>1.2</td><td>impl-test</td><td>latest.integration</td>
+</tr>
+<tr>
+<td>caGrid</td><td><a href="#caGrid-introduce">introduce</a></td><td>1.2</td><td>extension, impl-test</td><td>1.2</td>
+</tr>
+</tbody>
+</table>
+<h5>Dependencies</h5>
+<table class="deps">
+<thead>
+<tr>
+<th>Module</th><th>Revision</th><th>Status</th><th>Resolver</th><th>Default</th><th>Licenses</th><th>Size</th><th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#clarkware-jdepend"> jdepend
+         by
+         clarkware</a></td><td><a href="#clarkware-jdepend-2.7">2.7</a></td><td align="center">integration</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"></td><td align="center">424 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#jdom-jdom"> jdom
+         by
+         jdom</a></td><td><a href="#jdom-jdom-1.0">1.0</a></td><td align="center">release</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"></td><td align="center">150 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+<tr>
+<td><a href="#castor-castor"> castor
+         by
+         castor</a></td><td><a href="#castor-castor-0.9.9">0.9.9</a></td><td align="center">integration</td><td align="center">caGrid-fs-fs</td><td align="center">false</td><td align="center"><span style="padding-right:3px;"><a href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache</a></span></td><td align="center">1865 kB
+    </td><td align="center"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></td>
+</tr>
+</tbody>
+</table>
+<h5>Artifacts</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th><th>Type</th><th>Ext</th><th>Download</th><th>Size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>caGrid-core-tests</td><td>jar</td><td>jar</td><td align="center">no</td><td align="center">16 kB</td>
+</tr>
+<tr>
+<td>caGrid-core</td><td>jar</td><td>jar</td><td align="center">no</td><td align="center">83 kB</td>
+</tr>
+</tbody>
+</table>
+<h3>
+<a name="clarkware-jdepend"></a>jdepend by clarkware</h3>
+<h4>
+<a name="clarkware-jdepend-2.7"></a>
+           Revision: 2.7<span style="padding-left:15px;"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></span>
+</h4>
+<table class="header">
+<tr>
+<td class="title">Home Page</td><td class="value"><a href="http://clarkware.com/software/JDepend.html">http://clarkware.com/software/JDepend.html</a></td>
+</tr>
+<tr>
+<td class="title">Status</td><td class="value">integration</td>
+</tr>
+<tr>
+<td class="title">Publication</td><td class="value">20080216004343</td>
+</tr>
+<tr>
+<td class="title">Resolver</td><td class="value">caGrid-fs-fs</td>
+</tr>
+<tr>
+<td class="title">Configurations</td><td class="value">default</td>
+</tr>
+<tr>
+<td class="title">Artifacts size</td><td class="value">424 kB
+            (0 kB downloaded,
+            424 kB in cache)</td>
+</tr>
+</table>
+<h5>Required by</h5>
+<table>
+<thead>
+<tr>
+<th>Organisation</th><th>Name</th><th>Revision</th><th>In Configurations</th><th>Asked Revision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>caGrid</td><td><a href="#caGrid-core">core</a></td><td>1.2</td><td>impl-test</td><td>2.7</td>
+</tr>
+</tbody>
+</table>
+<h5>Dependencies</h5>
+<table>
+<tr>
+<td>
+    No dependency
+    </td>
+</tr>
+</table>
+<h5>Artifacts</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th><th>Type</th><th>Ext</th><th>Download</th><th>Size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>jdepend</td><td>jar</td><td>jar</td><td align="center">no</td><td align="center">424 kB</td>
+</tr>
+</tbody>
+</table>
+<h3>
+<a name="jdom-jdom"></a>jdom by jdom</h3>
+<h4>
+<a name="jdom-jdom-1.0"></a>
+           Revision: 1.0<span style="padding-left:15px;"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></span>
+</h4>
+<table class="header">
+<tr>
+<td class="title">Status</td><td class="value">release</td>
+</tr>
+<tr>
+<td class="title">Publication</td><td class="value">20080225152958</td>
+</tr>
+<tr>
+<td class="title">Resolver</td><td class="value">caGrid-fs-fs</td>
+</tr>
+<tr>
+<td class="title">Configurations</td><td class="value">default</td>
+</tr>
+<tr>
+<td class="title">Artifacts size</td><td class="value">150 kB
+            (0 kB downloaded,
+            150 kB in cache)</td>
+</tr>
+</table>
+<h5>Required by</h5>
+<table>
+<thead>
+<tr>
+<th>Organisation</th><th>Name</th><th>Revision</th><th>In Configurations</th><th>Asked Revision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>caGrid</td><td><a href="#caGrid-testing">testing</a></td><td>1.2</td><td>core</td><td>1.0</td>
+</tr>
+<tr>
+<td>caGrid</td><td><a href="#caGrid-core">core</a></td><td>1.2</td><td>default</td><td>1.0</td>
+</tr>
+<tr>
+<td>caGrid</td><td><a href="#caGrid-introduce">introduce</a></td><td>1.2</td><td>extension</td><td>1.0</td>
+</tr>
+</tbody>
+</table>
+<h5>Dependencies</h5>
+<table>
+<tr>
+<td>
+    No dependency
+    </td>
+</tr>
+</table>
+<h5>Artifacts</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th><th>Type</th><th>Ext</th><th>Download</th><th>Size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>jdom</td><td>jar</td><td>jar</td><td align="center">no</td><td align="center">150 kB</td>
+</tr>
+</tbody>
+</table>
+<h3>
+<a name="castor-castor"></a>castor by castor</h3>
+<h4>
+<a name="castor-castor-0.9.9"></a>
+           Revision: 0.9.9<span style="padding-left:15px;"><img src="http://ant.apache.org/ivy/images/searched.gif" alt="searched" title="required a search in repository"></span>
+</h4>
+<table class="header">
+<tr>
+<td class="title">Status</td><td class="value">integration</td>
+</tr>
+<tr>
+<td class="title">Publication</td><td class="value">20080216004336</td>
+</tr>
+<tr>
+<td class="title">Resolver</td><td class="value">caGrid-fs-fs</td>
+</tr>
+<tr>
+<td class="title">Configurations</td><td class="value">default</td>
+</tr>
+<tr>
+<td class="title">Artifacts size</td><td class="value">1865 kB
+            (0 kB downloaded,
+            1865 kB in cache)</td>
+</tr>
+<tr>
+<td class="title">Licenses</td><td class="value"><span style="padding-right:3px;"><a href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache</a></span></td>
+</tr>
+</table>
+<h5>Required by</h5>
+<table>
+<thead>
+<tr>
+<th>Organisation</th><th>Name</th><th>Revision</th><th>In Configurations</th><th>Asked Revision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>caGrid</td><td><a href="#caGrid-core">core</a></td><td>1.2</td><td>default</td><td>0.9.9</td>
+</tr>
+</tbody>
+</table>
+<h5>Dependencies</h5>
+<table>
+<tr>
+<td>
+    No dependency
+    </td>
+</tr>
+</table>
+<h5>Artifacts</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th><th>Type</th><th>Ext</th><th>Download</th><th>Size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>castor</td><td>jar</td><td>jar</td><td align="center">no</td><td align="center">1865 kB</td>
+</tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

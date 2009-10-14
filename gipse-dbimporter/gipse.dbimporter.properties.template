@@ -1,0 +1,29 @@
+#This is a template file, please rename to gipse.dbimporter.properties, place in same directory and populate with actual values.
+
+##MAIN PROPERTIES - Change these##
+#specifies the jdbc url. postgres=jdbc:postgresql://server:port[usually 5432]/dbname; sqlserver=jdbc:jtds:sqlserver://server:port[usually 1433]/dbname;ssl=request
+gipse.dbimporter.db.url=DB URL
+#jdbc driver to be used, the package includes jtds and postgres so if you use something else, rebuild with that jar; SQLServer=net.sourceforge.jtds.jdbc.Driver;Postgres=org.postgresql.Driver
+gipse.dbimporter.db.driver=DB DRIVER
+#username in cleartext, this user needs insert permissions to gipse_jobs_import and gipse_store
+gipse.dbimporter.db.user=USER NAME
+#associated password
+gipse.dbimporter.db.pass=PASSWORD
+#working directory where imports are processed. This directory needs to have write access to the user running the dbimporter, remember slashes (\) are special characters in java so c:\foo should be entered as c:\\\\
+gipse.dbimporter.working.directory=SOME WORKING DIR
+#if this property is non-blank then the program will attempt to update twitter with import results
+gipse.dbimporter.twitter.user=SOME TWITTER ACCOUNT
+#password for associated twitter account
+gipse.dbimporter.twitter.pass=SOME TWITTER PASSWORD
+#If this property is set, then any count that equals the value will be reset with a random int between 1 and 100. Leave blank for production.
+gipse.dbimporter.resetrandom=
+#An id for the runtime environment, used for logging & twitter (so keep it short)
+gipse.dbimporter.environment.label=SOME LABEL
+
+##LOGGING PROPERTIES - You can leave these alone and be fine##
+#log4j level for messaging level (DEBUG, INFO, WARN, ERROR, FATAL)
+gipse.dbimporter.log.level=DEBUG
+#log4j appender where messages go (CONSOLE and FILE), if you choose FILE, then make sure log.dir and log.file are set
+gipse.dbimporter.log.appender=CONSOLE
+#directory path and file name for log file, will be created if it doesn't exist
+gipse.dbimporter.log.file=SOME FILE

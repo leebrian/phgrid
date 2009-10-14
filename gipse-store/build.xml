@@ -1,0 +1,47 @@
+<!--
+Rudimentary build file for the amds DDL/Seed for the AMDS Store (used by the AMDS BioSense services and populated by the AMDS loader).
+@author Brian Alexander Lee (brianalee@gmail.com)
+@created 2009.05.08
+-->
+<project name="amds-db" default="filter" basedir=".">
+	<property name="target.dir" value="${basedir}/target"/>
+	
+	<!-- remove the target dir to insure clean target -->
+	<target name="clean">
+		<delete dir="${target.dir}" quiet="true"/>
+	</target>
+	
+	<!-- Copy over all the db specific ddl and seed data, expanding the properties to populate db variables-->
+	<target name="filter" depends="clean">
+		<copy tofile="${basedir}/build.properties" file="${basedir}/build.properties.template" overwrite="false"/>
+		
+		<property file="${basedir}/build.properties"/>
+		
+		<copy todir="${target.dir}/ddl">
+			<filterchain>
+		    	<expandproperties/>
+		  	</filterchain>
+			<fileset dir="${basedir}/ddl"/>
+		</copy>
+		<concat destfile="${target.dir}/ddl/postgresql/allddl.sql">
+			<fileset dir="${target.dir}/ddl/postgresql" includes="**/*.sql"/>
+		</concat>
+		<concat destfile="${target.dir}/ddl/sqlserver/allddl.sql">
+			<fileset dir="${target.dir}/ddl/sqlserver" includes="**/*.sql"/>
+		</concat>
+		
+		<copy todir="${target.dir}/seed-data">
+			<filterchain>
+		    	<expandproperties/>
+		  	</filterchain>
+			<fileset dir="${basedir}/seed-data"/>
+		</copy>
+		<concat destfile="${target.dir}/seed-data/postgresql/loadseeddata.sql">
+			<fileset dir="${target.dir}/seed-data/postgresql" includes="**/*.sql"/>
+		</concat>
+		<concat destfile="${target.dir}/seed-data/sqlserver/loadseeddata.sql">
+			<fileset dir="${target.dir}/seed-data/sqlserver" includes="**/*.sql"/>
+		</concat>
+		
+	</target>
+</project>

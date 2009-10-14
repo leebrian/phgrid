@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Folder>
+  <name maxLines="1">statecentroids</name>
+  <Snippet maxLines="1"><![CDATA[]]>
+  </Snippet>
+  <description><![CDATA[]]>
+  </description>
+  <Folder id="FeatureLayer">
+    <name maxLines="1">statecentroids</name>
+  <Snippet maxLines="1"><![CDATA[]]>
+  </Snippet>
+  <description><![CDATA[]]>
+  </description>
+    <Placemark>
+      <name maxLines="1">AL</name>
+      <Snippet maxLines="1"><![CDATA[0 0 AL 32.791617 -86.827611 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 0<BR>STATE: AL<BR>LAT: 32.791617<BR>LON: -86.827611<BR>]]></description>
+      <Style id="000000_0_0">
+        <IconStyle>
+          <Icon>
+            <href>000000.png</href>
+            <x>0</x>
+            <y>0</y>
+            <w>32</w>
+            <h>32</h>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -86.827611,32.791617,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">AK</name>
+      <Snippet maxLines="1"><![CDATA[0 1 AK 64.262549 -152.56708 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 1<BR>STATE: AK<BR>LAT: 64.262549<BR>LON: -152.56708<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -152.567080,64.262549,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">AZ</name>
+      <Snippet maxLines="1"><![CDATA[0 2 AZ 34.293226 -111.664589 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 2<BR>STATE: AZ<BR>LAT: 34.293226<BR>LON: -111.664589<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -111.664589,34.293226,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">AR</name>
+      <Snippet maxLines="1"><![CDATA[0 3 AR 34.899831 -92.439159 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 3<BR>STATE: AR<BR>LAT: 34.899831<BR>LON: -92.439159<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -92.439159,34.899831,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">CA</name>
+      <Snippet maxLines="1"><![CDATA[0 4 CA 37.246132 -119.60942 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 4<BR>STATE: CA<BR>LAT: 37.246132<BR>LON: -119.60942<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -119.609420,37.246132,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">CO</name>
+      <Snippet maxLines="1"><![CDATA[0 5 CO 38.998551 -105.547831 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 5<BR>STATE: CO<BR>LAT: 38.998551<BR>LON: -105.547831<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -105.547831,38.998551,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">CT</name>
+      <Snippet maxLines="1"><![CDATA[0 6 CT 41.621871 -72.725185 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 6<BR>STATE: CT<BR>LAT: 41.621871<BR>LON: -72.725185<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -72.725185,41.621871,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">DE</name>
+      <Snippet maxLines="1"><![CDATA[0 7 DE 39.003902 -75.507461 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 7<BR>STATE: DE<BR>LAT: 39.003902<BR>LON: -75.507461<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -75.507461,39.003902,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">DC</name>
+      <Snippet maxLines="1"><![CDATA[0 8 DC 38.904784 -77.016274 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 8<BR>STATE: DC<BR>LAT: 38.904784<BR>LON: -77.016274<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -77.016274,38.904784,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">FL</name>
+      <Snippet maxLines="1"><![CDATA[0 9 FL 28.650413 -82.488331 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 9<BR>STATE: FL<BR>LAT: 28.650413<BR>LON: -82.488331<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -82.488331,28.650413,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">GA</name>
+      <Snippet maxLines="1"><![CDATA[0 10 GA 32.651172 -83.449374 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 10<BR>STATE: GA<BR>LAT: 32.651172<BR>LON: -83.449374<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -83.449374,32.651172,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">HI</name>
+      <Snippet maxLines="1"><![CDATA[0 11 HI 20.245884 -156.344543 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 11<BR>STATE: HI<BR>LAT: 20.245884<BR>LON: -156.344543<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -156.344543,20.245884,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">ID</name>
+      <Snippet maxLines="1"><![CDATA[0 12 ID 44.389073 -114.659366 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 12<BR>STATE: ID<BR>LAT: 44.389073<BR>LON: -114.659366<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -114.659366,44.389073,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">IL</name>
+      <Snippet maxLines="1"><![CDATA[0 13 IL 40.064993 -89.198394 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 13<BR>STATE: IL<BR>LAT: 40.064993<BR>LON: -89.198394<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -89.198394,40.064993,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">IN</name>
+      <Snippet maxLines="1"><![CDATA[0 14 IN 39.908138 -86.275545 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 14<BR>STATE: IN<BR>LAT: 39.908138<BR>LON: -86.275545<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -86.275545,39.908138,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">IA</name>
+      <Snippet maxLines="1"><![CDATA[0 15 IA 42.074657 -93.500045 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 15<BR>STATE: IA<BR>LAT: 42.074657<BR>LON: -93.500045<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -93.500045,42.074657,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">KS</name>
+      <Snippet maxLines="1"><![CDATA[0 16 KS 38.484727 -98.380188 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 16<BR>STATE: KS<BR>LAT: 38.484727<BR>LON: -98.380188<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -98.380188,38.484727,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">KY</name>
+      <Snippet maxLines="1"><![CDATA[0 17 KY 37.526682 -85.290483 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 17<BR>STATE: KY<BR>LAT: 37.526682<BR>LON: -85.290483<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -85.290483,37.526682,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">LA</name>
+      <Snippet maxLines="1"><![CDATA[0 18 LA 31.073035 -92.007187 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 18<BR>STATE: LA<BR>LAT: 31.073035<BR>LON: -92.007187<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -92.007187,31.073035,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">ME</name>
+      <Snippet maxLines="1"><![CDATA[0 19 ME 45.380607 -69.232241 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 19<BR>STATE: ME<BR>LAT: 45.380607<BR>LON: -69.232241<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -69.232241,45.380607,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">MD</name>
+      <Snippet maxLines="1"><![CDATA[0 20 MD 39.019074 -76.799262 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 20<BR>STATE: MD<BR>LAT: 39.019074<BR>LON: -76.799262<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -76.799262,39.019074,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">MA</name>
+      <Snippet maxLines="1"><![CDATA[0 21 MA 42.256815 -71.812238 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 21<BR>STATE: MA<BR>LAT: 42.256815<BR>LON: -71.812238<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -71.812238,42.256815,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">MI</name>
+      <Snippet maxLines="1"><![CDATA[0 22 MI 44.34666 -85.439827 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 22<BR>STATE: MI<BR>LAT: 44.34666<BR>LON: -85.439827<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -85.439827,44.346660,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">MN</name>
+      <Snippet maxLines="1"><![CDATA[0 23 MN 46.316306 -94.309304 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 23<BR>STATE: MN<BR>LAT: 46.316306<BR>LON: -94.309304<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -94.309304,46.316306,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">MS</name>
+      <Snippet maxLines="1"><![CDATA[0 24 MS 32.751612 -89.665419 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 24<BR>STATE: MS<BR>LAT: 32.751612<BR>LON: -89.665419<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -89.665419,32.751612,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">MO</name>
+      <Snippet maxLines="1"><![CDATA[0 25 MO 38.367499 -92.47724 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 25<BR>STATE: MO<BR>LAT: 38.367499<BR>LON: -92.47724<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -92.477240,38.367499,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">MT</name>
+      <Snippet maxLines="1"><![CDATA[0 26 MT 47.033522 -109.645134 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 26<BR>STATE: MT<BR>LAT: 47.033522<BR>LON: -109.645134<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -109.645134,47.033522,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">NE</name>
+      <Snippet maxLines="1"><![CDATA[0 27 NE 41.5271 -99.810586 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 27<BR>STATE: NE<BR>LAT: 41.5271<BR>LON: -99.810586<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -99.810586,41.527100,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">NV</name>
+      <Snippet maxLines="1"><![CDATA[0 28 NV 39.356469 -116.655398 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 28<BR>STATE: NV<BR>LAT: 39.356469<BR>LON: -116.655398<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -116.655398,39.356469,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">NH</name>
+      <Snippet maxLines="1"><![CDATA[0 29 NH 43.686777 -71.578906 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 29<BR>STATE: NH<BR>LAT: 43.686777<BR>LON: -71.578906<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -71.578906,43.686777,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">NJ</name>
+      <Snippet maxLines="1"><![CDATA[0 30 NJ 40.201045 -74.671151 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 30<BR>STATE: NJ<BR>LAT: 40.201045<BR>LON: -74.671151<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -74.671151,40.201045,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">NM</name>
+      <Snippet maxLines="1"><![CDATA[0 31 NM 34.421361 -106.108391 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 31<BR>STATE: NM<BR>LAT: 34.421361<BR>LON: -106.108391<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -106.108391,34.421361,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">NY</name>
+      <Snippet maxLines="1"><![CDATA[0 32 NY 42.951392 -75.516098 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 32<BR>STATE: NY<BR>LAT: 42.951392<BR>LON: -75.516098<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -75.516098,42.951392,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">NC</name>
+      <Snippet maxLines="1"><![CDATA[0 33 NC 35.543789 -79.387643 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 33<BR>STATE: NC<BR>LAT: 35.543789<BR>LON: -79.387643<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -79.387643,35.543789,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">ND</name>
+      <Snippet maxLines="1"><![CDATA[0 34 ND 47.446315 -100.469309 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 34<BR>STATE: ND<BR>LAT: 47.446315<BR>LON: -100.469309<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -100.469309,47.446315,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">OH</name>
+      <Snippet maxLines="1"><![CDATA[0 35 OH 40.291295 -82.790053 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 35<BR>STATE: OH<BR>LAT: 40.291295<BR>LON: -82.790053<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -82.790053,40.291295,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">OK</name>
+      <Snippet maxLines="1"><![CDATA[0 36 OK 35.583452 -97.508298 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 36<BR>STATE: OK<BR>LAT: 35.583452<BR>LON: -97.508298<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -97.508298,35.583452,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">OR</name>
+      <Snippet maxLines="1"><![CDATA[0 37 OR 43.938387 -120.556417 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 37<BR>STATE: OR<BR>LAT: 43.938387<BR>LON: -120.556417<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -120.556417,43.938387,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">PA</name>
+      <Snippet maxLines="1"><![CDATA[0 38 PA 40.873668 -77.799289 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 38<BR>STATE: PA<BR>LAT: 40.873668<BR>LON: -77.799289<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -77.799289,40.873668,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">PR</name>
+      <Snippet maxLines="1"><![CDATA[0 39 PR 18.222541 -66.469235 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 39<BR>STATE: PR<BR>LAT: 18.222541<BR>LON: -66.469235<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -66.469235,18.222541,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">RI</name>
+      <Snippet maxLines="1"><![CDATA[0 40 RI 41.676207 -71.555705 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 40<BR>STATE: RI<BR>LAT: 41.676207<BR>LON: -71.555705<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -71.555705,41.676207,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">SC</name>
+      <Snippet maxLines="1"><![CDATA[0 41 SC 33.914461 -80.899695 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 41<BR>STATE: SC<BR>LAT: 33.914461<BR>LON: -80.899695<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -80.899695,33.914461,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">SD</name>
+      <Snippet maxLines="1"><![CDATA[0 42 SD 44.436147 -100.230494 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 42<BR>STATE: SD<BR>LAT: 44.436147<BR>LON: -100.230494<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -100.230494,44.436147,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">TN</name>
+      <Snippet maxLines="1"><![CDATA[0 43 TN 35.842995 -86.343228 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 43<BR>STATE: TN<BR>LAT: 35.842995<BR>LON: -86.343228<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -86.343228,35.842995,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">TX</name>
+      <Snippet maxLines="1"><![CDATA[0 44 TX 31.494986 -99.358886 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 44<BR>STATE: TX<BR>LAT: 31.494986<BR>LON: -99.358886<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -99.358886,31.494986,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">UT</name>
+      <Snippet maxLines="1"><![CDATA[0 45 UT 39.323779 -111.678222 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 45<BR>STATE: UT<BR>LAT: 39.323779<BR>LON: -111.678222<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -111.678222,39.323779,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">VT</name>
+      <Snippet maxLines="1"><![CDATA[0 46 VT 44.075226 -72.662738 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 46<BR>STATE: VT<BR>LAT: 44.075226<BR>LON: -72.662738<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -72.662738,44.075226,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">VA</name>
+      <Snippet maxLines="1"><![CDATA[0 47 VA 37.514902 -78.824717 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 47<BR>STATE: VA<BR>LAT: 37.514902<BR>LON: -78.824717<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -78.824717,37.514902,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">WA</name>
+      <Snippet maxLines="1"><![CDATA[0 48 WA 47.379794 -120.442589 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 48<BR>STATE: WA<BR>LAT: 47.379794<BR>LON: -120.442589<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -120.442589,47.379794,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">WV</name>
+      <Snippet maxLines="1"><![CDATA[0 49 WV 38.642578 -80.613732 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 49<BR>STATE: WV<BR>LAT: 38.642578<BR>LON: -80.613732<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -80.613732,38.642578,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">WI</name>
+      <Snippet maxLines="1"><![CDATA[0 50 WI 44.635761 -90.011425 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 50<BR>STATE: WI<BR>LAT: 44.635761<BR>LON: -90.011425<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -90.011425,44.635761,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name maxLines="1">WY</name>
+      <Snippet maxLines="1"><![CDATA[0 51 WY 42.999627 -107.551449 ]]></Snippet>
+      <description><![CDATA[Id: 0<BR>PolyFID: 51<BR>STATE: WY<BR>LAT: 42.999627<BR>LON: -107.551449<BR>]]></description>
+      <styleUrl>#000000_0_0</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> -107.551449,42.999627,0.000000</coordinates>
+      </Point>
+    </Placemark>
+  </Folder>
+</Folder>
+</kml>

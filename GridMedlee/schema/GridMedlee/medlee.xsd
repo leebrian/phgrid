@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://dbmi.columbia.edu/GridMedlee/medlee"
+	xmlns:tns="http://dbmi.columbia.edu/GridMedlee/medlee"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+	attributeFormDefault="unqualified">
+
+	<xs:element name="MedleeOutputDocuments"
+		type="tns:MedleeOutputDocuments" />
+	<xs:complexType name="MedleeOutputDocuments">
+		<xs:sequence>
+			<xs:element ref="tns:MedleeOutputDocument" minOccurs="1"
+				maxOccurs="unbounded">
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:element name="MedleeOutputDocument"
+		type="tns:MedleeOutputDocument" />
+	<xs:complexType name="MedleeOutputDocument">
+		<xs:sequence>
+			<xs:element name="XMLOutput" type="xs:string"></xs:element>
+		</xs:sequence>
+		<xs:attribute name="identifier" type="xs:string"></xs:attribute>
+	</xs:complexType>
+
+
+	<xs:element name="MedleeInputDocuments"
+		type="tns:MedleeInputDocuments" />
+	<xs:complexType name="MedleeInputDocuments">
+		<xs:sequence>
+			<xs:element ref="tns:MedleeInputDocument" minOccurs="1"
+				maxOccurs="unbounded">
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:element name="MedleeInputDocument"
+		type="tns:MedleeInputDocument" />
+	<xs:complexType name="MedleeInputDocument">
+		<xs:sequence>
+			<xs:element name="Text" type="xs:string"></xs:element>
+		</xs:sequence>
+		<xs:attribute name="identifier" type="xs:string"></xs:attribute>
+	</xs:complexType>
+
+	<xs:element name="MedleeInvocationConfiguration"
+		type="tns:MedleeInvocationConfiguration" />
+	<xs:complexType name="MedleeInvocationConfiguration">
+		<xs:sequence>
+			<xs:element name="ParseMode" type="tns:ParseModeOptions" minOccurs="1" maxOccurs="1"></xs:element>
+			<xs:element name="OutputFormat" type="tns:OutputFormatOptions" minOccurs="1"  maxOccurs="1"></xs:element>
+			<xs:element name="Code" type="tns:CodeOptions" minOccurs="1"  maxOccurs="1"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+    <xs:simpleType name="ParseModeOptions">
+      <xs:restriction base="string">
+      	<xs:enumeration value="best"></xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="OutputFormatOptions">
+      <xs:restriction base="string">
+      	<xs:enumeration value="xml"></xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="CodeOptions">
+      <xs:restriction base="string">
+      	<xs:enumeration value="yes"></xs:enumeration>
+      	<xs:enumeration value="no"></xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:element name="Status"
+		type="tns:StatusOptions" />
+    <xs:simpleType name="StatusOptions">
+      <xs:restriction base="string">
+        <xs:enumeration value="READY"></xs:enumeration>
+      	<xs:enumeration value="RUNNING"></xs:enumeration>
+      	<xs:enumeration value="COMPLETE"></xs:enumeration>
+      	<xs:enumeration value="ERROR"></xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+
+</schema>

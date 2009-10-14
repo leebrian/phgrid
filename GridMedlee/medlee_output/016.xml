@@ -1,0 +1,40 @@
+<medlee>
+<section c = "report unknown section item"><structured form = "xml">
+<problem v = "fever" idref = "p55"><certainty v = "no" idref = "p53"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s2"></sid></problem>
+<problem v = "discomfort" idref = "p64"><bodyloc v = "abdomen" idref = "p62"></bodyloc>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s3"></sid><status v = "occasional" idref = "p60"></status>
+</problem>
+<problem v = "discomfort" idref = "p95"><certainty v = "high certainty" idref = "p89"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s5"></sid><status v = "post prandial" idref = "p91"></status>
+<status v = "subsequent" idref = "p82"></status>
+</problem>
+<problem v = "blood" idref = "p102"><certainty v = "no" idref = "p100"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s6"></sid></problem>
+<problem v = "depression" idref = "p253"><certainty v = "moderate certainty" idref = "p254"></certainty>
+<parsemode v = "mode1"></parsemode>
+<quantity v = "3" idref = "p250"></quantity>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s18"></sid></problem>
+<problem v = "anxiety state" idref = "p255"><certainty v = "moderate certainty" idref = "p254"></certainty>
+<parsemode v = "mode1"></parsemode>
+<quantity v = "3" idref = "p250"></quantity>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s18"></sid></problem>
+<labtest v = "protein" idref = "p306"><certainty v = "no" idref = "p304"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s22"></sid></labtest>
+
+</structured>
+<tt><sent id = "s1"><undef>Xxxxxx</undef>, <undef>Xxxxxxx</undef> 9999999 <undef>AIM</undef> f/u (last <undef>visit</undef> 12/7/5) 58 <undef>F</undef> reports having fecal frequency, occasional diarrhea x 1 week.</sent><sent id = "s2">  <phr id = "p53">no</phr> <phr id = "p55">fevers</phr>.</sent><sent id = "s3">  <phr id = "p60">Occasional</phr> <phr id = "p62">abd</phr> <phr id = "p64">discomfort</phr>.</sent><sent id = "s4">  <undef>Travelled</undef> to <undef>DR</undef> in January.</sent><sent id = "s5">  <phr id = "p82">Since then</phr>, has <phr id = "p89">had</phr> <phr id = "p91">post-prandial</phr> <phr id = "p95">discomfort</phr>.</sent><sent id = "s6">  <phr id = "p100">No</phr> <phr id = "p102">blood</phr>.</sent><sent id = "s7"> <undef>PMHx</undef> and Problem <undef>List</undef> 1) HTN.</sent><sent id = "s8"> Prior ex <undef>thall</undef> '98 negative.</sent><sent id = "s9"> 116/70 on altace 10 bid.</sent><sent id = "s10"> ->Continue altace.</sent><sent id = "s11"> <undef>Cont</undef> asa 81.</sent><sent id = "s12"> 2) Chronic abd pain, likely <undef>ibs</undef>.</sent><sent id = "s13"> <undef>Colonscopy</undef> with adenomas '3.</sent><sent id = "s14"> EGD <undef>neg</undef> '3 (polyp).</sent><sent id = "s15"> <undef>Eus</undef> shows no pancreatic mass.</sent><sent id = "s16"> <undef>Anti</undef>-<undef>transglutaminase</undef> <undef>ab</undef> <undef>neg</undef> (for celiac <undef>dz.</undef>).</sent><sent id = "s17"> sx largely relieved despite <undef>d</undef>/<undef>c</undef> prilosec.</sent><sent id = "s18"> <phr id = "p250">3</phr>) <phr id = "p253">Depression</phr><phr id = "p254">/</phr><phr id = "p255">Anxiety</phr>.</sent><sent id = "s19"> Has psych f/u.</sent><sent id = "s20"> on depakote, paxil, clonazepam (adjusted by psych only) much <undef>happier</undef> today.</sent><sent id = "s21"> 4) <undef>DM2</undef>.</sent><sent id = "s22"> <phr id = "p304">No</phr> <phr id = "p306">protein</phr>.</sent><sent id = "s23"> No h/o Cad (stress <undef>nl</undef> 1998).</sent><sent id = "s24"> No h/o retinopathy last <undef>visit</undef> 1 year ago.</sent><sent id = "s25"> Has f/u <undef>naomie</undef> <undef>berrie</undef>,  on metformin 500/1000 5) Thyroid.</sent><sent id = "s26"> TSH >5 + solitary nodule (bx with <undef>follic</undef> hyperplasia) <undef>follows</undef> w/ thyroid clinic.</sent><sent id = "s27"> 6) <undef>SurgHx</undef>: L cataract 8/4;</sent><sent id = "s28"> h/o bladder surgery for incontinence.</sent><sent id = "s29"> 7) Carpel Tunnel Syndrome (EMG 1999, recurrent symptoms intermittently) Allergies--> <undef>PCN</undef>--> hives Side Effects--> Codeine--> anxiety <undef>Med</undef>: Paxil 40 bid clonazepam 0. at <undef>lunch</undef> + 1 qhs zyprexa 5mg Qhs Ramipril 10 daily metformin 500 qam, 1000 qhs <undef>Ecasa</undef> 81 Levoxyl 0.75 qd <undef>loratidine</undef> tylenol prn <undef>OScal</undef>+<undef>D</undef> PE: NAD 110/70, 80 <undef>Wt</undef>.</sent><sent id = "s30"> 135 lbs.</sent><sent id = "s31"> = 135 <undef>WDWN</undef>, NAD Abd <undef>SNTND</undef>, <undef>nl</undef> <undef>BS</undef> no <undef>HSM</undef> <undef>Ext</undef> <undef>WWP</undef> no <undef>c</undef>/<undef>c</undef>/<undef>e</undef> Neuro Nonfocal Labs: <undef>HGA1C</undef> 2/27/6: 6.2 Urine <undef>MicroAlb</undef> 12/5: 4.4 (177) Lipid (2/6): 167, 255, 36, 80 <undef>BMP</undef>: 137, 4.0, 102, 23, 17, 0.7, 112, 9.1 LFT's: 8.0, 4.7, 0.4, 0.1, 25, 28, 104 <undef>TFT</undef>'s (11/5): TSH 0.48, T4 9.91, T3 97, <undef>FT4</undef> 1.5 3/1: HepB, <undef>HC</undef> negative.</sent><sent id = "s32"> <undef>HM</undef>: - Lipids 2/6 - Pap wnl 2/6 - Mammo <undef>neg</undef> 1/5 - <undef>colonscopy</undef> '3 with <undef>mult</undef> adenomas - Tetanus booster done 1/6.</sent><sent id = "s33"> - Dexa: osteoporosis of R forearm, <undef>nl</undef> at L spine and hip.</sent><sent id = "s34"> 4/4 - <undef>Ophtho</undef> 1/11/5: no retinopathy.</sent><sent id = "s35"> - <undef>FluVax</undef> 12/5 - pneumovax 12/5 A/<undef>P</undef> 56 y/o <undef>F</undef> stable HTN, depression, <undef>DM2</undef> well controlled, hypothyroid well controlled, ? Low back pain, <undef>B</undef> <undef>CTS</undef> 0.</sent><sent id = "s36"> Diarrhea: r/o parasites - <undef>send</undef> <undef>O</undef>&<undef>P</undef>, <undef>C</undef>&S, <undef>FOBT</undef> - hydration 1.</sent><sent id = "s37"> Back pain: continue back <undef>exercises.</undef>, side pain warm compresses, tylenol prn.</sent><sent id = "s38"> 2.</sent><sent id = "s39"> <undef>CTS</undef>: PT, continue <undef>quilter</undef>'s <undef>glove</undef>/brace 3.</sent><sent id = "s40"> htn: <undef>cont</undef> altace 4.</sent><sent id = "s41"> <undef>dm2</undef>: <undef>cont</undef> metformin 500/1000 - continue f/u at <undef>Naomi</undef> <undef>Berrie</undef> 5.</sent><sent id = "s42"> thyroid: <undef>contine</undef> levoxyl - continue f/u w/ Thyroid clinic 6.</sent><sent id = "s43"> Psych: <undef>reg</undef> psych f/u.</sent><sent id = "s44"> appears <undef>happier</undef>.</sent><sent id = "s45"> Meds adjusted by psychiatry.</sent><sent id = "s46"> 7.</sent><sent id = "s47"> <undef>HM</undef>: - continue <undef>encourage</undef> dietary modification and exercise - PPD testing as requesting - <undef>encourage</undef> <undef>Ophtho</undef> f/u - <undef>sched</undef> mammo 3/28 - weight bearing exercise - <undef>referral</undef> derm for nose.</sent><sent id = "s48"> <undef>RTC</undef> in 1 month to f/u diarrhea.</sent></tt></section>
+
+</medlee>

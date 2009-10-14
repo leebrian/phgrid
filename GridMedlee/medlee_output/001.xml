@@ -1,0 +1,52 @@
+<medlee>
+<section c = "report unknown section item"><structured form = "xml">
+<problem v = "diarrhea" idref = "p275"><change v = "worse" idref = "p271"><certainty v = "moderate certainty" idref = "p267"></certainty>
+</change>
+<descriptor v = "watery" idref = "p273"></descriptor>
+<locative v = "over" idref = "p277"></locative>
+<parsemode v = "mode1"></parsemode>
+<reltime v = "previous" idref = "p281"><numunit v = "few month" idref = "p283"></numunit>
+</reltime>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s6"></sid></problem>
+<problem v = "irritable bowel syndrome" idref = "p299"><certainty v = "high certainty" idref = "p291"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s7"></sid><status v = "history" idref = "p295"></status>
+</problem>
+<med v = "imodium" idref = "p309"><certainty v = "high certainty"></certainty>
+<manner v = "as needed" idref = "p311"></manner>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s7"></sid><status v = "therapy" idref = "p305"></status>
+</med>
+<med v = "lipitor" idref = "p449"><certainty v = "no" idref = "p451"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s14"></sid></med>
+<procedure v = "laboratory test" idref = "p457"><certainty v = "high certainty" idref = "p455"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s14"></sid></procedure>
+<problem v = "blind" idref = "p492"><certainty v = "high certainty" idref = "p490"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s16"></sid><timeper v = "now" idref = "p494"></timeper>
+</problem>
+<problem v = "thrombosis" idref = "p502"><bodyloc v = "retina" idref = "p500"></bodyloc>
+<certainty v = "moderate certainty" idref = "p496"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s16"></sid></problem>
+<med v = "imodium" idref = "p652"><certainty v = "high certainty"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s23"></sid><status v = "future" idref = "p648"></status>
+<status v = "start" idref = "p650"></status>
+</med>
+
+</structured>
+<tt><sent id = "s1">Problems: hypertension Depression Severe anxiety disorder Somatization disorder Irritable bowel syndrome Hyperlipidemia White matter microvascular disease Urge incontinence Retinal thrombosis/blindness Fatty liver Meds (<undef>update</undef> 3/10/6): METOPROLOL <undef>XL</undef> 100 MG ONCE A DAY diamox 500 mg twice a day trazodone 100 mg at <undef>bedtime</undef> mirtazapine 15 mg at <undef>bedtime</undef> risperidal 0.5 twice a day aspirin <undef>EC</undef> 81 mg once a day Alcon 1 <undef>caps</undef> qd imodium q 8 hrs as needed Allergy: penicillin <undef>HM</undef>: Normal mammogram 2003 Report of outside mammogram 2004 not <undef>available</undef>.</sent><sent id = "s2"> pap smear normal 2003 Normal colonoscopy 1998 Flu vaccine 2005 <undef>ordered</undef> Pneumovax 2005 <undef>ordered</undef> Functional <undef>issues</undef>;</sent><sent id = "s3"> Has 24 hours home <undef>aide</undef>.</sent><sent id = "s4"> <undef>Comes</undef> for follow-up of anxiety, hypertension, dyslipidemia.</sent><sent id = "s5"> She is accompanied by a friend, <undef>AAAAAAA</undef> <undef>ZZZZZZ</undef>.</sent><sent id = "s6"> <phr id = "p267">Complains of</phr> <phr id = "p271">worsening</phr> <phr id = "p273">watery</phr> <phr id = "p275">diarrhea</phr> <phr id = "p277">over</phr> the <phr id = "p281">last</phr> <phr id = "p283">few months</phr>.</sent><sent id = "s7"> She <phr id = "p291">has</phr> a <phr id = "p295">history of</phr> <phr id = "p299">Irritable bowel syndrome</phr> <phr id = "p305">treated with</phr> <phr id = "p309">imodium</phr> <phr id = "p311">as needed</phr>.</sent><sent id = "s8"> She has not been using the imodium She denies psychiatric hospitalizations since last appt.</sent><sent id = "s9"> She is being <undef>followed</undef> as an appt by <undef>Mt</undef>.</sent><sent id = "s10"> <undef>Sinai</undef>.</sent><sent id = "s11"> <undef>I</undef> was <undef>notified</undef> in February that Ms.</sent><sent id = "s12"> <undef>XXXXX</undef> had an abnormal <undef>US</undef> of the abdomen showing dilated bile ducts in October.</sent><sent id = "s13"> <undef>I</undef> scheduled an abdominal <undef>US</undef> last month and she missed the appt.</sent><sent id = "s14"> Is <phr id = "p445">not</phr> taking <phr id = "p449">lipitor</phr> <phr id = "p451">Did not</phr> <phr id = "p455">get</phr> <phr id = "p457">labs</phr>.</sent><sent id = "s15"> Is following with <undef>ophtalmologist</undef> outside <undef>CUMC</undef> (Dr. <undef>YYYYYY</undef> 610 <undef>E</undef> 90th <undef>street</undef>).</sent><sent id = "s16"> <phr id = "p490">Is</phr> <phr id = "p492">blind</phr> <phr id = "p494">now</phr> <phr id = "p496">due to</phr> <phr id = "p500">retinal</phr> <phr id = "p502">thrombosis</phr>.</sent><sent id = "s17"> <undef>W</undef> = 165 lbs BP = 144/80 HR = 70 <undef>reg</undef> soft abdomen.</sent><sent id = "s18"> no hepatomegaly no splenomegaly.</sent><sent id = "s19"> No tenderness no masses.</sent><sent id = "s20"> A/<undef>P</undef> 1) hypertension: borderline control;</sent><sent id = "s21"> <undef>reassess</undef> next appt 2) lipids: <undef>reassess</undef> with labs 3) liver: <undef>carried</undef> a diagnosis of fatty liver;</sent><sent id = "s22"> will reschedule ultrasound and get liver panel 4) Diarrhea: consistent with past history of irritable bowel syndrome.</sent><sent id = "s23"> <phr id = "p648">Will</phr> <phr id = "p650">start</phr> <phr id = "p652">imodium</phr> as above.</sent><sent id = "s24"> 5) Continue <undef>ophtalmology</undef> follow-up <undef>RTC</undef> in one month labs today Ultrasound liver  
+</sent></tt></section>
+
+</medlee>

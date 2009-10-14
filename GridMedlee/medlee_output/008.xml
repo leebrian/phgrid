@@ -1,0 +1,66 @@
+<medlee>
+<section c = "report unknown section item"><structured form = "xml">
+<problem v = "leukocytes" idref = "p119"><bodyloc v = "feces" idref = "p117"></bodyloc>
+<certainty v = "negative" idref = "p115"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s4"></sid></problem>
+<problem v = "tremor" idref = "p208"><certainty v = "high certainty" idref = "p200"></certainty>
+<change v = "no change" idref = "p202"></change>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s10"></sid></problem>
+<procedure v = "magnetic resonance imaging" idref = "p212"><parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s11"></sid></procedure>
+<problem v = "degenerative changes" idref = "p222"><certainty v = "high certainty" idref = "p214"></certainty>
+<degree v = "low degree" idref = "p216"></degree>
+<descriptor v = "age-related" idref = "p218"></descriptor>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s11"></sid></problem>
+<problem v = "diarrhea" idref = "p322"><parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s16"></sid><status v = "chronic" idref = "p320"></status>
+</problem>
+<problem v = "fracture" idref = "p433"><bodyloc v = "wrist" idref = "p427"><region v = "left" idref = "p425"></region>
+</bodyloc>
+<date v = "00000202" idref = "p429"></date>
+<parsemode v = "mode1"></parsemode>
+<problemdescr v = "open reduction with internal fixation" idref = "p423"></problemdescr>
+<quantity v = "2" idref = "p438"></quantity>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s20"></sid></problem>
+<problem v = "fall" idref = "p436"><bodyloc v = "wrist" idref = "p427"><region v = "left" idref = "p425"></region>
+</bodyloc>
+<certainty v = "high certainty" idref = "p434"></certainty>
+<date v = "00000202" idref = "p429"></date>
+<parsemode v = "mode1"></parsemode>
+<problemdescr v = "open reduction with internal fixation" idref = "p423"></problemdescr>
+<quantity v = "2" idref = "p438"></quantity>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s20"></sid></problem>
+<problem v = "mask like facies" idref = "p689"><certainty v = "no" idref = "p687"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s31"></sid></problem>
+<problem v = "rigid" idref = "p696"><certainty v = "no" idref = "p687"></certainty>
+<descriptor v = "cogwheeling" idref = "p694"></descriptor>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s31"></sid></problem>
+<labtest v = "cholesterol" idref = "p904"><degree v = "low degree" idref = "p902"></degree>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s34"></sid></labtest>
+<problem v = "atherosclerosis" idref = "p908"><certainty v = "low certainty" idref = "p910"></certainty>
+<parsemode v = "mode1"></parsemode>
+<quantity v = "2" idref = "p914"></quantity>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s34"></sid></problem>
+
+</structured>
+<tt><sent id = "s1"><undef>AIM</undef> Follow-Up Seen 2/23/6 for first <undef>visit</undef>, at that time c/o 9 months of watery diarrhea, and on exam noted intention tremor.</sent><sent id = "s2"> Pt notes that diarrhea has improved currently over past several days, but <undef>comes</undef> and <undef>goes</undef>.</sent><sent id = "s3"> Interval studies for diarrhea show negative <undef>O</undef>&<undef>P</undef> and stool culture;</sent><sent id = "s4"> <phr id = "p115">negative</phr> <phr id = "p117">fecal</phr> <phr id = "p119">leukocytes</phr>;</sent><sent id = "s5"> negative <undef>FOBTx3</undef>.</sent><sent id = "s6">  Serum sprue <undef>Ab</undef>'s show mildly +IgA <undef>anti</undef>-<undef>gliadin</undef> <undef>Ab</undef>, <undef>nl</undef> IgG <undef>anti</undef>-<undef>gliadin</undef> and tissue <undef>transglutaminase</undef>;</sent><sent id = "s7"> no <undef>endomysial</undef> <undef>Ab</undef> was drawn.</sent><sent id = "s8"> Carbamezepine level was mildly low;</sent><sent id = "s9"> <undef>TFTs</undef> WNL.</sent><sent id = "s10"> Pt <phr id = "p200">notes</phr> <phr id = "p202">no change</phr> in <phr id = "p208">tremor</phr>;</sent><sent id = "s11"> <phr id = "p212">MRI</phr> <phr id = "p214">with</phr> <phr id = "p216">mild</phr> <phr id = "p218">age-related</phr> <phr id = "p222">degenerative changes</phr>.</sent><sent id = "s12"> <undef>PMHx</undef> 1.</sent><sent id = "s13"> HTN- on meds x approx 1 year 2.</sent><sent id = "s14"> <undef>DM2</undef>- <undef>Dx</undef>'<undef>d</undef> 8 years ago 3.</sent><sent id = "s15"> ?trigeminal neuralgia- pt notes 30 yr history of L sided facial pain for which she has been on tegretol for many years 4.</sent><sent id = "s16"> <phr id = "p320">chronic</phr> <phr id = "p322">diarrhea</phr>;</sent><sent id = "s17"> work-up in <undef>progress</undef> -notes approx 10 months of persistent watery diarrhea, worst post-<undef>prandially</undef> -Notes approx 15 lb <undef>wt</undef> loss -<undef>cites</undef> <undef>nl</undef> colonoscopy 9 months ago at outside <undef>provider</undef> 5.</sent><sent id = "s18"> tremor as above -tegretol level WNL;</sent><sent id = "s19"> MRI without <undef>cerebellear</undef> mass <undef>PSHx</undef> 1.</sent><sent id = "s20"> <phr id = "p423">ORIF</phr> <phr id = "p425">L</phr> <phr id = "p427">wrist</phr> <phr id = "p429">2/2 </phr><phr id = "p433">Fx</phr><phr id = "p434">,</phr> <phr id = "p436">fall</phr> <phr id = "p438">2</phr>.</sent><sent id = "s21"> s/p TAH/BSO 1 yr ago in <undef>DR</undef> 2/2 bleeding 3.</sent><sent id = "s22"> s/p <undef>appy</undef> <undef>decades</undef> ago NKDA Meds 1.</sent><sent id = "s23"> ASA 81 PO QD 2.</sent><sent id = "s24"> Toprol 50 PO QD 3.</sent><sent id = "s25"> starlix 120 PO bid 4.</sent><sent id = "s26"> tegretol 200 bid 5.</sent><sent id = "s27"> zestril 5 PO QD <undef>Phys</undef> Ex BP 138/74 HR 82;</sent><sent id = "s28"> 135 lbs Elderly woman, no acute distress HEENT <undef>MMM</undef>, no bruits, no goiter, no JVD COR RRR, <undef>nl</undef> S1 S2, + 3/6 <undef>SEM</undef> <undef>loudesat</undef> at <undef>LLSB</undef>, no radiation <undef>Pulm</undef> <undef>CTA</undef> <undef>B</undef>/L <undef>Ext</undef> <undef>WWP</undef>, no edema Neuro A&<undef>O</undef> x3;</sent><sent id = "s29"> <undef>CN2</undef>-12 intact;</sent><sent id = "s30"> no tremor at rest, with marked intention tremor and <undef>B</undef>/L <undef>UE</undef> dysmetria;</sent><sent id = "s31"> <phr id = "p687">no</phr> <phr id = "p689">masked facies</phr><phr id = "p692">/</phr> <phr id = "p694">cogwheel</phr> <phr id = "p696">rigidity</phr>;</sent><sent id = "s32"> <undef>nl</undef> gait Rectal Guaiac negative brown stool A/<undef>P</undef> 74 yo <undef>F</undef> with HTN, <undef>DM2</undef>, ?trigeminal neuralgia on tegretol x years, now with nearly 1 year of diarrhea and tremor 1.</sent><sent id = "s33"> Diarrhea -will <undef>send</undef> for <undef>endomysial</undef> <undef>Ab</undef>'s to w/<undef>u</undef> potential for sprue -made appt for GI clinic March 30 @12:30 PM to further w/<undef>u</undef> diarrhea, consider repeat <undef>C</undef>-<undef>scope</undef> -pt notes <undef>nl</undef> <undef>c</undef>-<undef>scope</undef> 1 year ago, again <undef>asked</undef> to obtain <undef>results</undef> obtain <undef>results</undef> -while unlikely cause of diarrhea, post prandial pain may be 2/2 impaired gastric motility;</sent><sent id = "s34"> <phr id = "p902">low</phr> <phr id = "p904">cholesterol</phr> <phr id = "p906">makes</phr> <phr id = "p908">atherosclerosis</phr> <phr id = "p910">less likely</phr> <phr id = "p914">2</phr>.</sent><sent id = "s35"> Tremor -tegretol level mildly low, unlikely toxicity as cause of tremor -MRI without obvious structural cerebellar process -pt has new pt <undef>appointment</undef> with Neurology on March 13 at <undef>VC</undef>-10;</sent><sent id = "s36"> <undef>await</undef> Neuro <undef>input</undef> 3.</sent><sent id = "s37"> CV -mildly improved BP, will continue <undef>BB</undef> and newly added <undef>ACE</undef> for now until diarrhea w/<undef>u</undef> (and volume status) more <undef>equilibrated</undef> -<undef>TTE</undef> with mild concentric hypertrophy, no significant valvular disease -lipids low -will <undef>resend</undef> for <undef>baselin</undef> EKG 4.</sent><sent id = "s38"> <undef>Endo</undef> -<undef>A1C</undef> well controlled;</sent><sent id = "s39"> therefore will continue Starlix -will <undef>arrange</undef> for <undef>ophtho</undef>, podiatry 5.</sent><sent id = "s40"> Heme -mildly macrocytic anemia with elevated B12 and <undef>nl</undef> folate;</sent><sent id = "s41"> <undef>nl</undef> <undef>TFTs</undef>, low <undef>retics</undef> concerning for myelodysplastic syndrome -Ferritin relatively low with evidence of inflammation (elevated ESR) despite negative <undef>FOBT</undef>;</sent><sent id = "s42"> for GI clinic to consider colonoscopy -will <undef>send</undef> to Heme clinic for smear and potential <undef>BM</undef> Bx to assess <undef>hypoproliferative</undef> marrow 5.</sent><sent id = "s43"> <undef>HCM</undef> -colonoscopy as above -will <undef>defer</undef> DEXA for another time 6.</sent><sent id = "s44"> <undef>Insurance</undef> -pt will need to <undef>alter</undef> <undef>insurance</undef> to continue to f/u in clinic system;</sent><sent id = "s45"> will <undef>go</undef> to <undef>SW</undef> today immediately after <undef>appointment</undef>.</sent><sent id = "s46"> -<undef>Yyyy</undef> <undef>Yyyyyyy</undef> #<undef>NNNN</undef> <undef>RTC</undef> 1 month to F/U labs  
+</sent></tt></section>
+
+</medlee>

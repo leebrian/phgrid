@@ -1,0 +1,173 @@
+<medlee>
+<section c = "report unknown section item"><structured form = "xml">
+<problem v = "mass" idref = "p255"><bodyloc v = "scapula" idref = "p283"></bodyloc>
+<bodyloc v = "tissue" idref = "p267"><region v = "medial" idref = "p275"><region v = "posterior to" idref = "p269"></region>
+</region>
+<bodyloc v = "subcutaneous" idref = "p265"></bodyloc>
+</bodyloc>
+<certainty v = "high certainty" idref = "p259"></certainty>
+<measure v = "3.7 2.0" idref = "p243"></measure>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s3"></sid></problem>
+<problem v = "abnormality" idref = "p342"><certainty v = "no" idref = "p336"></certainty>
+<degree v = "high degree" idref = "p340"></degree>
+<descriptor v = "additional" idref = "p338"></descriptor>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s6"></sid></problem>
+<problem v = "abnormal enhancement" idref = "p346"><certainty v = "no" idref = "p336"></certainty>
+<degree v = "high degree" idref = "p340"></degree>
+<descriptor v = "additional" idref = "p338"></descriptor>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s6"></sid></problem>
+<problem v = "joint complaints" idref = "p464"><certainty v = "high certainty" idref = "p475"></certainty>
+<date v = "19900000" idref = "p470"><reltime v = "since" idref = "p468"></reltime>
+</date>
+<frequency v = "1" idref = "p473"></frequency>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s10"></sid></problem>
+<problem v = "swelling" idref = "p489"><bodyloc v = "knee" idref = "p481"><region v = "right" idref = "p479"></region>
+</bodyloc>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s10"></sid></problem>
+<problem v = "swelling" idref = "p489"><bodyloc v = "elbow" idref = "p487"><region v = "left" idref = "p485"></region>
+</bodyloc>
+<certainty v = "high certainty" idref = "p483"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s10"></sid></problem>
+<problem v = "pain" idref = "p493"><bodyloc v = "knee" idref = "p481"><region v = "right" idref = "p479"></region>
+</bodyloc>
+<certainty v = "high certainty" idref = "p491"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s10"></sid></problem>
+<problem v = "pain" idref = "p493"><bodyloc v = "elbow" idref = "p487"><region v = "left" idref = "p485"></region>
+</bodyloc>
+<certainty v = "high certainty" idref = "p491"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s10"></sid></problem>
+<procedure v = "x-ray" idref = "p496"><parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s10"></sid></procedure>
+<problem v = "fracture" idref = "p504"><certainty v = "no" idref = "p502"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s10"></sid></problem>
+<problem v = "dislocation" idref = "p508"><certainty v = "no" idref = "p502"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s10"></sid></problem>
+<problem v = "swelling" idref = "p1004"><bodyloc v = "face" idref = "p1002"></bodyloc>
+<certainty v = "high certainty" idref = "p1000"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s21"></sid><status v = "episode" idref = "p1006"></status>
+</problem>
+<problem v = "involved" idref = "p1024"><bodyloc v = "kidney" idref = "p1018"></bodyloc>
+<certainty v = "no" idref = "p1014"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s22"></sid></problem>
+<problem v = "involved" idref = "p1024"><bodyloc v = "lung" idref = "p1022"></bodyloc>
+<certainty v = "no" idref = "p1014"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s22"></sid></problem>
+<problem v = "dyspnea" idref = "p1087"><certainty v = "no" idref = "p1085"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s25"></sid></problem>
+<problem v = "chest pain" idref = "p1090"><certainty v = "no" idref = "p1085"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s25"></sid></problem>
+<problem v = "nausea" idref = "p1095"><certainty v = "no" idref = "p1085"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s25"></sid></problem>
+<problem v = "vomiting" idref = "p1098"><certainty v = "no" idref = "p1085"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s25"></sid></problem>
+<problem v = "diarrhea" idref = "p1101"><certainty v = "no" idref = "p1085"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s25"></sid></problem>
+<problem v = "constipation" idref = "p1104"><certainty v = "no" idref = "p1085"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s25"></sid></problem>
+<problem v = "Raynaud's syndrome" idref = "p1109"><certainty v = "no" idref = "p1107"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s25"></sid></problem>
+<problem v = "rash" idref = "p1116"><certainty v = "no" idref = "p1114"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s25"></sid></problem>
+<problem v = "alopecia" idref = "p1121"><certainty v = "no" idref = "p1119"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s25"></sid></problem>
+<med v = "diclofenac" idref = "p1705"><certainty v = "no" idref = "p1707"></certainty>
+<parsemode v = "mode1"></parsemode>
+<reaction v = "effective" idref = "p1717"></reaction>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s38"></sid></med>
+
+</structured>
+<tt><sent id = "s1">Patient <undef>Name</undef>: <undef>Xxxxxx</undef> <undef>Xxxxxx</undef> MR: 9999999 3/16/6 Rheumatology Clinic - Follow up <undef>Visit</undef> <undef>PMD</undef>: <undef>Dddd</undef> <undef>Bbbbbbb</undef> Neurology: <undef>Mmmmmmmm</undef> <undef>Eeeeee</undef>/ <undef>Ccccccccccc</undef> <undef>Wwwwwww</undef> Surgery: Dr. <undef>Aaaaa</undef> <undef>Sssssss</undef> 44 yo <undef>F</undef> with L wrist/forearm pain and numbness, initially thought related to a L carpal tunnel / cubital tunnel syndrome with associated epicondylitis, however, on further evaluation by Dr. <undef>Wwwwwww</undef> of Neurology, the impression was more likely a regional pain syndrome of unclear etiology, possibly related to the shoulder lipoma.</sent><sent id = "s2">  MRI of the shoulder (2/26/6) showed mild degenerative change of the acromioclavicular joint, mild fibrocystic degenerative change at the greater tuberosity, evidence of mild supra- and infraspinatus <undef>tendonopathy</undef>.</sent><sent id = "s3"> A <phr id = "p243">3.7 x 2.0</phr> x 2.2 cm <phr id = "p255">mass</phr> was <phr id = "p259">seen</phr> in the <phr id = "p265">subcutaneous</phr> <phr id = "p267">tissues</phr> <phr id = "p269">posterior to</phr> the <phr id = "p275">medial</phr> aspect of the <phr id = "p283">scapula</phr>.</sent><sent id = "s4"> The mass <undef>follows</undef> fat signal on all <undef>sequences</undef> and is homogeneous (= lipoma).</sent><sent id = "s5"> A minimal rim of surrounding enhancement is noted.</sent><sent id = "s6">  <phr id = "p336">No</phr> <phr id = "p338">additional</phr> <phr id = "p340">significant</phr> <phr id = "p342">abnormality</phr> or <phr id = "p346">abnormal enhancement</phr> <phr id = "p350">was identified</phr>.</sent><sent id = "s7">  Dr. <undef>Wwwwwww</undef> was <undef>interested</undef> in <undef>pursuing</undef> further testing to <undef>clarify</undef> the diagnosis and etiology of her L arm pain and swelling, however Ms.</sent><sent id = "s8"> <undef>Xxxxxx</undef> had already scheduled surgery to remove the large lipoma, this was performed 3/14/6 without apparent complications (pathology still pending).</sent><sent id = "s9"> .</sent><sent id = "s10"> She has <phr id = "p462">had</phr> <phr id = "p464">joint complaints</phr> <phr id = "p468">since</phr> <phr id = "p470">1990</phr>, <phr id = "p473">first</phr> <phr id = "p475">manifesting</phr> <phr id = "p477">with</phr> <phr id = "p479">R</phr> <phr id = "p481">knee</phr> <phr id = "p483">and</phr> <phr id = "p485">L</phr> <phr id = "p487">elbow</phr> <phr id = "p489">swelling</phr> <phr id = "p491">and</phr> <phr id = "p493">pain</phr><phr id = "p494">,</phr> <phr id = "p496">X-rays</phr> <phr id = "p500">showed</phr> <phr id = "p502">no</phr> <phr id = "p504">fracture</phr> or <phr id = "p508">dislocation</phr>.</sent><sent id = "s11"> ESR was 11 and rheumatoid factor was negative, and the patient was lost to follow up.</sent><sent id = "s12"> From 1990 to 1998, she reports she <undef>sought</undef> no medical <undef>attention</undef> and was on no medication except for occasional Tylenol and Motrin, because of new L knee swelling and pain and pain and small joints of L hand and decreased grip strength.</sent><sent id = "s13"> She also had <undef>subjective</undef> fevers and night sweats.</sent><sent id = "s14"> Tests for ANA and <undef>anti</undef>-cardiolipin antibody were negative in 1993.</sent><sent id = "s15"> In 1998, she was <undef>referred</undef> to Dr. <undef>Kkkkk</undef> at <undef>HSS</undef>, but she does not recall being given a specific <undef>rheumatological</undef> diagnosis.</sent><sent id = "s16"> She began an evaluation but the work-up could not be completed because of her <undef>insurance</undef> status, and she was not given any specific treatment.</sent><sent id = "s17"> She is currently <undef>followed</undef> by Dr. <undef>Bbbbbbb</undef>, given Celebrex, then Vioxx (worse swelling), then switched to Mobic which helped the swelling and pain somewhat, but now it's worse so diclofenac was added recently.</sent><sent id = "s18"> Tests for ANA, p-ANCA, <undef>RF</undef> were negative in 1999, with a normal ESR.</sent><sent id = "s19"> As of her initial <undef>visit</undef> on 11/10/5, the worst pain was in her R hip and knee radiating down to R foot and L arm.</sent><sent id = "s20"> She had no morning stiffness, the pain was constant during the day, occasionally <undef>interfered</undef> with sleep at night and was sharp and burning in <undef>quality</undef>.</sent><sent id = "s21"> She has <phr id = "p1000">had</phr> <phr id = "p1002">facial</phr> <phr id = "p1004">swelling</phr> <phr id = "p1006">episodically</phr> as well.</sent><sent id = "s22"> <phr id = "p1014">No</phr> known <phr id = "p1018">renal</phr> <phr id = "p1020">or</phr> <phr id = "p1022">lung</phr> <phr id = "p1024">involvement</phr>.</sent><sent id = "s23"> She has had <undef>subjective</undef> fevers at home with chills at night with sweats.</sent><sent id = "s24"> No known exposure to TB, <undef>says</undef> she was PPD negative one year ago.</sent><sent id = "s25"> <phr id = "p1085">No</phr> <phr id = "p1087">dyspnea</phr>, <phr id = "p1090">chest pain</phr><phr id = "p1093">,</phr> <phr id = "p1095">nausea</phr><phr id = "p1096">,</phr> <phr id = "p1098">vomiting</phr><phr id = "p1099">,</phr> <phr id = "p1101">diarrhea</phr><phr id = "p1102">,</phr> <phr id = "p1104">constipation</phr><phr id = "p1105">,</phr> <phr id = "p1107">no</phr> <phr id = "p1109">Raynaud's</phr><phr id = "p1112">,</phr> <phr id = "p1114">no</phr> <phr id = "p1116">rashes</phr><phr id = "p1117">,</phr> <phr id = "p1119">no</phr> <phr id = "p1121">alopecia</phr>.</sent><sent id = "s26"> Her exercise tolerance is 2 blocks, 2 <undef>flights</undef> of <undef>stairs</undef> because of L thigh pain, relieved by <undef>rest</undef> and taking weight off the L leg.</sent><sent id = "s27"> She has early morning <undef>awakenings</undef>, good appetite, no weight loss.</sent><sent id = "s28"> The impression at that time was that since she lacked synovitis on exam, and her <undef>serologies</undef> were negative, <undef>possibilities</undef> included fibromyalgia vs. an <undef>undiagnosed</undef> rheumatic illness, so she was continued on diclofenac, which appeared effective, and <undef>instructed</undef> to return to clinic before January <undef>if</undef> she developed frank arthritis.</sent><sent id = "s29"> In follow up 12/21/5, she returned because of an exacerbation of her presumed L carpal tunnel syndrome, manifested by L arm pain and swelling that <undef>awakened</undef> her from sleep on 12/19/5.</sent><sent id = "s30"> She denied any trauma, but <undef>said</undef> this is typical of her usual presentation.</sent><sent id = "s31"> The pain worst on the lateral elbow, exacerbated by movement and <undef>interferes</undef> with <undef>ADLs</undef> (<undef>carrying</undef> <undef>groceries</undef>), no erythema but <undef>subjective</undef> warmth.</sent><sent id = "s32"> L wrist and <undef>PIPs</undef> were also painful and swollen.</sent><sent id = "s33"> She also had transient R <undef>CMC</undef> pain a few days ago that resolved spontaneously.</sent><sent id = "s34"> The plantar fasciitis is not resolved although <undef>wearing</undef> <undef>athletic</undef> <undef>shoes</undef> is <undef>tolerable</undef> (still <undef>wearing</undef> <undef>slippers</undef> at home).</sent><sent id = "s35"> On exam, she had some L epicondylitis that was felt to be associated with her carpal tunnel syndrome, but she lacked clinical, <undef>serological</undef> or radiographic features of inflammatory arthritis.</sent><sent id = "s36"> She was prescribed a resting L wrist splint and told to continue diclofenac.</sent><sent id = "s37"> In follow up 1/12/6, the splint had helped somewhat but she had pain and numbness in her hand <undef>awakening</undef> her from sleep and she couldn't tolerate the splint all night.</sent><sent id = "s38"> <phr id = "p1705">Diclofenac</phr> <phr id = "p1707">did not</phr> seem to be <phr id = "p1717">effective</phr>.</sent><sent id = "s39">  She was <undef>referred</undef> back to her neurologist for further evaluation and consideration of surgery (see above).</sent><sent id = "s40"> <undef>PMHx</undef>: hypertension, migraine headache, myomatous uterus <undef>FHx</undef>: 11 yr old son (<undef>Dddddd</undef> <undef>Tttttt</undef>) with lupus vs. juvenile rheumatoid arthritis (Dr. <undef>Llll</undef> <undef>Iiiiii</undef>), Mother with RA and heart problems <undef>SocHx</undef>: no tobacco, no EtOH, no illicit drugs.</sent><sent id = "s41"> <undef>Lives</undef> with 3 children (23 yr dtr, 21 yr son, 11 yr son), and a dog and cat.</sent><sent id = "s42"> <undef>Homemaker</undef> now, previously <undef>worked</undef> as <undef>security</undef> for the <undef>NYC</undef> <undef>marathon</undef>, <undef>babysitting</undef>.</sent></tt></section>
+
+<section c = "report allergy item"><structured form = "xml">
+<normalfinding v = "full range of motion" idref = "p2073"><certainty v = "high certainty" idref = "p2071"></certainty>
+<bodyloc v = "shoulder" idref = "p2069"><region v = "right" idref = "p2067"></region>
+</bodyloc>
+<bodyloc v = "shoulder" idref = "p2084"><region v = "left" idref = "p2082"></region>
+</bodyloc>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report allergy item"></sectname>
+<sid idref = "s44"></sid></normalfinding>
+<problem v = "rotation" idref = "p2090"><parsemode v = "mode1"></parsemode>
+<proceduredescr v = "intact" idref = "p2088"></proceduredescr>
+<sectname v = "report allergy item"></sectname>
+<sid idref = "s44"></sid></problem>
+<bodyfunc v = "flex" idref = "p2094"><parsemode v = "mode1"></parsemode>
+<sectname v = "report allergy item"></sectname>
+<sid idref = "s44"></sid></bodyfunc>
+<problem v = "pain" idref = "p2109"><certainty v = "no" idref = "p2099"></certainty>
+<parsemode v = "mode1"></parsemode>
+<region v = "surgical site" idref = "p2115"></region>
+<sectname v = "report allergy item"></sectname>
+<sid idref = "s44"></sid></problem>
+
+</structured>
+<tt> Allergies:<sent id = "s43"> NKDA Medications: Topamax (for migraine headache) Zocor Toprol XL 50 mg po daily HCTZ 25 mg po daily <undef>PPI</undef> Tylenol with codeine #3 1-2 tab bid prn On exam: Musculoskeletal: no synovitis <undef>DIP</undef>/<undef>PIP</undef>/<undef>MCPs</undef>, resolved tenderness on L medial and lateral epicondyles with no elbow <undef>bogginess</undef>, no warmth or erythema, L wrist with tenderness on dorsal aspect, mild diffuse swelling with no warmth, +pain with flexion/extension.</sent><sent id = "s44"> <phr id = "p2067">R</phr> <phr id = "p2069">shoulders</phr> <phr id = "p2071">with</phr> <phr id = "p2073">full range of motion</phr>, <phr id = "p2082">L</phr> <phr id = "p2084">shoulder</phr> <phr id = "p2086">with</phr> <phr id = "p2088">intact</phr> <phr id = "p2090">rotation</phr> <phr id = "p2092">and</phr> <phr id = "p2094">flexion</phr>, <phr id = "p2097">but</phr> <phr id = "p2099">cannot</phr> be raised <phr id = "p2105">because of</phr> <phr id = "p2109">pain</phr> at the <phr id = "p2115">surgical site</phr>.</sent><sent id = "s45"> Both knees with crepitus (R>L) but no pain on <undef>ranging</undef>.</sent><sent id = "s46"> Ankles with full range of painless motion.</sent><sent id = "s47"> Skin: small surgical wound on posterior L shoulder, dressing <undef>c</undef>/<undef>d</undef>/<undef>i</undef>, no rashes Labs (3/7/6): WBC 7.3/ Hgb 11.8/ <undef>Plt</undef> 313 BUN 10/ <undef>creat</undef> 0.7 LFTs wnl Labs (12/23/5): ESR 8 C-reactive protein 1.51 TSH 1.56 free T4 1.2 Labs (7/29/5): WBC 8.3/ Hgb 13.6/ <undef>Plt</undef> 270/ <undef>G67L27M4</undef> BUN 8/ <undef>creat</undef> 0.7/ <undef>gluc</undef> 94 LFTs - wnl Urinalysis- negative Labs (6/20/5): CK 105 Radiology (10/99): Hand X-rays with no features of OA or RA.</sent></tt></section>
+
+<section c = "report assessment item"><structured form = "xml">
+<problem v = "lipoma" idref = "p2451"><certainty v = "high certainty" idref = "p2441"></certainty>
+<date v = "20060314" idref = "p2455"><reltime v = "on" idref = "p2453"></reltime>
+</date>
+<parsemode v = "mode1"></parsemode>
+<proceduredescr v = "excision" idref = "p2445"></proceduredescr>
+<proceduredescr v = "surgery" idref = "p2443"></proceduredescr>
+<sectname v = "report assessment item"></sectname>
+<sid idref = "s49"></sid></problem>
+<problem v = "epicondylitis" idref = "p2464"><certainty v = "high certainty" idref = "p2466"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report assessment item"></sectname>
+<sid idref = "s49"></sid><status v = "resolved" idref = "p2468"></status>
+</problem>
+
+</structured>
+<tt> Assessment:<sent id = "s48"> 44 yo <undef>F</undef> with L arm neuropathic pain and diffuse swelling, without <undef>concomitant</undef> synovitis, which was refractory to conservative management and was eventually attributed to compression within the L shoulder by a large lipoma.</sent><sent id = "s49">  She <phr id = "p2441">underwent</phr> <phr id = "p2443">surgical</phr> <phr id = "p2445">excision of</phr> the <phr id = "p2451">lipoma</phr> <phr id = "p2453">on</phr> <phr id = "p2455">3/14/6</phr><phr id = "p2460">,</phr> the <phr id = "p2464">epicondylitis</phr> <phr id = "p2466">has</phr> <phr id = "p2468">resolved</phr>.</sent><sent id = "s50">  She <undef>hasno</undef> evidence of an inflammatory joint pathology.</sent></tt></section>
+
+<section c = "report plan item"><tt> Plan:<sent id = "s51"> 1.</sent><sent id = "s52"> Pt to follow up with her surgeon to <undef>discuss</undef> <undef>optimal</undef> <undef>timing</undef> of physical therapy for her shoulder, and with her neurologist.</sent><sent id = "s53"> 2.</sent><sent id = "s54"> Case <undef>discussed</undef> with <undef>Attending</undef> Dr. <undef>Aaaa</undef> <undef>Dddddddd</undef>.</sent><sent id = "s55"> 3.</sent><sent id = "s56"> <undef>RTC</undef> 6 weeks.</sent><sent id = "s57"> <undef>Mmmmmmm</undef> <undef>Wwwwwwwwwwww</undef> Rheumatology <undef>fellow</undef> <undef>beeper</undef> <undef>NNNNN</undef>  
+</sent></tt></section>
+
+</medlee>

@@ -1,0 +1,52 @@
+<project name="run-tools file" basedir="." default="runClient">
+	<target name="getCode" unless="medlee.code">
+		<input defaultvalue="no" addproperty="medlee.code" message="Use the UMLS Code [no]">
+		</input>
+	</target>
+
+	<target name="getParseMode" unless="medlee.parsemode">
+		<input defaultvalue="best" addproperty="medlee.parsemode" message="Medlee Parse Mode [best]">
+		</input>
+	</target>
+
+	<target name="getOutputFormat" unless="medlee.outputformat">
+		<input defaultvalue="xml" addproperty="medlee.outputformat" message="Output File Format [xml]">
+		</input>
+	</target>
+
+	<target name="getDir" unless="medlee.dir">
+		<input defaultvalue="./inputs" addproperty="medlee.dir" message="Directory where source files are contained [./inputs]">
+		</input>
+	</target>
+
+	<target name="getOutDir" unless="medlee.outdir">
+		<input defaultvalue="./outputs" addproperty="medlee.outdir" message="Directory where the output files will be writen [./outputs]">
+		</input>
+	</target>
+
+	<target name="getURL" unless="service.url">
+		<input defaultvalue="https://128.59.19.244:9443/wsrf/services/cagrid/GridMedlee" addproperty="service.url" message="URL of the Medlee Grid Service [https://128.59.19.244:9443/wsrf/services/cagrid/GridMedlee]">
+		</input>
+	</target>
+
+	<target name="runClient" depends="checkGlobus, defineClasspaths, getURL, getDir, getOutDir, getParseMode, getOutputFormat, getCode" description="Run the sample Client">
+		<property name="service.url" value="http://localhost:8080/wsrf/services/cagrid/GridMedlee" />
+		<property name="runclasspath" refid="run.classpath" />
+		<echo message="Connecting to service: ${service.url}" />
+		<java failonerror="true" classname="edu.columbia.dbmi.client.GridMedleeClient" classpathref="run.classpath" fork="yes">
+			<jvmarg value="-DGLOBUS_LOCATION=${ext.globus.dir}" />
+			<arg value="-url" />
+			<arg value="${service.url}" />
+			<arg value="-m" />
+			<arg value="${medlee.parsemode}" />
+			<arg value="-code" />
+			<arg value="${medlee.code}" />
+			<arg value="-f" />
+			<arg value="${medlee.outputformat}" />
+			<arg value="-dir" />
+			<arg value="${medlee.dir}" />
+			<arg value="-out" />
+			<arg value="${medlee.outdir}" />
+		</java>
+	</target>
+</project>

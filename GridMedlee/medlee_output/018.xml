@@ -1,0 +1,75 @@
+<medlee>
+<section c = "report unknown section item"><structured form = "xml">
+<problem v = "prostate cancer" idref = "p30"><parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s2"></sid></problem>
+<procedure v = "radiation therapy" idref = "p40"><certainty v = "high certainty" idref = "p47"></certainty>
+<date v = "00000302" idref = "p42"></date>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s2"></sid><status v = "post" idref = "p36"></status>
+</procedure>
+<problem v = "disease" idref = "p56"><certainty v = "moderate certainty" idref = "p57"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s3"></sid><status v = "recurrence" idref = "p54"></status>
+</problem>
+<procedure v = "bone scan" idref = "p59"><bodyloc v = "spine" idref = "p63"></bodyloc>
+<certainty v = "moderate certainty" idref = "p64"></certainty>
+<date v = "00000103" idref = "p68"></date>
+<parsemode v = "mode1"></parsemode>
+<quantity v = "2" idref = "p72"></quantity>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s3"></sid></procedure>
+<procedure v = "bone scan" idref = "p59"><bodyloc v = "femur" idref = "p65"></bodyloc>
+<certainty v = "moderate certainty" idref = "p64"></certainty>
+<date v = "00000103" idref = "p68"></date>
+<parsemode v = "mode1"></parsemode>
+<quantity v = "2" idref = "p72"></quantity>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s3"></sid></procedure>
+<problem v = "weight loss" idref = "p128"><certainty v = "no" idref = "p126"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s7"></sid></problem>
+<problem v = "symptom" idref = "p155"><certainty v = "no" idref = "p151"></certainty>
+<parsemode v = "mode1"></parsemode>
+<problemdescr v = "hypoglycemia" idref = "p153"></problemdescr>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s9"></sid></problem>
+<med v = "glipizide" idref = "p166"><certainty v = "no" idref = "p160"></certainty>
+<change v = "increase" idref = "p164"></change>
+<frequency v = "bid" idref = "p170"></frequency>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s10"></sid></med>
+<labtest v = "low density lipoproteins" idref = "p350"><certainty v = "high certainty" idref = "p352"></certainty>
+<measure v = "73" idref = "p354"></measure>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s15"></sid></labtest>
+<labtest v = "low density lipoproteins" idref = "p376"><certainty v = "high certainty" idref = "p378"></certainty>
+<measure v = "89" idref = "p380"></measure>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s17"></sid></labtest>
+<med v = "pneumovax" idref = "p475"><date v = "00000403" idref = "p477"></date>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s26"></sid></med>
+<med v = "hydrochlorothiazide" idref = "p536"><certainty v = "high certainty"></certainty>
+<dose v = "25 mg" idref = "p538"></dose>
+<frequency v = "daily" idref = "p541"></frequency>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s31"></sid><status v = "start" idref = "p534"></status>
+</med>
+<finding v = "no change" idref = "p557"><parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s34"></sid></finding>
+
+</structured>
+<tt><sent id = "s1">F/U 3/20/6 <undef>Xxxxxxx</undef>, <undef>Xxxx</undef> 9999999 73 yo <undef>M</undef>: 1.</sent><sent id = "s2"> <phr id = "p30">Prostate Cancer</phr> - <phr id = "p36">s/p</phr> <phr id = "p40">XRT</phr> <phr id = "p42">3/2 </phr>(<phr id = "p47">done</phr> elsewhere);</sent><sent id = "s3"> <phr id = "p54">recurrent</phr> <phr id = "p56">disease</phr><phr id = "p57">/</phr><phr id = "p58">+</phr><phr id = "p59">bone scan</phr>(<phr id = "p63">spine</phr><phr id = "p64">/</phr><phr id = "p65">femur</phr>) <phr id = "p68">1/3 </phr><phr id = "p72">2</phr>.</sent><sent id = "s4"> DM - <undef>Dx</undef>'<undef>d</undef> 3/4 3.</sent><sent id = "s5"> HTN - <undef>Dx</undef>'<undef>d</undef> 2000.</sent><sent id = "s6"> S: -Reports some bloating and diarrhea associated with metformin;</sent><sent id = "s7"> <phr id = "p126">no</phr> <phr id = "p128">weight loss</phr>;</sent><sent id = "s8"> sx do not <undef>impact</undef> on <undef>lifestyle</undef> significantly.</sent><sent id = "s9"> -<phr id = "p151">No</phr> <phr id = "p153">hypoglycemic</phr> <phr id = "p155">sx</phr>.</sent><sent id = "s10">  <phr id = "p160">Did not</phr> <phr id = "p164">increase</phr> <phr id = "p166">glipizide</phr> to <phr id = "p170">BID</phr>.</sent><sent id = "s11"> <undef>O</undef>: Exam: 158/90 - 60 - 14 <undef>Wt</undef>=209 <undef>Ht</undef>=69inches <undef>Gen</undef>: <undef>Well</undef>-<undef>groomed</undef>;</sent><sent id = "s12"> comfortable Cor: RRR <undef>Nl</undef> <undef>S1S2</undef> Lungs: <undef>CTA</undef> <undef>bilat</undef>.</sent><sent id = "s13"> <undef>Ext</undef>: No edema <undef>bilat</undef>.</sent><sent id = "s14"> MEDS: (brought all) Lipitor 10mg Daily Metformin 1000mg BID Glipizide ER 10mg BID (still taking daily) Norvasc 10mg Daily Atenolol 50mg Daily Accupril 10mg Daily ASA 81mg Daily Lupron q 4months Casodex 50mg Daily (?stopped by <undef>urology</undef>?) <undef>DATA</undef>: 3/13/6 <undef>HgA1C</undef> = 7.2;</sent><sent id = "s15"> <phr id = "p350">LDL</phr> <phr id = "p352">=</phr> <phr id = "p354">73</phr>;</sent><sent id = "s16"> TG=180 12/14/5 <undef>HgA1C</undef> = 7.6;</sent><sent id = "s17"> <phr id = "p376">LDL</phr> <phr id = "p378">=</phr> <phr id = "p380">89</phr>;</sent><sent id = "s18"> TG=300 9/16/5 <undef>HgA1C</undef> = 6.8;</sent><sent id = "s19"> LDL = 114 5/17/5 <undef>HgA1c</undef> = 9.7;</sent><sent id = "s20"> LDL = 80 <undef>HCM</undef>: Lipids <undef>abnl</undef> 5/3;</sent><sent id = "s21"> Stool hemoccult <undef>neg</undef>.</sent><sent id = "s22"> 12/5;</sent><sent id = "s23"> <undef>Ophtho</undef> 5/4;</sent><sent id = "s24"> <undef>UMicroalbumin</undef> <undef>pos</undef>.</sent><sent id = "s25"> 2/5;</sent><sent id = "s26"> <phr id = "p475">pneumovax</phr> <phr id = "p477">4/3</phr>;</sent><sent id = "s27"> flu <undef>vax</undef> 12/5 A/<undef>P</undef>: 1.</sent><sent id = "s28"> DM - Suboptimal;</sent><sent id = "s29"> again, increase glipizide to 10mg BID 2.</sent><sent id = "s30"> HTN - Suboptimal;</sent><sent id = "s31"> <phr id = "p534">start</phr> <phr id = "p536">HCTZ</phr> <phr id = "p538">25mg</phr> <phr id = "p541">Daily</phr>.</sent><sent id = "s32"> 3.</sent><sent id = "s33"> Lipids - <undef>Optimal</undef>;</sent><sent id = "s34"> <phr id = "p557">no change</phr>.</sent><sent id = "s35"> 4.</sent><sent id = "s36"> <undef>HCM</undef> - Opthalmology/Podiatry <undef>referrals</undef>/ Urine Microalbumin today.</sent><sent id = "s37"> <undef>Ophthalmology</undef> Clinic/ Podiatry Clinic/ Urine Microalbumin/ Labs (prior to next <undef>visit</undef>)/ <undef>RTC</undef> 3 months  
+</sent></tt></section>
+
+</medlee>

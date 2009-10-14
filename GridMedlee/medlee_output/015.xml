@@ -1,0 +1,396 @@
+<medlee>
+<section c = "report unknown section item"><structured form = "xml">
+<procedure v = "resection" idref = "p84"><bodyloc v = "sigmoid colon" idref = "p88"></bodyloc>
+<certainty v = "high certainty" idref = "p82"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s3"></sid></procedure>
+<problem v = "formation" idref = "p96"><certainty v = "high certainty" idref = "p92"></certainty>
+<parsemode v = "mode1"></parsemode>
+<proceduredescr v = "colostomy" idref = "p94"></proceduredescr>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s3"></sid></problem>
+<finding v = "open" idref = "p108"><bodyloc v = "abdomen" idref = "p102"></bodyloc>
+<certainty v = "moderate certainty" idref = "p104"></certainty>
+<parsemode v = "mode1"></parsemode>
+<region v = "left" idref = "p106"></region>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s4"></sid></finding>
+<problem v = "pathology processes" idref = "p112"><parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s5"></sid></problem>
+<problem v = "perforated" idref = "p116"><bodyloc v = "sigmoid colon" idref = "p120"></bodyloc>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s5"></sid></problem>
+<problem v = "formation" idref = "p128"><certainty v = "high certainty" idref = "p124"></certainty>
+<parsemode v = "mode1"></parsemode>
+<problemdescr v = "abscess" idref = "p126"></problemdescr>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s5"></sid></problem>
+<problem v = "pathology processes" idref = "p302"><parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s10"></sid></problem>
+<problem v = "adenocarcinoma" idref = "p306"><certainty v = "high certainty" idref = "p304"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s10"></sid></problem>
+<problem v = "pain" idref = "p340"><bodyloc v = "lower back" idref = "p356"></bodyloc>
+<certainty v = "moderate certainty" idref = "p334"></certainty>
+<degree v = "low degree" idref = "p338"></degree>
+<parsemode v = "mode1"></parsemode>
+<region v = "surgical site" idref = "p346"></region>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s12"></sid><status v = "occasional" idref = "p352"></status>
+<timeper v = "that time" idref = "p328"><reltime v = "at" idref = "p326"></reltime>
+</timeper>
+</problem>
+<bodyfunc v = "appetite" idref = "p366"><certainty v = "high certainty" idref = "p362"></certainty>
+<descriptor v = "poor" idref = "p364"></descriptor>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s13"></sid></bodyfunc>
+<problem v = "weight loss" idref = "p373"><certainty v = "high certainty" idref = "p368"></certainty>
+<date v = "20041000" idref = "p379"><reltime v = "since" idref = "p377"></reltime>
+</date>
+<measure v = "30 lbs" idref = "p370"></measure>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s13"></sid></problem>
+<procedure v = "chemotherapy" idref = "p459"><certainty v = "no" idref = "p445"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s15"></sid><status v = "candidate" idref = "p455"></status>
+</procedure>
+<procedure v = "radiation therapy" idref = "p463"><certainty v = "no" idref = "p445"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s15"></sid><status v = "candidate" idref = "p455"></status>
+</procedure>
+<problem v = "wound" idref = "p473"><certainty v = "moderate certainty" idref = "p465"></certainty>
+<descriptor v = "open" idref = "p471"></descriptor>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s15"></sid></problem>
+<problem v = "rectal discharge" idref = "p709"><degree v = "low degree" idref = "p707"></degree>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s24"></sid></problem>
+<finding v = "non-bloody" idref = "p715"><certainty v = "high certainty" idref = "p713"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s24"></sid></finding>
+<finding v = "good" idref = "p737"><bodyfunc v = "appetite" idref = "p733"></bodyfunc>
+<certainty v = "high certainty" idref = "p735"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s26"></sid></finding>
+<problem v = "fever" idref = "p785"><certainty v = "no" idref = "p783"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s30"></sid></problem>
+<problem v = "chill" idref = "p789"><certainty v = "no" idref = "p783"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s30"></sid></problem>
+<med v = "xeloda" idref = "p795"><certainty v = "high certainty"></certainty>
+<date v = "000315" idref = "p806"></date>
+<parsemode v = "mode1"></parsemode>
+<reltime v = "_"><timeunit v = "week" idref = "p799"></timeunit>
+</reltime>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s31"></sid><status v = "end" idref = "p804"></status>
+<status v = "previous" idref = "p797"></status>
+<status v = "start" idref = "p793"></status>
+</med>
+<problem v = "fever" idref = "p835"><certainty v = "no" idref = "p833"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s34"></sid></problem>
+
+</structured>
+<tt><sent id = "s1"><undef>Xxxx</undef>, <undef>Xxxx</undef> 9999999 Oncology Clinic 3/6/6 83<undef>M</undef> with rectal cancer presenting 9/4 with abdominal pain and pneumoperitoneum on plain film.</sent><sent id = "s2"> Taken <undef>emergently</undef> to OR where he was found to have perforated sigmoid colon.</sent><sent id = "s3"> He <phr id = "p82">underwent</phr> <phr id = "p84">resection of</phr> <phr id = "p88">sigmoid colon</phr> <phr id = "p92">and</phr> <phr id = "p94">colostomy</phr> <phr id = "p96">formation</phr>;</sent><sent id = "s4"> the <phr id = "p102">abdomen</phr> <phr id = "p104">was</phr> <phr id = "p106">left</phr> <phr id = "p108">open</phr>.</sent><sent id = "s5"> <phr id = "p112">Path</phr> <phr id = "p114">showed</phr> <phr id = "p116">perforation</phr> of <phr id = "p120">sigmoid colon</phr> <phr id = "p124">with</phr> <phr id = "p126">abscess</phr> <phr id = "p128">formation</phr>.</sent><sent id = "s6"> Post-op course complicated by poor nutrition, fevers and concern for cholecystitis (cholecystectomy not done due to <undef>comorbidities</undef>) also a fib with <undef>RVR</undef>.</sent><sent id = "s7"> Discharged to <undef>NH</undef> in Oct 2004 with <undef>VAC</undef> dressing in place.</sent><sent id = "s8"> The <undef>VAC</undef> was discontinued in December 2004, however, he still has an open abdominal wound and gets daily dressing changes.</sent><sent id = "s9"> Seen in surgery clinic in Jan 2005 and colonoscopy was done which showed a circumferential nearly obstructing tumor at 6cm in the distal rectum.</sent><sent id = "s10"> <phr id = "p302">Path</phr> <phr id = "p304">showed</phr> <phr id = "p306">adenocarcinoma</phr>.</sent><sent id = "s11"> <undef>Referred</undef> to <undef>onc</undef> clinic in early Feb.</sent><sent id = "s12"> <phr id = "p326">At</phr> <phr id = "p328">that time</phr> was <phr id = "p334">complaining of</phr> <phr id = "p338">some</phr> <phr id = "p340">pain</phr> at his <phr id = "p346">surgical site</phr> <phr id = "p350">and</phr> <phr id = "p352">occasionally</phr> in <phr id = "p356">lower back</phr>.</sent><sent id = "s13"> <phr id = "p362">Had</phr> <phr id = "p364">poor</phr> <phr id = "p366">appetite</phr> <phr id = "p368">and</phr> <phr id = "p370">30lb</phr> <phr id = "p373">weight loss</phr> <phr id = "p377">since</phr> <phr id = "p379">Oct 2004</phr>.</sent><sent id = "s14"> At that time his surgical wound was not healed, still had a 5x3cm open area of pink granulation tissue and was getting daily dressing changes.</sent><sent id = "s15"> He was <phr id = "p445">not</phr> felt to be a <phr id = "p455">candidate for</phr> <phr id = "p459">chemotherapy</phr> <phr id = "p461">or</phr> <phr id = "p463">XRT</phr> <phr id = "p465">due to</phr> the <phr id = "p471">open</phr> <phr id = "p473">wounds</phr>.</sent><sent id = "s16"> Since then he has been <undef>followed</undef> intermittently in oncology clinic and has had gradual improvement in his <undef>performance</undef> status.</sent><sent id = "s17"> He is now <undef>living</undef> at home and <undef>spends</undef> his day at a <undef>senior</undef> center.</sent><sent id = "s18"> Scans in 11/5 showed possible enlargement of <undef>perihepatic</undef> fluid collection.</sent><sent id = "s19"> <undef>Sent</undef> to surgery clinic, and they <undef>set</undef> up <undef>U</undef>/S guided aspiration of fluid.</sent><sent id = "s20"> This was attempted on 2/6/6;</sent><sent id = "s21"> however, no fluid was localized for drainage.</sent><sent id = "s22"> He had repeat CT scans last week and now <undef>comes</undef> in for f/u.</sent><sent id = "s23"> He reports <undef>occ</undef> abd pain mainly RUQ, worsens with movement, especially moving from lying down to sitting or standing.</sent><sent id = "s24"> <phr id = "p707">Some</phr> <phr id = "p709">rectal discharge</phr> <phr id = "p713">but</phr> <phr id = "p715">nonbloody</phr>.</sent><sent id = "s25"> Occasional rectal pain but not severe.</sent><sent id = "s26"> <phr id = "p733">Appetite</phr> <phr id = "p735">is</phr> <phr id = "p737">good</phr>.</sent><sent id = "s27"> No N/V.</sent><sent id = "s28"> No change in ostomy <undef>output</undef>.</sent><sent id = "s29"> Still having problems with getting enough <undef>supplies</undef> for his <undef>stomas</undef>.</sent><sent id = "s30"> <phr id = "p783">No</phr> <phr id = "p785">fevers</phr> or <phr id = "p789">chills</phr>.</sent><sent id = "s31"> <phr id = "p793">Started</phr> <phr id = "p795">Xeloda</phr> <phr id = "p797">last</phr> <phr id = "p799">week</phr>, will <phr id = "p804">finish</phr> <phr id = "p806">March 15</phr>.</sent><sent id = "s32">  Tolerating fairly <undef>well</undef>.</sent><sent id = "s33">  Some increase ostomy <undef>output</undef>.</sent><sent id = "s34">  <phr id = "p833">No</phr> <phr id = "p835">fevers</phr>.</sent><sent id = "s35">  Dry skin on hands but no rash.</sent><sent id = "s36"> Primary MD: Dr. <undef>Pulini</undef> 212-475-7109 PMH: as above and CAD, CVA, high cholesterol, DM <undef>PSH</undef>: as above Meds: Colace 100mg tid, Metformin ER 500mg bid, MVI, Cozaar 50mg qd, Toprol XL 50mg qd, <undef>EC</undef> ASA 81mg qd, Amaryl 1mg po qd, <undef>FeSO4</undef> 325mg po bid, Xeloda 1000mg in am, 1500mg qhs x 14 days.</sent></tt></section>
+
+<section c = "report examination item"><structured form = "xml">
+<problem v = "pleural thickening" idref = "p1317"><bodyloc v = "lung" idref = "p1309"><region v = "base" idref = "p1311"></region>
+</bodyloc>
+<certainty v = "high certainty" idref = "p1321"></certainty>
+<descriptor v = "nodular" idref = "p1315"></descriptor>
+<parsemode v = "mode1"></parsemode>
+<previous_info v = "procedure computerized axial tomography" idref = "p1329"></previous_info>
+<sectname v = "report examination item"></sectname>
+<sid idref = "s40"></sid></problem>
+<procedure v = "colectomy" idref = "p1337"><certainty v = "high certainty" idref = "p1347"></certainty>
+<parsemode v = "mode1"></parsemode>
+<region v = "left" idref = "p1335"></region>
+<sectname v = "report examination item"></sectname>
+<sid idref = "s41"></sid><status v = "again" idref = "p1345"></status>
+</procedure>
+<procedure v = "ileostomy" idref = "p1341"><certainty v = "high certainty" idref = "p1347"></certainty>
+<parsemode v = "mode1"></parsemode>
+<region v = "left" idref = "p1335"></region>
+<sectname v = "report examination item"></sectname>
+<sid idref = "s41"></sid><status v = "again" idref = "p1345"></status>
+</procedure>
+<problem v = "inflammatory changes" idref = "p1351"><bodyloc v = "mesentery" idref = "p1359"><bodyloc v = "pelvis" idref = "p1369"><region v = "anterior" idref = "p1367"><region v = "left" idref = "p1365"></region>
+</region>
+</bodyloc>
+</bodyloc>
+<certainty v = "high certainty" idref = "p1371"></certainty>
+<change v = "no change" idref = "p1373"><previous_info v = "procedure computerized axial tomography" idref = "p1381"></previous_info>
+</change>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report examination item"></sectname>
+<sid idref = "s42"></sid></problem>
+<problem v = "changes" idref = "p1391"><certainty v = "moderate certainty" idref = "p1387"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report examination item"></sectname>
+<sid idref = "s42"></sid><status v = "postoperative" idref = "p1389"></status>
+</problem>
+<problem v = "lymphadenopathy" idref = "p1405"><bodyloc v = "pelvis" idref = "p1403"></bodyloc>
+<certainty v = "no" idref = "p1399"></certainty>
+<parsemode v = "mode1"></parsemode>
+<problemdescr v = "abnormal" idref = "p1401"></problemdescr>
+<sectname v = "report examination item"></sectname>
+<sid idref = "s43"></sid></problem>
+<problem v = "hernia" idref = "p1439"><certainty v = "no" idref = "p1437"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report examination item"></sectname>
+<sid idref = "s45"></sid></problem>
+<problem v = "irregular nodule" idref = "p1486"><bodyloc v = "right lower lobe of lung" idref = "p1492"></bodyloc>
+<certainty v = "high certainty" idref = "p1494"></certainty>
+<change v = "increase in size" idref = "p1496"></change>
+<descriptor v = "small" idref = "p1484"></descriptor>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report examination item"></sectname>
+<sid idref = "s47"></sid><status v = "previous" idref = "p1480"></status>
+</problem>
+<problem v = "bilobed" idref = "p1508"><certainty v = "high certainty" idref = "p1510"></certainty>
+<measure v = "3.7 x 2.4 cm" idref = "p1512"></measure>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report examination item"></sectname>
+<sid idref = "s47"></sid><timeper v = "now" idref = "p1506"></timeper>
+</problem>
+<finding v = "patent" idref = "p1525"><bodyloc v = "bronchus" idref = "p1521"><bpquantity v = "all" idref = "p1519"></bpquantity>
+</bodyloc>
+<certainty v = "high certainty" idref = "p1523"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report examination item"></sectname>
+<sid idref = "s48"></sid></finding>
+<problem v = "lymphadenopathy" idref = "p1531"><certainty v = "no" idref = "p1529"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report examination item"></sectname>
+<sid idref = "s49"></sid></problem>
+<finding v = "enhancement" idref = "p1622"><bodyloc v = "parenchyma" idref = "p1620"><bodyloc v = "liver" idref = "p1618"></bodyloc>
+</bodyloc>
+<descriptor v = "normally" idref = "p1624"></descriptor>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report examination item"></sectname>
+<sid idref = "s52"></sid></finding>
+<problem v = "mass" idref = "p1630"><bodyloc v = "liver" idref = "p1628"></bodyloc>
+<certainty v = "no" idref = "p1626"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report examination item"></sectname>
+<sid idref = "s52"></sid></problem>
+<problem v = "lymphadenopathy" idref = "p1636"><certainty v = "no" idref = "p1634"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report examination item"></sectname>
+<sid idref = "s53"></sid></problem>
+<procedure v = "colostomy" idref = "p1642"><certainty v = "high certainty" idref = "p1644"></certainty>
+<parsemode v = "mode1"></parsemode>
+<region v = "left" idref = "p1640"></region>
+<sectname v = "report examination item"></sectname>
+<sid idref = "s54"></sid></procedure>
+<problem v = "inflammation" idref = "p1648"><bodyloc v = "tissue" idref = "p1650"><bodyloc v = "pelvis" idref = "p1658"><region v = "anterior" idref = "p1656"><region v = "left" idref = "p1654"></region>
+</region>
+</bodyloc>
+</bodyloc>
+<certainty v = "high certainty" idref = "p1660"></certainty>
+<parsemode v = "mode1"></parsemode>
+<previous_info v = "procedure computerized axial tomography" idref = "p1666"></previous_info>
+<sectname v = "report examination item"></sectname>
+<sid idref = "s55"></sid></problem>
+<bodymeas v = "size" idref = "p1676"><change v = "decrease" idref = "p1672"><degree v = "high degree" idref = "p1670"></degree>
+</change>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report examination item"></sectname>
+<sid idref = "s55"></sid></bodymeas>
+<finding v = "prominent" idref = "p1680"><certainty v = "high certainty" idref = "p1678"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report examination item"></sectname>
+<sid idref = "s55"></sid></finding>
+<problem v = "free air" idref = "p1698"><certainty v = "no" idref = "p1696"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report examination item"></sectname>
+<sid idref = "s57"></sid></problem>
+<problem v = "collection" idref = "p1811"><parsemode v = "mode1"></parsemode>
+<sectname v = "report examination item"></sectname>
+<sid idref = "s60"></sid></problem>
+<problem v = "septation" idref = "p1817"><certainty v = "moderate certainty" idref = "p1813"></certainty>
+<parsemode v = "mode1"></parsemode>
+<region v = "internal" idref = "p1815"></region>
+<sectname v = "report examination item"></sectname>
+<sid idref = "s60"></sid></problem>
+<finding v = "enhancement" idref = "p1823"><parsemode v = "mode1"></parsemode>
+<region v = "wall" idref = "p1825"></region>
+<sectname v = "report examination item"></sectname>
+<sid idref = "s60"></sid></finding>
+<problem v = "abscess" idref = "p1833"><certainty v = "moderate certainty" idref = "p1827"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report examination item"></sectname>
+<sid idref = "s60"></sid></problem>
+<finding v = "enhancement" idref = "p1849"><bodyloc v = "parenchyma" idref = "p1841"><bodyloc v = "liver" idref = "p1839"></bodyloc>
+</bodyloc>
+<certainty v = "moderate certainty" idref = "p1843"></certainty>
+<descriptor v = "homogeneous" idref = "p1847"></descriptor>
+<parsemode v = "mode1"></parsemode>
+<proceduredescr v = "normal" idref = "p1845"></proceduredescr>
+<sectname v = "report examination item"></sectname>
+<sid idref = "s61"></sid></finding>
+<problem v = "mass" idref = "p1857"><certainty v = "no" idref = "p1853"></certainty>
+<descriptor v = "focal" idref = "p1855"></descriptor>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report examination item"></sectname>
+<sid idref = "s61"></sid></problem>
+<problem v = "dilatation" idref = "p1875"><bodyloc v = "intrahepatic" idref = "p1867"></bodyloc>
+<certainty v = "no" idref = "p1865"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report examination item"></sectname>
+<sid idref = "s62"></sid></problem>
+<problem v = "dilatation" idref = "p1875"><bodyloc v = "extrahepatic biliary duct" idref = "p1871"></bodyloc>
+<certainty v = "no" idref = "p1865"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report examination item"></sectname>
+<sid idref = "s62"></sid></problem>
+<finding v = "enhancement" idref = "p1885"><bodyloc v = "vein" idref = "p1893"><region v = "portal" idref = "p1891"></region>
+</bodyloc>
+<bodyloc v = "vein" idref = "p1899"></bodyloc>
+<certainty v = "high certainty" idref = "p1877"></certainty>
+<parsemode v = "mode1"></parsemode>
+<proceduredescr v = "normal" idref = "p1883"></proceduredescr>
+<sectname v = "report examination item"></sectname>
+<sid idref = "s62"></sid></finding>
+<finding v = "enhancement" idref = "p1885"><bodyloc v = "liver" idref = "p1897"></bodyloc>
+<bodyloc v = "vein" idref = "p1899"></bodyloc>
+<certainty v = "high certainty" idref = "p1895"></certainty>
+<parsemode v = "mode1"></parsemode>
+<proceduredescr v = "normal" idref = "p1883"></proceduredescr>
+<sectname v = "report examination item"></sectname>
+<sid idref = "s62"></sid></finding>
+<problem v = "gallstone" idref = "p1907"><bodyloc v = "gallbladder" idref = "p1907"></bodyloc>
+<certainty v = "high certainty" idref = "p1913"></certainty>
+<descriptor v = "large" idref = "p1905"></descriptor>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report examination item"></sectname>
+<sid idref = "s63"></sid><status v = "again" idref = "p1911"></status>
+</problem>
+<finding v = "normal size" idref = "p1932"><bodyloc v = "spleen" idref = "p1919"></bodyloc>
+<certainty v = "high certainty" idref = "p1930"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report examination item"></sectname>
+<sid idref = "s64"></sid></finding>
+<finding v = "normal size" idref = "p1932"><bodyloc v = "pancreas" idref = "p1922"></bodyloc>
+<certainty v = "high certainty" idref = "p1930"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report examination item"></sectname>
+<sid idref = "s64"></sid></finding>
+<finding v = "normal size" idref = "p1932"><bodyloc v = "adrenal gland" idref = "p1926"><bpquantity v = "multiple" idref = "p1926"></bpquantity>
+</bodyloc>
+<certainty v = "high certainty" idref = "p1930"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report examination item"></sectname>
+<sid idref = "s64"></sid></finding>
+<finding v = "configuration" idref = "p1940"><bodyloc v = "spleen" idref = "p1919"></bodyloc>
+<certainty v = "high certainty" idref = "p1938"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report examination item"></sectname>
+<sid idref = "s64"></sid></finding>
+<finding v = "configuration" idref = "p1940"><bodyloc v = "pancreas" idref = "p1922"></bodyloc>
+<certainty v = "high certainty" idref = "p1938"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report examination item"></sectname>
+<sid idref = "s64"></sid></finding>
+<finding v = "configuration" idref = "p1940"><bodyloc v = "adrenal gland" idref = "p1926"><bpquantity v = "multiple" idref = "p1926"></bpquantity>
+</bodyloc>
+<certainty v = "high certainty" idref = "p1938"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report examination item"></sectname>
+<sid idref = "s64"></sid></finding>
+<finding v = "enhancement" idref = "p1954"><bodyloc v = "kidney" idref = "p1946"><bpquantity v = "2" idref = "p1944"></bpquantity>
+</bodyloc>
+<certainty v = "high certainty" idref = "p1948"></certainty>
+<descriptor v = "symmetric" idref = "p1952"></descriptor>
+<parsemode v = "mode1"></parsemode>
+<proceduredescr v = "normal" idref = "p1950"></proceduredescr>
+<sectname v = "report examination item"></sectname>
+<sid idref = "s65"></sid></finding>
+<problem v = "mass" idref = "p1962"><bodyloc v = "kidney" idref = "p1960"></bodyloc>
+<certainty v = "no" idref = "p1958"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report examination item"></sectname>
+<sid idref = "s65"></sid></problem>
+<problem v = "hydronephrosis" idref = "p1966"><bodyloc v = "kidney" idref = "p1960"></bodyloc>
+<certainty v = "no" idref = "p1958"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report examination item"></sectname>
+<sid idref = "s65"></sid></problem>
+<problem v = "lymphadenopathy" idref = "p1980"><bodyloc v = "abdomen" idref = "p1978"></bodyloc>
+<certainty v = "no" idref = "p1974"></certainty>
+<parsemode v = "mode1"></parsemode>
+<problemdescr v = "abnormal" idref = "p1976"></problemdescr>
+<sectname v = "report examination item"></sectname>
+<sid idref = "s66"></sid></problem>
+<normalfinding v = "normal" idref = "p1990"><bodyloc v = "bone" idref = "p1986"></bodyloc>
+<certainty v = "no" idref = "p1994"></certainty>
+<descriptor v = "lytic" idref = "p1996"></descriptor>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report examination item"></sectname>
+<sid idref = "s66"></sid></normalfinding>
+<problem v = "blastic lesion" idref = "p2000"><certainty v = "no" idref = "p1994"></certainty>
+<parsemode v = "mode1"></parsemode>
+<quantity v = "multiple" idref = "p2000"></quantity>
+<sectname v = "report examination item"></sectname>
+<sid idref = "s66"></sid></problem>
+<problem v = "distended" idref = "p2150"><bodyloc v = "bowel" idref = "p2152"><region v = "loop" idref = "p2154"></region>
+</bodyloc>
+<certainty v = "no" idref = "p2148"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report examination item"></sectname>
+<sid idref = "s69"></sid></problem>
+<problem v = "obstruction" idref = "p2160"><certainty v = "ignore"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report examination item"></sectname>
+<sid idref = "s69"></sid></problem>
+<normalfinding v = "normal" idref = "p2170"><bodyloc v = "appendix" idref = "p2166"></bodyloc>
+<certainty v = "moderate certainty" idref = "p2168"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report examination item"></sectname>
+<sid idref = "s70"></sid></normalfinding>
+<problem v = "fluid collection" idref = "p2182"><bodyloc v = "pelvis" idref = "p2190"></bodyloc>
+<certainty v = "no" idref = "p2178"></certainty>
+<descriptor v = "loculation" idref = "p2180"></descriptor>
+<parsemode v = "mode1"></parsemode>
+<quantity v = "multiple" idref = "p2182"></quantity>
+<sectname v = "report examination item"></sectname>
+<sid idref = "s71"></sid></problem>
+<problem v = "abscess" idref = "p2198"><certainty v = "ignore"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report examination item"></sectname>
+<sid idref = "s71"></sid></problem>
+<problem v = "hernia" idref = "p2235"><certainty v = "no" idref = "p2233"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report examination item"></sectname>
+<sid idref = "s73"></sid></problem>
+<procedure v = "cat scan" idref = "p2496"><bodyloc v = "chest" idref = "p2494"></bodyloc>
+<certainty v = "scheduled" idref = "p2498"></certainty>
+<date v = "00000321" idref = "p2504"><reltime v = "for" idref = "p2500"></reltime>
+</date>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report examination item"></sectname>
+<sid idref = "s82"></sid></procedure>
+
+</structured>
+<tt> EXAM:<sent id = "s37"> 98 122/60 <undef>wt</undef>.</sent><sent id = "s38"> 116# (from 106) <undef>GEN</undef>: thin, elderly man, walks with <undef>walker</undef>, NAD HEENT: anicteric, OP clear, no LAD CV: RRR CHEST: <undef>CTAB</undef> ABD: soft, <undef>NTND</undef>, LLQ ostomy with brown stool in <undef>bag</undef>, <undef>BS</undef> present, midline wound with thin pink granulation tissue intact, no drainage <undef>EXT</undef>: trace edema bilateral <undef>LE</undef> Lab: 3/6  wbc 12, hgb 12.9, <undef>plt</undef> 259,  78N 2/27/6 wbc 14, hgb 13, <undef>plt</undef> 323, <undef>Diff</undef> 77N <undef>Cr</undef> 0.5, <undef>AlkP</undef> 269 otherwise LFTs <undef>nl</undef> CEA 6.5 1/23 CEA 7.1 11/14/5 wbc 15, hgb 12, <undef>plt</undef> 394 <undef>Cr</undef> 0.6, LFTs normal except <undef>AlkP</undef> 193 CEA 5.6 1/5/5 CEA 5.8 CT a/<undef>p</undef> 2/18/6: Liver parenchyma normal.</sent><sent id = "s39"> Complex <undef>perihepatic</undef> fluid collection along lateral aspect of R hepatic lobe, decreased in size since prior CT.</sent><sent id = "s40"> <phr id = "p1309">Lung</phr> <phr id = "p1311">bases</phr> <phr id = "p1313">show</phr> <phr id = "p1315">nodular</phr> <phr id = "p1317">pleural thickening</phr> <phr id = "p1321">present</phr> on the prior <phr id = "p1329">CT</phr>.</sent><sent id = "s41"> A <phr id = "p1335">left</phr> <phr id = "p1337">colectomy</phr> <phr id = "p1339">and</phr> <phr id = "p1341">ileostomy</phr> are <phr id = "p1345">again</phr> <phr id = "p1347">noted</phr>.</sent><sent id = "s42"> <phr id = "p1351">Inflammatory changes</phr> in the <phr id = "p1359">mesentery</phr> of the <phr id = "p1365">left</phr> <phr id = "p1367">anterior</phr> <phr id = "p1369">pelvis</phr> <phr id = "p1371">are</phr> <phr id = "p1373">unchanged</phr> from the prior <phr id = "p1381">CT</phr> <phr id = "p1383">and</phr> likely <phr id = "p1387">represent</phr> <phr id = "p1389">postsurgical</phr> <phr id = "p1391">changes</phr>.</sent><sent id = "s43"> There is <phr id = "p1399">no</phr> <phr id = "p1401">abnormal</phr> <phr id = "p1403">pelvic</phr> <phr id = "p1405">lymphadenopathy</phr>.</sent><sent id = "s44"> The bowel is normal in caliber with no evidence of obstruction.</sent><sent id = "s45"> There are <phr id = "p1437">no</phr> <phr id = "p1439">hernias</phr>.</sent><sent id = "s46"> CT chest 11/23/5: small right pleural effusion has increased when compared to March 2005 scan.</sent><sent id = "s47"> <phr id = "p1480">Previously</phr> <phr id = "p1482">seen</phr> <phr id = "p1484">small</phr> <phr id = "p1486">irregular nodule</phr> in <phr id = "p1492">RLL</phr> <phr id = "p1494">has</phr> <phr id = "p1496">increased in size</phr> <phr id = "p1502">and</phr> <phr id = "p1504">is</phr> <phr id = "p1506">now</phr> <phr id = "p1508">bilobed</phr> <phr id = "p1510">measuring</phr> <phr id = "p1512">3.7x2.4cm</phr>.</sent><sent id = "s48"> <phr id = "p1519">All</phr> <phr id = "p1521">bronchi</phr> <phr id = "p1523">are</phr> <phr id = "p1525">patent</phr>.</sent><sent id = "s49"> <phr id = "p1529">No</phr> <phr id = "p1531">lymphadenopathy</phr>.</sent><sent id = "s50"> CT a/<undef>p</undef> 11/23/5: Enhancing rim of soft tissue extending along lateral and posterior margin of R hepatic lobe has slightly increased in size since prior study.</sent><sent id = "s51"> Soft tissue enhances peripherally with heterogeneous solid and cystic <undef>components</undef>.</sent><sent id = "s52"> <phr id = "p1618">Liver</phr> <phr id = "p1620">parenchyma</phr> <phr id = "p1622">enhances</phr> <phr id = "p1624">normally</phr> <phr id = "p1626">without</phr> <phr id = "p1628">liver</phr> <phr id = "p1630">masses</phr>.</sent><sent id = "s53"> <phr id = "p1634">No</phr> <phr id = "p1636">lymphadenopathy</phr>.</sent><sent id = "s54"> <phr id = "p1640">Left</phr> <phr id = "p1642">colostomy</phr> <phr id = "p1644">noted</phr>.</sent><sent id = "s55"> <phr id = "p1648">Inflammatory</phr> <phr id = "p1650">tissue</phr> in <phr id = "p1654">left</phr> <phr id = "p1656">anterior</phr> <phr id = "p1658">pelvis</phr> <phr id = "p1660">seen</phr> on prior <phr id = "p1666">CT</phr> <phr id = "p1668">is</phr> <phr id = "p1670">markedly</phr> <phr id = "p1672">decreased</phr> in <phr id = "p1676">size</phr> <phr id = "p1678">and</phr> <phr id = "p1680">prominence</phr>.</sent><sent id = "s56"> Bowel is normal in caliber.</sent><sent id = "s57"> <phr id = "p1696">No</phr> <phr id = "p1698">free air</phr>.</sent><sent id = "s58"> Midline pelvic wall defect which contains air and a small amount of oral contrast suggesting <undef>EC</undef> fistula.</sent><sent id = "s59"> CT a/<undef>p</undef> 7/12/5: A 6.6 x 2.5 cm heterogeneously enhancing loculated fluid collection is again noted abutting compressing the lateral right hepatic lobe which is unchanged from the prior study.</sent><sent id = "s60"> This <phr id = "p1811">collection</phr> <phr id = "p1813">demonstrates</phr> <phr id = "p1815">internal</phr> <phr id = "p1817">septations</phr> <phr id = "p1819">and</phr> an <phr id = "p1823">enhancing</phr> <phr id = "p1825">wall</phr> <phr id = "p1827">consistent with</phr> an <phr id = "p1833">abscess</phr>.</sent><sent id = "s61"> The <phr id = "p1839">liver</phr> <phr id = "p1841">parenchyma</phr> <phr id = "p1843">demonstrates</phr> <phr id = "p1845">normal</phr> <phr id = "p1847">homogeneous</phr> <phr id = "p1849">enhancement</phr> <phr id = "p1851">with</phr> <phr id = "p1853">no</phr> <phr id = "p1855">focal</phr> <phr id = "p1857">masses</phr>.</sent><sent id = "s62"> There is <phr id = "p1865">no</phr> <phr id = "p1867">intrahepatic</phr> <phr id = "p1869">or</phr> <phr id = "p1871">extrahepatic biliary</phr> <phr id = "p1875">dilatation</phr> <phr id = "p1877">and</phr> there is <phr id = "p1883">normal</phr> <phr id = "p1885">enhancement</phr> of the <phr id = "p1891">portal</phr> <phr id = "p1893">vein</phr> <phr id = "p1895">and</phr> <phr id = "p1897">hepatic</phr> <phr id = "p1899">veins</phr>.</sent><sent id = "s63"> A <phr id = "p1905">large</phr> <phr id = "p1907">gallstone</phr> is <phr id = "p1911">again</phr> <phr id = "p1913">noted</phr>.</sent><sent id = "s64"> The <phr id = "p1919">spleen</phr>, <phr id = "p1922">pancreas</phr> <phr id = "p1924">and</phr> <phr id = "p1926">adrenal glands</phr> <phr id = "p1930">are</phr> <phr id = "p1932">normal in size</phr> <phr id = "p1938">and</phr> <phr id = "p1940">configuration</phr>.</sent><sent id = "s65"> <phr id = "p1944">Both</phr> <phr id = "p1946">kidneys</phr> <phr id = "p1948">show</phr> <phr id = "p1950">normal</phr> <phr id = "p1952">symmetric</phr> <phr id = "p1954">enhancement</phr> <phr id = "p1956">with</phr> <phr id = "p1958">no</phr> <phr id = "p1960">renal</phr> <phr id = "p1962">masses</phr> or <phr id = "p1966">hydronephrosis</phr>.</sent><sent id = "s66"> There is <phr id = "p1974">no</phr> <phr id = "p1976">abnormal</phr> <phr id = "p1978">abdominal</phr> <phr id = "p1980">lymphadenopathy</phr> <phr id = "p1982">and</phr> the <phr id = "p1986">bones</phr> <phr id = "p1988">are</phr> <phr id = "p1990">normal</phr> with <phr id = "p1994">no</phr> <phr id = "p1996">lytic</phr> <phr id = "p1998">or</phr> <phr id = "p2000">blastic lesions</phr>.</sent><sent id = "s67"> A 5.2 x 3.7 cm <undef>phlegmonous</undef> mass is again noted in the left anterior pelvis which <undef>encases</undef> the sigmoid colon and multiple small bowel loops which appears more prominent <undef>compared</undef> to the prior CT.</sent><sent id = "s68"> There is a communicating tract in the left anterior pelvic wall with passage of oral contrast from the sigmoid colon through a defect in the anterior pelvic wall into an external colostomy bag.</sent><sent id = "s69"> There are <phr id = "p2148">no</phr> <phr id = "p2150">distended</phr> <phr id = "p2152">bowel</phr> <phr id = "p2154">loops</phr> <phr id = "p2156">to suggest</phr> <phr id = "p2160">obstruction</phr>.</sent><sent id = "s70"> The <phr id = "p2166">appendix</phr> <phr id = "p2168">appears</phr> <phr id = "p2170">normal</phr>.</sent><sent id = "s71"> There are <phr id = "p2178">no</phr> <phr id = "p2180">loculated</phr> <phr id = "p2182">fluid collections</phr> in the <phr id = "p2190">pelvis</phr> <phr id = "p2192">to suggest</phr> an <phr id = "p2198">abscess</phr>.</sent><sent id = "s72"> There is no free fluid, free intraperitoneal air or extraluminal oral contrast.</sent><sent id = "s73"> There are <phr id = "p2233">no</phr> <phr id = "p2235">hernias</phr>.</sent><sent id = "s74"> A/<undef>P</undef>: 83<undef>M</undef> with locally advanced rectal cancer s/p ex lap and colostomy in 9/4 for perforated diverticulum.</sent><sent id = "s75"> He has had a slow recovery but is now <undef>doing</undef> fairly <undef>well</undef>.</sent><sent id = "s76"> He has had a chronic <undef>perihepatic</undef> complex fluid collection;</sent><sent id = "s77"> however, this was unable to be drained via ultrasound guidance because no fluid <undef>component</undef> was localized.</sent><sent id = "s78"> -Continue palliative chemotherapy with Xeloda 750mg/<undef>m2</undef> bid x 14 days.</sent><sent id = "s79"> (1000mg qam and 1500mg <undef>qpm.</undef>) -Has Zofran prn nausea but hasn't had to take.</sent><sent id = "s80"> -Imodium prn diarrhea.</sent><sent id = "s81"> -Again <undef>reviewed</undef> <undef>toxicities</undef> with pt and his home <undef>attendant</undef> including  need to monitor for N/V, diarrhea, fevers, hand-foot syndrome and other side effects.</sent><sent id = "s82"> -<phr id = "p2494">Chest</phr> <phr id = "p2496">CT</phr> <phr id = "p2498">scheduled</phr> <phr id = "p2500">for</phr> Tuesday <phr id = "p2504">3/21</phr>.</sent><sent id = "s83"> -<undef>RTC</undef> 3/20.</sent><sent id = "s84"> <undef>M</undef>.</sent><sent id = "s85"> <undef>Bbbbb</undef> 9999  
+</sent></tt></section>
+
+</medlee>

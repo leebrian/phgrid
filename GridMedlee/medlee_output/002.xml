@@ -1,0 +1,37 @@
+<medlee>
+<section c = "report unknown section item"><structured form = "xml">
+<med v = "tramadol" idref = "p37"><certainty v = "high certainty" idref = "p35"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s2"></sid><status v = "previous" idref = "p39"></status>
+<timeper v = "previous" idref = "p45"><reltime v = "previous" idref = "p45"><numunit v = "4 day" idref = "p41"></numunit>
+</reltime>
+</timeper>
+</med>
+<problem v = "thrombosis" idref = "p405"><bodyloc v = "internal jugular vein" idref = "p389"><region v = "left" idref = "p387"></region>
+</bodyloc>
+<bodyloc v = "vein" idref = "p403"><bodyloc v = "innominatum" idref = "p401"></bodyloc>
+</bodyloc>
+<degree v = "partial degree" idref = "p399"></degree>
+<parsemode v = "mode1"></parsemode>
+<quantity v = "5" idref = "p384"></quantity>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s7"></sid></problem>
+<problem v = "thrombosis" idref = "p405"><bodyloc v = "subclavian" idref = "p394"></bodyloc>
+<bodyloc v = "vein" idref = "p403"><bodyloc v = "innominatum" idref = "p401"></bodyloc>
+</bodyloc>
+<certainty v = "high certainty" idref = "p392"></certainty>
+<degree v = "partial degree" idref = "p399"></degree>
+<parsemode v = "mode1"></parsemode>
+<quantity v = "5" idref = "p384"></quantity>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s7"></sid></problem>
+<status v = "disease remission" idref = "p834"><sectname v = "report unknown section item"></sectname>
+<parsemode v = "mode1"></parsemode>
+<sid idref = "s12"></sid></status>
+
+</structured>
+<tt><sent id = "s1">AIM Clinic <undef>XXXXX</undef>, <undef>XXXXX</undef> 9999999 47<undef>yF</undef> BAck pain much improved, going to PT.</sent><sent id = "s2">   <phr id = "p35">Took</phr> <phr id = "p37">tramadol</phr> <phr id = "p39">last</phr> <phr id = "p41">4 days</phr> <phr id = "p45">ago</phr>.</sent><sent id = "s3"> depression improved, no <undef>SI</undef>, <undef>HI</undef>.</sent><sent id = "s4"> ROS: cold <undef>sxs</undef> these days some some generalized body pains, sweats, ?<undef>wt</undef> loss over 5 years, <undef>occ</undef> nausea, <undef>occ</undef> diarrhea 2-3x/day, normal color, no blood, no vomiting, <undef>occ</undef> <undef>dyssuria</undef>, no hematuria, PMH: 1) peripheral T-cell lymphoma s/p <undef>CHOP</undef> (4/99) + <undef>CAMP</undef> 6 <undef>protocol</undef> (9/99) but <undef>d</undef>/<undef>c</undef>'<undef>d</undef> <undef>protocol</undef> after stem cell infusion 9/99.</sent><sent id = "s5"> <undef>followed</undef> by <undef>onc</undef> 2) ? history of schizoaffective disorder, <undef>SAD</undef>? 3) Non-ischemic dilated cardiomyopathy with LVEF 15-20%, secondary to adriamycin / <undef>mitoxantone</undef> ( <undef>neg</undef> ETT) 4) Hospitalization for palpitations <undef>followed</undef> by syncope (+<undef>LOC</undef>) (9/24) Evaluation in <undef>house</undef> included <undef>tele</undef>, which revealed no ectopy, and a T wave <undef>alternans</undef> study, which was negative.</sent><sent id = "s6"> Although the pt was advised to have an <undef>EP</undef> study, she repeatedly refused, and seemed to <undef>understand</undef> her <undef>risks</undef> in refusing this study.</sent><sent id = "s7"> <phr id = "p384">5</phr>) <phr id = "p387">Left</phr> <phr id = "p389">internal jugular</phr><phr id = "p392">,</phr> <phr id = "p394">subclavian</phr>, <phr id = "p397">and</phr> <phr id = "p399">partial</phr> <phr id = "p401">innominate</phr> <phr id = "p403">venous</phr> <phr id = "p405">thrombosis</phr>.</sent><sent id = "s8"> 4/1 6) back pain, s/p <undef>microdiskectomy</undef> '95 7) smokes 2-3 <undef>cigarrets</undef>/day 8) left leg pain with walking at 2 blocks, symptomatic PVD with 50% stenosis at left <undef>CFA</undef> (1/6) from outside lab, normal aortic <undef>U</undef>/S and carotid <undef>US</undef> ALLERGIES: ambien? (arm numbness and tongue numbness) Meds: Tramadol 50 PRN Paxil 25mg q d risperdal 2mg bid lasix 40mg q d prilosec OTC 20 diphenhydramine 50 qd prn digoxin 0.25mg q d <undef>ECASA</undef> 81 qd <undef>Vit</undef> B12 1000mcg daily Coreg 3.125 bid <undef>HM</undef>: mammo 5/5 PAP: 12/3 Studies: <undef>CPT</undef> (8/2004) Peak <undef>VO2</undef> was 18.2 ml/kg/min (1822 ml/min) or 84% of age and size predicted maximum.</sent><sent id = "s9"> <undef>TWA</undef> (9/3) Negative T wave <undef>alternans</undef> study.</sent><sent id = "s10"> EKG (9/3): NSR with <undef>lat</undef> TWI <undef>TTE</undef> (11/5): <undef>mod</undef> LV <undef>dil</undef> and <undef>HK</undef>, EF 25%, <undef>mod</undef> LAE, <undef>mod</undef>-severe MR, <undef>RVSP</undef> 39.</sent><sent id = "s11"> PE: 66 90/60, A/<undef>P</undef>: 47<undef>yF</undef> w/ <undef>Onc</undef>: peripheral T-cell lymphoma s/p <undef>CHOP</undef> (4/99) + <undef>CAMP</undef> 6 <undef>protocol</undef> (9/99) but <undef>d</undef>/<undef>c</undef>'<undef>d</undef> <undef>protocol</undef> after stem cell infusion 9/99.</sent><sent id = "s12"> <phr id = "p834">In remission</phr>.</sent><sent id = "s13"> <undef>followed</undef> by <undef>onc</undef> Psych: ? history of schizoaffective disorder, <undef>SAD</undef>?, not <undef>followed</undef> by psych <undef>anymore</undef>, no <undef>SI</undef>, <undef>HI</undef> - again, <undef>explained</undef> <undef>importance</undef> of following with psych - given <undef>list</undef> of outpatient psych <undef>referrals</undef> <undef>Cards</undef>: 1) Non-ischemic dilated cardiomyopathy with LVEF 15-20%, secondary to adriamycin / <undef>mitoxantone</undef> ( <undef>neg</undef> ETT), <undef>followed</undef> by <undef>Cards</undef> (<undef>Fujita</undef>) 2) ?PVD, left leg pain with walking at 2 blocks, symptomatic PVD with 50% stenosis at left <undef>CFA</undef> (1/6) from outside lab, normal aortic <undef>U</undef>/S and carotid <undef>US</undef>, taking ASA, low LDL <undef>M</undef>/S: chronic back pain, s/p <undef>microdiskectomy</undef> '95, improved back <undef>painwith</undef> PT, no <undef>worrisome</undef> <undef>sxs</undef> or signs, taking tramadol sporadically.</sent><sent id = "s14"> <undef>HM</undef>: - PAP <undef>RTC</undef> in 3 months  
+</sent></tt></section>
+
+</medlee>

@@ -1,0 +1,104 @@
+<medlee>
+<section c = "report unknown section item"><structured form = "xml">
+<problem v = "fever" idref = "p431"><certainty v = "no" idref = "p425"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s10"></sid></problem>
+<problem v = "diarrhea" idref = "p442"><certainty v = "high certainty" idref = "p440"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s11"></sid></problem>
+<problem v = "constipation" idref = "p449"><certainty v = "high certainty" idref = "p445"><status v = "alternating" idref = "p445"></status>
+</certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s11"></sid></problem>
+<bodyfunc v = "appetite" idref = "p520"><certainty v = "moderate certainty" idref = "p514"></certainty>
+<parsemode v = "mode1"></parsemode>
+<quantity v = "0" idref = "p518"></quantity>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s14"></sid></bodyfunc>
+<problem v = "hiccups" idref = "p548"><certainty v = "moderate certainty" idref = "p544"></certainty>
+<parsemode v = "mode1"></parsemode>
+<reltime v = "at" idref = "p550"><timeunit v = "night" idref = "p552"></timeunit>
+</reltime>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s16"></sid></problem>
+
+</structured>
+<tt><sent id = "s1">3/16/6 Oncology Clinic F/U 74 y old man with CAD, CHF with EF 25% who was <undef>referred</undef> to Oncology for further evaluation and management of a mass in the left hepatic lobe measuring 6 <undef>x6.6cm</undef>.</sent><sent id = "s2"> The mass was first noted on CT scan in 8/5, and a CT guided biopsy was performed 10/3/5 showing an invasive malignant neoplasm, of uncertain <undef>histogenesis</undef>.</sent><sent id = "s3"> He was admitted for CHF in 12/5 and a repeat biopsy was performed, showing findings suspicious for metastatic melanoma versus <undef>GIST</undef>.</sent><sent id = "s4"> He was readmitted in 1/6 for CHF, and he gave <undef>permission</undef> for his biopsy to be <undef>reviewed</undef> at <undef>University</undef> of <undef>Pennsylvania</undef> by Dr. <undef>Ddddd</undef> <undef>Dddddd</undef>.</sent><sent id = "s5"> Has started Gleevec for suspected <undef>GIST</undef> based on outside pathology <undef>review</undef>.</sent><sent id = "s6"> Brain MRI on 2/28 showed old cerebellar infarcts which <undef>I</undef> <undef>think</undef> could be contributing to his difficulty with balance and gait.</sent><sent id = "s7"> At last <undef>visit</undef>, he complained of diarrhea, which may be <undef>realated</undef> to Gleevec, and Imodium was recommended.</sent><sent id = "s8">  Today, he <undef>says</undef> he has worse dizziness <undef>than</undef> ever, which usually <undef>comes</undef> on when getting up to walk, accompanied by nausea.</sent><sent id = "s9">  He feels like the <undef>world</undef> is <undef>spending</undef>.</sent><sent id = "s10">  He has <phr id = "p425">not</phr> had any <phr id = "p431">fever</phr>.</sent><sent id = "s11">  He also <phr id = "p440">has</phr> <phr id = "p442">diarrhea</phr><phr id = "p443">,</phr> <phr id = "p445">alternating with</phr> <phr id = "p449">constipation</phr>.</sent><sent id = "s12">  At times he has the <undef>desire</undef> to have a bowel movement, but nothing <undef>comes</undef> <undef>out</undef>.</sent><sent id = "s13">  When he does have <undef>diarreha</undef>, it hurts his stomach.</sent><sent id = "s14">  He also <phr id = "p514">complains of</phr> <phr id = "p518">zero</phr> <phr id = "p520">appetite</phr>.</sent><sent id = "s15">  He chews the food and spits it <undef>out</undef>.</sent><sent id = "s16">  <phr id = "p544">Complains of</phr> <phr id = "p548">hiccups</phr> <phr id = "p550">at</phr> <phr id = "p552">night</phr>.</sent></tt></section>
+
+<section c = "report past history item"><structured form = "xml">
+<problem v = "coronary artery disease" idref = "p592"><parsemode v = "mode1"></parsemode>
+<sectname v = "report past history item"></sectname>
+<sid idref = "s19"></sid></problem>
+<problem v = "transient ischemic attack" idref = "p613"><date v = "00000402" idref = "p617"><reltime v = "in" idref = "p615"></reltime>
+</date>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report past history item"></sectname>
+<sid idref = "s21"></sid></problem>
+<problem v = "hypertension" idref = "p624"><parsemode v = "mode1"></parsemode>
+<sectname v = "report past history item"></sectname>
+<sid idref = "s22"></sid></problem>
+<status v = "previous" idref = "p685"><bodyloc v = "lap" idref = "p687"></bodyloc>
+<certainty v = "moderate certainty" idref = "p683"></certainty>
+<date v = "20000000" idref = "p691"><reltime v = "in" idref = "p689"></reltime>
+</date>
+<sectname v = "report past history item"></sectname>
+<parsemode v = "mode1"></parsemode>
+<sid idref = "s26"></sid></status>
+<problem v = "drainage" idref = "p713"><bodyloc v = "perirectal" idref = "p709"></bodyloc>
+<date v = "19930000" idref = "p706"></date>
+<parsemode v = "mode1"></parsemode>
+<problemdescr v = "abscess" idref = "p711"></problemdescr>
+<sectname v = "report past history item"></sectname>
+<sid idref = "s28"></sid></problem>
+<problem v = "living alone" idref = "p884"><parsemode v = "mode1"></parsemode>
+<sectname v = "report past history item"></sectname>
+<sid idref = "s30"></sid></problem>
+<problem v = "etoh" idref = "p949"><behavior v = "user"></behavior>
+<certainty v = "no" idref = "p947"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report past history item"></sectname>
+<sid idref = "s34"></sid></problem>
+<problem v = "illicit substance" idref = "p954"><behavior v = "user" idref = "p958"></behavior>
+<certainty v = "no" idref = "p952"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report past history item"></sectname>
+<sid idref = "s34"></sid></problem>
+<problem v = "distended" idref = "p1147"><degree v = "low degree" idref = "p1145"></degree>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report past history item"></sectname>
+<sid idref = "s38"></sid></problem>
+<status v = "acute" idref = "p1671"><certainty v = "no" idref = "p1669"></certainty>
+<sectname v = "report past history item"></sectname>
+<parsemode v = "mode1"></parsemode>
+<sid idref = "s50"></sid></status>
+<med v = "meclizine" idref = "p1679"><parsemode v = "mode1"></parsemode>
+<sectname v = "report past history item"></sectname>
+<sid idref = "s51"></sid></med>
+<procedure v = "check" idref = "p1703"><certainty v = "moderate certainty" idref = "p1706"></certainty>
+<descriptor v = "vitamin B12" idref = "p1705"></descriptor>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report past history item"></sectname>
+<sid idref = "s53"></sid></procedure>
+<labtest v = "folate" idref = "p1707"><certainty v = "moderate certainty" idref = "p1706"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report past history item"></sectname>
+<sid idref = "s53"></sid></labtest>
+<bodyfunc v = "appetite" idref = "p1745"><descriptor v = "poor" idref = "p1743"></descriptor>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report past history item"></sectname>
+<sid idref = "s56"></sid></bodyfunc>
+<med v = "megace" idref = "p1751"><certainty v = "high certainty"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report past history item"></sectname>
+<sid idref = "s56"></sid><status v = "continue" idref = "p1749"></status>
+</med>
+
+</structured>
+<tt> PAST MEDICAL HISTORY:<sent id = "s17"> .</sent><sent id = "s18"> CHF / <undef>DCM</undef> ? <undef>etiology</undef> --EF: 25% on Cath in 10/2002 .</sent><sent id = "s19"> <phr id = "p592">CAD</phr> .</sent><sent id = "s20"> Liver mass -> ? metastatic melanoma .</sent><sent id = "s21"> <phr id = "p613">TIA</phr> <phr id = "p615">in</phr> <phr id = "p617">4/2 </phr>.</sent><sent id = "s22"> <phr id = "p624">HTN</phr> .</sent><sent id = "s23"> LV thrombus seen on <undef>TTE</undef> treated with anticoagulant on clinical trial PAST SURGICAL HISTORY: .</sent><sent id = "s24"> 11/2003 - <undef>Cholycestectomy</undef> .</sent><sent id = "s25"> <undef>b</undef>/l cataract repair .</sent><sent id = "s26"> <phr id = "p683">?</phr> <phr id = "p685">Ex</phr>-<phr id = "p687">lap</phr> <phr id = "p689">in</phr> <phr id = "p691">2000</phr> .</sent><sent id = "s27"> 12/2002- TURP .</sent><sent id = "s28"> <phr id = "p706">1993</phr>- <phr id = "p709">perirectal</phr> <phr id = "p711">abscess</phr> <phr id = "p713">drainage</phr> .</sent><sent id = "s29"> L inguinal hernia repair -1950 ALLERGIES: NKDA MEDICATIONS: Meclizine 25 mg TID Gleevec 400 mg QD Fentanyl patch 25 mcg Lisinopril 40mg po daily Percocet Senna 2 tabs po <undef>bedtime</undef> prn constipation Colace 100mg po tid prn Lipitor 10mg daily Proscar 5mg po <undef>bedtime</undef> Prilosec OTC 20mg <undef>poqd</undef> Lasix 40mg po bid Imdur 30mg po daily Coreg 3.125mg po bid <undef>PMD</undef>: Dr. <undef>Vvvvv</undef> (AIM clinic) Cardiologist: -Dr. <undef>Gggggg</undef> 212-781-9223 <undef>SOCIAL</undef> HISTORY: .</sent><sent id = "s30"> <phr id = "p884">Lives alone</phr>.</sent><sent id = "s31"> <undef>Retired</undef> <undef>factory</undef> <undef>worker</undef> .</sent><sent id = "s32"> No ETOH, past <undef>cig</undef> smoker (stopped more than 25 yr ago) .</sent><sent id = "s33"> Remote smoking Hx, stopped > 25 yr ago .</sent><sent id = "s34"> <phr id = "p947">No</phr> <phr id = "p949">ETOH</phr><phr id = "p950">,</phr> <phr id = "p952">no</phr> <phr id = "p954">illicit drug</phr> <phr id = "p958">use</phr> .</sent><sent id = "s35"> Has <undef>HHA</undef> 3 hr x 5 days per week,VNS FAMILY HISTORY: <undef>NC</undef> REVIEW OF SYSTEMS: <undef>see</undef> <undef>HPI</undef> <undef>T</undef> 96.2 BP 118/60 HR 67 <undef>Wt</undef> 142 (-2) <undef>Ht</undef> 65 <undef>GEN</undef>: pleasant elderly man, NAD HEENT: <undef>MMM</undef>, OP clear, anicteric, no nystagmus NECK: No <undef>LAN</undef> CV: S1, S2, II/VI soft <undef>SEM</undef> murmur heard at apex LUNGS: Dec <undef>BS</undef> at the bases, no crackles, no wheezing.</sent><sent id = "s36"> ABD: + cholecystectomy scar in RUQ, Vertical suprapubic scar.</sent><sent id = "s37"> Both well healed.</sent><sent id = "s38"> <phr id = "p1145">Mildly</phr> <phr id = "p1147">distended</phr>.</sent><sent id = "s39"> + <undef>BS</undef>, soft, <undef>mildy</undef> tender to deep palpation in RUQ and LLQ.</sent><sent id = "s40"> No <undef>Murphy</undef>'s.</sent><sent id = "s41"> no ascites, <undef>b</undef>/l inguinal hernias <undef>EXT</undef>: no edema <undef>b</undef>/l, 2+ DP pulses <undef>b</undef>/l LABORATORY DATA: 3/16/6 WBC  8.4 <undef>Hb</undef> 11.3  HCT 34.2  <undef>PLT</undef>  208 2/27/6 WBC 9.1, <undef>Hb</undef> 11.8, HCT 35.9, <undef>PLT</undef> 262 2/6/6 WBC 7.1, <undef>Hb</undef> 11.1, HCT 33.7, <undef>PLT</undef> 322 12/20/5 WBC 8.9, <undef>Hb</undef> 12.4, <undef>PLT</undef> 279 12/5/5 WBC 7.8, <undef>Hb</undef> 11.1, <undef>PLT</undef> 304 10/27/5 Retic 4.7, <undef>Fe</undef> 35, <undef>Ferr</undef> 65, TIBC 350 9/27/5 AFP: 2.1(wnl);</sent><sent id = "s42"> 9/27/5 CEA: 0.9 (wnl), 10/12/5 <undef>CA19</undef>-9 = 32 9/27/5 <undef>HCV</undef> Ab negative, HBsAg <undef>neg</undef>, <undef>HBsAb</undef> <undef>neg</undef>, <undef>HBcAb</undef> <undef>pos</undef> EGD (3/2005): wnl Colonoscopy 11/9/5 - WNL IMPRESSION: 74 y old man with significant cardiac disease and liver mass with pelvic and mesenteric masses of unclear etiology being treated for probable <undef>GIST</undef>.</sent><sent id = "s43"> 1.</sent><sent id = "s44"> Liver mass, probable <undef>GIST</undef> - continue Gleevec.</sent><sent id = "s45">  Would usually scan after 2-3 months of treatment, but given lots of GI symptoms, will check CT scan now to r/o partial obstruction or other.</sent><sent id = "s46"> 2.</sent><sent id = "s47"> Abdominal pain - continue fentanyl/<undef>percocet.</undef>.</sent><sent id = "s48">  Refill of fentanyl given (#10) 3.</sent><sent id = "s49"> Dizziness - <undef>brai</undef> 
+n MRI with old <undef>cerebelar</undef> infarcts, possibly <undef>responsible</undef> for patient's <undef>symtpoms</undef>.</sent><sent id = "s50">  <phr id = "p1669">Nothing</phr> <phr id = "p1671">acute</phr>.</sent><sent id = "s51"> Already on <phr id = "p1679">Meclizine</phr>.</sent><sent id = "s52">  Has <undef>appointment</undef> with Dr. <undef>Zzzzzzzzz</undef> next month.</sent><sent id = "s53"> Also, <phr id = "p1703">check</phr> <phr id = "p1705">B12</phr><phr id = "p1706">/</phr><phr id = "p1707">folate</phr>.</sent><sent id = "s54">  Gleevec can cause dizziness in 10-12% of <undef>patients</undef> <undef>according</undef> to <undef>PDR</undef>.</sent><sent id = "s55"> 5.</sent><sent id = "s56"> <phr id = "p1743">Poor</phr> <phr id = "p1745">appetite</phr> - <phr id = "p1749">continue</phr> <phr id = "p1751">Megace</phr>;</sent><sent id = "s57"> <undef>call</undef> prescription for <undef>Ensure</undef>.</sent><sent id = "s58"> <undef>RTC</undef> 2 weeks <undef>D</undef>/<undef>W</undef> Dr. <undef>Yyyyyy</undef> <undef>Yyyy</undef> <undef>Yyyyyyyy</undef>, MD <undef>NNNNN</undef>  
+</sent></tt></section>
+
+</medlee>

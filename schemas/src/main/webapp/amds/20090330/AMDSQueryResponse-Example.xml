@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AMDSQueryResponse xmlns="http://ncphi.phgrid.net/schemas/amds/20090330">
+	<AMDSRecordSummary>
+		<DateStart>2009-01-01</DateStart>
+		<DateEnd>2009-01-05</DateEnd>
+		<CreationDateTime>2009-03-30T22:24:23-05:00
+		</CreationDateTime>
+		<RequestingUser>BrianLee</RequestingUser>
+		<DataSourceOID>BioSense-AMDS-NCPHILab
+		</DataSourceOID>
+		<GeoLocationSupported>
+			<GeoLocation type="zip3">300</GeoLocation>
+			<GeoLocation type="zip3">301</GeoLocation>
+		</GeoLocationSupported>
+		<CellSuppressionRule>5</CellSuppressionRule>
+		<TargetQuery>
+			<Condition classifier="BioSense">GI</Condition>
+			<Condition classifier="BioSense">Fever</Condition>
+		</TargetQuery>
+	</AMDSRecordSummary>
+	<CountSet>
+		<Day>
+			2009-01-01
+			<PatientLocation>
+				300
+				<Count>51</Count>
+			</PatientLocation>
+			<PatientLocation>
+				300
+				<Count suppressed="true" />
+			</PatientLocation>
+		</Day>
+		<Day>
+			2009-01-02
+			<PatientLocation>
+				300
+				<Count suppressed="false">11</Count>
+				<!--
+					suppressed="false" does nothing but it is possible according to
+					schema
+				-->
+			</PatientLocation>
+			<PatientLocation>
+				300
+				<Count>12</Count>
+			</PatientLocation>
+		</Day>
+		<Day>
+			2009-01-03
+			<PatientLocation>
+				300
+				<Count>111</Count>
+			</PatientLocation>
+			<!--
+				since no patient location exists for 301 it means that there is no
+				data for this location (save space by not transmiting zeros). If the
+				count was suppressed then suppressed="true" is sent.
+			-->
+		</Day>
+		<Day>
+			2009-01-04
+			<PatientLocation>
+				300
+				<Count>21</Count>
+			</PatientLocation>
+			<PatientLocation>
+				300
+				<Count>9</Count>
+			</PatientLocation>
+		</Day>
+		<Day>
+			2009-01-05
+			<PatientLocation>
+				300
+				<Count>5</Count>
+			</PatientLocation>
+			<PatientLocation>
+				300
+				<Count>20</Count>
+			</PatientLocation>
+		</Day>
+	</CountSet>
+</AMDSQueryResponse>

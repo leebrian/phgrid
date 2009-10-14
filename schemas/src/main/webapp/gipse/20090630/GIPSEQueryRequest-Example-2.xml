@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+This request demonstrates a simple query where the data is stratified by two days (Jan 1 and Jan 2), two indicators and a simple georegion consisting
+of all of the zip5 codes within the 309 zip3. The data returned will have three dimensions: date x indicator x region.
+The expectation is that this will result in 2 x 2 x 6 <Observation> elements (since 309 has 6 zip codes).
+
+This example does not use the optional stratifiers, nor does it use suppressed values, nor paging.
+ -->
+<GIPSEQueryRequest xmlns="http://ncphi.phgrid.net/schemas/gipse/20090630"><!-- date is used as version -->
+	<RequestCharacteristics>
+		<RequestDateTime>2009-03-30T22:24:13-00:00</RequestDateTime><!-- Always uses GMT -->
+		<RequestingUser>BrianLee</RequestingUser>
+		<RequestingOrganization>CDC NCPHI Lab</RequestingOrganization>
+	</RequestCharacteristics>
+	<QueryCharacteristics>
+		<Dates start="2009-01-01" end="2009-01-02" interval="day"/>
+		<Indicators>
+			<Indicator classifier="BioSense" name="Fever"/>
+			<Indicator classifier="BioSense" name="Respiratory"/>
+		</Indicators>
+		<GeoRegions>
+			<!-- All of the zip5s in 300 -->
+			<GeoRegion type="zip3" value="309">
+				<SpecificLocations>
+					<GeoLocation type="zip5" value="*"/>
+				</SpecificLocations>
+			</GeoRegion>
+		</GeoRegions>
+	</QueryCharacteristics>
+</GIPSEQueryRequest>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This can be used with an implicitly solicited request, the  ResponseCharacteristics and QueryCharacteristics define the implicit query -->
+<!-- using lower first letter camel case based on W3C examples -->
+<AMDSQueryResponse xmlns="http://ncphi.phgrid.net:8080/schemas/amds/20090531">
+	<ResponseCharacteristics>
+		<RequestDateTime>2009-03-30T22:24:13-00:00</RequestDateTime><!-- Always uses GMT -->
+		<ResponseDateTime>2009-03-30T22:24:23-00:00</ResponseDateTime><!-- Always uses GMT -->
+		<RequestingUser>BrianLee</RequestingUser>
+		<RequestingOrganization>CDC NCPHI Lab</RequestingOrganization><!-- unambiguous way of specifying user/org (OID) -->
+		<DataSourceOID>BioSense-AMDS-NCPHILab</DataSourceOID><!-- unambiguous way of specifying user/org (OID) //todo additional data sources, allow multiple sources in future -->
+		<DataSourceTimeZone>-5:00</DataSourceTimeZone><!-- optional, only specified when source has a single time zone, only used as a display label or grouping, not for date math -->
+	</ResponseCharacteristics>
+	<!-- Query submitted, modified to reflect all the explicit and implicit characteristics. Explicit criteria should never be overwritten,
+	generate an error if conflicts exist. -->
+	<QueryCharacteristics>
+		
+		<!-- interval is optional attributes. default to "day" -->
+		<Dates start="2009-01-01" end="2009-01-02" interval="day"/>
+		<!-- Optional element, if not provided then no suppression occurs. If provided then values less than smallestValueReports are suppressed. 
+		relportAs is optional. If reportAs is not provided, then suppressed values are not sent back in the ObservationSet. 
+		If reportAs is provided they are reported with indicator value set to the value of the reportAs attribute -->
+		<SuppressValues smallestValueReported="1" reportAs="Suppressed"/> <!--  or "0" or "whatever" -->
+		
+		<!--  Indicator classifiers and names are unique to services (as described by metadata). Future task will group these and use proper vocabularies. -->
+		<Indicators>
+			<Indicator classifier="DiSTRIBuTE" name="GI-Broad-Ratio"/>
+			<Indicator classifier="DiSTRIBuTE" name="GI-Broad-Count"/>
+			<Indicator classifier="DiSTRIBuTE" name="GI-Narrow-Count"/>
+			<Indicator classifier="DiSTRIBuTE" name="GI-Narrow-Ratio"/>
+			<Indicator classifier="DiSTRIBuTE" name="Fever-Ratio"/>
+			<Indicator classifier="DiSTRIBuTE" name="Fever-Count"/>
+			<Indicator classifier="DiSTRIBuTE" name="Fever2-Ratio"/>
+			<Indicator classifier="DiSTRIBuTE" name="Fever2-Count"/>
+			<Indicator classifier="DiSTRIBuTE" name="Total"/>
+			<Indicator classifier="BioSense" name="GI-Ratio"/>
+			<Indicator classifier="BioSense" name="GI-Count"/>
+			<Indicator classifier="BioSense" name="Fever"/>
+			<Indicator classifier="BioSense" name="Total"/>
+		</Indicators>
+		
+		<!-- optional, Observation only contains location if GeoRegions is specified -->
+		<GeoRegions>
+			<GeoRegion type="state" value="AL"/><!-- return indicator values by the state of Alabama -->
+			<GeoRegion type="zip5" value="30308"/><!--return indicator values by  the zip code of 30308-->
+			<!-- All of the zip5s in Georgia -->
+			<GeoRegion type="state" value="GA">
+				<SpecificLocations>
+					<GeoLocation type="zip5" value="*"/>
+				</SpecificLocations>
+			</GeoRegion>
+			<!--  All of the zip3s in Georgia -->
+			<GeoRegion type="state" value="GA">
+				<SpecificLocations>
+					<GeoLocation type="zip3" value="*"/>
+				</SpecificLocations>
+			</GeoRegion>
+			<!-- All of the zip5s in 300 -->
+			<GeoRegion type="zip3" value="300">
+				<SpecificLocations>
+					<GeoLocation type="zip5" value="*"/>
+				</SpecificLocations>
+			</GeoRegion>
+			<!-- zip5 30161, but only in GA (not other states that share 30161 -->
+			<GeoRegion type="state" value="GA">
+				<SpecificLocations>
+					<GeoLocation type="zip5" value="30161"/>
+				</SpecificLocations>
+			</GeoRegion>
+			<!-- zip5 30161, but only in AL (not other states that share 30161 -->
+			<GeoRegion type="state" value="AL">
+				<SpecificLocations>
+					<GeoLocation type="zip5" value="30161"/>
+				</SpecificLocations>
+			</GeoRegion>
+		</GeoRegions>
+		
+		<!-- optional, Observation only contains age if GeoRegions is specified. BioSense doesn't support Age for Beta. -->
+		<Ages>
+			<Age classifier="DiSTRIBuTE" name="0-1"/>
+			<Age classifier="DiSTRIBuTE" name="2-4"/>
+			<Age classifier="DiSTRIBuTE" name="5-17"/>
+			<Age classifier="DiSTRIBuTE" name="18-44"/>
+		</Ages>
+		
+		<!-- optional, Observation only contains faciliy if GeoRegions is specified. BioSense doesn't support Age for Beta. -->
+		<Facilities>
+			<Facility codeset="NWPHIE" name="SacredHeart"/>
+		</Facilities>
+		
+		<!-- optional, Observation only contains service area if GeoRegions is specified. BioSense doesn't support Age for Beta. -->
+		<ServiceAreas>
+			<ServiceArea codeset="NWPHIE" name="ED"/><!-- Emergency dept -->
+			<ServiceArea codeset="NWPHIE" name="UC"/><!-- urgent care  -->
+			<ServiceArea codeset="NWPHIE" name="IN"/><!-- inpatient -->
+			<ServiceArea codeset="NWPHIE" name="PC"/><!-- primary care -->
+			<ServiceArea codeset="NWPHIE" name="SC"/><!-- specialty clinic -->
+		</ServiceAreas>
+		
+		<!--Optional element.  This is included for real-time query support where returning 1000+ rows would be impractical. I envision paging based on observations. I think this single element provides
+		all the data necessary for a client to handle paging. -->
+		<PageData pageNumber="1" pageSize="100" totalRecords="24"/> <!-- Each condition is one record -->
+	</QueryCharacteristics>
+	<ObservationSet>
+	<!-- ratios are also valid attributes, but they are populated based on the condition. This could be tricky for visualization because services with ratios would need to be visualized differently. -->
+		<Observation start="2009-01-01" indicator="GI" value="1" location="30308" age="18-44" serviceArea="ED" facility="SacredHeart"/>
+		<Observation start="2009-01-01" indicator="GI" value="1" location="30308" age="18-44" serviceArea="ED" facility="SacredHeart"/>
+		<Observation start="2009-01-01" indicator="GI" value="1" location="30308" age="18-44" serviceArea="ED" facility="SacredHeart"/>
+		<Observation start="2009-01-01" indicator="GI" value="Supressed" location="30308" age="18-44" serviceArea="ED" facility="SacredHeart"/><!-- Would be reported if SuppressSmallValues\reportAs is unspecified-->
+		<Observation start="2009-01-01" indicator="GI" value="1" location="30308" age="18-44" serviceArea="ED" facility="SacredHeart"/>
+		<Observation start="2009-01-01" indicator="GI" value="1" location="30308" age="18-44" serviceArea="ED" facility="SacredHeart"/>
+		<Observation start="2009-01-02" indicator="GI" value="1" location="30308" age="18-44" serviceArea="ED" facility="SacredHeart"/>
+		<Observation start="2009-01-02" indicator="GI" value="1" location="30308" age="18-44" serviceArea="ED" facility="SacredHeart"/>
+		<Observation start="2009-01-02" indicator="GI" value="Supressed" location="30308" age="18-44" serviceArea="ED" facility="SacredHeart"/>
+	</ObservationSet>
+</AMDSQueryResponse>

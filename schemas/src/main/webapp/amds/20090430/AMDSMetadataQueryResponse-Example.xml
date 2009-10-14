@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetadataQueryResponse xmlns="http://ncphi.phgrid.net/schemas/amds/20090330">
+	<MetadataRecord>
+		<TimePeriodSupported>
+			<DateStart>2009-01-31T05:00:01-05:00</DateStart>
+			<DateEnd>2010-01-01T05:00:00-05:00</DateEnd>
+		</TimePeriodSupported>
+		<DataSourceOID>BioSense-AMDS-NCPHILab
+		</DataSourceOID>
+		<CellSuppressionRule>0</CellSuppressionRule>
+		<ConditionsSupported>
+			<Condition classifier="BioSense">Respiratory</Condition>
+			<Condition classifier="BioSense">GI</Condition>
+			<Condition classifier="BioSense">Botulism</Condition>
+			<Condition classifier="BioSense">Fever</Condition>
+			<Condition classifier="BioSense">Rash</Condition>
+			<Condition classifier="RODS">Rash</Condition>
+			<Condition classifier="RODS">GI</Condition>
+			<Condition classifier="RODS">Neurological</Condition>
+		</ConditionsSupported>
+		<GeoLocationSupported>
+			<GeoLocation type="state">GA</GeoLocation>
+			<GeoLocation type="state">FL</GeoLocation>
+			<GeoLocation type="state">SC</GeoLocation>
+			<GeoLocation type="state">NC</GeoLocation>
+			<GeoLocation type="state">MI</GeoLocation>
+			<GeoLocation type="state">MO</GeoLocation>
+			<GeoLocation type="state">CA</GeoLocation>
+			<GeoLocation type="state">VA</GeoLocation>
+			<GeoLocation type="state">MA</GeoLocation>
+			<GeoLocation type="state">MD</GeoLocation>
+			<GeoLocation type="state">DC</GeoLocation>
+			<GeoLocation type="state">KY</GeoLocation>
+			<GeoLocation type="state">WV</GeoLocation>
+			<GeoLocation type="zip3">300</GeoLocation>
+			<GeoLocation type="zip3">301</GeoLocation>
+			<GeoLocation type="zip3">302</GeoLocation>
+			<GeoLocation type="zip3">303</GeoLocation>
+			<GeoLocation type="zip3">304</GeoLocation>
+			<GeoLocation type="zip5">30001</GeoLocation>
+			<GeoLocation type="zip5">30002</GeoLocation>
+			<GeoLocation type="zip5">30003</GeoLocation>
+			<GeoLocation type="zip5">30004</GeoLocation>
+			<GeoLocation type="zip5">30005</GeoLocation>
+			<GeoLocation type="zip5">30006</GeoLocation>
+		</GeoLocationSupported>
+	</MetadataRecord>
+</MetadataQueryResponse>

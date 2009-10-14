@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This can be used with an implicitly solicited request, the  ResponseCharacteristics and QueryCharacteristics define the implicit query -->
+<!-- using lower first letter camel case based on W3C examples -->
+<GIPSEQueryResponse xmlns="http://ncphi.phgrid.net/schemas/gipse/20090630">
+	<ResponseCharacteristics>
+		<RequestDateTime>2009-03-30T22:24:13-00:00</RequestDateTime><!-- Always uses GMT -->
+		<ResponseDateTime>2009-03-30T22:24:23-00:00</ResponseDateTime><!-- Always uses GMT -->
+		<RequestingUser>BrianLee</RequestingUser>
+		<RequestingOrganization>CDC NCPHI Lab</RequestingOrganization><!-- unambiguous way of specifying user/org (OID) -->
+		<DataSourceOID>BioSense-GIPSE-NCPHILab</DataSourceOID><!-- unambiguous way of specifying user/org (OID) //todo additional data sources, allow multiple sources in future -->
+		<DataSourceTimeZone>-5:00</DataSourceTimeZone><!-- optional, only specified when source has a single time zone, only used as a display label or grouping, not for date math -->
+	</ResponseCharacteristics>
+	<!-- Query submitted, modified to reflect all the explicit and implicit characteristics. Explicit criteria should never be overwritten,
+	generate an error if conflicts exist. -->
+	<QueryCharacteristics>
+		<!-- interval is optional attributes. default to "day" -->
+		<Dates start="2009-01-01" end="2009-01-02" interval="day"/>
+		<!--  Indicator classifiers and names are unique to services (as described by metadata). Future task will group these and use proper vocabularies. -->
+		<Indicators>
+			<Indicator classifier="BioSense" name="Fever"/>
+		</Indicators>
+		
+		<!-- optional, Observation only contains location if GeoRegions is specified -->
+		<GeoRegions>
+			<GeoRegion type="state" value="DC"/>
+			<GeoRegion type="state" value="NC"/>
+			<GeoRegion type="state" value="SC"/>
+			<GeoRegion type="state" value="GA"/>
+		</GeoRegions>
+	</QueryCharacteristics>
+	<ObservationSet>
+	<!-- Only locations with counts > 0 are reported. -->
+		<Observation start="2009-01-01" indicator="Fever" value="4" location="DC"/>
+		<Observation start="2009-01-01" indicator="Fever" value="2" location="NC"/>
+		<Observation start="2009-01-01" indicator="Fever" value="6" location="SC"/>
+		<Observation start="2009-01-01" indicator="Fever" value="4" location="GA"/>
+		<Observation start="2009-01-02" indicator="Fever" value="11" location="DC"/>
+		<!-- NC not reported because the value is 0 for this day. Note that it is optional and could be provided by the service if they want to. -->
+		<Observation start="2009-01-02" indicator="Fever" value="5" location="SC"/>
+		<Observation start="2009-01-02" indicator="Fever" value="9" location="GA"/>
+	</ObservationSet>
+</GIPSEQueryResponse>

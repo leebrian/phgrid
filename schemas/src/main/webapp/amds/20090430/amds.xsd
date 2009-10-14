@@ -1,0 +1,241 @@
+<?xml version="1.0"?>
+	<!--
+		PHGrid AMDS Schema edited by Brian Alexander Lee (brianalee@gmail.com),
+		2009.04.30 1744EDT)
+	-->
+
+<xs:schema id="AMDS" targetNamespace="http://ncphi.phgrid.net:8080/schemas/amds/20090430"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="qualified"
+	elementFormDefault="qualified" version="1.0" xml:lang="EN">
+	
+	<!-- MetadataQueryRequest -->
+	<xs:element name="MetadataQuery">
+		<xs:complexType />
+	</xs:element>
+
+	<!-- MetadataQueryResponse -->
+	<xs:element name="MetadataQueryResponse">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element name="MetadataRecord">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="DataSourceOID" type="xs:string" minOccurs="0" maxOccurs="1" />
+							<xs:element name="CellSuppressionRule" type="xs:integer" minOccurs="0" maxOccurs="1" />
+							<xs:element name="TimePeriodSupported" minOccurs="0" maxOccurs="1">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="DateStart" type="xs:string" minOccurs="1" maxOccurs="1" />
+										<xs:element name="DateEnd" type="xs:string" minOccurs="1" maxOccurs="1" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="ConditionsSupported" minOccurs="1" maxOccurs="1">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Condition" minOccurs="1" maxOccurs="unbounded">
+											<xs:complexType>
+			                                   	<xs:simpleContent>
+			                                   		<xs:extension base="xs:string">
+														<xs:attribute name="classifier" type="xs:string" use="required" />
+													</xs:extension>
+												</xs:simpleContent>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="GeoLocationSupported" minOccurs="1" maxOccurs="1">
+								<xs:complexType>
+									<xs:sequence>
+	                                    <xs:element name="GeoLocation" minOccurs="1" maxOccurs="unbounded">
+	                                        <xs:complexType>
+	                                        	<xs:simpleContent>
+	                                        		<xs:extension base="xs:string">
+	                                        			<xs:attribute name="regionType" use="required">
+	                                        				<xs:simpleType>
+	                                        					<xs:restriction base="xs:string">
+	                                        						<xs:enumeration value="Zip3"/>
+	                                        						<xs:enumeration value="Zip5"/>
+	                                        						<xs:enumeration value="State"/>
+	                                        						<xs:enumeration value="County"/>
+	                                        						<xs:enumeration value="Country"/>
+	                                        					</xs:restriction>
+	                                        				</xs:simpleType>
+	                                        			</xs:attribute>
+	                                        		</xs:extension>
+	                                        	</xs:simpleContent>
+	                                        </xs:complexType>
+	                                    </xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	
+	<!-- AMDSQueryRequest -->
+	<xs:element name="AMDSQueryRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="DateStart" type="xs:string" minOccurs="1" maxOccurs="1" />
+				<xs:element name="DateEnd" type="xs:string" minOccurs="1" maxOccurs="1" />
+				<xs:element name="RequestDateTime" type="xs:string" minOccurs="1" maxOccurs="1" />
+				<xs:element name="RequestingUser" type="xs:string" minOccurs="1" maxOccurs="1" />
+				<xs:element name="GeoLocationRequested" minOccurs="1" maxOccurs="1">
+					<xs:complexType>
+						<xs:sequence>
+	                        <xs:element name="GeoLocation" minOccurs="1" maxOccurs="unbounded">
+	                            <xs:complexType>
+	                            	<xs:simpleContent>
+	                            		<xs:extension base="xs:string">
+	                            			<xs:attribute name="regionType" use="required">
+	                            				<xs:simpleType>
+	                            					<xs:restriction base="xs:string">
+	                            						<xs:enumeration value="Zip3"/>
+	                            						<xs:enumeration value="Zip5"/>
+	                            						<xs:enumeration value="State"/>
+	                            						<xs:enumeration value="County"/>
+	                            						<xs:enumeration value="Country"/>
+	                            					</xs:restriction>
+	                            				</xs:simpleType>
+	                            			</xs:attribute>
+	                            		</xs:extension>
+	                            	</xs:simpleContent>
+	                            </xs:complexType>
+	                        </xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="CellSuppressionRule" type="xs:integer" minOccurs="0" maxOccurs="1" />
+				<xs:element name="TargetQuery" minOccurs="1" maxOccurs="1">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Condition" minOccurs="1" maxOccurs="unbounded">
+								<xs:complexType>
+                                   	<xs:simpleContent>
+                                   		<xs:extension base="xs:string">
+											<xs:attribute name="classifier" type="xs:string" use="required" />
+										</xs:extension>
+									</xs:simpleContent>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<!-- AMDSQueryResponse -->
+	<xs:element name="AMDSQueryResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="AMDSRecord" minOccurs="1" maxOccurs="1">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="AMDSRecordSummary" minOccurs="1" maxOccurs="1">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="DateStart" type="xs:string" minOccurs="1" maxOccurs="1"/>
+										<xs:element name="DateEnd" type="xs:string" minOccurs="1" maxOccurs="1"/>
+										<xs:element name="CreationDateTime" type="xs:string" minOccurs="1" maxOccurs="1"/>
+										<xs:element name="RequestingUser" type="xs:string" minOccurs="1" maxOccurs="1"/>
+										<xs:element name="DataSourceOID" type="xs:string" minOccurs="1" maxOccurs="1"/>
+										<xs:element name="GeoLocationSupported" minOccurs="1" maxOccurs="1">
+											<xs:complexType>
+												<xs:sequence>
+							                        <xs:element name="GeoLocation" minOccurs="1" maxOccurs="unbounded">
+							                            <xs:complexType>
+							                            	<xs:simpleContent>
+							                            		<xs:extension base="xs:string">
+							                            			<xs:attribute name="regionType" use="required">
+							                            				<xs:simpleType>
+							                            					<xs:restriction base="xs:string">
+							                            						<xs:enumeration value="Zip3"/>
+							                            						<xs:enumeration value="Zip5"/>
+							                            						<xs:enumeration value="State"/>
+							                            						<xs:enumeration value="County"/>
+							                            						<xs:enumeration value="Country"/>
+							                            					</xs:restriction>
+							                            				</xs:simpleType>
+							                            			</xs:attribute>
+							                            		</xs:extension>
+							                            	</xs:simpleContent>
+							                            </xs:complexType>
+							                        </xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="CellSuppressionRule" type="xs:integer" minOccurs="0" maxOccurs="1"/>
+										<xs:element name="TargetQuery" minOccurs="1" maxOccurs="1">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="Condition" minOccurs="1" maxOccurs="unbounded">
+														<xs:complexType>
+						                                   	<xs:simpleContent>
+						                                   		<xs:extension base="xs:string">
+																	<xs:attribute name="classifier" type="xs:string" use="required" />
+																</xs:extension>
+															</xs:simpleContent>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="CountSet" minOccurs="1" maxOccurs="1">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="CountItem" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="Day" type="xs:string" minOccurs="1" maxOccurs="1"/>
+													<xs:element name="LocationItem" minOccurs="0" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="PatientLocation" type="xs:string" minOccurs="1" maxOccurs="1"/>
+																<xs:element name="Count" minOccurs="1" maxOccurs="1">
+																	<xs:complexType>
+									                                   	<xs:simpleContent>
+									                                   		<xs:extension base="xs:integer">
+																				<xs:attribute name="suppressed" type="xs:boolean" use="optional" />
+																			</xs:extension>
+																		</xs:simpleContent>
+																	</xs:complexType>
+																</xs:element>
+																<!-- 
+																AllCount is an optional value in case service does not support all condition available from a data source.
+																If a data source has all conditions, then this field should not be used. Instead the "All" condition
+																should be requested in the query.
+																 -->
+																<xs:element name="AllCount" minOccurs="0" maxOccurs="1">
+																	<xs:complexType>
+									                                   	<xs:simpleContent>
+									                                   		<xs:extension base="xs:integer">
+																				<xs:attribute name="suppressed" type="xs:boolean" use="optional" />
+																			</xs:extension>
+																		</xs:simpleContent>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,42 @@
+<medlee>
+<section c = "report unknown section item"><structured form = "xml">
+<problem v = "blood" idref = "p166"><certainty v = "no" idref = "p164"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s3"></sid></problem>
+<finding v = "black" idref = "p172"><bodyloc v = "stools" idref = "p178"></bodyloc>
+<certainty v = "no" idref = "p170"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s4"></sid></finding>
+<finding v = "tarry" idref = "p176"><bodyloc v = "stools" idref = "p178"></bodyloc>
+<certainty v = "no" idref = "p170"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s4"></sid></finding>
+<problem v = "chest pain" idref = "p251"><certainty v = "high certainty" idref = "p255"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s8"></sid><status v = "brief" idref = "p257"><timeper v = "yesterday" idref = "p259"></timeper>
+</status>
+</problem>
+<problem v = "symptom" idref = "p307"><certainty v = "no" idref = "p311"></certainty>
+<parsemode v = "mode1"></parsemode>
+<problemdescr v = "gastroesophageal reflux" idref = "p305"></problemdescr>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s12"></sid><status v = "now" idref = "p309"></status>
+</problem>
+<problem v = "dysuria" idref = "p317"><certainty v = "no" idref = "p315"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s13"></sid></problem>
+<problem v = "depression" idref = "p351"><certainty v = "no" idref = "p349"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s16"></sid></problem>
+
+</structured>
+<tt><sent id = "s1"><undef>nnn</undef>-<undef>nnn</undef>-<undef>nnnn</undef>;</sent><sent id = "s2"> CC: diarrhea 66<undef>M</undef> <undef>PMHx</undef>: <undef>DM2</undef> <undef>dx</undef> 2002 on oral meds hypertension GERD-like symptoms DJD and orthopedic injuries s/p MVA accident w/ resulting R hip injury, unsteady gait major depression 2/3, resolved with sertraline / trazodone- now good mood off meds atypical chest pain syndrome adenosine <undef>thall</undef> 6/3: negative erectile dysfunction diverticulosis prior EtOH, <undef>sober</undef> Notes two months of diarrhea, alternating between soft-solid and liquid brown stools.</sent><sent id = "s3"> <phr id = "p164">Never</phr> <phr id = "p166">blood</phr>;</sent><sent id = "s4"> <phr id = "p170">never</phr> <phr id = "p172">black</phr> or <phr id = "p176">tarry</phr> <phr id = "p178">stools</phr>.</sent><sent id = "s5"> Associated with <undef>intemittent</undef> stabbing LUQ pain.</sent><sent id = "s6"> Last trip out of <undef>country</undef> was 5/5, to DR. Has no <undef>pets</undef>, has not had contact with <undef>farm</undef> <undef>animals</undef>.</sent><sent id = "s7"> ROS: Denies other complaints.</sent><sent id = "s8"> <phr id = "p251">Chest pain</phr> <phr id = "p255">present</phr> <phr id = "p257">briefly</phr> <phr id = "p259">yesterday</phr>;</sent><sent id = "s9"> resolved <undef>sponteneously</undef> without using <undef>NTG</undef>;</sent><sent id = "s10"> no other <undef>CP</undef> episodes for months.</sent><sent id = "s11"> Denies <undef>F</undef>/<undef>C</undef>, palpitations, SOB/cough.</sent><sent id = "s12"> <phr id = "p305">GERD</phr> <phr id = "p307">symptoms</phr> <phr id = "p309">currently</phr> <phr id = "p311">absent</phr>.</sent><sent id = "s13"> <phr id = "p315">Denies</phr> <phr id = "p317">dysuria</phr>;</sent><sent id = "s14"> has 3x nocturia, no hesitancy or incontinence;</sent><sent id = "s15"> strong urine flow <undef>stream</undef>.</sent><sent id = "s16"> <phr id = "p349">Denies</phr> <phr id = "p351">depressed mood</phr>.</sent><sent id = "s17"> NKDA Tylenol PRN Toprol XL 200 mg po daily Metformin 850 mg po bid HCTZ 25 mg po daily <undef>ECASA</undef> 81 mg po daily Omeprazole OTC 20 mg po daily Lisinopril 40 mg po daily Norvasc 10 mg po daily Viagra 50-100 prn Loprox 0.77% topical PRN <undef>NTG</undef> 0.3 SL PRN--has not used in months, and is <undef>aware</undef> not to take with viagra <undef>Pharmacy</undef>=<undef>Duane</undef> <undef>Reade</undef> 212-567-1282 colonoscopy 2001 diverticulosis <undef>ophtho</undef> 10/5 podiatry 6/5 pneumovax 10/4 lipids: LDL=98 (8/5) HbA1c 10.2 (2/6);</sent><sent id = "s18"> was 6.9 (8/5) EKG 10/5 <undef>Microalbumin</undef> 8/5 5.1 DM <undef>educator</undef> VITALS BP 126/80-R <undef>seated</undef> <undef>P68reg</undef> <undef>GEN</undef> pleasant, cooperative, ambulates with <undef>cane</undef> ABD nd +<undef>bs</undef> <undef>nt</undef>, no <undef>hsm</undef> RECTAL no hemorrhoids, scant brown guaiac negative stool in vault, large boggy prostate without appreciable nodularity or tenderness <undef>EXTR</undef> no edema A/<undef>P</undef>: 66 <undef>M</undef> w/ HTN, <undef>DM2</undef>, obesity, OA, R shoulder pain secondary to <undef>ortho</undef> injury, here for abdominal pain of unclear etiology;</sent><sent id = "s19"> diabetes newly uncontrolled ABD PAIN: Metformin-induced diarrhea v.</sent><sent id = "s20"> <undef>parasite</undef> v.</sent><sent id = "s21"> other.</sent><sent id = "s22"> Will observe <undef>closely</undef>;</sent><sent id = "s23"> due to uncontrolled diabetes will not stop metformin at this time but will consider <undef>if</undef> diarrhea fails to resolve in future.</sent><sent id = "s24"> <undef>DM2</undef>: Continue metformin with glyburide, check HbA1c in 1-2 months HTN: Well controlled;</sent><sent id = "s25"> continue regimen above OA: Moderately controlled with Tylenol <undef>HM</undef>: <undef>ORDERS</undef> FOR NOW: Stool for <undef>O</undef>&<undef>P</undef> x3--please provide <undef>kit</undef> and <undef>educate</undef> patient on <undef>how</undef> to <undef>collect</undef> stool for ova and <undef>parasite</undef> <undef>RTC</undef> <undef>Siegel</undef> 3-4 weeks dT vaccine, please  
+</sent></tt></section>
+
+</medlee>

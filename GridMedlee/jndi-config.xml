@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndiConfig xmlns="http://wsrf.globus.org/jndi/config">
+  <service name="SERVICE-INSTANCE-PREFIX/GridMedleeContext">
+    <resource name="configuration" type="edu.columbia.dbmi.context.service.globus.resource.GridMedleeContextResourceConfiguration">
+      <resourceParams>
+        <parameter>
+          <name>factory</name>
+          <value>org.globus.wsrf.jndi.BeanFactory</value>
+        </parameter>
+        <parameter>
+          <name>performRegistration</name>
+          <!-- Set this to false to skip ServiceGroup registration -->
+          <value>PERFORM_REGISTRATION</value>
+        </parameter>
+        <parameter>
+          <name>registrationTemplateFile</name>
+          <!-- Set this to the relative path (from the container root, e.g GLOBUS_LOCATION for globus container) of the registration parameters template file (ignored if performRegistration is false) -->
+          <value>ETC-PATH/GridMedleeContext_registration.xml</value>
+        </parameter>
+      </resourceParams>
+    </resource>
+    <resource name="home" type="edu.columbia.dbmi.context.service.globus.resource.GridMedleeContextResourceHome">
+      <resourceParams>
+        <parameter>
+          <name>factory</name>
+          <value>org.globus.wsrf.jndi.BeanFactory</value>
+        </parameter>
+        <parameter>
+          <name>resourceClass</name>
+          <value>edu.columbia.dbmi.context.service.globus.resource.GridMedleeContextResource</value>
+        </parameter>
+        <parameter>
+          <name>resourceKeyName</name>
+          <value>{http://dbmi.columbia.edu/GridMedlee/Context}GridMedleeContextResultsKey</value>
+        </parameter>
+        <parameter>
+          <name>resourceKeyType</name>
+          <value>java.lang.String</value>
+        </parameter>
+      </resourceParams>
+    </resource>
+    <resourceLink name="serviceconfiguration" target="java:comp/env/services/SERVICE-INSTANCE-PREFIX/GridMedlee/serviceconfiguration" />
+    <resourceLink name="gridMedleeHome" target="java:comp/env/services/SERVICE-INSTANCE-PREFIX/GridMedlee/home" />
+  </service>
+  <service name="SERVICE-INSTANCE-PREFIX/GridMedlee">
+    <resource name="configuration" type="edu.columbia.dbmi.service.globus.resource.GridMedleeResourceConfiguration">
+      <resourceParams>
+        <parameter>
+          <name>factory</name>
+          <value>org.globus.wsrf.jndi.BeanFactory</value>
+        </parameter>
+        <parameter>
+          <name>performRegistration</name>
+          <!-- Set this to false to skip ServiceGroup registration -->
+          <value>PERFORM_REGISTRATION</value>
+        </parameter>
+        <parameter>
+          <name>registrationTemplateFile</name>
+          <!-- Set this to the relative path (from the container root, e.g GLOBUS_LOCATION for globus container) of the registration parameters template file (ignored if performRegistration is false) -->
+          <value>ETC-PATH/GridMedlee_registration.xml</value>
+        </parameter>
+      </resourceParams>
+    </resource>
+    <resource name="serviceconfiguration" type="edu.columbia.dbmi.service.GridMedleeConfiguration">
+      <resourceParams>
+        <parameter>
+          <name>factory</name>
+          <value>org.globus.wsrf.jndi.BeanFactory</value>
+        </parameter>
+        <parameter>
+          <name>etcDirectoryPath</name>
+          <value>ETC-PATH</value>
+        </parameter>
+      </resourceParams>
+    </resource>
+    <resource name="home" type="edu.columbia.dbmi.service.globus.resource.GridMedleeResourceHome">
+      <resourceParams>
+        <parameter>
+          <name>factory</name>
+          <value>org.globus.wsrf.jndi.BeanFactory</value>
+        </parameter>
+      </resourceParams>
+    </resource>
+    <resourceLink name="gridMedleeContextHome" target="java:comp/env/services/SERVICE-INSTANCE-PREFIX/GridMedleeContext/home" />
+  </service>
+</jndiConfig>
+

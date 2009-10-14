@@ -1,0 +1,63 @@
+<medlee>
+<section c = "report unknown section item"><structured form = "xml">
+<problem v = "fever" idref = "p140"><certainty v = "no" idref = "p138"></certainty>
+<parsemode v = "mode1"></parsemode>
+<procedure v = "review of systems" idref = "p135"></procedure>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s6"></sid></problem>
+<problem v = "chill" idref = "p143"><certainty v = "no" idref = "p138"></certainty>
+<parsemode v = "mode1"></parsemode>
+<procedure v = "review of systems" idref = "p135"></procedure>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s6"></sid></problem>
+<problem v = "nausea" idref = "p146"><certainty v = "no" idref = "p138"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s6"></sid></problem>
+<problem v = "vomiting" idref = "p149"><certainty v = "no" idref = "p138"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s6"></sid></problem>
+<problem v = "diarrhea" idref = "p152"><certainty v = "no" idref = "p138"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s6"></sid></problem>
+<problem v = "dysuria" idref = "p155"><certainty v = "no" idref = "p138"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s6"></sid></problem>
+<problem v = "hypertension" idref = "p168"><parsemode v = "mode1"></parsemode>
+<quantity v = "2" idref = "p170"></quantity>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s8"></sid></problem>
+<problem v = "depression" idref = "p500"><parsemode v = "mode1"></parsemode>
+<quantity v = "9" idref = "p502"></quantity>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s16"></sid></problem>
+<problem v = "pain" idref = "p1264"><bodyloc v = "knee" idref = "p1262"><region v = "right" idref = "p1260"></region>
+</bodyloc>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s31"></sid></problem>
+<procedure v = "magnetic resonance imaging" idref = "p1268"><bodyloc v = "knee" idref = "p1274"><region v = "medial" idref = "p1279"></region>
+<region v = "right" idref = "p1272"></region>
+</bodyloc>
+<parsemode v = "mode1"></parsemode>
+<problemdescr v = "tear of meniscus of knee" idref = "p1281"></problemdescr>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s32"></sid></procedure>
+<med v = "zoloft" idref = "p1398"><certainty v = "high certainty"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s38"></sid><status v = "continue" idref = "p1396"></status>
+</med>
+<problem v = "sleepy" idref = "p1408"><certainty v = "high certainty" idref = "p1404"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s38"></sid></problem>
+
+</structured>
+<tt><sent id = "s1">AIM Clinic <undef>XXXXXX</undef>, <undef>XXXXXX</undef> 9999999 54<undef>yF</undef> Here for follow up of depression.</sent><sent id = "s2"> Pt did not tolerate Paxil 20 due to tremors, so she stopped it after 12 days.</sent><sent id = "s3"> Pt c/o right arm pain x a few months, no paresthesias.</sent><sent id = "s4"> Also with new open skin in left <undef>lat</undef> malleolus, painful, now healed.</sent><sent id = "s5">  Pt not following at vascular clinic.</sent><sent id = "s6"> <phr id = "p135">ROS</phr>: <phr id = "p138">no</phr> <phr id = "p140">fevers</phr>, <phr id = "p143">chills</phr><phr id = "p144">,</phr> <phr id = "p146">Nausea</phr><phr id = "p147">,</phr> <phr id = "p149">vomiting</phr><phr id = "p150">,</phr> <phr id = "p152">diarrhea</phr><phr id = "p153">,</phr> <phr id = "p155">dysuria</phr>.</sent><sent id = "s7"> PMH/<undef>PSH</undef>: 1.</sent><sent id = "s8"> <phr id = "p168">HTN</phr> <phr id = "p170">2</phr>.</sent><sent id = "s9"> GERD, s/p EGD 2002 with no <undef>Barrets</undef>.</sent><sent id = "s10"> 3.</sent><sent id = "s11"> Thyroid ca, s/p right thyroidectomy '89, radiotracer uptake 7/4 with no abnormal uptake, <undef>nl</undef> TSH and <undef>US</undef> 4/4 with no <undef>recurrance</undef>, (<undef>f</undef>/ by Thyroid clinic, TSH suppression< 0.5, yearly thyroid <undef>US</undef>) 4.</sent><sent id = "s12"> Varicose veins, s/p L ankle ulcer, s/p cell implantation with resolution 5.</sent><sent id = "s13"> Asthma, <undef>PFTs</undef> with mild obstructive defect, no improvement on bronchodilator 6.</sent><sent id = "s14"> LBP: LS MRI '3 with multidisk disease, but no canal stenosis or nerve impingement 7.</sent><sent id = "s15"> Multiple joint pains, symmetric, ANA >1:2560, <undef>anti</undef>-DNA <undef>neg</undef>, <undef>RF</undef> <undef>neg</undef>, B12 <undef>nl</undef>, RPR non-reactive ESR 15, CRP 4.83, C3 wnl, C4 wnl, <undef>CH50</undef> 164, Lupus anticoagulant: <undef>neg</undef>, <undef>Anticardiolipin</undef> <undef>Ab</undef>: <undef>neg</undef>, <undef>ENA</undef> <undef>neg</undef>, EMG <undef>neg</undef> 3/4, Lyme <undef>neg</undef>, 2 daughter with Lupus, but unlikely to be Lupus arthritis, 8.</sent><sent id = "s16"> <phr id = "p500">Depression</phr> <phr id = "p502">9</phr>.</sent><sent id = "s17"> Internal Hemorrhoids without <undef>beeding</undef> All: Penicillin Meds: Paxil 10 Diovan/<undef>H50</undef> Synthroid 137 Albuterol/Atrovent nebs Singulair 10 Fluticasone inh 110 BID Flexeril 10 qhs Naproxen 500 BID Prilosec OTC <undef>HM</undef>: colonoscopy 2002->adenomatous polyp mammogram ? in Nov 4, repeat <undef>neg</undef> 1/5 Pap 5/5 Tetanus 6/5 PE: flat mood 130/80, 80 right trapezius spasm, painful active <undef>ext</undef> rotation of <undef>shouder</undef>, otherwise normal strength, sensation reflexes and <undef>ROM</undef> left <undef>lat</undef> malleolus with healed skin, 2+ pulses <undef>bil</undef>, multiple varicose veins MRI Right Knee: Degenerative changes of right knee with tear of the body and posterior horn of the medial meniscus.</sent><sent id = "s18"> A/<undef>P</undef>: 54<undef>yF</undef> with 1.</sent><sent id = "s19"> CV: HTN, controlled, - increase toprol to 50 2.</sent><sent id = "s20"> GI: GERD, s/p EGD 2002 with no <undef>Barrets</undef>, on prilosec OTC.</sent><sent id = "s21"> H/o colonic polyps removed 2002, repeat colonoscopy w/ poor prep, repeat colonoscopy as per GI - repeat colonoscopy as per GI 3.</sent><sent id = "s22"> <undef>Onc</undef>: Thyroid ca, s/p right thyroidectomy '89, radiotracer uptake 7/4 with no abnormal uptake, <undef>nl</undef> TSH, <undef>US</undef> 4/4 with no <undef>recurrance</undef>, <undef>followed</undef> by Thyroid clinic.</sent><sent id = "s23"> - re-<undef>refered</undef> for f/u <undef>appointment</undef> (7/6) 4.</sent><sent id = "s24"> Varicose veins, s/p L ankle ulcer, s/p cell implantation with resolution, now on venous <undef>stocking</undef>.</sent><sent id = "s25"> - re-<undef>prescibe</undef> compression stockings - <undef>NIFS</undef> 5.</sent><sent id = "s26"> <undef>Pul</undef>: Asthma, <undef>PFTs</undef> with mild obstructive defect without <undef>brochodilator</undef> response - <undef>cont</undef> current regimen.</sent><sent id = "s27"> 6.</sent><sent id = "s28"> <undef>M</undef>/S: LBP: LS MRI '3 with multidisk disease, but no canal stenosis or nerve impingement NOw with multiple pains, normal neuro exam, mild spasm of right trapezius muscle.</sent><sent id = "s29"> - Ibuprofen 600 <undef>q6hPRN</undef> - flexeril 10 qhs <undef>x10</undef> days <undef>Rheum</undef>: Multiple joint pains, symmetric, ANA >1:2560, <undef>anti</undef>-DNA <undef>neg</undef>, <undef>RF</undef> <undef>neg</undef>, B12 <undef>nl</undef>, RPR non-reactive, ESR 15, CRP 4.83, C3 wnl, C4 wnl, <undef>CH50</undef> 164, Lupus anticoagulant: <undef>neg</undef>, <undef>Anticardiolipin</undef> <undef>Ab</undef>: <undef>neg</undef>, <undef>ENA</undef> <undef>neg</undef>, EMG <undef>neg</undef> 3/4, Lyme <undef>neg</undef>, Unlikely to be Lupus arthritis or other inflammatory <undef>arthirti</undef>.</sent><sent id = "s30"> <undef>Referred</undef> to <undef>Rheum</undef> <undef>clinc</undef> and they <undef>agree</undef> with <undef>assesment</undef>.</sent><sent id = "s31"> <phr id = "p1260">Right</phr> <phr id = "p1262">knee</phr> <phr id = "p1264">pain</phr>.</sent><sent id = "s32"> <phr id = "p1268">MRI</phr> of <phr id = "p1272">right</phr> <phr id = "p1274">knee</phr> w/ <phr id = "p1279">medial</phr> <phr id = "p1281">meniscal tear</phr>.</sent><sent id = "s33"> <undef>Saw</undef> Orthopedist in June but deferred surgery until the fall, now getting PT.</sent><sent id = "s34"> - <undef>cont</undef> PT as per <undef>ortho</undef>.</sent><sent id = "s35"> <undef>Endo</undef>: impaired fasting glucose, had <undef>nutritionist</undef> <undef>consult</undef>.</sent><sent id = "s36"> pt advised to lose wt Psych: depression, pt advised to <undef>see</undef> psychiatrist.</sent><sent id = "s37"> Pt has not made <undef>appointment</undef> despite <undef>encouragement</undef>.</sent><sent id = "s38"> Did not <phr id = "p1396">continue</phr> <phr id = "p1398">Zoloft</phr> <phr id = "p1400">because</phr> <phr id = "p1402">it</phr> <phr id = "p1404">made</phr> her <phr id = "p1408">sleepy</phr>.</sent><sent id = "s39"> Improved with Paxil 10, but did not tolerate paxil 20.</sent><sent id = "s40"> - dec Paxil to 10 - trazodone 50 qhs for insomnia Derm: irritant dermatitis, resolved.</sent><sent id = "s41"> Now with dry skin, improved with aquaphor <undef>HM</undef>: - <undef>utd</undef> <undef>RTC</undef> in 1 month  
+</sent></tt></section>
+
+</medlee>

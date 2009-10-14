@@ -1,0 +1,74 @@
+<medlee>
+<section c = "report unknown section item"><structured form = "xml">
+<med v = "colchicine" idref = "p508"><certainty v = "after" idref = "p500"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s8"></sid><status v = "end" idref = "p504"></status>
+</med>
+<problem v = "pain" idref = "p518"><bodyloc v = "foot" idref = "p534"><region v = "left" idref = "p532"><region v = "lateral" idref = "p524"></region>
+</region>
+</bodyloc>
+<certainty v = "high certainty" idref = "p511"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s8"></sid><status v = "new" idref = "p516"></status>
+<timeper v = "previous" idref = "p540"><reltime v = "previous" idref = "p540"><numunit v = "1 week" idref = "p536"></numunit>
+</reltime>
+</timeper>
+</problem>
+<normalfinding v = "intact" idref = "p712"><bodyloc v = "skin" idref = "p708"></bodyloc>
+<certainty v = "moderate certainty" idref = "p710"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s11"></sid></normalfinding>
+<problem v = "deformity" idref = "p723"><bodyloc v = "joint" idref = "p721"></bodyloc>
+<certainty v = "no" idref = "p719"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s11"></sid></problem>
+<problem v = "involved" idref = "p731"><bodyloc v = "joint" idref = "p729"></bodyloc>
+<certainty v = "no" idref = "p719"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s11"></sid></problem>
+
+</structured>
+<tt><sent id = "s1">Patient <undef>Name</undef>: <undef>Xxxx</undef> <undef>Xxxxx</undef> <undef>Xxxxxx</undef> MR: 9999999 3/8/6 Rheumatology Clinic -- follow up <undef>visit</undef> <undef>PMD</undef>: Dr. <undef>Kkkkk</undef> <undef>Bbbbbbb</undef> (next <undef>visit</undef> 4/5/6) Renal: Dr. <undef>Kkkkkkkkk</undef> <undef>Dddd</undef> 64 yo <undef>M</undef> with HIV, diagnosed in 1990s (<undef>VL</undef> < 50, CD4 count 408 as of 9/14/5), <undef>CRI</undef> (baseline creatinine 1.5-1.8), HTN, hypercholesteremia, prior CVA, seen in clinic by Dr. <undef>Eeeeeeeee</undef> <undef>Mmmmm</undef> for polyarticular gouty arthritis.</sent><sent id = "s2"> His first attack was about 2 years ago, in the L ankle, had X-rays and a local intra-articular injection (at an outside clinic), with subsequent resolution.</sent><sent id = "s3"> He then had R knee swelling about 6 months ago, the joint was aspirated and injected (outside MD Dr. <undef>Aaaaa</undef> <undef>Fffff</undef>), again with improvement.</sent><sent id = "s4"> In March 2005, he was seen in the <undef>ED</undef> with R wrist swelling and pain, synovial fluid was aspirated by the orthopedics <undef>consultant</undef> and examined under polarized light microscopy, with <undef>intracellular</undef> <undef>negatively</undef> <undef>birefringent</undef> crystals confirming the diagnosis of acute gout.</sent><sent id = "s5"> He was treated with tablets, does not recall <undef>name</undef>.</sent><sent id = "s6"> In May 2005, he developed pain and swelling in his R foot, then in his L foot, he was treated with a prednisone taper (10 mg bid) and colchicine 0.6 mg po daily with improvement.</sent><sent id = "s7"> He was <undef>counseled</undef> about dietary modifications and <undef>avoidance</undef> of alcohol, and <undef>says</undef> he was taking daily colchicine until recently.</sent><sent id = "s8"> <phr id = "p500">Soon after</phr> <phr id = "p504">stopping</phr> the <phr id = "p508">colchicine</phr>, <phr id = "p511">however,</phr> he <phr id = "p516">developed</phr> <phr id = "p518">pain</phr> on the <phr id = "p524">lateral</phr> aspect of his <phr id = "p532">L</phr> <phr id = "p534">foot</phr> <phr id = "p536">one week</phr> <phr id = "p540">ago</phr>.</sent><sent id = "s9"> Onset was insidious, there was no <undef>trauman</undef> or skin breakdown, he took no meds for this, and symptoms progressed to the <undef>point</undef> he had difficulty with weight bearing and <undef>saw</undef> Dr. <undef>Bbbbbbb</undef> on 10/17/5.</sent><sent id = "s10"> On that day, <undef>I</undef> briefly <undef>saw</undef> the patient in the <undef>ED</undef> (he was <undef>escorted</undef> by Dr. <undef>Bbbbbbb</undef>), and noted soft tissue swelling, warmth and erythema over the dorsal lateral aspect of his L foot, along the 5th tarsal.</sent><sent id = "s11"> The <phr id = "p708">skin</phr> <phr id = "p710">was</phr> <phr id = "p712">intact</phr><phr id = "p713">,</phr> there <phr id = "p717">was</phr> <phr id = "p719">no</phr> <phr id = "p721">joint</phr> <phr id = "p723">deformity</phr> <phr id = "p725">or</phr> other <phr id = "p729">articular</phr> <phr id = "p731">involvement</phr>.</sent><sent id = "s12"> We presumed he was having another gout flare and began treatment with prednisone 10 mg po bid, with a plan to follow up on 10/19/5 in Rheumatology Clinic.</sent><sent id = "s13"> In follow up 10/19/5, he was feeling better after 2 days of prednisone 10 mg po bid, with only mild swelling and warmth, but still <undef>exquisite</undef> tenderness to pressure lateral to the L 5th tarsal, so he was started on a taper, to 10 mg po qd x 3days, then 5 mg po daily until the next <undef>visit</undef> 10/26/5.</sent><sent id = "s14"> In follow up 10/26/5, the patient reported continued gradual improvement in his pain, however he still had significant pain with weight bearing on the L foot, requiring the continued use of a <undef>cane</undef>.</sent><sent id = "s15"> In follow up 11/2/5, pt reports feeling much improved, only minimal discomfort with weight bearing, no need for a <undef>cane</undef>.</sent><sent id = "s16"> He has not noted any change in his bowel movements while on colchicine, does have some baseline loose <undef>BMs</undef> that have been attributed to his HIV meds.</sent><sent id = "s17"> In follow up 12/7/5, pt reports complete resolution of his gouty flare, the prednisone was stopped 2 weeks ago as scheduled, and he still taking the colchicine daily.</sent><sent id = "s18"> He was cleared to begin allopurinol at a low dose (50 mg daily) at his next <undef>visit</undef> with Dr. <undef>Bbbbbbb</undef>.</sent><sent id = "s19"> In follow up 2/8/6, he has no joint complaints, denies increase in baseline loose <undef>BMs</undef>, denies rash since starting allopurinol.</sent><sent id = "s20"> In follow up today, again denies joint pain, rash, muscle pain or weakness.</sent></tt></section>
+
+<section c = "report allergy item"><structured form = "xml">
+<med v = "nsaid" idref = "p1794"><certainty v = "high certainty"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report allergy item"></sectname>
+<sid idref = "s25"></sid><status v = "avoid" idref = "p1792"></status>
+</med>
+<problem v = "nephrotoxicity" idref = "p1800"><certainty v = "high certainty" idref = "p1796"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report allergy item"></sectname>
+<sid idref = "s25"></sid></problem>
+<med v = "colchicine" idref = "p1813"><certainty v = "high certainty"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report allergy item"></sectname>
+<sid idref = "s27"></sid><status v = "end" idref = "p1811"></status>
+</med>
+<procedure v = "therapy" idref = "p1819"><certainty v = "prophylaxis" idref = "p1817"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report allergy item"></sectname>
+<sid idref = "s27"></sid></procedure>
+<problem v = "flaring" idref = "p1833"><certainty v = "no" idref = "p1829"></certainty>
+<parsemode v = "mode1"></parsemode>
+<problemdescr v = "gout" idref = "p1831"></problemdescr>
+<sectname v = "report allergy item"></sectname>
+<sid idref = "s27"></sid><status v = "recurrence" idref = "p1835"></status>
+</problem>
+<med v = "Allopurinol" idref = "p1845"><certainty v = "high certainty" idref = "p1839"></certainty>
+<parsemode v = "mode1"></parsemode>
+<reaction v = "tolerate" idref = "p1841"></reaction>
+<sectname v = "report allergy item"></sectname>
+<sid idref = "s27"></sid></med>
+
+</structured>
+<tt> Allergies:<sent id = "s21"> <undef>PCN</undef>, Bactrim, Sulfa Medications: combivir viracept pravachol 20mg daily Cozaar 50mg daily tylenol 325mg prn colchicine 0.6 mg po daily allopurinol 100 mg po daily On exam: <undef>well</undef>-appearing, ambulating comfortably Musculoskeletal: no synovitis, L foot soft tissue inflammation has completely resolved, motor strength 5/5 throughout Labs (2/3/6): uric acid 7.5 BUN 35/ <undef>creat</undef> 2.8 (baseline 1.8, was 2.1 on 12/16/5) LFTs wnl Labs (10/20/5): 24 hr urine collection (1375 ml): uric acid 408 
+ mg protein 288.8 mg creatinine 1169 mg Labs (10/5/5): BUN 21/ <undef>creat</undef> 1.8 LFTs wnl uric acid 11.6 Labs (9/14/5): WBC 4.4/ Hgb 13.3/ <undef>Plt</undef> 192 Radiology: L wrist X-ray (3/12/5): Question non-fusion of previous ulnar styloid fracture versus normal variant.</sent><sent id = "s22"> Horizontal lucency seen through the navicular bone on one view only.</sent><sent id = "s23"> Given the presence of soft tissue swelling dorsally, fracture cannot entirely be <undef>excluded</undef>.</sent><sent id = "s24"> Assessment 64 yo <undef>M</undef> with HIV on <undef>HAART</undef>, acute on chronic renal insufficiency (creatinine 2.8 over baseline 1.8) thought to be due to either HIV nephropathy or hypertensive nephrosclerosis, elevated serum uric acid and polyarticular gout, now resolved gout flare in the L foot, being maintained on colchicine 0.6 mg daily for prophylaxis and recently increased to allopurinol 100 mg po daily.</sent><sent id = "s25"> <phr id = "p1792">Avoiding</phr> <phr id = "p1794">NSAIDs</phr> <phr id = "p1796">because of</phr> <phr id = "p1800">nephrotoxicity</phr>.</sent><sent id = "s26"> Recommend: 1.</sent><sent id = "s27"> <phr id = "p1811">Discontinue</phr> <phr id = "p1813">colchicine</phr> <phr id = "p1815">as</phr> <phr id = "p1817">prophylaxis</phr> <phr id = "p1819">therapy</phr> <phr id = "p1821">as</phr> he has <phr id = "p1827">had</phr> <phr id = "p1829">no</phr> <phr id = "p1831">gout</phr> <phr id = "p1833">flare</phr> <phr id = "p1835">recurrences</phr> <phr id = "p1837">and</phr> <phr id = "p1839">is</phr> <phr id = "p1841">tolerating</phr> the <phr id = "p1845">allopurinol</phr>.</sent><sent id = "s28"> 2.</sent><sent id = "s29"> Continue allopurinol at 100 mg po daily.</sent><sent id = "s30"> <undef>If</undef> well-tolerated (no evidence of skin rash, myopathy so <undef>far</undef>), may need to <undef>titrate</undef> up allopurinol slowly (once monthly) to <undef>goal</undef> uric acid <6.</sent><sent id = "s31"> Check CBC and uric acid level <undef>today.</undef>.</sent><sent id = "s32"> 3.</sent><sent id = "s33"> Please <undef>schedule</undef> follow up appt <undef>ASAP</undef> with Dr. <undef>Kkkkkkkkk</undef> <undef>Dddd</undef> (Renal).</sent><sent id = "s34">  Will <undef>recheck</undef> BUN/creatinine today.</sent><sent id = "s35"> 4.</sent><sent id = "s36"> <undef>RTC</undef> 1 month.</sent><sent id = "s37"> <undef>Mmmmmmm</undef> <undef>Wwwwwwwwwwww</undef> Rheumatology <undef>fellow</undef> <undef>beeper</undef> <undef>NNNNN</undef>  
+</sent></tt></section>
+
+</medlee>

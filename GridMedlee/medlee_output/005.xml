@@ -1,0 +1,76 @@
+<medlee>
+<section c = "report unknown section item"><structured form = "xml">
+<med v = "actos" idref = "p37"><dose v = "30 mg" idref = "p39"></dose>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s2"></sid></med>
+<med v = "cozaar" idref = "p45"><dose v = "50 mg" idref = "p47"></dose>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s3"></sid></med>
+<med v = "KCL" idref = "p53"><dose v = "20 mEq" idref = "p55"></dose>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s4"></sid></med>
+<med v = "furosemide" idref = "p61"><dose v = "40 mg" idref = "p63"></dose>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s5"></sid></med>
+<med v = "Evista" idref = "p69"><dose v = "60 mg" idref = "p71"></dose>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s6"></sid></med>
+<med v = "motrin" idref = "p77"><dose v = "400 mg" idref = "p79"></dose>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s7"></sid></med>
+<problem v = "diarrhea" idref = "p112"><bodyloc v = "back" idref = "p116"></bodyloc>
+<certainty v = "high certainty" idref = "p114"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s9"></sid></problem>
+<problem v = "fever" idref = "p123"><certainty v = "no" idref = "p121"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s10"></sid></problem>
+<problem v = "nervous" idref = "p154"><degree v = "high degree" idref = "p152"></degree>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s13"></sid></problem>
+
+</structured>
+<tt><sent id = "s1">Follow-up <undef>visit</undef> Diabetes DJD Depression Sarcoid of lungs Hypertension Osteopenia Meds: ASA Atenolol 50 mg.</sent><sent id = "s2"> <phr id = "p37">Actos</phr> <phr id = "p39">30 mg</phr>.</sent><sent id = "s3"> <phr id = "p45">Cozaar</phr> <phr id = "p47">50 mg</phr>.</sent><sent id = "s4"> <phr id = "p53">KCl</phr> <phr id = "p55">20 mEq</phr>.</sent><sent id = "s5"> <phr id = "p61">Furosemide</phr> <phr id = "p63">40 mg</phr>.</sent><sent id = "s6"> <phr id = "p69">Evista</phr> <phr id = "p71">60 mg</phr>.</sent><sent id = "s7"> <phr id = "p77">Motrin</phr> <phr id = "p79">400 mg</phr>.</sent><sent id = "s8"> Glyburide/metformin 5-500 mg. two tabs tid <undef>Subjective</undef>: <undef>Everything</undef> is <undef>bad</undef>.</sent><sent id = "s9"> <phr id = "p112">Diarrhea</phr> <phr id = "p114">is</phr> <phr id = "p116">back</phr>.</sent><sent id = "s10">  <phr id = "p121">No</phr> <phr id = "p123">fevers</phr>.</sent><sent id = "s11"> Sugars are up and down.</sent><sent id = "s12">  39 on Sunday with symptoms.</sent><sent id = "s13"> <phr id = "p152">Very</phr> <phr id = "p154">nervous</phr>.</sent><sent id = "s14">  Can't <undef>specify</undef> the problem.</sent></tt></section>
+
+<section c = "objectives"><structured form = "xml">
+<bodymeas v = "blood pressure" idref = "p203"><parsemode v = "mode1"></parsemode>
+<sectname v = "objectives"></sectname>
+<sid idref = "s16"></sid></bodymeas>
+<problem v = "diabetes mellitus" idref = "p215"><parsemode v = "mode1"></parsemode>
+<sectname v = "objectives"></sectname>
+<sid idref = "s19"></sid></problem>
+<problem v = "diarrhea" idref = "p245"><parsemode v = "mode1"></parsemode>
+<sectname v = "objectives"></sectname>
+<sid idref = "s22"></sid></problem>
+<med v = "loperamide" idref = "p254"><certainty v = "high certainty"></certainty>
+<manner v = "prn" idref = "p252"></manner>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "objectives"></sectname>
+<sid idref = "s23"></sid><status v = "start" idref = "p250"></status>
+</med>
+<bodyfunc v = "mood" idref = "p280"><parsemode v = "mode1"></parsemode>
+<sectname v = "objectives"></sectname>
+<sid idref = "s28"></sid></bodyfunc>
+
+</structured>
+<tt> Objective:<sent id = "s15"> BP-140/80 Lungs-clear Cor-<undef>RR</undef> <undef>S1S2</undef> Abd-soft, <undef>NT</undef> <undef>Imp</undef>: 1.</sent><sent id = "s16"> <phr id = "p203">BP</phr>.</sent><sent id = "s17"> <undef>OK</undef>.</sent><sent id = "s18"> 2.</sent><sent id = "s19"> <phr id = "p215">DM</phr>.</sent><sent id = "s20"> Told to decrease metformin prn <undef>if</undef> sugars are running low.</sent><sent id = "s21"> 3.</sent><sent id = "s22"> <phr id = "p245">Diarrhea</phr>.</sent><sent id = "s23">  <phr id = "p250">Resume</phr> <phr id = "p252">prn</phr> <phr id = "p254">loperamide</phr>.</sent><sent id = "s24"> 4.</sent><sent id = "s25"> <undef>WAC</undef>.</sent><sent id = "s26"> Guaiac once diarrhea resolved.</sent><sent id = "s27"> 5.</sent><sent id = "s28"> <phr id = "p280">Mood</phr>.</sent><sent id = "s29">  Down in the <undef>dumps</undef>.</sent><sent id = "s30">  Will check in with her on Monday.</sent></tt></section>
+
+<section c = "report plan item"><structured form = "xml">
+<procedure v = "drug prescription" idref = "p314"><parsemode v = "mode1"></parsemode>
+<sectname v = "report plan item"></sectname>
+<sid idref = "s31"></sid></procedure>
+
+</structured>
+<tt> Plan:<sent id = "s31"> <phr id = "p314">Rx</phr>.</sent><sent id = "s32"> given <undef>Mail</undef> all rx.</sent><sent id = "s33"> next week  
+</sent></tt></section>
+
+</medlee>

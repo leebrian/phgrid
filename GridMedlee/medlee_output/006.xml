@@ -1,0 +1,19 @@
+<medlee>
+<section c = "report unknown section item"><structured form = "xml">
+<problem v = "abdominal pain" idref = "p167"><certainty v = "moderate certainty" idref = "p163"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s4"></sid><status v = "continue" idref = "p159"></status>
+<timeper v = "afterward" idref = "p153"></timeper>
+</problem>
+<problem v = "inflammation" idref = "p219"><bodyloc v = "small bowel" idref = "p207"><region v = "segment" idref = "p211"></region>
+</bodyloc>
+<certainty v = "moderate certainty" idref = "p215"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s6"></sid></problem>
+
+</structured>
+<tt><sent id = "s1">To <undef>whom</undef> it <undef>my</undef> <undef>concern</undef> Please note that Ms <undef>XXXXXX</undef> is 64 y/o female with h/o HTN, DM, asthma, who initially presented to <undef>our</undef> ER on 12/16/2005 with abdominal pain, nausea, vomiting, diarrhea, and symptoms consistent with acute Right lower extremity (<undef>RLE</undef>) ischemia.</sent><sent id = "s2"> Patient was subsequently admitted to Milstein Hospital.</sent><sent id = "s3"> Thrombectomy of right femoral artery with <undef>RLE</undef> fasciotomy was performed on the same day.</sent><sent id = "s4"> <phr id = "p153">Afterwards</phr> the patient <phr id = "p159">continued to</phr> <phr id = "p163">complain of</phr> <phr id = "p167">abdominal pain</phr>.</sent><sent id = "s5"> A CT <undef>angio</undef> of abd/pelvis showed patent celiac/SMA with thrombus in distal thoracic aorta.</sent><sent id = "s6"> <phr id = "p207">Small bowel</phr> <phr id = "p211">segment</phr> showed <phr id = "p215">signs of</phr> <phr id = "p219">inflammation</phr>.</sent><sent id = "s7"> Pt was then taken to the OR on 12/16/6 where a 3 <undef>ft</undef> segment of Small Bowel appeared slightly ischemic but viable, so no further surgical intervention was deemed necessary at that time.</sent><sent id = "s8"> Pt taken to OR 12/27/5 for suspected Small Bowel Obstruction and was found to have 17 ischemic area of <undef>SB</undef> that was resected.</sent><sent id = "s9"> Small bowel <undef>reanastomosis</undef> & abdominal wall closure was done on 12/28.</sent><sent id = "s10"> Exploratory-<undef>laparatomy</undef> on 1/3/6 with <undef>Bogota</undef> <undef>bag</undef> placement, subsequent <undef>Bogota</undef> <undef>bag</undef> removal and vicryl mesh with <undef>VAC</undef> placed in OR 1/10/6.</sent><sent id = "s11"> After a long <undef>recuperation</undef> period with numerous medical complications, the patient is being discharged today, March 20th 2006, to a nursing home.</sent></tt></section>
+
+</medlee>

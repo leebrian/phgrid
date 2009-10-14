@@ -1,0 +1,32 @@
+<medlee>
+<section c = "report unknown section item"><structured form = "xml">
+<problem v = "blood" idref = "p248"><bodyloc v = "mucous" idref = "p253"></bodyloc>
+<certainty v = "no" idref = "p251"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s3"></sid></problem>
+<problem v = "hematochezia" idref = "p259"><certainty v = "no" idref = "p257"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s4"></sid></problem>
+<problem v = "melena" idref = "p262"><certainty v = "no" idref = "p257"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s4"></sid></problem>
+<problem v = "hematemesis" idref = "p265"><certainty v = "high certainty" idref = "p263"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s4"></sid></problem>
+<problem v = "nausea" idref = "p313"><certainty v = "no" idref = "p311"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s8"></sid></problem>
+<problem v = "vomiting" idref = "p315"><certainty v = "no" idref = "p311"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s8"></sid></problem>
+
+</structured>
+<tt><sent id = "s1">Problems: Hypertension Chronic rhinitis retinitis pigmentosa urinary urgency (stopped meds 6/4) Lactose intolerance <undef>Hemorroids</undef> Meds: Nasonex once a day cozaar 100 mg once a day atenolol 100 mg once a day Simvastatin 40 mg at <undef>bedtime</undef> Naproxen 500 mg twice a day as needed acetaminophen 1 gm every six hours as needed loratadine 10 mg once a day as needed metamucil 1 tsp twice a day colace 100 mg three times a day Adverse reactions;</sent><sent id = "s2"> Did not tolerate detrol allergic to penicillin <undef>HM</undef>: normal <undef>FOBT</undef> 2001 normal colonoscopy 1997 Mammogram normal 9/ 5 Normal pap 12/2003 flu vaccine 2003 given-declines flu vaccine 2005 <undef>Comes</undef> as a walk-in with 6 days of watery diarrhea.</sent><sent id = "s3"> <phr id = "p246">No</phr> <phr id = "p248">blood</phr>, <phr id = "p251">no</phr> <phr id = "p253">mucus</phr>.</sent><sent id = "s4"> <phr id = "p257">Denies</phr> <phr id = "p259">hematochezia</phr>, <phr id = "p262">melena</phr><phr id = "p263">,</phr> <phr id = "p265">hematemesis</phr>.</sent><sent id = "s5">  Sometimes gets crampy abdominal pain before the diarrhea.</sent><sent id = "s6"> Yesterday had 3 episodes.</sent><sent id = "s7">  Today has had 2 episodes.</sent><sent id = "s8"> <phr id = "p311">Denies</phr> <phr id = "p313">nausea</phr>/<phr id = "p315">vomiting</phr>.</sent><sent id = "s9"> She <undef>says</undef> that she had been taking a lot of laxatives, but stopped them since start of diarrhea.</sent><sent id = "s10"> <undef>T</undef> = 96 BP = 130/70 HR=80 <undef>reg</undef> <undef>RR</undef>=16 distended, soft, non-tender abdomen A/<undef>P</undef> 1) Diarrhea: likely causes include viral gastroenteritis and laxative abuse.</sent><sent id = "s11"> Will <undef>prescribe</undef> loperamide 2 mg every 8 hours as needed.</sent><sent id = "s12"> WIll stop laxatives and stool <undef>softeners</undef>.</sent><sent id = "s13"> Avoid <undef>dairies</undef>.</sent><sent id = "s14"> <undef>If</undef> diarrhea persists in one week will return, and will consider stool studies and GI <undef>referral</undef> at that time.</sent><sent id = "s15"> <undef>RTC</undef> with previous appt.</sent></tt></section>
+
+</medlee>

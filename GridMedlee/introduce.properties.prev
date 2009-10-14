@@ -1,0 +1,11 @@
+#Introduce Properties
+#Fri Aug 08 16:57:54 EDT 2008
+introduce.skeleton.services.list=GridMedlee,GridMedleeContext
+introduce.skeleton.extensions=
+introduce.skeleton.timestamp=1218228852839
+introduce.skeleton.service.name=GridMedlee
+introduce.skeleton.resource.options=main,singleton,identifiable,resourcePropertyManagement
+introduce.skeleton.destination.dir=/home/amlai/GridMedlee_secured/GridMedlee
+introduce.skeleton.namespace.domain=http\://dbmi.columbia.edu/GridMedlee
+introduce.ns.excludes=\ -x gme\://caGrid.caBIG/1.0/gov.nih.nci.cagrid.metadata.security
+introduce.soap.binding.excludes=\ 

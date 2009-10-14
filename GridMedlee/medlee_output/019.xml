@@ -1,0 +1,34 @@
+<medlee>
+<section c = "report unknown section item"><structured form = "xml">
+<labtest v = "cd4 lymphocyte count" idref = "p34"><certainty v = "high certainty" idref = "p35"></certainty>
+<measure v = "482" idref = "p36"></measure>
+<parsemode v = "mode1"></parsemode>
+<problemdescr v = "hiv" idref = "p30"></problemdescr>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s2"></sid></labtest>
+<normalfinding v = "doing well" idref = "p433"><certainty v = "moderate certainty" idref = "p429"></certainty>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s16"></sid><status v = "followup examination" idref = "p441"><status v = "future" idref = "p439"></status>
+<timeper v = "tuesday" idref = "p447"></timeper>
+</status>
+</normalfinding>
+<device v = "splint" idref = "p592"><certainty v = "high certainty" idref = "p589"></certainty>
+<bodyloc v = "forearm" idref = "p598"><region v = "mid" idref = "p596"></region>
+</bodyloc>
+<bodyloc v = "hand" idref = "p587"><region v = "left" idref = "p585"></region>
+</bodyloc>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s25"></sid></device>
+<procedure v = "mammography" idref = "p808"><date v = "00000705" idref = "p812"></date>
+<parsemode v = "mode1"></parsemode>
+<sectname v = "report unknown section item"></sectname>
+<sid idref = "s33"></sid><status v = "pending" idref = "p810"></status>
+</procedure>
+
+</structured>
+<tt><sent id = "s1">F/U 3/16/6 <undef>Xxxxxx</undef>, <undef>Xxxxxx</undef> 9999999 44 yo <undef>F</undef>: 1.</sent><sent id = "s2"> <phr id = "p30">HIV</phr> - <phr id = "p34">CD4</phr><phr id = "p35">=</phr><phr id = "p36">482</phr>;</sent><sent id = "s3"> (CD4 <undef>nadir</undef>=265 7/99);</sent><sent id = "s4"> <undef>VL</undef>=<50;</sent><sent id = "s5"> <undef>RF</undef>=<undef>Heterosexual</undef> <undef>sex</undef>;</sent><sent id = "s6"> <undef>OI</undef>=none - <undef>HAART</undef> = Combivir/Nelfinavir started 8/99 - +PPD/<undef>neg</undef>.</sent><sent id = "s7"> CXR on INH/<undef>B6</undef> 4/1 - 4/2.</sent><sent id = "s8"> 2.</sent><sent id = "s9"> <undef>Fe</undef>-<undef>defficiency</undef> Anemia - Likely secondary to menorrhagia.</sent><sent id = "s10"> 3.</sent><sent id = "s11"> Menometrorrhagia - <undef>Followed</undef> by <undef>gyne</undef> (<undef>Tose</undef> <undef>B</undef>#8541) 4.</sent><sent id = "s12"> Health <undef>care</undef> <undef>maintenance</undef>: (x) pneumovax 2/19/6 () immune to <undef>HBV</undef> (x) <undef>HCV</undef> negative 3/6/6 () RPR (x) PPD + s/p INH 4/1-4/2 ( ) <undef>optho</undef> pending (x ) urine protein/creatinine 8/133 2/6 (x) cervical Ca screening: h/o <undef>irreg</undef> pap 1/31/3 s/p <undef>colop</undef>;</sent><sent id = "s13"> <undef>paps</undef> <undef>nl</undef> since then last 1/2006 (x) lipids cholesterol 198, tg 100, ldl 133, hdl 40  3/8/6 () <undef>proxy</undef> S: Today presents with L arm splint <undef>recounting</undef> <undef>job</undef> related injury to L hand tendon 2.5 wks ago at <undef>work</undef> as <undef>HHA</undef>.</sent><sent id = "s14">  She is on > <undef>payment</undef>.</sent><sent id = "s15">  Had surgery on 3/13 for tendon repair @ <undef>Roosevelt</undef>.</sent><sent id = "s16"> <phr id = "p429">Has been</phr> <phr id = "p433">doing well</phr> <phr id = "p437">and</phr> <phr id = "p439">will</phr> <phr id = "p441">f/u on</phr> <phr id = "p447">Tuesday</phr>.</sent><sent id = "s17"> 100% <undef>compliance</undef>.</sent><sent id = "s18"> Uses <undef>condoms</undef> 100% for contraception and <undef>safety</undef> w/ + husband.</sent><sent id = "s19"> <undef>O</undef>: Exam: 119/87  90, 98.4, 20  - <undef>Wt</undef>=133 <undef>pds</undef>.</sent><sent id = "s20"> <undef>Ht.</undef>=59.5inches <undef>Gen</undef>: Comfortable/ <undef>well</undef>-<undef>groomed</undef>.</sent><sent id = "s21"> Cor: RRR <undef>Nl</undef> <undef>S1S2</undef>;</sent><sent id = "s22"> <undef>I</undef>/VI <undef>SEM</undef> at base <undef>wo</undef>/radiation (old) Lungs: <undef>CTA</undef> <undef>bilat</undef>.</sent><sent id = "s23"> Breasts: WNL <undef>bilat</undef>.</sent><sent id = "s24"> <undef>Ext</undef>: No edema;</sent><sent id = "s25"> <phr id = "p585">L</phr> <phr id = "p587">hand</phr> <phr id = "p589">w/</phr> <phr id = "p592">splint</phr> to <phr id = "p596">mid</phr> <phr id = "p598">forearm</phr>;</sent><sent id = "s26"> able to move fingers all warm MEDS (<undef>MOMs</undef> delivery to clinic): Combivir 1 BID Nelfinavir 1250mg BID Lomotil 2 tabs qD Hydrocodone/actamin 750-7.5 1-2 tab q 4 hr prn <undef>DATA</undef>: 3/6/6 CD4 = 482 (44);</sent><sent id = "s27"> <undef>VL</undef> < 50 2/17/5 CD4 = 520;</sent><sent id = "s28"> <undef>VL</undef> < 50 7/26/4 CD4 = 440;</sent><sent id = "s29"> <undef>VL</undef> < 50 4/27/4 CD4 = 680;</sent><sent id = "s30"> <undef>VL</undef> < 50 1/22/4 CD4 = 675;</sent><sent id = "s31"> <undef>VL</undef> < 50 5/22/3 CD4 = 600;</sent><sent id = "s32"> <undef>VL</undef> < 50 <undef>HCM</undef>: Negative 12/4;</sent><sent id = "s33"> <phr id = "p808">Mammo</phr> <phr id = "p810">pending</phr> <phr id = "p812">7/5</phr>;</sent><sent id = "s34"> Breast Exam <undef>neg</undef>.</sent><sent id = "s35"> 4/5;</sent><sent id = "s36"> Lipids <undef>neg</undef>.</sent><sent id = "s37"> 1/2;</sent><sent id = "s38"> Flu <undef>vax</undef> 10/3 A/<undef>P</undef>: 1.</sent><sent id = "s39"> Diarrhea - <undef>HAART</undef>-associated;</sent><sent id = "s40"> <undef>well</undef>-controlled on lomotil.</sent><sent id = "s41"> 2.</sent><sent id = "s42"> HIV/<undef>HAART</undef> - Adherent/<undef>suppressed</undef>;</sent><sent id = "s43"> no change 3.</sent><sent id = "s44"> Derm <undef>foliculitis</undef> - trial of antibacterial <undef>soap</undef> 2x/day (<undef>Dial</undef> <undef>okay</undef>) <undef>if</undef> not improved w/ conservative tx  <undef>refer</undef> to derm;</sent><sent id = "s45"> impression mouth lesion is <undef>apthous</undef> ulcer 4.</sent><sent id = "s46">  s/p Trauma L Hand Tendon - to <undef>see</undef> <undef>Roosevelt</undef> MD next week and <undef>bring</undef> <undef>records</undef> 4.</sent><sent id = "s47"> <undef>HCM</undef> - check RPR <undef>refer</undef> for Mammo pt <undef>see</undef> dentist <undef>HBV</undef> vaccine #1 today Check labs 1 wk before next <undef>visit</undef> Labs (prior to next <undef>visit</undef>)/ <undef>RTC</undef> 3-4 months  
+</sent></tt></section>
+
+</medlee>

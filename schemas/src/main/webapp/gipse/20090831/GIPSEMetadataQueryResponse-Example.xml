@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetadataQueryResponse xmlns="http://ncphi.phgrid.net/schemas/gipse/20090831">
+	<MetadataRecord>
+		<TimePeriodSupported start="2009-01-31T05:00:01-00:00" end="2010-01-01T05:00:00-00:00"/>
+		<DataSourceOID>BioSense-GIPSE-NCPHILab</DataSourceOID>
+		<SuppressValues smallestValueReported="0"/><!-- Means this service does not apply cell suppression -->
+		<PagingSupported maxPageSize="100"/><!-- Optional, if not specified then service does not support paging. -->
+		<IndicatorsSupported><!-- These would correspond to entries in a wiki/registry describing the classification rules (count vs. ratio, etc) -->
+			<Indicator classifier="BioSense" name="GI"/>
+			<Indicator classifier="BioSense" name="Botulism"/>
+			<Indicator classifier="BioSense" name="Fever"/>
+			<Indicator classifier="BioSense" name="Rash"/>
+			<Indicator classifier="BioSense" name="Total"/>
+		</IndicatorsSupported>
+		<IntervalsSupported>
+			<Interval isDefault="true" name="Day"/>
+			<Interval name="Week"/>
+		</IntervalsSupported>
+		<GeoRegionsSupported>
+			<GeoRegion type="state" value="AL"/><!-- return indicator values by the state of Alabama -->
+			<GeoRegion type="zip5" value="30308"/><!--return indicator values by  the zip code of 30308-->
+			<!-- All of the zip5s in Georgia -->
+			<GeoRegion type="state" value="GA">
+				<SpecificLocations>
+					<GeoLocation type="zip5" value="*"/>
+				</SpecificLocations>
+			</GeoRegion>
+			<!--  All of the zip3s in Georgia -->
+			<GeoRegion type="state" value="GA">
+				<SpecificLocations>
+					<GeoLocation type="zip3" value="*"/>
+				</SpecificLocations>
+			</GeoRegion>
+			<!-- All of the zip5s in 300 -->
+			<GeoRegion type="zip3" value="300">
+				<SpecificLocations>
+					<GeoLocation type="zip5" value="*"/>
+				</SpecificLocations>
+			</GeoRegion>
+			<!-- zip5 30161, but only in GA (not other states that share 30161 -->
+			<GeoRegion type="state" value="GA">
+				<SpecificLocations>
+					<GeoLocation type="zip5" value="30161"/>
+				</SpecificLocations>
+			</GeoRegion>
+			<!-- zip5 30161, but only in AL (not other states that share 30161 -->
+			<GeoRegion type="state" value="AL">
+				<SpecificLocations>
+					<GeoLocation type="zip5" value="30161"/>
+				</SpecificLocations>
+			</GeoRegion>
+		</GeoRegionsSupported>
+		<AgeCodingsSupported><!-- These would correspond to entries in a wiki/registry describing the age sets, etc -->
+			<Age classifier="DiSTRIBuTE" name="0-1"/>
+			<Age classifier="DiSTRIBuTE" name="2-4"/>
+			<Age classifier="DiSTRIBuTE" name="5-17"/>
+			<Age classifier="DiSTRIBuTE" name="18-44"/>
+			<Age classifier="DiSTRIBuTE" name="45+"/>
+		</AgeCodingsSupported>
+		<FacilitiesSupported>
+			<Facility codeset="NWPHIE" name="SacredHeart"/>
+		</FacilitiesSupported>
+		<ServiceAreasSupported>
+			<ServiceArea codeset="NWPHIE" name="ED"/><!-- Emergency dept -->
+			<ServiceArea codeset="NWPHIE" name="UC"/><!-- urgent care  -->
+			<ServiceArea codeset="NWPHIE" name="IN"/><!-- inpatient -->
+			<ServiceArea codeset="NWPHIE" name="PC"/><!-- primary care -->
+			<ServiceArea codeset="NWPHIE" name="SC"/><!-- specialty clinic -->
+		</ServiceAreasSupported>
+	</MetadataRecord>
+</MetadataQueryResponse>

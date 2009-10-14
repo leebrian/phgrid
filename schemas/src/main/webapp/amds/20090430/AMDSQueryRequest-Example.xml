@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AMDSQueryRequest xmlns="http://ncphi.phgrid.net/schemas/amds/20090330">
+	<DateStart>2009-01-01</DateStart>
+	<DateEnd>2009-01-05</DateEnd>
+	<RequestDateTime>2009-03-30T22:24:13-05:00</RequestDateTime>
+	<RequestingUser>BrianLee</RequestingUser>
+	<GeoLocationRequested>
+		<GeoLocation type="zip3">300</GeoLocation>
+		<GeoLocation type="zip3">301</GeoLocation>
+	</GeoLocationRequested>
+	<CellSuppressionRule>5</CellSuppressionRule>
+	<TargetQuery>
+		<Condition classifier="BioSense">GI</Condition>
+		<Condition classifier="BioSense">Fever</Condition>
+	</TargetQuery>
+</AMDSQueryRequest>

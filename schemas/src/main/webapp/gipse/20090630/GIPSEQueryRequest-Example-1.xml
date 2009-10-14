@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+This request demonstrates a simple query where the data is stratified by two days (Jan 1 and Jan 2), a single indicators and a few simple georegions consisting
+of the states of DC,NC,SC,GA. The data returned will have three dimensions: date x indicator x region. 
+The expectation is that this will result in 2 x 1 x 4 <Observation> elements.
+
+This example does not multiple indicators, nor complex GeoRegions, nor the optional stratifiers, nor does it use suppressed values, nor paging.
+ -->
+<GIPSEQueryRequest xmlns="http://ncphi.phgrid.net/schemas/gipse/20090630"><!-- date is used as version -->
+	<RequestCharacteristics>
+		<RequestDateTime>2009-03-30T22:24:13-00:00</RequestDateTime><!-- Always uses GMT -->
+		<RequestingUser>BrianLee</RequestingUser>
+		<RequestingOrganization>CDC NCPHI Lab</RequestingOrganization>
+	</RequestCharacteristics>
+	<QueryCharacteristics>
+		<Dates start="2009-01-01" end="2009-01-02" interval="day"/>
+		<Indicators>
+			<Indicator classifier="BioSense" name="Fever"/>
+		</Indicators>
+		<GeoRegions>
+			<GeoRegion type="state" value="DC"/>
+			<GeoRegion type="state" value="NC"/>
+			<GeoRegion type="state" value="SC"/>
+			<GeoRegion type="state" value="GA"/>
+		</GeoRegions>
+	</QueryCharacteristics>
+</GIPSEQueryRequest>

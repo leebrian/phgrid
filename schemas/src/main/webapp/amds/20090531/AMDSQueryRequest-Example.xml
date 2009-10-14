@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AMDSQueryRequest xmlns="http://ncphi.phgrid.net:8080/schemas/amds/20090531"><!-- date is used as version -->
+	<RequestCharacteristics>
+		<RequestDateTime>2009-03-30T22:24:13-00:00</RequestDateTime><!-- Always uses GMT -->
+		<RequestingUser>BrianLee</RequestingUser>
+		<RequestingOrganization>CDC NCPHI Lab</RequestingOrganization>
+	</RequestCharacteristics>
+	<QueryCharacteristics>
+		<Dates start="2009-01-01" end="2009-01-02" interval="day"/>
+		<SuppressValues smallestValueReported="1" reportAs="Suppressed"/>
+		<Indicators>
+			<Indicator classifier="DiSTRIBuTE" name="GI-Broad-Ratio"/>
+			<Indicator classifier="DiSTRIBuTE" name="GI-Broad-Count"/>
+			<Indicator classifier="DiSTRIBuTE" name="GI-Narrow-Count"/>
+			<Indicator classifier="DiSTRIBuTE" name="GI-Narrow-Ratio"/>
+			<Indicator classifier="DiSTRIBuTE" name="Fever-Ratio"/>
+			<Indicator classifier="DiSTRIBuTE" name="Fever-Count"/>
+			<Indicator classifier="DiSTRIBuTE" name="Fever2-Ratio"/>
+			<Indicator classifier="DiSTRIBuTE" name="Fever2-Count"/>
+			<Indicator classifier="DiSTRIBuTE" name="Total"/>
+			<Indicator classifier="BioSense" name="GI-Ratio"/>
+			<Indicator classifier="BioSense" name="GI-Count"/>
+			<Indicator classifier="BioSense" name="Fever"/>
+			<Indicator classifier="BioSense" name="Total"/>
+		</Indicators>
+		<GeoRegions>
+			<GeoRegion type="state" value="AL"/><!-- return indicator values by the state of Alabama -->
+			<GeoRegion type="zip5" value="30308"/><!--return indicator values by  the zip code of 30308-->
+			<!-- All of the zip5s in Georgia -->
+			<GeoRegion type="state" value="GA">
+				<SpecificLocations>
+					<GeoLocation type="zip5" value="*"/>
+				</SpecificLocations>
+			</GeoRegion>
+			<!--  All of the zip3s in Georgia -->
+			<GeoRegion type="state" value="GA">
+				<SpecificLocations>
+					<GeoLocation type="zip3" value="*"/>
+				</SpecificLocations>
+			</GeoRegion>
+			<!-- All of the zip5s in 300 -->
+			<GeoRegion type="zip3" value="300">
+				<SpecificLocations>
+					<GeoLocation type="zip5" value="*"/>
+				</SpecificLocations>
+			</GeoRegion>
+			<!-- zip5 30161, but only in GA (not other states that share 30161 -->
+			<GeoRegion type="state" value="GA">
+				<SpecificLocations>
+					<GeoLocation type="zip5" value="30161"/>
+				</SpecificLocations>
+			</GeoRegion>
+			<!-- zip5 30161, but only in AL (not other states that share 30161 -->
+			<GeoRegion type="state" value="AL">
+				<SpecificLocations>
+					<GeoLocation type="zip5" value="30161"/>
+				</SpecificLocations>
+			</GeoRegion>
+		</GeoRegions>
+		
+		<!-- optional, Observation only contains age if GeoRegions is specified. BioSense doesn't support Age for Beta. -->
+		<Ages>
+			<Age classifier="DiSTRIBuTE" name="0-1"/>
+			<Age classifier="DiSTRIBuTE" name="2-4"/>
+			<Age classifier="DiSTRIBuTE" name="5-17"/>
+			<Age classifier="DiSTRIBuTE" name="18-44"/>
+		</Ages>
+		
+		<!-- optional, Observation only contains faciliy if GeoRegions is specified. BioSense doesn't support Age for Beta. -->
+		<Facilities>
+			<Facility codeset="NWPHIE" name="SacredHeart"/>
+		</Facilities>
+		
+		<!-- optional, Observation only contains service area if GeoRegions is specified. BioSense doesn't support Age for Beta. -->
+		<ServiceAreas>
+			<ServiceArea codeset="NWPHIE" name="ED"/><!-- Emergency dept -->
+			<ServiceArea codeset="NWPHIE" name="UC"/><!-- urgent care  -->
+			<ServiceArea codeset="NWPHIE" name="IN"/><!-- inpatient -->
+			<ServiceArea codeset="NWPHIE" name="PC"/><!-- primary care -->
+			<ServiceArea codeset="NWPHIE" name="SC"/><!-- specialty clinic -->
+		</ServiceAreas>
+		
+		<PageData pageNumber="1" pageSize="24"/>
+	</QueryCharacteristics>
+</AMDSQueryRequest>

@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  This is a general example, not tied to any of the previous examples (1-5). 
+Observations are fake counts and do not correspond to any real values. -->
+<GIPSEQueryResponse xmlns="http://ncphi.phgrid.net/schemas/gipse/20090831">
+	<ResponseCharacteristics>
+		<RequestDateTime>2009-09-29T22:24:13.000Z
+		</RequestDateTime>
+		<ResponseDateTime>2009-09-29T19:00:56.885Z
+		</ResponseDateTime>
+		<RequestingUser>BrianLee</RequestingUser>
+		<RequestingOrganization>CDC NCPHI Lab</RequestingOrganization>
+		<DataSourceOID>BioSense-RT</DataSourceOID>
+		<DataSourceOID>BioSense-VA</DataSourceOID>
+		<DataSourceOID>BioSense-DoD</DataSourceOID>
+		<DataSourceOID>DiSTRIBuTE</DataSourceOID>
+		<DataSourceTimeZone>US/Eastern</DataSourceTimeZone>
+	</ResponseCharacteristics>
+	<QueryCharacteristics>
+		<Dates end="2009-04-25" interval="Day" start="2009-04-01" />
+		<SuppressValues smallestValueReported="0" />
+		<Indicators>
+			<Indicator classifier="BioSense" name="EDVisits" />
+			<Indicator classifier="BioSense" name="ILI-b" />
+			<Indicator classifier="BioSense" name="ILI-n" />
+			<Indicator classifier="BioSense" name="Respiratory" />
+		</Indicators>
+		<GeoRegions>
+			<GeoRegion type="state" value="GA" />
+			<GeoRegion type="state" value="FL" />
+			<GeoRegion type="state" value="AL" />
+			<GeoRegion type="state" value="SC" />
+		</GeoRegions>
+	</QueryCharacteristics>
+	<ObservationSet>
+		<Observation indicator="EDVisits" location="FL" start="2009-04-16"
+			value="4385" />
+		<Observation indicator="ILI-b" location="AL" start="2009-04-17"
+			value="141" />
+		<Observation indicator="ILI-n" location="GA" start="2009-04-11"
+			value="729" />
+		<Observation indicator="ILI-n" location="SC" start="2009-04-14"
+			value="203" />
+		<Observation indicator="ILI-n" location="FL" start="2009-04-15"
+			value="278" />
+		<Observation indicator="EDVisits" location="GA" start="2009-04-12"
+			value="9204" />
+		<Observation indicator="EDVisits" location="SC" start="2009-04-13"
+			value="2324" />
+		<Observation indicator="EDVisits" location="FL" start="2009-04-15"
+			value="5488" />
+		<Observation indicator="ILI-b" location="AL" start="2009-04-18"
+			value="133" />
+		<Observation indicator="ILI-n" location="GA" start="2009-04-12"
+			value="902" />
+		<Observation indicator="ILI-n" location="SC" start="2009-04-13"
+			value="131" />
+		<Observation indicator="ILI-n" location="FL" start="2009-04-16"
+			value="470" />
+		<Observation indicator="EDVisits" location="GA" start="2009-04-11"
+			value="8543" />
+		<Observation indicator="EDVisits" location="SC" start="2009-04-14"
+			value="2065" />
+		<Observation indicator="EDVisits" location="FL" start="2009-04-18"
+			value="5259" />
+		<Observation indicator="ILI-b" location="AL" start="2009-04-15"
+			value="58" />
+		<Observation indicator="ILI-n" location="SC" start="2009-04-12"
+			value="144" />
+		<Observation indicator="ILI-n" location="GA" start="2009-04-13"
+			value="584" />
+		<Observation indicator="ILI-n" location="FL" start="2009-04-17"
+			value="352" />
+		<Observation indicator="EDVisits" location="SC" start="2009-04-11"
+			value="1514" />
+		<Observation indicator="EDVisits" location="GA" start="2009-04-14"
+			value="9474" />
+		<Observation indicator="EDVisits" location="FL" start="2009-04-17"
+			value="4283" />
+		<Observation indicator="ILI-b" location="AL" start="2009-04-16"
+			value="71" />
+		<Observation indicator="ILI-n" location="SC" start="2009-04-11"
+			value="350" />
+		<Observation indicator="ILI-n" location="GA" start="2009-04-14"
+			value="657" />
+		<Observation indicator="ILI-n" location="FL" start="2009-04-18"
+			value="341" />
+		<Observation indicator="EDVisits" location="SC" start="2009-04-12"
+			value="2987" />
+		<Observation indicator="EDVisits" location="GA" start="2009-04-13"
+			value="9340" />
+		<Observation indicator="ILI-b" location="FL" start="2009-04-07"
+			value="398" />
+		<Observation indicator="EDVisits" location="FL" start="2009-04-20"
+			value="4859" />
+		<Observation indicator="ILI-b" location="AL" start="2009-04-21"
+			value="89" />
+		<Observation indicator="ILI-n" location="GA" start="2009-04-07"
+			value="855" />
+		<Observation indicator="ILI-n" location="SC" start="2009-04-10"
+			value="192" />
+		<Observation indicator="EDVisits" location="AL" start="2009-04-10"
+			value="1268" />
+		<Observation indicator="ILI-n" location="FL" start="2009-04-19"
+			value="287" />
+		<Observation indicator="ILI-b" location="GA" start="2009-04-19"
+			value="778" />
+		<Observation indicator="ILI-b" location="SC" start="2009-04-22"
+			value="274" />
+		<Observation indicator="ILI-n" location="AL" start="2009-04-09"
+			value="137" />
+		<Observation indicator="EDVisits" location="GA" start="2009-04-08"
+			value="8447" />
+		<Observation indicator="EDVisits" location="SC" start="2009-04-09"
+			value="1927" />
+		<Observation indicator="ILI-b" location="FL" start="2009-04-08"
+			value="318" />
+		<Observation indicator="EDVisits" location="FL" start="2009-04-19"
+			value="4438" />
+		<Observation indicator="ILI-b" location="AL" start="2009-04-22"
+			value="102" />
+		<Observation indicator="ILI-n" location="GA" start="2009-04-08"
+			value="749" />
+		<Observation indicator="ILI-n" location="SC" start="2009-04-09"
+			value="97" />
+		<Observation indicator="EDVisits" location="AL" start="2009-04-09"
+			value="1157" />
+		<Observation indicator="ILI-n" location="FL" start="2009-04-20"
+			value="449" />
+		<Observation indicator="ILI-b" location="GA" start="2009-04-20"
+			value="619" />
+		<Observation indicator="ILI-b" location="SC" start="2009-04-21"
+			value="161" />
+		<Observation indicator="ILI-n" location="AL" start="2009-04-10"
+			value="130" />
+		<Observation indicator="EDVisits" location="GA" start="2009-04-07"
+			value="7881" />
+		<Observation indicator="EDVisits" location="SC" start="2009-04-10"
+			value="2078" />
+		<Observation indicator="ILI-b" location="FL" start="2009-04-09"
+			value="337" />
+		<Observation indicator="EDVisits" location="FL" start="2009-04-22"
+			value="5077" />
+		<Observation indicator="ILI-b" location="AL" start="2009-04-19"
+			value="88" />
+		<Observation indicator="ILI-n" location="SC" start="2009-04-08"
+			value="229" />
+		<Observation indicator="ILI-n" location="GA" start="2009-04-09"
+			value="921" />
+		<Observation indicator="EDVisits" location="AL" start="2009-04-08"
+			value="1028" />
+		<Observation indicator="ILI-n" location="FL" start="2009-04-21"
+			value="320" />
+		<Observation indicator="ILI-b" location="SC" start="2009-04-20"
+			value="134" />
+		<Observation indicator="ILI-b" location="GA" start="2009-04-21"
+			value="919" />
+		<Observation indicator="ILI-n" location="AL" start="2009-04-07"
+			value="143" />
+		<Observation indicator="EDVisits" location="SC" start="2009-04-07"
+			value="2258" />
+		<Observation indicator="EDVisits" location="GA" start="2009-04-10"
+			value="8779" />
+		<Observation indicator="ILI-b" location="FL" start="2009-04-10"
+			value="492" />
+		<Observation indicator="EDVisits" location="FL" start="2009-04-21"
+			value="4403" />
+		<Observation indicator="ILI-b" location="AL" start="2009-04-20"
+			value="160" />
+		<Observation indicator="ILI-n" location="SC" start="2009-04-07"
+			value="193" />
+		<Observation indicator="ILI-n" location="GA" start="2009-04-10"
+			value="678" />
+		<Observation indicator="EDVisits" location="AL" start="2009-04-07"
+			value="1266" />
+		<Observation indicator="ILI-n" location="FL" start="2009-04-22"
+			value="314" />
+		<Observation indicator="ILI-b" location="SC" start="2009-04-19"
+			value="229" />
+		<Observation indicator="ILI-b" location="GA" start="2009-04-22"
+			value="781" />
+		<Observation indicator="ILI-n" location="AL" start="2009-04-08"
+			value="115" />
+		<Observation indicator="EDVisits" location="SC" start="2009-04-08"
+			value="2438" />
+		<Observation indicator="EDVisits" location="GA" start="2009-04-09"
+			value="9071" />
+		<Observation indicator="ILI-b" location="FL" start="2009-04-03"
+			value="353" />
+		<Observation indicator="EDVisits" location="FL" start="2009-04-24"
+			value="4838" />
+		<Observation indicator="ILI-n" location="GA" start="2009-04-03"
+			value="854" />
+		<Observation indicator="ILI-n" location="SC" start="2009-04-06"
+			value="260" />
+		<Observation indicator="EDVisits" location="AL" start="2009-04-06"
+			value="1316" />
+		<Observation indicator="ILI-n" location="FL" start="2009-04-23"
+			value="288" />
+		<Observation indicator="ILI-b" location="GA" start="2009-04-23"
+			value="842" />
+		<Observation indicator="ILI-n" location="AL" start="2009-04-05"
+			value="139" />
+		<Observation indicator="EDVisits" location="GA" start="2009-04-04"
+			value="9858" />
+		<Observation indicator="EDVisits" location="SC" start="2009-04-05"
+			value="2257" />
+		<Observation indicator="ILI-b" location="FL" start="2009-04-04"
+			value="466" />
+		<Observation indicator="EDVisits" location="FL" start="2009-04-23"
+			value="4670" />
+		<Observation indicator="ILI-n" location="GA" start="2009-04-04"
+			value="716" />
+		<Observation indicator="ILI-n" location="SC" start="2009-04-05"
+			value="191" />
+		<Observation indicator="EDVisits" location="AL" start="2009-04-05"
+			value="915" />
+		<Observation indicator="ILI-n" location="FL" start="2009-04-24"
+			value="354" />
+		<Observation indicator="ILI-b" location="GA" start="2009-04-24"
+			value="773" />
+		<Observation indicator="ILI-n" location="AL" start="2009-04-06"
+			value="37" />
+		<Observation indicator="EDVisits" location="GA" start="2009-04-03"
+			value="7518" />
+		<Observation indicator="EDVisits" location="SC" start="2009-04-06"
+			value="1220" />
+		<Observation indicator="ILI-b" location="FL" start="2009-04-05"
+			value="395" />
+		<Observation indicator="ILI-b" location="AL" start="2009-04-23"
+			value="180" />
+		<Observation indicator="ILI-n" location="SC" start="2009-04-04"
+			value="137" />
+		<Observation indicator="ILI-n" location="GA" start="2009-04-05"
+			value="891" />
+		<Observation indicator="EDVisits" location="AL" start="2009-04-04"
+			value="895" />
+		<Observation indicator="ILI-b" location="SC" start="2009-04-24"
+			value="295" />
+		<Observation indicator="ILI-n" location="AL" start="2009-04-03"
+			value="94" />
+		<Observation indicator="EDVisits" location="SC" start="2009-04-03"
+			value="2599" />
+		<Observation indicator="EDVisits" location="GA" start="2009-04-06"
+			value="9577" />
+		<Observation indicator="ILI-b" location="FL" start="2009-04-06"
+			value="245" />
+		<Observation indicator="ILI-b" location="AL" start="2009-04-24"
+			value="147" />
+		<Observation indicator="ILI-n" location="SC" start="2009-04-03"
+			value="194" />
+		<Observation indicator="ILI-n" location="GA" start="2009-04-06"
+			value="918" />
+		<Observation indicator="EDVisits" location="AL" start="2009-04-03"
+			value="835" />
+		<Observation indicator="ILI-b" location="SC" start="2009-04-23"
+			value="205" />
+		<Observation indicator="ILI-n" location="AL" start="2009-04-04"
+			value="119" />
+		<Observation indicator="EDVisits" location="SC" start="2009-04-04"
+			value="2037" />
+		<Observation indicator="EDVisits" location="GA" start="2009-04-05"
+			value="8008" />
+		<Observation indicator="ILI-n" location="SC" start="2009-04-02"
+			value="263" />
+		<Observation indicator="EDVisits" location="AL" start="2009-04-02"
+			value="714" />
+		<Observation indicator="ILI-n" location="AL" start="2009-04-01"
+			value="90" />
+		<Observation indicator="EDVisits" location="SC" start="2009-04-01"
+			value="2232" />
+		<Observation indicator="ILI-n" location="SC" start="2009-04-01"
+			value="184" />
+		<Observation indicator="EDVisits" location="AL" start="2009-04-01"
+			value="377" />
+		<Observation indicator="ILI-n" location="AL" start="2009-04-02"
+			value="105" />
+		<Observation indicator="EDVisits" location="SC" start="2009-04-02"
+			value="2179" />
+		<Observation indicator="ILI-b" location="FL" start="2009-04-01"
+			value="450" />
+		<Observation indicator="ILI-n" location="GA" start="2009-04-01"
+			value="880" />
+		<Observation indicator="EDVisits" location="GA" start="2009-04-02"
+			value="9354" />
+		<Observation indicator="ILI-b" location="FL" start="2009-04-02"
+			value="374" />
+		<Observation indicator="ILI-n" location="GA" start="2009-04-02"
+			value="806" />
+		<Observation indicator="EDVisits" location="GA" start="2009-04-01"
+			value="8974" />
+		<Observation indicator="ILI-b" location="AL" start="2009-04-01"
+			value="97" />
+		<Observation indicator="ILI-b" location="SC" start="2009-04-02"
+			value="251" />
+		<Observation indicator="ILI-b" location="AL" start="2009-04-02"
+			value="107" />
+		<Observation indicator="ILI-b" location="SC" start="2009-04-01"
+			value="235" />
+		<Observation indicator="EDVisits" location="FL" start="2009-04-02"
+			value="5412" />
+		<Observation indicator="ILI-n" location="FL" start="2009-04-01"
+			value="264" />
+		<Observation indicator="ILI-b" location="GA" start="2009-04-01"
+			value="943" />
+		<Observation indicator="EDVisits" location="FL" start="2009-04-01"
+			value="4330" />
+		<Observation indicator="ILI-n" location="FL" start="2009-04-02"
+			value="479" />
+		<Observation indicator="ILI-b" location="GA" start="2009-04-02"
+			value="876" />
+		<Observation indicator="ILI-b" location="FL" start="2009-04-23"
+			value="504" />
+		<Observation indicator="EDVisits" location="FL" start="2009-04-04"
+			value="4889" />
+		<Observation indicator="ILI-b" location="AL" start="2009-04-05"
+			value="158" />
+		<Observation indicator="ILI-n" location="GA" start="2009-04-23"
+			value="1022" />
+		<Observation indicator="ILI-n" location="FL" start="2009-04-03"
+			value="269" />
+		<Observation indicator="ILI-b" location="GA" start="2009-04-03"
+			value="584" />
+		<Observation indicator="ILI-b" location="SC" start="2009-04-06"
+			value="158" />
+		<Observation indicator="EDVisits" location="GA" start="2009-04-24"
+			value="8901" />
+		<Observation indicator="ILI-b" location="FL" start="2009-04-24"
+			value="449" />
+		<Observation indicator="EDVisits" location="FL" start="2009-04-03"
+			value="5006" />
+		<Observation indicator="ILI-b" location="AL" start="2009-04-06"
+			value="55" />
+		<Observation indicator="ILI-n" location="GA" start="2009-04-24"
+			value="831" />
+		<Observation indicator="ILI-n" location="FL" start="2009-04-04"
+			value="506" />
+		<Observation indicator="ILI-b" location="GA" start="2009-04-04"
+			value="582" />
+		<Observation indicator="ILI-b" location="SC" start="2009-04-05"
+			value="237" />
+		<Observation indicator="EDVisits" location="GA" start="2009-04-23"
+			value="8815" />
+		<Observation indicator="EDVisits" location="FL" start="2009-04-06"
+			value="4007" />
+		<Observation indicator="ILI-b" location="AL" start="2009-04-03"
+			value="88" />
+		<Observation indicator="ILI-n" location="SC" start="2009-04-24"
+			value="239" />
+		<Observation indicator="EDVisits" location="AL" start="2009-04-24"
+			value="798" />
+		<Observation indicator="ILI-n" location="FL" start="2009-04-05"
+			value="456" />
+		<Observation indicator="ILI-b" location="SC" start="2009-04-04"
+			value="214" />
+		<Observation indicator="ILI-b" location="GA" start="2009-04-05"
+			value="637" />
+		<Observation indicator="ILI-n" location="AL" start="2009-04-23"
+			value="143" />
+		<Observation indicator="EDVisits" location="SC" start="2009-04-23"
+			value="3123" />
+		<Observation indicator="EDVisits" location="FL" start="2009-04-05"
+			value="6270" />
+		<Observation indicator="ILI-b" location="AL" start="2009-04-04"
+			value="156" />
+		<Observation indicator="ILI-n" location="SC" start="2009-04-23"
+			value="252" />
+		<Observation indicator="EDVisits" location="AL" start="2009-04-23"
+			value="1339" />
+		<Observation indicator="ILI-n" location="FL" start="2009-04-06"
+			value="438" />
+		<Observation indicator="ILI-b" location="SC" start="2009-04-03"
+			value="240" />
+		<Observation indicator="ILI-b" location="GA" start="2009-04-06"
+			value="613" />
+		<Observation indicator="ILI-n" location="AL" start="2009-04-24"
+			value="61" />
+		<Observation indicator="EDVisits" location="SC" start="2009-04-24"
+			value="2336" />
+		<Observation indicator="ILI-b" location="FL" start="2009-04-19"
+			value="505" />
+		<Observation indicator="EDVisits" location="FL" start="2009-04-08"
+			value="5475" />
+		<Observation indicator="ILI-b" location="AL" start="2009-04-09"
+			value="176" />
+		<Observation indicator="ILI-n" location="GA" start="2009-04-19"
+			value="1035" />
+		<Observation indicator="ILI-n" location="SC" start="2009-04-22"
+			value="193" />
+		<Observation indicator="EDVisits" location="AL" start="2009-04-22"
+			value="1499" />
+		<Observation indicator="ILI-n" location="FL" start="2009-04-07"
+			value="329" />
+		<Observation indicator="ILI-b" location="GA" start="2009-04-07"
+			value="850" />
+		<Observation indicator="ILI-b" location="SC" start="2009-04-10"
+			value="206" />
+		<Observation indicator="ILI-n" location="AL" start="2009-04-21"
+			value="165" />
+		<Observation indicator="EDVisits" location="GA" start="2009-04-20"
+			value="9171" />
+		<Observation indicator="EDVisits" location="SC" start="2009-04-21"
+			value="2426" />
+		<Observation indicator="ILI-b" location="FL" start="2009-04-20"
+			value="409" />
+		<Observation indicator="EDVisits" location="FL" start="2009-04-07"
+			value="4412" />
+		<Observation indicator="ILI-b" location="AL" start="2009-04-10"
+			value="117" />
+		<Observation indicator="ILI-n" location="GA" start="2009-04-20"
+			value="633" />
+		<Observation indicator="ILI-n" location="SC" start="2009-04-21"
+			value="283" />
+		<Observation indicator="EDVisits" location="AL" start="2009-04-21"
+			value="925" />
+		<Observation indicator="ILI-n" location="FL" start="2009-04-08"
+			value="304" />
+		<Observation indicator="ILI-b" location="GA" start="2009-04-08"
+			value="800" />
+		<Observation indicator="ILI-b" location="SC" start="2009-04-09"
+			value="221" />
+		<Observation indicator="ILI-n" location="AL" start="2009-04-22"
+			value="74" />
+		<Observation indicator="EDVisits" location="GA" start="2009-04-19"
+			value="8761" />
+		<Observation indicator="EDVisits" location="SC" start="2009-04-22"
+			value="2241" />
+		<Observation indicator="ILI-b" location="FL" start="2009-04-21"
+			value="372" />
+		<Observation indicator="EDVisits" location="FL" start="2009-04-10"
+			value="3889" />
+		<Observation indicator="ILI-b" location="AL" start="2009-04-07"
+			value="93" />
+		<Observation indicator="ILI-n" location="SC" start="2009-04-20"
+			value="297" />
+		<Observation indicator="ILI-n" location="GA" start="2009-04-21"
+			value="776" />
+		<Observation indicator="EDVisits" location="AL" start="2009-04-20"
+			value="1204" />
+		<Observation indicator="ILI-n" location="FL" start="2009-04-09"
+			value="225" />
+		<Observation indicator="ILI-b" location="SC" start="2009-04-08"
+			value="228" />
+		<Observation indicator="ILI-b" location="GA" start="2009-04-09"
+			value="803" />
+		<Observation indicator="ILI-n" location="AL" start="2009-04-19"
+			value="62" />
+		<Observation indicator="EDVisits" location="SC" start="2009-04-19"
+			value="1341" />
+		<Observation indicator="EDVisits" location="GA" start="2009-04-22"
+			value="9055" />
+		<Observation indicator="ILI-b" location="FL" start="2009-04-22"
+			value="358" />
+		<Observation indicator="EDVisits" location="FL" start="2009-04-09"
+			value="5524" />
+		<Observation indicator="ILI-b" location="AL" start="2009-04-08"
+			value="95" />
+		<Observation indicator="ILI-n" location="SC" start="2009-04-19"
+			value="201" />
+		<Observation indicator="ILI-n" location="GA" start="2009-04-22"
+			value="952" />
+		<Observation indicator="EDVisits" location="AL" start="2009-04-19"
+			value="966" />
+		<Observation indicator="ILI-n" location="FL" start="2009-04-10"
+			value="334" />
+		<Observation indicator="ILI-b" location="SC" start="2009-04-07"
+			value="178" />
+		<Observation indicator="ILI-b" location="GA" start="2009-04-10"
+			value="741" />
+		<Observation indicator="ILI-n" location="AL" start="2009-04-20"
+			value="117" />
+		<Observation indicator="EDVisits" location="SC" start="2009-04-20"
+			value="2243" />
+		<Observation indicator="EDVisits" location="GA" start="2009-04-21"
+			value="10107" />
+		<Observation indicator="ILI-b" location="FL" start="2009-04-15"
+			value="355" />
+		<Observation indicator="EDVisits" location="FL" start="2009-04-12"
+			value="3038" />
+		<Observation indicator="ILI-b" location="AL" start="2009-04-13"
+			value="115" />
+		<Observation indicator="ILI-n" location="GA" start="2009-04-15"
+			value="738" />
+		<Observation indicator="ILI-n" location="SC" start="2009-04-18"
+			value="220" />
+		<Observation indicator="EDVisits" location="AL" start="2009-04-18"
+			value="1212" />
+		<Observation indicator="ILI-n" location="FL" start="2009-04-11"
+			value="368" />
+		<Observation indicator="ILI-b" location="GA" start="2009-04-11"
+			value="685" />
+		<Observation indicator="ILI-b" location="SC" start="2009-04-14"
+			value="182" />
+		<Observation indicator="ILI-n" location="AL" start="2009-04-17"
+			value="126" />
+		<Observation indicator="EDVisits" location="GA" start="2009-04-16"
+			value="9893" />
+		<Observation indicator="EDVisits" location="SC" start="2009-04-17"
+			value="2954" />
+		<Observation indicator="ILI-b" location="FL" start="2009-04-16"
+			value="554" />
+		<Observation indicator="EDVisits" location="FL" start="2009-04-11"
+			value="4553" />
+		<Observation indicator="ILI-b" location="AL" start="2009-04-14"
+			value="95" />
+		<Observation indicator="ILI-n" location="GA" start="2009-04-16"
+			value="823" />
+		<Observation indicator="ILI-n" location="SC" start="2009-04-17"
+			value="271" />
+		<Observation indicator="EDVisits" location="AL" start="2009-04-17"
+			value="790" />
+		<Observation indicator="ILI-n" location="FL" start="2009-04-12"
+			value="298" />
+		<Observation indicator="ILI-b" location="GA" start="2009-04-12"
+			value="918" />
+		<Observation indicator="ILI-b" location="SC" start="2009-04-13"
+			value="126" />
+		<Observation indicator="ILI-n" location="AL" start="2009-04-18"
+			value="109" />
+		<Observation indicator="EDVisits" location="GA" start="2009-04-15"
+			value="7726" />
+		<Observation indicator="EDVisits" location="SC" start="2009-04-18"
+			value="2360" />
+		<Observation indicator="ILI-b" location="FL" start="2009-04-17"
+			value="419" />
+		<Observation indicator="EDVisits" location="FL" start="2009-04-14"
+			value="3996" />
+		<Observation indicator="ILI-b" location="AL" start="2009-04-11"
+			value="128" />
+		<Observation indicator="ILI-n" location="SC" start="2009-04-16"
+			value="248" />
+		<Observation indicator="ILI-n" location="GA" start="2009-04-17"
+			value="753" />
+		<Observation indicator="EDVisits" location="AL" start="2009-04-16"
+			value="1188" />
+		<Observation indicator="ILI-n" location="FL" start="2009-04-13"
+			value="287" />
+		<Observation indicator="ILI-b" location="SC" start="2009-04-12"
+			value="182" />
+		<Observation indicator="ILI-b" location="GA" start="2009-04-13"
+			value="902" />
+		<Observation indicator="ILI-n" location="AL" start="2009-04-15"
+			value="108" />
+		<Observation indicator="EDVisits" location="SC" start="2009-04-15"
+			value="2540" />
+		<Observation indicator="EDVisits" location="GA" start="2009-04-18"
+			value="8909" />
+		<Observation indicator="ILI-b" location="FL" start="2009-04-18"
+			value="573" />
+		<Observation indicator="EDVisits" location="FL" start="2009-04-13"
+			value="3743" />
+		<Observation indicator="ILI-b" location="AL" start="2009-04-12"
+			value="133" />
+		<Observation indicator="ILI-n" location="SC" start="2009-04-15"
+			value="78" />
+		<Observation indicator="ILI-n" location="GA" start="2009-04-18"
+			value="689" />
+		<Observation indicator="EDVisits" location="AL" start="2009-04-15"
+			value="1434" />
+		<Observation indicator="ILI-n" location="FL" start="2009-04-14"
+			value="425" />
+		<Observation indicator="ILI-b" location="SC" start="2009-04-11"
+			value="201" />
+		<Observation indicator="ILI-b" location="GA" start="2009-04-14"
+			value="758" />
+		<Observation indicator="ILI-n" location="AL" start="2009-04-16"
+			value="117" />
+		<Observation indicator="EDVisits" location="SC" start="2009-04-16"
+			value="1747" />
+		<Observation indicator="EDVisits" location="GA" start="2009-04-17"
+			value="8268" />
+		<Observation indicator="ILI-b" location="FL" start="2009-04-11"
+			value="232" />
+		<Observation indicator="EDVisits" location="AL" start="2009-04-14"
+			value="263" />
+		<Observation indicator="ILI-b" location="GA" start="2009-04-15"
+			value="840" />
+		<Observation indicator="ILI-b" location="SC" start="2009-04-18"
+			value="146" />
+		<Observation indicator="ILI-n" location="AL" start="2009-04-13"
+			value="27" />
+		<Observation indicator="ILI-b" location="FL" start="2009-04-12"
+			value="461" />
+		<Observation indicator="EDVisits" location="AL" start="2009-04-13"
+			value="737" />
+		<Observation indicator="ILI-b" location="GA" start="2009-04-16"
+			value="689" />
+		<Observation indicator="ILI-b" location="SC" start="2009-04-17"
+			value="246" />
+		<Observation indicator="ILI-n" location="AL" start="2009-04-14"
+			value="116" />
+		<Observation indicator="ILI-b" location="FL" start="2009-04-13"
+			value="517" />
+		<Observation indicator="EDVisits" location="AL" start="2009-04-12"
+			value="1840" />
+		<Observation indicator="ILI-b" location="SC" start="2009-04-16"
+			value="114" />
+		<Observation indicator="ILI-b" location="GA" start="2009-04-17"
+			value="786" />
+		<Observation indicator="ILI-n" location="AL" start="2009-04-11"
+			value="70" />
+		<Observation indicator="ILI-b" location="FL" start="2009-04-14"
+			value="437" />
+		<Observation indicator="EDVisits" location="AL" start="2009-04-11"
+			value="910" />
+		<Observation indicator="ILI-b" location="SC" start="2009-04-15"
+			value="299" />
+		<Observation indicator="ILI-b" location="GA" start="2009-04-18"
+			value="731" />
+		<Observation indicator="ILI-n" location="AL" start="2009-04-12"
+			value="105" />
+	</ObservationSet>
+</GIPSEQueryResponse>

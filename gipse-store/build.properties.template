@@ -1,0 +1,8 @@
+#This file is build.properties.template instead of build.properties so developers don't check in the actual values they use to perform a build
+
+#name of the database that the AMDS services/importers will be connecting to; ignored by PostgreSQL
+db.name=SAMPLEDB
+#schema where the objects will be created (SQLServer likes to default to dbo)
+db.schema=SAMPLESCHEMA
+#owner of objects, ignored by SQLServer
+db.owner=SAMPLEOWNER
